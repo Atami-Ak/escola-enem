@@ -1,0 +1,7 @@
+.claude
+tools
+wrangler.jsonc
+.assetsignore
+node_modules
+SECURITY.md
+serve.py

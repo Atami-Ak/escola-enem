@@ -1,0 +1,26 @@
+{
+  "blocos": [
+    {
+      "id": "antes",
+      "titulo": "Antes",
+      "questoes": [
+        {"materia": "Matemática", "enunciado": "Quanto é 20% de 150?", "alternativas": ["20", "30", "45", "15"], "correta": 1},
+        {"materia": "Português", "enunciado": "Qual frase está correta quanto à concordância?", "alternativas": ["Haviam muitos alunos na sala.", "Fazem dois anos que moro aqui.", "Faz dois anos que moro aqui.", "Houveram vários problemas."], "correta": 2},
+        {"materia": "Redação", "enunciado": "Qual é a estrutura de uma redação dissertativo-argumentativa?", "alternativas": ["Apenas um parágrafo com a opinião", "Narração de fatos com personagens", "Lista de tópicos sem conclusão", "Introdução, desenvolvimento e conclusão com proposta de intervenção"], "correta": 3},
+        {"materia": "Ciências", "enunciado": "Qual gás as plantas absorvem na fotossíntese?", "alternativas": ["Oxigênio", "Gás carbônico", "Nitrogênio", "Hidrogênio"], "correta": 1},
+        {"materia": "Matemática", "enunciado": "Se 3x + 5 = 20, quanto vale x?", "alternativas": ["4", "6", "5", "15"], "correta": 2}
+      ]
+    },
+    {
+      "id": "depois",
+      "titulo": "Depois",
+      "questoes": [
+        {"materia": "Matemática", "enunciado": "Qual é a média aritmética de 4, 6, 8 e 10?", "alternativas": ["6", "7", "8", "28"], "correta": 1},
+        {"materia": "Português", "enunciado": "Em \"Os alunos estudaram muito\", qual é o sujeito da oração?", "alternativas": ["muito", "estudaram", "Os", "Os alunos"], "correta": 3},
+        {"materia": "Redação", "enunciado": "Na proposta de intervenção, qual elemento indica quem vai executar a ação?", "alternativas": ["Finalidade", "Agente", "Detalhamento", "Tese"], "correta": 1},
+        {"materia": "Ciências", "enunciado": "Ao nível do mar, a que temperatura a água pura ferve?", "alternativas": ["50 °C", "90 °C", "100 °C", "120 °C"], "correta": 2},
+        {"materia": "Matemática", "enunciado": "Qual é a área de um retângulo de 8 m por 5 m?", "alternativas": ["13 m²", "26 m²", "80 m²", "40 m²"], "correta": 3}
+      ]
+    }
+  ]
+}

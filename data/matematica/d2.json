@@ -1,0 +1,1659 @@
+[
+  {
+    "id": "leitura-graficos-tabelas",
+    "nivel": "basico",
+    "titulo": "Leitura de gráficos e tabelas",
+    "competencia": "C6",
+    "habilidades": ["H24", "H25", "H26"],
+    "conceito": [
+      "Antes de calcular, leia o título, os eixos, as unidades e a legenda. Muitos erros vêm de trocar milhares por unidades ou de ler a escala errada.",
+      "Em um gráfico de barras ou de linhas, cada ponto é um par (categoria, valor). Em um gráfico de setores, cada fatia é uma parte do total: a soma das partes é 100%.",
+      "Para comparar, use diferença (quanto mudou) ou razão (quantas vezes, ou quantos por cento). A variação percentual é {valor final − valor inicial/valor inicial}."
+    ],
+    "quando": {
+      "sinais": [
+        "“de acordo com o gráfico” ou “segundo a tabela”: todos os dados vêm de lá, não de memória",
+        "“em milhares” ou “em milhões”: a unidade do eixo muda o valor lido",
+        "“variação” ou “em relação ao ano anterior”: compare dois pontos, diferença sobre o inicial",
+        "“a fatia” ou “do total” (gráfico de setores): as partes somam 100%",
+        "“maior crescimento”: compare as variações, não só os valores finais"
+      ],
+      "formula": "variação = {final − inicial/inicial}",
+      "armadilhas": [
+        "Ignorar a unidade do eixo (milhares) e dar a resposta em unidades.",
+        "Dividir a diferença pelo valor final em vez do inicial."
+      ]
+    },
+    "ler": {
+      "passos": [
+        "Leia o título, os eixos, a unidade e a legenda antes de qualquer conta.",
+        "Anote em uma lista curta os valores que a pergunta usa, com a unidade.",
+        "Descarte as barras ou linhas que a pergunta não menciona.",
+        "Decida se a pergunta quer diferença, razão ou variação percentual.",
+        "Confira se a resposta está na mesma unidade do eixo ou do que foi pedido."
+      ],
+      "exemplo": {
+        "enunciado": "Um gráfico de barras mostra as visitas ao site de uma escola, em milhares: 40 em janeiro, 50 em fevereiro e 45 em março. O gráfico foi feito por um estagiário e usa barras azuis. Qual foi a variação percentual de visitas de janeiro para fevereiro?",
+        "anotacoes": [
+          {
+            "trecho": "em milhares",
+            "papel": "unidade",
+            "nota": "40 significa 40 mil visitas"
+          },
+          {
+            "trecho": "40 em janeiro",
+            "papel": "dado",
+            "nota": "valor inicial"
+          },
+          {
+            "trecho": "50 em fevereiro",
+            "papel": "dado",
+            "nota": "valor final"
+          },
+          {
+            "trecho": "45 em março",
+            "papel": "distracao",
+            "nota": "o mês de março fica fora da comparação pedida"
+          },
+          {
+            "trecho": "feito por um estagiário e usa barras azuis",
+            "papel": "distracao",
+            "nota": "detalhe visual, não entra na conta"
+          },
+          {
+            "trecho": "Qual foi a variação percentual",
+            "papel": "pede",
+            "nota": "{50 − 40/40} = 0,25, ou seja, 25%"
+          },
+          {
+            "trecho": "de janeiro para fevereiro",
+            "papel": "condicao",
+            "nota": "o período define o inicial e o final"
+          }
+        ]
+      }
+    },
+    "formulas": [
+      {
+        "nome": "Variação percentual",
+        "f": "{final − inicial/inicial}",
+        "uso": "Quando se pede “quanto cresceu, em porcentagem” entre dois pontos do gráfico."
+      },
+      {
+        "nome": "Diferença entre valores",
+        "f": "diferença = final − inicial",
+        "uso": "Quando se pede “quanto a mais” ou “quanto a menos”, em unidades."
+      },
+      {
+        "nome": "Soma das fatias",
+        "f": "soma das partes = 100%",
+        "uso": "Quando o gráfico de setores omite uma fatia e é preciso achar o que falta."
+      }
+    ],
+    "exemplos": [
+      {
+        "enunciado": "Uma tabela mostra as vendas de uma loja: 120 unidades em janeiro, 150 em fevereiro e 90 em março. Qual foi a variação percentual de janeiro para fevereiro?",
+        "formula": "variação = {150 − 120/120} = 0,25",
+        "passos": [
+          "A diferença entre fevereiro e janeiro é 150 − 120 = 30.",
+          "Compare com o valor inicial (janeiro): {30/120} = 0,25.",
+          "0,25 = 25%, ou seja, um aumento de 25%."
+        ]
+      },
+      {
+        "enunciado": "Em um gráfico de setores, a fatia A ocupa 35% e a fatia B ocupa 15%. Quanto resta para as demais fatias?",
+        "formula": "100% − 35% − 15% = 50%",
+        "passos": [
+          "O total do gráfico é 100%.",
+          "Já foram usados 35% + 15% = 50%.",
+          "Restam 50% para as demais fatias."
+        ]
+      }
+    ],
+    "truque": "Escreva ao lado do gráfico os valores lidos em uma lista curta, com a unidade. Só depois faça a conta: ler e calcular em passos separados evita misturar eixos.",
+    "erroComum": "Confundir variação absoluta com variação percentual, ou usar o valor final (em vez do inicial) como base da porcentagem.",
+    "exercicios": [
+      {
+        "enunciado": "Uma tabela traz as vendas de uma loja: 120 unidades em janeiro, 150 em fevereiro e 90 em março. Qual é o total vendido no trimestre?",
+        "passos": ["Some os três meses.", "120 + 150 + 90 = 360."],
+        "resposta": "360 unidades",
+        "conta": "120+150+90",
+        "valor": 360
+      },
+      {
+        "enunciado": "Usando a mesma tabela, de quantos por cento foi o aumento nas vendas de janeiro (120) para fevereiro (150)?",
+        "passos": ["Diferença: 150 − 120 = 30.", "Razão com a base inicial: {30/120} = 0,25.", "0,25 = 25%."],
+        "resposta": "25%",
+        "conta": "(150-120)/120*100",
+        "valor": 25
+      },
+      {
+        "enunciado": "Um gráfico de barras mostra três produtos com vendas de 40, 25 e 35 (em milhares de reais). Que porcentagem do total corresponde ao segundo produto (25)?",
+        "passos": ["Total: 40 + 25 + 35 = 100.", "Parte do segundo: {25/100} = 0,25.", "0,25 = 25%."],
+        "resposta": "25%",
+        "conta": "25/(40+25+35)*100",
+        "valor": 25
+      },
+      {
+        "enunciado": "Um gráfico de linha mostra a temperatura de uma cidade: 18 °C às 6 h e 27 °C às 15 h. Se o aumento foi constante, quantos graus a temperatura subiu por hora?",
+        "passos": ["Variação da temperatura: 27 − 18 = 9 °C.", "Intervalo de tempo: 15 − 6 = 9 horas.", "{9/9} = 1 grau por hora."],
+        "resposta": "1 °C por hora",
+        "conta": "(27-18)/(15-6)",
+        "valor": 1
+      },
+      {
+        "enunciado": "Um gráfico de setores mostra que 30% dos 800 entrevistados preferem o item X. Quantas pessoas preferem o item X?",
+        "passos": ["30% = 0,30.", "0,30 × 800 = 240."],
+        "resposta": "240 pessoas",
+        "conta": "0.3*800",
+        "valor": 240
+      }
+    ],
+    "cartoes": [
+      {"p": "O que ler antes de calcular em qualquer gráfico?", "r": "Título, eixos, unidades (milhares? milhões?), escala e legenda."},
+      {"p": "Como calcular a variação percentual entre dois valores?", "r": "Divida a diferença (final − inicial) pelo valor inicial e multiplique por 100."},
+      {"p": "Quanto vale a soma de todas as fatias de um gráfico de setores?", "r": "100% do total."},
+      {"p": "Qual é o erro mais comum ao comparar valores em um gráfico?", "r": "Ler a escala errada ou usar o valor final como base da porcentagem."}
+    ],
+    "gerador": {
+      "vars": {},
+      "questoes": [
+        {
+          "vars": {
+            "a": {
+              "min": 10,
+              "max": 40
+            },
+            "dif": {
+              "min": 5,
+              "max": 30
+            }
+          },
+          "deriv": {
+            "b": "a+dif"
+          },
+          "enunciado": "Em um gráfico de barras, a barra de janeiro marca {a} mil peças e a de fevereiro, {b} mil peças. Quantas mil peças a mais a fábrica produziu em fevereiro?",
+          "conta": "b-a",
+          "unidade": "mil peças",
+          "casas": 0,
+          "passos": [
+            "Leia o valor de cada barra no eixo vertical: janeiro, {a} mil; fevereiro, {b} mil.",
+            "\"A mais\" pede a diferença: {b} - {a} = {valor} mil peças."
+          ]
+        },
+        {
+          "vars": {
+            "a": {
+              "min": 20,
+              "max": 60
+            },
+            "b": {
+              "min": 20,
+              "max": 60
+            },
+            "c": {
+              "min": 20,
+              "max": 60
+            },
+            "d": {
+              "min": 20,
+              "max": 60
+            }
+          },
+          "enunciado": "A tabela mostra as vendas de uma loja na semana, em unidades: segunda, {a}; terça, {b}; quarta, {c}; quinta, {d}. Quantas unidades foram vendidas de segunda a quinta?",
+          "conta": "a+b+c+d",
+          "unidade": "unidades",
+          "casas": 0,
+          "passos": [
+            "Cada linha da tabela traz as vendas de um dia: {a}, {b}, {c} e {d}.",
+            "Some os quatro valores: {a} + {b} + {c} + {d} = {valor} unidades."
+          ]
+        },
+        {
+          "vars": {
+            "v": {
+              "min": 600,
+              "max": 2400,
+              "step": 120
+            },
+            "g": {
+              "min": 60,
+              "max": 150,
+              "step": 30
+            }
+          },
+          "enunciado": "Um gráfico de setores representa as despesas mensais de uma família, que somam R$ {v}. O setor da alimentação mede {g} graus (o círculo completo tem 360 graus). Quantos reais a família gasta com alimentação?",
+          "conta": "v*g/360",
+          "unidade": "reais",
+          "casas": 0,
+          "passos": [
+            "O círculo completo, de 360 graus, representa o total de R$ {v}.",
+            "O setor de {g} graus é a fração {{g}/360} do total.",
+            "{{g}/360} × {v} = {valor} reais."
+          ]
+        },
+        {
+          "vars": {
+            "t1": {
+              "min": 0,
+              "max": 30,
+              "step": 15
+            },
+            "s": {
+              "min": 1,
+              "max": 3
+            },
+            "v": {
+              "min": 12,
+              "max": 28,
+              "step": 4
+            },
+            "d1": {
+              "min": 2,
+              "max": 10
+            }
+          },
+          "deriv": {
+            "t2": "t1+15*s",
+            "d2": "d1+v*s/4",
+            "dd": "d2-d1",
+            "dt": "t2-t1"
+          },
+          "enunciado": "O gráfico de linhas mostra a posição de um ciclista em uma ciclovia: aos {t1} minutos ele estava no quilômetro {d1} e, aos {t2} minutos, no quilômetro {d2}. Qual foi a velocidade média dele nesse trecho, em km/h?",
+          "conta": "(d2-d1)*60/(t2-t1)",
+          "unidade": "km/h",
+          "casas": 0,
+          "passos": [
+            "Distância percorrida: {d2} - {d1} = {dd} km.",
+            "Tempo gasto: {t2} - {t1} = {dt} minutos, ou seja, {{dt}/60} de hora.",
+            "Velocidade média = {dd} ÷ {{dt}/60} = {valor} km/h."
+          ]
+        },
+        {
+          "vars": {
+            "w": {
+              "min": 100,
+              "max": 200,
+              "step": 20
+            },
+            "p": {
+              "min": 15,
+              "max": 30,
+              "step": 5
+            },
+            "a": {
+              "min": 10,
+              "max": 30
+            },
+            "c": {
+              "min": 10,
+              "max": 30
+            }
+          },
+          "deriv": {
+            "b": "w*p/100",
+            "d": "w-a-b-c",
+            "tt": "a+b+c+d"
+          },
+          "enunciado": "A tabela mostra os livros emprestados por uma biblioteca em um mês, por gênero: fantasia, {a}; aventura, {b}; romance, {c}; outros, {d}. Que porcentagem dos empréstimos foi de aventura?",
+          "conta": "b*100/(a+b+c+d)",
+          "unidade": "%",
+          "casas": 0,
+          "passos": [
+            "O total de empréstimos é a soma da coluna: {a} + {b} + {c} + {d} = {tt}.",
+            "Porcentagem = parte ÷ todo: razão {{b}/{tt}}.",
+            "{{b} × 100/{tt}} = {valor}%."
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "media-aritmetica-ponderada",
+    "nivel": "basico",
+    "titulo": "Média aritmética e ponderada",
+    "competencia": "C7",
+    "habilidades": ["H27", "H28"],
+    "antes": "leitura-graficos-tabelas",
+    "conceito": [
+      "A média aritmética de n valores é a soma deles dividida por n: {soma dos valores/n}. Ela representa o valor que todos teriam se fossem iguais, mantendo a mesma soma.",
+      "Na média ponderada, cada valor tem um peso. Multiplique cada valor pelo seu peso, some tudo e divida pela soma dos pesos.",
+      "Quando os dados vêm em tabela de frequências, a frequência funciona como peso de cada valor."
+    ],
+    "quando": {
+      "sinais": [
+        "“em média” ou “média das notas”: some os valores e divida pela quantidade",
+        "“peso” ou “importância”: média ponderada, cada valor multiplicado pelo seu peso",
+        "“para que a média seja”: use soma = média · quantidade e ache o valor que falta",
+        "“a média passa a ser”: compare a soma antes e depois",
+        "tabela de frequências: a frequência faz papel de peso"
+      ],
+      "formula": "ponderada = {v_{1} · p_{1} + v_{2} · p_{2}/p_{1} + p_{2}}",
+      "armadilhas": [
+        "Dividir pela quantidade de valores em vez da soma dos pesos.",
+        "Fazer a média das médias de grupos de tamanhos diferentes sem ponderar."
+      ]
+    },
+    "ler": {
+      "passos": [
+        "Veja se há pesos: a palavra peso ou a tabela de frequências indica média ponderada.",
+        "Liste cada valor ao lado do seu peso.",
+        "Anote o que a pergunta pede: a média, ou um valor que falta para atingir uma média.",
+        "Separe informações que não entram na conta, como idade e nome.",
+        "Confira: a média fica entre o menor e o maior valor."
+      ],
+      "exemplo": {
+        "enunciado": "Em um curso, a prova tem peso 3 e o trabalho tem peso 2. Rafael, de 17 anos, tirou 6 na prova e 9 no trabalho. A média mínima para aprovação é 7. Qual é a média ponderada de Rafael?",
+        "anotacoes": [
+          {
+            "trecho": "peso 3",
+            "papel": "dado",
+            "nota": "peso da prova"
+          },
+          {
+            "trecho": "peso 2",
+            "papel": "dado",
+            "nota": "peso do trabalho"
+          },
+          {
+            "trecho": "de 17 anos",
+            "papel": "distracao",
+            "nota": "a idade não entra na conta"
+          },
+          {
+            "trecho": "6 na prova",
+            "papel": "dado",
+            "nota": "valor com peso 3"
+          },
+          {
+            "trecho": "9 no trabalho",
+            "papel": "dado",
+            "nota": "valor com peso 2"
+          },
+          {
+            "trecho": "A média mínima para aprovação é 7",
+            "papel": "distracao",
+            "nota": "serve para decidir aprovação, não para calcular a média"
+          },
+          {
+            "trecho": "Qual é a média ponderada",
+            "papel": "pede",
+            "nota": "{6 · 3 + 9 · 2/3 + 2} = 7,2"
+          }
+        ]
+      }
+    },
+    "formulas": [
+      {
+        "nome": "Média aritmética",
+        "f": "média = {soma dos valores/n}",
+        "uso": "Quando todos os valores têm a mesma importância."
+      },
+      {
+        "nome": "Média ponderada",
+        "f": "{v_{1} · p_{1} + v_{2} · p_{2}/p_{1} + p_{2}}",
+        "uso": "Quando o enunciado fala em “peso” de cada nota ou valor."
+      },
+      {
+        "nome": "Soma pela média",
+        "f": "soma = média · quantidade",
+        "uso": "Quando se dá a média e se pede o valor que falta."
+      }
+    ],
+    "exemplos": [
+      {
+        "enunciado": "Um aluno tirou 6, 7, 8 e 9 em quatro provas. Qual é a média?",
+        "formula": "média = {6 + 7 + 8 + 9/4} = 7,5",
+        "passos": ["Some as notas: 6 + 7 + 8 + 9 = 30.", "Divida por 4: {30/4} = 7,5."]
+      },
+      {
+        "enunciado": "Em uma disciplina, a prova vale peso 2 e o trabalho vale peso 3. Um aluno tirou 5 na prova e 8 no trabalho. Qual é a média?",
+        "formula": "média = {5 · 2 + 8 · 3/2 + 3} = 6,8",
+        "passos": ["Valores vezes pesos: 5 × 2 = 10 e 8 × 3 = 24.", "Soma: 10 + 24 = 34. Soma dos pesos: 2 + 3 = 5.", "{34/5} = 6,8."]
+      }
+    ],
+    "truque": "Soma = média × quantidade. Esse caminho inverso resolve quase todo problema que dá a média e pede um valor que falta.",
+    "erroComum": "Calcular a média ponderada dividindo pelo número de valores, em vez de dividir pela soma dos pesos.",
+    "exercicios": [
+      {
+        "enunciado": "Um aluno tirou 6, 7, 8 e 9 em quatro provas. Qual é a média aritmética?",
+        "passos": ["Soma: 6 + 7 + 8 + 9 = 30.", "{30/4} = 7,5."],
+        "resposta": "7,5",
+        "conta": "(6+7+8+9)/4",
+        "valor": 7.5
+      },
+      {
+        "enunciado": "A prova tem peso 2 e o trabalho tem peso 3. Com nota 5 na prova e 8 no trabalho, qual é a média ponderada?",
+        "passos": ["5 × 2 + 8 × 3 = 34.", "Soma dos pesos: 5.", "{34/5} = 6,8."],
+        "resposta": "6,8",
+        "conta": "(5*2+8*3)/5",
+        "valor": 6.8
+      },
+      {
+        "enunciado": "A média de 5 números é 12. Qual é a soma desses números?",
+        "passos": ["Soma = média × quantidade.", "12 × 5 = 60."],
+        "resposta": "60",
+        "conta": "12*5",
+        "valor": 60
+      },
+      {
+        "enunciado": "Quatro alunos têm média 8 em uma prova. Um quinto aluno entra na turma e tira 3. Qual passa a ser a média dos cinco?",
+        "passos": ["Soma dos quatro: 8 × 4 = 32.", "Nova soma: 32 + 3 = 35.", "{35/5} = 7."],
+        "resposta": "7",
+        "conta": "(8*4+3)/5",
+        "valor": 7
+      },
+      {
+        "enunciado": "Os salários de quatro funcionários são R$ 1.200,00, R$ 1.500,00, R$ 1.800,00 e R$ 3.500,00. Qual é o salário médio?",
+        "passos": ["Soma: 1200 + 1500 + 1800 + 3500 = 8000.", "{8000/4} = 2000."],
+        "resposta": "R$ 2.000,00",
+        "conta": "(1200+1500+1800+3500)/4",
+        "valor": 2000
+      }
+    ],
+    "cartoes": [
+      {"p": "Como se calcula a média aritmética de n valores?", "r": "Soma dos valores dividida por n."},
+      {"p": "Como se calcula a média ponderada?", "r": "Soma de (valor × peso) dividida pela soma dos pesos."},
+      {"p": "A média de 6 números é 10. Quanto vale a soma?", "r": "60, pois soma = média × quantidade."},
+      {"p": "Em tabela de frequências, o que faz o papel de peso?", "r": "A frequência de cada valor."}
+    ],
+    "gerador": {
+      "vars": {},
+      "questoes": [
+        {
+          "vars": {
+            "x": {
+              "min": 4,
+              "max": 10
+            },
+            "y": {
+              "min": 4,
+              "max": 10
+            }
+          },
+          "restricoes": [
+            [
+              "inteiro",
+              "(x+2*y)/3"
+            ]
+          ],
+          "enunciado": "Em um curso, a prova da 1ª etapa tem peso 1 e a da 2ª etapa tem peso 2. Ana tirou {x} na 1ª e {y} na 2ª. Qual é a média ponderada dela?",
+          "conta": "(x+2*y)/3",
+          "unidade": "",
+          "casas": 0,
+          "passos": [
+            "Média ponderada: multiplique cada nota pelo seu peso e divida a soma pela soma dos pesos.",
+            "Soma ponderada: {x} × 1 + {y} × 2. Soma dos pesos: 1 + 2 = 3.",
+            "Média = {{x} + 2 × {y}/3} = {valor}."
+          ]
+        },
+        {
+          "vars": {
+            "a": {
+              "min": 4,
+              "max": 10
+            },
+            "b": {
+              "min": 4,
+              "max": 10
+            },
+            "c": {
+              "min": 4,
+              "max": 10
+            }
+          },
+          "enunciado": "Pedro fez um trabalho (peso 2), uma prova (peso 3) e um projeto (peso 5). Tirou {a} no trabalho, {b} na prova e {c} no projeto. Qual é a média final dele?",
+          "conta": "(2*a+3*b+5*c)/10",
+          "unidade": "",
+          "casas": 1,
+          "passos": [
+            "Os pesos somam 2 + 3 + 5 = 10.",
+            "Soma ponderada: {a} × 2 + {b} × 3 + {c} × 5.",
+            "Média = {{a} × 2 + {b} × 3 + {c} × 5/10} = {valor}."
+          ]
+        },
+        {
+          "vars": {
+            "a": {
+              "min": 2,
+              "max": 9
+            },
+            "b": {
+              "min": 2,
+              "max": 9
+            }
+          },
+          "deriv": {
+            "c": "20-a-b"
+          },
+          "enunciado": "Em uma turma de 20 alunos, {a} tiraram nota 5, {b} tiraram nota 7 e {c} tiraram nota 9. Qual é a média da turma?",
+          "conta": "(5*a+7*b+9*c)/20",
+          "unidade": "",
+          "casas": 2,
+          "passos": [
+            "Cada nota se repete: a quantidade de alunos funciona como o peso.",
+            "Soma das notas: {a} × 5 + {b} × 7 + {c} × 9. Total de alunos: {a} + {b} + {c} = 20.",
+            "Média = soma ÷ 20 = {valor}."
+          ]
+        },
+        {
+          "vars": {
+            "a": {
+              "min": 4,
+              "max": 10
+            },
+            "b": {
+              "min": 4,
+              "max": 10
+            },
+            "c": {
+              "min": 3,
+              "max": 10
+            }
+          },
+          "deriv": {
+            "M": "(2*a+3*b+5*c)/10"
+          },
+          "enunciado": "Para ser aprovado, Carlos precisa de média ponderada {M} em três provas, com pesos 2, 3 e 5. Ele tirou {a} na 1ª e {b} na 2ª. Quanto precisa tirar na 3ª prova?",
+          "conta": "(10*M-2*a-3*b)/5",
+          "unidade": "",
+          "casas": 0,
+          "passos": [
+            "Os pesos somam 2 + 3 + 5 = 10, então a soma ponderada necessária é {M} × 10.",
+            "A 1ª e a 2ª provas já garantem {a} × 2 + {b} × 3.",
+            "O que falta vem da 3ª prova, de peso 5: x = ({M} × 10 − {a} × 2 − {b} × 3) ÷ 5 = {valor}."
+          ]
+        },
+        {
+          "vars": {
+            "na": {
+              "min": 15,
+              "max": 35
+            },
+            "ma": {
+              "min": 50,
+              "max": 90
+            },
+            "mb": {
+              "min": 50,
+              "max": 90
+            }
+          },
+          "deriv": {
+            "nb": "50-na"
+          },
+          "enunciado": "Num simulado, {na} alunos da turma A tiveram média {ma} e {nb} alunos da turma B tiveram média {mb}. Qual é a média dos 50 alunos juntos?",
+          "conta": "(na*ma+nb*mb)/50",
+          "unidade": "",
+          "casas": 2,
+          "passos": [
+            "Não basta tirar a média de {ma} e {mb}: as turmas têm tamanhos diferentes, então o número de alunos é o peso.",
+            "Soma das notas da turma A: {na} × {ma}. Soma da turma B: {nb} × {mb}.",
+            "Total de alunos: {na} + {nb} = 50.",
+            "Média = ({na} × {ma} + {nb} × {mb}) ÷ 50 = {valor}."
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "moda-e-mediana",
+    "nivel": "intermediario",
+    "titulo": "Moda e mediana",
+    "competencia": "C7",
+    "habilidades": ["H27", "H28", "H29"],
+    "antes": "media-aritmetica-ponderada",
+    "conceito": [
+      "A moda é o valor que mais se repete. Pode haver mais de uma moda, ou nenhuma, se todos os valores aparecerem o mesmo número de vezes.",
+      "A mediana é o valor central dos dados em ordem crescente. Com quantidade ímpar, é o termo do meio. Com quantidade par, é a média dos dois termos centrais.",
+      "A mediana quase não sofre com valores extremos; a média sofre. Por isso, em salários, a mediana costuma descrever melhor o caso típico."
+    ],
+    "quando": {
+      "sinais": [
+        "“valor central” ou “metade dos dados”: mediana",
+        "“o mais frequente” ou “o que mais se repete”: moda",
+        "“salário típico” ou “caso típico” com valores extremos: a mediana descreve melhor que a média",
+        "“em ordem crescente”: o enunciado já indica que a mediana depende da ordenação",
+        "quantidade par de dados: a mediana é a média dos dois termos centrais"
+      ],
+      "formula": "mediana: posição {n + 1/2} (n ímpar); n par: média dos dois centrais",
+      "armadilhas": [
+        "Pegar o termo do meio sem ordenar os dados antes.",
+        "Responder a frequência (quantas vezes) quando a pergunta pede a moda (qual valor)."
+      ]
+    },
+    "ler": {
+      "passos": [
+        "Descubra qual medida a pergunta pede: moda, mediana ou média.",
+        "Copie os dados em uma lista só, com a unidade.",
+        "Para a mediana, ordene antes de qualquer outra coisa.",
+        "Ignore o que não é dado numérico, como quem coletou ou onde.",
+        "Confira se a mediana está entre o menor e o maior valor."
+      ],
+      "exemplo": {
+        "enunciado": "Cinco amigos, todos moradores do mesmo prédio, anotaram quanto gastaram com transporte na semana, em reais: 30, 12, 18, 45 e 20. Qual é a mediana desses gastos?",
+        "anotacoes": [
+          {
+            "trecho": "Cinco amigos",
+            "papel": "dado",
+            "nota": "n = 5, quantidade ímpar: a mediana é o 3º termo"
+          },
+          {
+            "trecho": "todos moradores do mesmo prédio",
+            "papel": "distracao",
+            "nota": "não entra na conta"
+          },
+          {
+            "trecho": "em reais",
+            "papel": "unidade",
+            "nota": "a mediana sai em reais"
+          },
+          {
+            "trecho": "30, 12, 18, 45 e 20",
+            "papel": "dado",
+            "nota": "ordene: 12, 18, 20, 30, 45"
+          },
+          {
+            "trecho": "Qual é a mediana",
+            "papel": "pede",
+            "nota": "o termo central, 20"
+          }
+        ]
+      }
+    },
+    "formulas": [
+      {
+        "nome": "Moda",
+        "f": "moda = valor de maior frequência",
+        "uso": "Quando se pergunta o valor que “mais se repete” ou o mais frequente."
+      },
+      {
+        "nome": "Mediana com n ímpar",
+        "f": "posição = {n + 1/2}",
+        "uso": "Quando há quantidade ímpar de dados: pegue o termo do meio, em ordem crescente."
+      },
+      {
+        "nome": "Mediana com n par",
+        "f": "mediana = média dos dois valores centrais",
+        "uso": "Quando há quantidade par de dados: tire a média dos dois centrais."
+      }
+    ],
+    "exemplos": [
+      {
+        "enunciado": "Qual é a mediana de 8, 3, 10, 5, 7 e 12?",
+        "formula": "mediana = {7 + 8/2} = 7,5",
+        "passos": ["Ordene: 3, 5, 7, 8, 10, 12.", "São 6 valores: os centrais são o 3º (7) e o 4º (8).", "Média dos centrais: {7 + 8/2} = 7,5."]
+      },
+      {
+        "enunciado": "Em uma sala, as idades são 15 (4 alunos), 16 (9 alunos) e 17 (7 alunos). Qual é a moda?",
+        "formula": "moda = 16",
+        "passos": ["A moda é o valor de maior frequência.", "A maior frequência é 9, da idade 16.", "Moda: 16 anos."]
+      }
+    ],
+    "truque": "Mediana: ordene primeiro, sempre. Com n valores, a posição central é {n + 1/2}; se n for par, o resultado cai entre duas posições, e você tira a média.",
+    "erroComum": "Calcular a mediana sem ordenar os dados, ou confundir moda (o valor) com sua frequência (quantas vezes aparece).",
+    "exercicios": [
+      {
+        "enunciado": "Qual é a mediana do conjunto 8, 3, 10, 5, 7 e 12?",
+        "passos": ["Ordene: 3, 5, 7, 8, 10, 12.", "Centrais: 7 e 8.", "{7 + 8/2} = 7,5."],
+        "resposta": "7,5",
+        "conta": "(7+8)/2",
+        "valor": 7.5
+      },
+      {
+        "enunciado": "Qual é a mediana de 14, 9, 11, 20 e 6?",
+        "passos": ["Ordene: 6, 9, 11, 14, 20.", "São 5 valores: o central é o 3º.", "Mediana: 11."],
+        "resposta": "11",
+        "conta": "11",
+        "valor": 11
+      },
+      {
+        "enunciado": "Em uma turma de 20 alunos, 4 têm 15 anos, 9 têm 16 anos e 7 têm 17 anos. Qual é a média de idade?",
+        "passos": ["Soma ponderada: 15 × 4 + 16 × 9 + 17 × 7 = 60 + 144 + 119 = 323.", "{323/20} = 16,15."],
+        "resposta": "16,15 anos",
+        "conta": "(15*4+16*9+17*7)/20",
+        "valor": 16.15
+      },
+      {
+        "enunciado": "Em uma loja, 30 clientes calçam: 36 (5 clientes), 37 (8 clientes), 38 (12 clientes) e 39 (5 clientes). Que porcentagem dos clientes calça o número que é a moda?",
+        "passos": ["A moda é 38, com 12 clientes.", "{12/30} = 0,40.", "0,40 = 40%."],
+        "resposta": "40%",
+        "conta": "12/30*100",
+        "valor": 40
+      },
+      {
+        "enunciado": "As notas 4, 6, 6, 8 e 10 têm uma média e uma mediana. Qual é a diferença entre a média e a mediana?",
+        "passos": ["Média: {4 + 6 + 6 + 8 + 10/5} = {34/5} = 6,8.", "Mediana (valor central já em ordem): 6.", "6,8 − 6 = 0,8."],
+        "resposta": "0,8",
+        "conta": "(4+6+6+8+10)/5-6",
+        "valor": 0.8
+      }
+    ],
+    "cartoes": [
+      {"p": "O que é a moda de um conjunto de dados?", "r": "O valor que mais se repete."},
+      {"p": "Como achar a mediana com quantidade par de dados?", "r": "Ordene e tire a média dos dois valores centrais."},
+      {"p": "Qual é o primeiro passo para achar a mediana?", "r": "Ordenar os dados."},
+      {"p": "Qual medida sofre mais com valores extremos: média ou mediana?", "r": "A média."}
+    ],
+    "gerador": {
+      "vars": {},
+      "questoes": [
+        {
+          "vars": {
+            "a": {
+              "min": 10,
+              "max": 20
+            },
+            "g1": {
+              "min": 1,
+              "max": 4
+            },
+            "g2": {
+              "min": 1,
+              "max": 4
+            },
+            "g3": {
+              "min": 1,
+              "max": 4
+            },
+            "g4": {
+              "min": 1,
+              "max": 4
+            }
+          },
+          "deriv": {
+            "x2": "a+g1",
+            "x3": "x2+g2",
+            "x4": "x3+g3",
+            "x5": "x4+g4"
+          },
+          "enunciado": "Os tempos de cinco atletas em uma prova, em minutos e já em ordem crescente, são {a}, {x2}, {x3}, {x4} e {x5}. Qual é a mediana desses tempos?",
+          "conta": "x3",
+          "unidade": "minutos",
+          "casas": 0,
+          "passos": [
+            "A mediana é o valor central dos dados em ordem crescente.",
+            "Com 5 valores, o central é o 3º: {a}, {x2}, {x3}, {x4}, {x5}.",
+            "A mediana é {valor} minutos."
+          ]
+        },
+        {
+          "vars": {
+            "a": {
+              "min": 3,
+              "max": 9
+            },
+            "g1": {
+              "min": 1,
+              "max": 5
+            },
+            "g2": {
+              "min": 1,
+              "max": 5
+            },
+            "g3": {
+              "min": 1,
+              "max": 5
+            }
+          },
+          "deriv": {
+            "b": "a+g1",
+            "c": "a+g2",
+            "d": "a+g3"
+          },
+          "enunciado": "Sete alunos informaram quantos livros leram no mês: {b}, {a}, {c}, {a}, {a}, {d}, {a}. Qual é a moda desse conjunto de dados?",
+          "conta": "a",
+          "unidade": "livros",
+          "casas": 0,
+          "passos": [
+            "A moda é o valor que mais se repete.",
+            "O valor {a} aparece 4 vezes; cada um dos outros aparece no máximo 3 vezes.",
+            "A moda é {valor}."
+          ]
+        },
+        {
+          "vars": {
+            "a": {
+              "min": 5,
+              "max": 15
+            },
+            "g1": {
+              "min": 1,
+              "max": 4
+            },
+            "g2": {
+              "min": 1,
+              "max": 4
+            },
+            "g3": {
+              "min": 1,
+              "max": 4
+            },
+            "g4": {
+              "min": 1,
+              "max": 4
+            },
+            "g5": {
+              "min": 1,
+              "max": 4
+            },
+            "g6": {
+              "min": 1,
+              "max": 4
+            }
+          },
+          "deriv": {
+            "x2": "a+g1",
+            "x3": "x2+g2",
+            "x4": "x3+g3",
+            "x5": "x4+g4",
+            "x6": "x5+g5",
+            "x7": "x6+g6"
+          },
+          "enunciado": "Sete corredores fizeram os tempos abaixo, em segundos, fora de ordem: {x5}, {x2}, {x7}, {a}, {x4}, {x3}, {x6}. Qual é a mediana desses tempos?",
+          "conta": "x4",
+          "unidade": "segundos",
+          "casas": 0,
+          "passos": [
+            "Coloque os valores em ordem crescente: {a}, {x2}, {x3}, {x4}, {x5}, {x6}, {x7}.",
+            "Com 7 valores, a mediana é o 4º valor: {valor} segundos."
+          ]
+        },
+        {
+          "vars": {
+            "a": {
+              "min": 8,
+              "max": 20
+            },
+            "g1": {
+              "min": 1,
+              "max": 5
+            },
+            "g2": {
+              "min": 1,
+              "max": 5
+            },
+            "g3": {
+              "min": 1,
+              "max": 5
+            },
+            "g4": {
+              "min": 1,
+              "max": 5
+            },
+            "g5": {
+              "min": 1,
+              "max": 5
+            }
+          },
+          "deriv": {
+            "x2": "a+g1",
+            "x3": "x2+g2",
+            "x4": "x3+g3",
+            "x5": "x4+g4",
+            "x6": "x5+g5"
+          },
+          "enunciado": "A temperatura máxima, em graus Celsius, em seis dias seguidos foi: {x4}, {a}, {x6}, {x2}, {x5}, {x3}. Qual é a mediana dessas temperaturas?",
+          "conta": "(x3+x4)/2",
+          "unidade": "graus",
+          "casas": 1,
+          "passos": [
+            "Ordene os valores: {a}, {x2}, {x3}, {x4}, {x5}, {x6}.",
+            "Com 6 valores (quantidade par), a mediana é a média dos dois centrais, o 3º e o 4º: {x3} e {x4}.",
+            "({x3} + {x4}) ÷ 2 = {valor} graus."
+          ]
+        },
+        {
+          "vars": {
+            "a": {
+              "min": 4,
+              "max": 10
+            },
+            "g1": {
+              "min": 1,
+              "max": 3
+            },
+            "g2": {
+              "min": 1,
+              "max": 3
+            },
+            "g3": {
+              "min": 1,
+              "max": 3
+            },
+            "g4": {
+              "min": 1,
+              "max": 3
+            },
+            "g5": {
+              "min": 1,
+              "max": 3
+            },
+            "g6": {
+              "min": 1,
+              "max": 3
+            }
+          },
+          "deriv": {
+            "b": "a+g1",
+            "c": "b+g2",
+            "d": "c+g3",
+            "e": "d+g4",
+            "f": "e+g5",
+            "h": "f+g6"
+          },
+          "enunciado": "Nove notas foram anotadas: {d}, {b}, {f}, {a}, {b}, {c}, {h}, {b}, {e}. Qual é a soma entre a moda e a mediana dessas notas?",
+          "conta": "b+c",
+          "unidade": "",
+          "casas": 0,
+          "passos": [
+            "Ordene as notas: {a}, {b}, {b}, {b}, {c}, {d}, {e}, {f}, {h}.",
+            "A moda é o valor mais frequente: {b}, que aparece 3 vezes. A mediana é o 5º dos 9 valores: {c}.",
+            "Soma: {b} + {c} = {valor}."
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "desvio-padrao-variancia",
+    "nivel": "intermediario",
+    "titulo": "Desvio padrão e variância",
+    "competencia": "C7",
+    "habilidades": [
+      "H27",
+      "H28"
+    ],
+    "antes": "moda-e-mediana",
+    "quando": {
+      "sinais": [
+        "“mais regular”, “mais homogêneo” ou “mais estável”: o conjunto com menor desvio padrão",
+        "“dispersão” ou “variabilidade”: use variância ou desvio padrão",
+        "médias iguais e pergunta sobre qual conjunto é mais uniforme: compare os desvios",
+        "valores somados a k: o desvio não muda; valores multiplicados por k: o desvio é multiplicado por k"
+      ],
+      "formula": "variância = {soma dos (x − m)^{2}/n}; desvio padrão = sqrt{variância}",
+      "armadilhas": [
+        "Esquecer de elevar os desvios ao quadrado: a soma dos desvios simples sempre dá zero.",
+        "Parar na variância: o desvio padrão é a raiz dela e fica na mesma unidade dos dados."
+      ]
+    },
+    "ler": {
+      "passos": [
+        "Veja o que se pede: variância, desvio padrão ou só qual conjunto é mais regular.",
+        "Liste os valores e a unidade; confirme quantos são (n).",
+        "Calcule primeiro a média, depois os desvios, os quadrados e a soma.",
+        "Risque dados que não entram na conta, como datas e nomes.",
+        "Confira: variância nunca é negativa e o desvio fica na unidade dos dados."
+      ],
+      "exemplo": {
+        "enunciado": "Uma fábrica, aberta em 1995, produz cápsulas cujo conteúdo de pó, em mg, foi medido em cinco unidades: 47, 49, 50, 51 e 53. Qual é o desvio padrão desse conjunto de medidas, em mg?",
+        "anotacoes": [
+          {
+            "trecho": "aberta em 1995",
+            "papel": "distracao",
+            "nota": "o ano não entra na conta"
+          },
+          {
+            "trecho": "47, 49, 50, 51 e 53",
+            "papel": "dado",
+            "nota": "média 250/5 = 50"
+          },
+          {
+            "trecho": "cinco unidades",
+            "papel": "dado",
+            "nota": "n = 5, o divisor da variância"
+          },
+          {
+            "trecho": "Qual é o desvio padrão",
+            "papel": "pede",
+            "nota": "quadrados dos desvios: 9, 1, 0, 1, 9; variância 20/5 = 4; desvio 2"
+          },
+          {
+            "trecho": "desse conjunto de medidas, em mg",
+            "papel": "unidade",
+            "nota": "o desvio padrão sai em mg, a unidade dos dados"
+          }
+        ]
+      }
+    },
+    "conceito": [
+      "A média diz onde os dados se concentram; a dispersão diz o quanto eles se espalham em torno dela. Dois conjuntos podem ter a mesma média e dispersões bem diferentes.",
+      "O desvio de um valor é x − m, a distância até a média. A variância é a média dos quadrados dos desvios: σ^{2} = {(x_{1} − m)^{2} + ... + (x_{n} − m)^{2}/n}. Elevar ao quadrado evita que desvios positivos e negativos se anulem.",
+      "O desvio padrão é a raiz quadrada da variância, σ = sqrt{σ^{2}}, e fica na mesma unidade dos dados. Quanto menor o desvio padrão, mais concentrados e regulares são os valores."
+    ],
+    "exemplos": [
+      {
+        "enunciado": "Calcule a variância de 1, 3, 5 e 7.",
+        "formula": "σ^{2} = {(−3)^{2} + (−1)^{2} + 1^{2} + 3^{2}/4}",
+        "passos": [
+          "A média é {1 + 3 + 5 + 7/4} = 4.",
+          "Os desvios são −3, −1, 1 e 3, e os quadrados são 9, 1, 1 e 9.",
+          "Variância: {20/4} = 5."
+        ]
+      },
+      {
+        "enunciado": "Um conjunto tem desvio padrão 3. Se cada valor for multiplicado por 2 e depois somado a 5, qual passa a ser o desvio padrão?",
+        "formula": "σ' = |k| · σ",
+        "passos": [
+          "Somar 5 desloca todos os valores igualmente: o desvio não muda.",
+          "Multiplicar por 2 dobra as distâncias: o desvio dobra.",
+          "σ' = 2 · 3 = 6."
+        ]
+      }
+    ],
+    "formulas": [
+      {
+        "nome": "Média",
+        "f": "m = {x_{1} + x_{2} + ... + x_{n}/n}",
+        "uso": "Primeiro passo de qualquer cálculo de dispersão."
+      },
+      {
+        "nome": "Variância",
+        "f": "σ^{2} = {(x_{1} − m)^{2} + ... + (x_{n} − m)^{2}/n}",
+        "uso": "Quando pedem a variância ou o passo intermediário do desvio padrão."
+      },
+      {
+        "nome": "Desvio padrão",
+        "f": "σ = sqrt{σ^{2}}",
+        "uso": "Quando pedem o desvio padrão ou comparam a regularidade de dois conjuntos."
+      },
+      {
+        "nome": "Efeito de transformações",
+        "f": "x + b: σ não muda; k · x: σ vira |k| · σ",
+        "uso": "Quando todos os valores sofrem soma, reajuste ou mudança de unidade."
+      }
+    ],
+    "truque": "Para comparar regularidade não precisa tirar a raiz: variância menor significa desvio padrão menor. Se todos os valores são iguais, o desvio padrão é zero.",
+    "erroComum": "Somar os desvios sem elevar ao quadrado: (47 − 50) + (53 − 50) se cancelam, e a soma de todos os desvios é sempre 0. Eleve ao quadrado antes de somar.",
+    "exercicios": [
+      {
+        "enunciado": "Os tempos, em minutos, de cinco corridas foram 4, 6, 8, 10 e 12. Qual é a variância desses tempos?",
+        "passos": [
+          "A média é 40/5 = 8.",
+          "Os quadrados dos desvios são 16, 4, 0, 4 e 16, que somam 40.",
+          "Variância: {40/5} = 8."
+        ],
+        "resposta": "8 (minutos ao quadrado)",
+        "conta": "((4-8)**2+(6-8)**2+(8-8)**2+(10-8)**2+(12-8)**2)/5",
+        "valor": 8
+      },
+      {
+        "enunciado": "Em quatro dias, o número de ônibus atrasados em uma linha foi 1, 1, 5 e 5. Qual é o desvio padrão?",
+        "passos": [
+          "A média é {12/4} = 3.",
+          "Os desvios são −2, −2, 2 e 2, e os quadrados somam 16.",
+          "Variância {16/4} = 4; desvio padrão sqrt{4} = 2."
+        ],
+        "resposta": "2 ônibus",
+        "conta": "sqrt(((1-3)**2*2+(5-3)**2*2)/4)",
+        "valor": 2
+      },
+      {
+        "enunciado": "Os salários de uma equipe têm desvio padrão de R$ 300. Depois de um reajuste de 10% sobre cada salário, qual é o novo desvio padrão, em reais?",
+        "passos": [
+          "Reajuste de 10% é multiplicar cada valor por 1,1.",
+          "O desvio padrão também é multiplicado por 1,1.",
+          "300 · 1,1 = 330."
+        ],
+        "resposta": "R$ 330",
+        "conta": "300*1.1",
+        "valor": 330
+      },
+      {
+        "enunciado": "A variância de um conjunto de tempos é 2,25 min². Se cada tempo for multiplicado por 4, qual será a nova variância, em min²?",
+        "passos": [
+          "O desvio padrão é sqrt{2,25} = 1,5 min.",
+          "Multiplicado por 4, vira 6 min.",
+          "A nova variância é 6^{2} = 36."
+        ],
+        "resposta": "36 min²",
+        "conta": "2.25*4**2",
+        "valor": 36
+      },
+      {
+        "enunciado": "O peso de pacotes de duas máquinas tem média 50 g. Máquina X: 46, 48, 52 e 54. Máquina Y: 49, 49, 51 e 51. Quanto a variância de X excede a de Y?",
+        "passos": [
+          "X: quadrados 16, 4, 4 e 16 somam 40, variância 10.",
+          "Y: quadrados 1, 1, 1 e 1 somam 4, variância 1.",
+          "Diferença: 10 − 1 = 9."
+        ],
+        "resposta": "9 (X tem variância 10 e Y tem 1; Y é mais regular)",
+        "conta": "((46-50)**2+(48-50)**2+(52-50)**2+(54-50)**2)/4-((49-50)**2*2+(51-50)**2*2)/4",
+        "valor": 9
+      }
+    ],
+    "cartoes": [
+      {
+        "p": "O que mede o desvio padrão?",
+        "r": "O quanto os valores se afastam da média; menor desvio, dados mais concentrados."
+      },
+      {
+        "p": "Como se calcula a variância?",
+        "r": "Média dos quadrados dos desvios: some (x − m)^{2} e divida por n."
+      },
+      {
+        "p": "Qual a relação entre variância e desvio padrão?",
+        "r": "O desvio padrão é a raiz quadrada da variância."
+      },
+      {
+        "p": "Somar 10 a todos os valores muda o desvio padrão?",
+        "r": "Não. Só multiplicar muda: vezes k, o desvio vira |k| vezes."
+      }
+    ],
+    "gerador": {
+      "vars": {},
+      "questoes": [
+        {
+          "vars": {
+            "m": {
+              "min": 10,
+              "max": 30
+            },
+            "d": {
+              "min": 1,
+              "max": 6
+            }
+          },
+          "deriv": {
+            "v1": "m-d",
+            "v2": "m+d",
+            "dd": "d**2"
+          },
+          "enunciado": "Em dois treinos, um atleta correu por {v1} min e {v2} min. Calcule a variância desses tempos (variância populacional).",
+          "conta": "d**2",
+          "unidade": "",
+          "casas": 0,
+          "passos": [
+            "A média é ({v1} + {v2}) ÷ 2 = {m}.",
+            "Os desvios são −{d} e {d}, e cada um ao quadrado vale {dd}.",
+            "A variância é a média dos quadrados dos desvios: ({dd} + {dd}) ÷ 2 = {valor}."
+          ]
+        },
+        {
+          "vars": {
+            "m": {
+              "min": 12,
+              "max": 30
+            },
+            "q": {
+              "min": 1,
+              "max": 5
+            },
+            "k": {
+              "min": 1,
+              "max": 3
+            }
+          },
+          "deriv": {
+            "p": "q+2*k",
+            "v1": "m-p",
+            "v2": "m-q",
+            "v3": "m+q",
+            "v4": "m+p",
+            "pp": "p**2",
+            "qq": "q**2",
+            "ss": "2*(p**2+q**2)"
+          },
+          "enunciado": "As idades, em anos, de quatro irmãos são {v1}, {v2}, {v3} e {v4}. Calcule a variância dessas idades (variância populacional).",
+          "conta": "(p**2+q**2)/2",
+          "unidade": "",
+          "casas": 0,
+          "passos": [
+            "Média: ({v1} + {v2} + {v3} + {v4}) ÷ 4 = {m}.",
+            "Desvios: −{p}, −{q}, {q} e {p}. Quadrados: {pp}, {qq}, {qq} e {pp}.",
+            "Soma dos quadrados dos desvios: 2 × {pp} + 2 × {qq} = {ss}.",
+            "Variância = {ss} ÷ 4 = {valor}."
+          ]
+        },
+        {
+          "vars": {
+            "s": {
+              "min": 3,
+              "max": 9
+            },
+            "k": {
+              "min": 2,
+              "max": 5
+            }
+          },
+          "deriv": {
+            "V": "s**2"
+          },
+          "enunciado": "Os pesos, em kg, de um lote de peças têm variância {V} kg². Se todos os pesos forem multiplicados por {k}, qual será o novo desvio padrão, em kg?",
+          "conta": "k*s",
+          "unidade": "kg",
+          "casas": 0,
+          "passos": [
+            "O desvio padrão atual é a raiz quadrada da variância: raiz de {V} = {s}.",
+            "Multiplicar todos os valores por {k} multiplica o desvio padrão por {k}.",
+            "Novo desvio padrão: {k} × {s} = {valor} kg."
+          ]
+        },
+        {
+          "vars": {
+            "c": {
+              "min": 20,
+              "max": 35
+            },
+            "t": {
+              "min": 1,
+              "max": 6
+            }
+          },
+          "deriv": {
+            "p1": "c-3*t",
+            "p2": "c-t",
+            "p3": "c-t",
+            "p4": "c-t",
+            "p5": "c",
+            "p6": "c",
+            "p7": "c+2*t",
+            "p8": "c+4*t",
+            "t2": "2*t",
+            "t3": "3*t",
+            "t4": "4*t",
+            "tt": "t**2",
+            "a9": "9*t**2",
+            "a4": "4*t**2",
+            "a16": "16*t**2",
+            "S": "32*t**2",
+            "V4": "4*t**2"
+          },
+          "enunciado": "As oito medidas, em cm, de uma peça foram {p1}, {p2}, {p3}, {p4}, {p5}, {p6}, {p7} e {p8}, com média {c} cm. Qual é o desvio padrão (populacional) dessas medidas, em cm?",
+          "conta": "2*t",
+          "unidade": "cm",
+          "casas": 0,
+          "passos": [
+            "Desvios em relação a {c}: −{t3}, −{t}, −{t}, −{t}, 0, 0, {t2} e {t4}.",
+            "Quadrados: {a9}, {tt}, {tt}, {tt}, 0, 0, {a4} e {a16}; soma = {S}.",
+            "Variância = {S} ÷ 8 = {V4}.",
+            "Desvio padrão = raiz de {V4} = {valor} cm."
+          ]
+        },
+        {
+          "vars": {
+            "m": {
+              "min": 18,
+              "max": 32
+            },
+            "t": {
+              "min": 1,
+              "max": 5
+            },
+            "k": {
+              "min": 2,
+              "max": 3
+            }
+          },
+          "deriv": {
+            "a": "m-3*t",
+            "c": "m+t",
+            "f1": "k",
+            "f2": "2*k",
+            "f3": "3*k",
+            "N": "6*k",
+            "t3": "3*t",
+            "tt": "t**2",
+            "q9": "9*t**2",
+            "S": "12*k*t**2"
+          },
+          "enunciado": "Em uma gincana, {f1} equipes marcaram {a} pontos, {f2} equipes marcaram {m} pontos e {f3} equipes marcaram {c} pontos. Calcule a variância das pontuações das equipes.",
+          "conta": "2*t**2",
+          "unidade": "",
+          "casas": 0,
+          "passos": [
+            "Total de equipes: {f1} + {f2} + {f3} = {N}.",
+            "Média: ({a} × {f1} + {m} × {f2} + {c} × {f3}) ÷ {N} = {m}.",
+            "Desvios: −{t3} (com {f1} equipes), 0 (com {f2}) e {t} (com {f3}).",
+            "Soma ponderada dos quadrados: {f1} × {q9} + {f3} × {tt} = {S}.",
+            "Variância = {S} ÷ {N} = {valor}."
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "graficos-setores-barras-linhas-tendencia",
+    "nivel": "intermediario",
+    "titulo": "Gráficos de setores, barras e linhas: tendência",
+    "competencia": "C6",
+    "habilidades": [
+      "H24",
+      "H25",
+      "H26"
+    ],
+    "antes": "leitura-graficos-tabelas",
+    "quando": {
+      "sinais": [
+        "gráfico de setores com ângulos: converta o ângulo em porcentagem, pois 360° é o total",
+        "“taxa média de variação” ou “por ano, em média”: variação do valor dividida pelo intervalo de tempo",
+        "“estime o valor em” um ponto entre dois medidos: interpolação",
+        "“se a tendência se mantiver”: extrapole com a mesma taxa",
+        "eixo que não começa em zero: compare os números, não a altura das barras"
+      ],
+      "formula": "taxa = {y_{2} − y_{1}/x_{2} − x_{1}}; ângulo = {p/100} · 360°",
+      "armadilhas": [
+        "Comparar a altura das barras quando o eixo vertical não começa em zero.",
+        "Extrapolar longe dos dados como se a tendência fosse garantida."
+      ]
+    },
+    "ler": {
+      "passos": [
+        "Leia título, eixos, unidades e legenda antes de olhar os números.",
+        "Identifique o tipo: setores mostram partes de um total, barras comparam, linhas mostram evolução.",
+        "Marque o que se pede: um valor lido, uma variação, uma taxa ou uma estimativa entre ou além dos pontos.",
+        "Risque dados de outro período ou categoria que a pergunta não usa.",
+        "Confira: porcentagens somam 100% e a estimativa fica coerente com os pontos vizinhos."
+      ],
+      "exemplo": {
+        "enunciado": "A prefeitura de uma cidade litorânea, que tem 80 mil habitantes, registra em um gráfico de linhas os visitantes de um parque: 12 mil em 2018 e 18 mil em 2022, com crescimento constante entre os dois pontos. Qual é o número estimado de visitantes, em milhares, em 2020?",
+        "anotacoes": [
+          {
+            "trecho": "que tem 80 mil habitantes",
+            "papel": "distracao",
+            "nota": "a população da cidade não entra na conta"
+          },
+          {
+            "trecho": "12 mil em 2018",
+            "papel": "dado",
+            "nota": "ponto inicial do gráfico"
+          },
+          {
+            "trecho": "18 mil em 2022",
+            "papel": "dado",
+            "nota": "ponto final do gráfico"
+          },
+          {
+            "trecho": "crescimento constante",
+            "papel": "condicao",
+            "nota": "permite interpolar em linha reta"
+          },
+          {
+            "trecho": "em milhares",
+            "papel": "unidade",
+            "nota": "a resposta sai em milhares de visitantes"
+          },
+          {
+            "trecho": "Qual é o número estimado de visitantes",
+            "papel": "pede",
+            "nota": "ponto médio de 2018 e 2022: 12 + {6/4} · 2 = 15"
+          }
+        ]
+      }
+    },
+    "conceito": [
+      "Em um gráfico de setores, o círculo inteiro (360°) é o total (100%). Cada 1% vale 3,6°, então um setor de 90° é 25% do total. Barras comparam categorias e linhas mostram como um valor evolui no tempo.",
+      "Em um gráfico de linhas, a inclinação do trecho é a taxa média de variação: {y_{2} − y_{1}/x_{2} − x_{1}}. Se a taxa é constante, o gráfico é uma reta e o valor em um instante x é y_{1} + taxa · (x − x_{1}).",
+      "Interpolar é estimar um valor entre dois pontos medidos; extrapolar é estimar além deles, com menos confiança. Cuidado com o eixo vertical: se não começa em zero, a altura das barras exagera as diferenças."
+    ],
+    "exemplos": [
+      {
+        "enunciado": "Em um gráfico de setores, o setor de transporte ocupa um ângulo de 72°. Que porcentagem do total ele representa?",
+        "formula": "{72/360}",
+        "passos": [
+          "O círculo inteiro, 360°, equivale a 100%.",
+          "{72/360} = 0,2.",
+          "O setor de transporte é 20% do total."
+        ]
+      },
+      {
+        "enunciado": "Um reservatório tinha 500 m³ em janeiro e 380 m³ em maio, com queda constante. Qual é a taxa média de variação por mês?",
+        "formula": "taxa = {380 − 500/4}",
+        "passos": [
+          "De janeiro a maio passaram 4 meses.",
+          "Variação: 380 − 500 = −120 m³.",
+          "Taxa: {−120/4} = −30, uma queda de 30 m³ por mês."
+        ]
+      }
+    ],
+    "formulas": [
+      {
+        "nome": "Ângulo e porcentagem",
+        "f": "ângulo = {p/100} · 360°",
+        "uso": "Quando o gráfico de setores traz ângulos ou pede o ângulo de uma fatia."
+      },
+      {
+        "nome": "Taxa média de variação",
+        "f": "taxa = {y_{2} − y_{1}/x_{2} − x_{1}}",
+        "uso": "Quando pedem quanto muda por unidade de tempo entre dois pontos de um gráfico de linhas."
+      },
+      {
+        "nome": "Interpolação linear",
+        "f": "y = y_{1} + taxa · (x − x_{1})",
+        "uso": "Quando se estima um valor entre dois pontos medidos com crescimento constante."
+      },
+      {
+        "nome": "Variação percentual",
+        "f": "{final − inicial/inicial}",
+        "uso": "Quando se compara dois valores do gráfico em porcentagem."
+      }
+    ],
+    "truque": "Em gráfico de setores, 25% valem 90°, 50% valem 180° e 10% valem 36°. Em barras e linhas, leia sempre o primeiro número do eixo: se não é zero, as alturas enganam.",
+    "erroComum": "Confundir o ângulo do setor com a porcentagem: um setor de 90° é 25% do total, não 90%. Também é erro dividir a variação pelo valor final em vez do inicial.",
+    "exercicios": [
+      {
+        "enunciado": "Em um gráfico de setores sobre o orçamento de uma família de R$ 4.000, o setor “moradia” tem ângulo de 108°. Quantos reais a moradia representa?",
+        "passos": [
+          "Fração do círculo: {108/360} = 0,3, ou seja, 30%.",
+          "30% de 4000."
+        ],
+        "resposta": "R$ 1.200",
+        "conta": "108/360*4000",
+        "valor": 1200
+      },
+      {
+        "enunciado": "Uma cidade tinha 36 mil habitantes em 2010 e 48 mil em 2020, com crescimento constante. Quantos habitantes tinha em 2016, em milhares?",
+        "passos": [
+          "Taxa: {48 − 36/10} = 1,2 mil por ano.",
+          "De 2010 a 2016 passaram 6 anos.",
+          "36 + 1,2 · 6 = 43,2."
+        ],
+        "resposta": "43,2 mil habitantes",
+        "conta": "36+(48-36)/10*6",
+        "valor": 43.2
+      },
+      {
+        "enunciado": "O preço do litro de um combustível foi R$ 5,00 em janeiro e R$ 5,60 em abril, subindo sempre o mesmo valor por mês. Mantida a tendência, qual será o preço em julho, em reais?",
+        "passos": [
+          "De janeiro a abril: 3 meses e alta de R$ 0,60, ou R$ 0,20 por mês.",
+          "De abril a julho: mais 3 meses, mais R$ 0,60.",
+          "5,60 + 0,60 = 6,20."
+        ],
+        "resposta": "R$ 6,20",
+        "conta": "5.6+(5.6-5)/3*3",
+        "valor": 6.2
+      },
+      {
+        "enunciado": "Uma pesquisa com 900 alunos mostra, em gráfico de setores: 40% vão de ônibus, 30% a pé, 90° de bicicleta e o restante de carro. Quantos alunos vão de carro?",
+        "passos": [
+          "90° equivalem a {90/360} = 25%.",
+          "Carro: 100% − 40% − 30% − 25% = 5%.",
+          "5% de 900."
+        ],
+        "resposta": "45 alunos",
+        "conta": "900*(1-0.4-0.3-90/360)",
+        "valor": 45
+      },
+      {
+        "enunciado": "Em um gráfico de barras com eixo vertical começando em 90, a barra de B parece ter o dobro da altura da barra de A, mas os valores são A = 100 e B = 110. Qual é o aumento percentual real de A para B?",
+        "passos": [
+          "As alturas desenhadas são 10 e 20 porque o eixo começa em 90.",
+          "O aumento real usa os valores: 110 − 100 = 10.",
+          "{10/100} = 0,1, ou seja, 10%."
+        ],
+        "resposta": "10%",
+        "conta": "(110-100)/100*100",
+        "valor": 10
+      }
+    ],
+    "cartoes": [
+      {
+        "p": "Como converter o ângulo de um setor em porcentagem?",
+        "r": "Divida por 360° e multiplique por 100: 90° é 25%."
+      },
+      {
+        "p": "Como achar a taxa média de variação em um gráfico de linhas?",
+        "r": "Divida a variação do valor pela variação do tempo entre dois pontos."
+      },
+      {
+        "p": "Qual a diferença entre interpolar e extrapolar?",
+        "r": "Interpolar estima entre pontos medidos; extrapolar estima além deles e é menos confiável."
+      },
+      {
+        "p": "Que cuidado ter com o eixo vertical?",
+        "r": "Veja se começa em zero; se não começa, a altura das barras exagera as diferenças."
+      }
+    ],
+    "gerador": {
+      "vars": {},
+      "questoes": [
+        {
+          "vars": {
+            "q": {
+              "min": 1,
+              "max": 15
+            }
+          },
+          "deriv": {
+            "a": "18*q"
+          },
+          "enunciado": "Em um gráfico de setores, o setor que representa o transporte tem ângulo de {a} graus. Que porcentagem do total esse setor representa?",
+          "conta": "a*100/360",
+          "unidade": "%",
+          "casas": 0,
+          "passos": [
+            "O círculo completo tem 360 graus e representa 100%.",
+            "Porcentagem = {{a} × 100/360} = {valor}%."
+          ]
+        },
+        {
+          "vars": {
+            "k": {
+              "min": 2,
+              "max": 9
+            },
+            "p1": {
+              "min": 3,
+              "max": 6
+            },
+            "p2": {
+              "min": 4,
+              "max": 8
+            }
+          },
+          "deriv": {
+            "a": "k*p1",
+            "b": "k*p2",
+            "c": "k*(20-p1-p2)",
+            "T": "20*k"
+          },
+          "enunciado": "Um gráfico de barras mostra as vendas de uma loja, em milhares de reais: janeiro, {a}; fevereiro, {b}; março, {c}. Que porcentagem das vendas do trimestre ocorreu em fevereiro?",
+          "conta": "b*100/(a+b+c)",
+          "unidade": "%",
+          "casas": 0,
+          "passos": [
+            "Total do trimestre: {a} + {b} + {c} = {T}.",
+            "Fevereiro: {b} de {T}.",
+            "{{b}/{T}} × 100 = {valor}%."
+          ]
+        },
+        {
+          "vars": {
+            "u": {
+              "min": 2,
+              "max": 10
+            },
+            "w": {
+              "min": 1,
+              "max": 8
+            }
+          },
+          "deriv": {
+            "p1": "20*u",
+            "p2": "u*(20+w)",
+            "dif": "u*w"
+          },
+          "enunciado": "O gráfico de linhas mostra que a produção de uma fábrica foi de {p1} toneladas em 2020 e de {p2} toneladas em 2021. De quanto foi o aumento percentual da produção?",
+          "conta": "(p2-p1)*100/p1",
+          "unidade": "%",
+          "casas": 0,
+          "passos": [
+            "Aumento absoluto: {p2} − {p1} = {dif} toneladas.",
+            "Aumento percentual = {{dif}/{p1}} × 100 = {valor}%."
+          ]
+        },
+        {
+          "vars": {
+            "x1": {
+              "min": 2010,
+              "max": 2016
+            },
+            "d": {
+              "min": 2,
+              "max": 4
+            },
+            "a": {
+              "min": 2,
+              "max": 9
+            },
+            "y1": {
+              "min": 20,
+              "max": 80
+            },
+            "e": {
+              "min": 2,
+              "max": 6
+            }
+          },
+          "deriv": {
+            "x2": "x1+d",
+            "y2": "y1+a*d",
+            "x3": "x1+d+e"
+          },
+          "enunciado": "Em um gráfico de linhas, a população de uma cidade aparece como uma reta crescente: {y1} mil habitantes em {x1} e {y2} mil em {x2}. Mantida essa tendência, quantos mil habitantes a cidade terá em {x3}?",
+          "conta": "y2+(y2-y1)/(x2-x1)*(x3-x2)",
+          "unidade": "mil",
+          "casas": 0,
+          "passos": [
+            "Taxa de crescimento: ({y2} − {y1}) ÷ ({x2} − {x1}) = {a} mil por ano.",
+            "De {x2} a {x3} passam-se {e} anos.",
+            "{y2} + {a} × {e} = {valor} mil habitantes."
+          ]
+        },
+        {
+          "vars": {
+            "u1": {
+              "min": 4,
+              "max": 7
+            },
+            "u2": {
+              "min": 3,
+              "max": 5
+            },
+            "u3": {
+              "min": 2,
+              "max": 4
+            }
+          },
+          "deriv": {
+            "p1": "5*u1",
+            "p2": "5*u2",
+            "p3": "5*u3",
+            "s": "5*(u1+u2+u3)",
+            "r": "100-5*(u1+u2+u3)"
+          },
+          "enunciado": "Em um gráfico de setores, o orçamento de uma ONG está dividido assim: educação, {p1}%; saúde, {p2}%; cultura, {p3}%; o restante vai para administração. Qual é, em graus, o ângulo do setor de administração?",
+          "conta": "(100-p1-p2-p3)*360/100",
+          "unidade": "graus",
+          "casas": 0,
+          "passos": [
+            "Soma dos três setores: {p1} + {p2} + {p3} = {s}%.",
+            "Administração: 100 − {s} = {r}%.",
+            "Ângulo = {r}% de 360 graus = {{r} × 360/100} = {valor} graus."
+          ]
+        }
+      ]
+    }
+  }
+]

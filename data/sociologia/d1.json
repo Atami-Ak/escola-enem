@@ -1,0 +1,488 @@
+[
+  {
+    "id": "desigualdade-social-renda-proporcoes",
+    "nivel": "basico",
+    "dia": 1,
+    "titulo": "Desigualdade social: renda, proporções e porcentagens",
+    "competencia": "C4",
+    "habilidades": ["H18"],
+    "conceito": [
+      "Para a Sociologia, desigualdade social é a distribuição desigual de recursos (renda, riqueza, educação, saúde, poder e prestígio) entre os grupos de uma sociedade. Ela não é natural: resulta de relações sociais, de instituições e de processos históricos. A estratificação social é a forma como a sociedade se organiza em camadas: castas (fechadas, definidas pelo nascimento), estamentos (definidos por direitos e títulos legais) e classes sociais (ligadas à posição econômica, em princípio abertas à mobilidade).",
+      "Marx explica as classes pela posição diante dos meios de produção: quem os possui (burguesia) e quem vende sua força de trabalho (proletariado). Weber acrescenta que a desigualdade tem mais de uma dimensão: classe (situação econômica), status (prestígio social) e poder (partido). Bourdieu mostra que o capital cultural e o capital social também se transmitem e reforçam a desigualdade.",
+      "Mobilidade social é a passagem de indivíduos ou grupos de uma posição social para outra. Ela pode ser vertical (ascendente ou descendente) ou horizontal (muda a ocupação, mas não o nível social), e intergeracional quando compara filhos e pais.",
+      "Para medir a desigualdade, a Sociologia usa números. A renda média esconde a concentração: o índice de Gini varia de 0 (todos têm a mesma renda) a 1 (uma pessoa concentra toda a renda). Já o IDH combina renda, educação e longevidade. Na prova, o que se pede quase sempre é ler porcentagens, proporções e razões: quanto um grupo detém, quantas vezes um grupo ganha mais que outro e quanto uma taxa variou."
+    ],
+    "quando": {
+      "sinais": [
+        "“x% da população” ou “x% da renda”: porcentagem de um total, ou seja, parte do todo",
+        "“os 10% mais ricos” e “os 40% mais pobres”: grupos de renda comparados por fatias da renda total",
+        "“quantas vezes maior”: razão entre dois valores, não diferença",
+        "“cresceu/caiu x%”: variação percentual sobre o valor inicial",
+        "“pontos percentuais”: diferença entre duas taxas, não variação relativa"
+      ],
+      "formula": "parte = {p/100} × total; razão = {a/b}; variação % = {novo − antigo/antigo} × 100",
+      "armadilhas": [
+        "Confundir diferença em pontos percentuais com variação percentual: a taxa de 10% para 5% caiu 5 pontos percentuais, mas 50% em termos relativos.",
+        "Comparar fatias da renda de grupos de tamanhos diferentes como se fossem rendas médias: só vale dividir direto se os grupos têm o mesmo número de pessoas."
+      ]
+    },
+    "ler": {
+      "passos": [
+        "Identifique o total (população ou renda) e a parte que o texto destaca.",
+        "Veja se o número dado é porcentagem da população ou da renda: são totais diferentes.",
+        "Anote a unidade pedida: pessoas, reais, vezes, % ou pontos percentuais.",
+        "Risque informações históricas ou de contexto que não entram na conta.",
+        "Monte a conta, resolva e confira se o resultado é plausível (a parte não pode passar do total)."
+      ],
+      "exemplo": {
+        "enunciado": "Em um município fictício de 50.000 habitantes, que tem uma praça tombada desde 1950, o relatório informa que 20% da população vive abaixo da linha de pobreza. Quantas pessoas vivem nessa condição?",
+        "anotacoes": [
+          { "trecho": "50.000 habitantes", "papel": "dado", "nota": "o total da população" },
+          { "trecho": "que tem uma praça tombada desde 1950", "papel": "distracao", "nota": "não entra na conta" },
+          { "trecho": "20% da população", "papel": "dado", "nota": "a parte, como porcentagem do total de habitantes" },
+          { "trecho": "abaixo da linha de pobreza", "papel": "condicao", "nota": "define o grupo cuja quantidade se quer" },
+          { "trecho": "Quantas pessoas", "papel": "pede", "nota": "resposta em pessoas: {20/100} × 50.000 = 10.000" }
+        ]
+      }
+    },
+    "formulas": [
+      {
+        "nome": "Parte de um total",
+        "f": "parte = {p/100} × total",
+        "uso": "Quando o texto dá a porcentagem de um grupo e o total (pessoas ou renda)."
+      },
+      {
+        "nome": "Razão entre dois grupos",
+        "f": "razão = {a/b}",
+        "uso": "Para dizer “quantas vezes maior”, por exemplo entre a renda do grupo mais rico e a do mais pobre."
+      },
+      {
+        "nome": "Variação percentual",
+        "f": "variação = {novo − antigo/antigo} × 100",
+        "uso": "Quando um indicador (renda média, taxa de pobreza) mudou de um valor antigo para um novo."
+      },
+      {
+        "nome": "Diferença em pontos percentuais",
+        "f": "diferença = taxa 1 − taxa 2",
+        "uso": "Para comparar duas taxas dadas em %: a unidade da resposta é ponto percentual."
+      }
+    ],
+    "exemplos": [
+      {
+        "enunciado": "Em um país fictício, a renda total é de R$ 800 milhões por ano e o 1% mais rico fica com 25% dela. Quantos milhões de reais cabem a esse grupo?",
+        "formula": "{25/100} × 800",
+        "passos": [
+          "A porcentagem se refere à renda total, não à população.",
+          "Parte = {25/100} × 800.",
+          "Parte = {25 × 800/100} = 200 milhões de reais.",
+          "Interpretação sociológica: 1% das pessoas fica com um quarto da renda, sinal de forte concentração."
+        ]
+      },
+      {
+        "enunciado": "Em uma região fictícia, o grupo A tem renda média de R$ 6.000 e o grupo B, de R$ 1.500. Quantas vezes a renda média de A é maior que a de B?",
+        "formula": "{6000/1500}",
+        "passos": [
+          "“Quantas vezes” pede razão: divida o maior pelo menor.",
+          "Razão = {6000/1500} = 4.",
+          "A renda média de A é 4 vezes a de B."
+        ]
+      }
+    ],
+    "truque": "Troque “%” por “por cem”: 20% de 50.000 é 20 para cada 100, ou seja, 50.000 ÷ 100 × 20. E lembre: ponto percentual é diferença entre taxas; porcentagem é variação sobre o valor inicial.",
+    "erroComum": "Ler “os 10% mais ricos ficam com 40% da renda” como se esse grupo ganhasse 40% a mais que os outros. A frase diz que a fatia do grupo vale 40% da renda total, e a comparação entre grupos exige razão entre fatias de grupos do mesmo tamanho.",
+    "exercicios": [
+      {
+        "enunciado": "Uma cidade fictícia tem 80.000 habitantes e 15% deles vivem abaixo da linha de pobreza. Quantas pessoas estão nessa situação?",
+        "passos": [
+          "15% do total da população.",
+          "Pessoas = {15/100} × 80.000.",
+          "{15 × 80000/100} = 12.000."
+        ],
+        "resposta": "12.000 pessoas",
+        "conta": "80000*15/100",
+        "valor": 12000
+      },
+      {
+        "enunciado": "Em um país fictício, os 20% mais ricos concentram 60% da renda e os 20% mais pobres, 4%. Como os dois grupos têm o mesmo número de pessoas, quantas vezes a renda média do grupo mais rico é maior que a do mais pobre?",
+        "passos": [
+          "Grupos de mesmo tamanho: a razão entre as fatias é a razão entre as rendas médias.",
+          "Razão = {60/4}.",
+          "Razão = 15."
+        ],
+        "resposta": "15 vezes",
+        "conta": "60/4",
+        "valor": 15
+      },
+      {
+        "enunciado": "A renda média mensal de um grupo social fictício passou de R$ 1.200 para R$ 1.380. Qual foi o aumento percentual?",
+        "passos": [
+          "Aumento = 1.380 − 1.200 = 180.",
+          "Variação = {180/1200} × 100.",
+          "Variação = 15%."
+        ],
+        "resposta": "15%",
+        "conta": "(1380-1200)/1200*100",
+        "valor": 15
+      },
+      {
+        "enunciado": "Em uma pesquisa fictícia, a extrema pobreza caiu de 12% para 9% da população. De quantos pontos percentuais foi a queda?",
+        "passos": [
+          "As duas taxas são porcentagens da população.",
+          "Diferença = 12 − 9.",
+          "Diferença = 3 pontos percentuais."
+        ],
+        "resposta": "3 pontos percentuais",
+        "conta": "12-9",
+        "valor": 3
+      },
+      {
+        "enunciado": "Na mesma pesquisa fictícia, a extrema pobreza caiu de 12% para 9% da população. Em termos relativos, qual foi a queda percentual da taxa?",
+        "passos": [
+          "A variação relativa usa o valor inicial como base.",
+          "Queda = {12 − 9/12} × 100.",
+          "Queda = {3/12} × 100 = 25%."
+        ],
+        "resposta": "25%",
+        "conta": "(12-9)/12*100",
+        "valor": 25
+      }
+    ],
+    "cartoes": [
+      {
+        "p": "Qual a diferença entre classe social em Marx e em Weber?",
+        "r": "Marx define classe pela relação com os meios de produção (donos e trabalhadores). Weber acrescenta status (prestígio) e poder à situação econômica."
+      },
+      {
+        "p": "O que é mobilidade social vertical ascendente?",
+        "r": "É a passagem de uma pessoa ou grupo para uma posição social mais alta, por exemplo, de operário a profissional de nível superior."
+      },
+      {
+        "p": "O que mede o índice de Gini?",
+        "r": "A concentração de renda: vai de 0 (igualdade total) a 1 (uma pessoa concentra toda a renda). Quanto maior, mais desigual."
+      },
+      {
+        "p": "Ponto percentual ou porcentagem?",
+        "r": "Ponto percentual é a diferença entre duas taxas. Porcentagem de variação é a diferença dividida pelo valor inicial."
+      }
+    ],
+    "gerador": {
+      "vars": {},
+      "questoes": [
+        {
+          "vars": { "k": { "min": 2, "max": 20 }, "p": { "min": 5, "max": 40 } },
+          "deriv": { "n": "k*5000" },
+          "restricoes": [["inteiro", "n*p/100"]],
+          "conceito": "Pobreza e extrema pobreza são indicadores sociais expressos em porcentagem da população: o número de pessoas é a parte do total correspondente a essa taxa.",
+          "enunciado": "Uma cidade fictícia tem {n} habitantes e {p}% deles vivem abaixo da linha de pobreza. Quantas pessoas estão nessa situação?",
+          "conta": "n*p/100",
+          "unidade": "pessoas",
+          "casas": 0,
+          "passos": [
+            "{p}% significa {{p}/100} da população.",
+            "Pessoas = {{p}/100} × {n}.",
+            "{{p} × {n}/100} = {valor} pessoas."
+          ]
+        },
+        {
+          "vars": { "m": { "min": 2, "max": 30 }, "x": { "min": 30, "max": 60 } },
+          "deriv": { "R": "100*m" },
+          "conceito": "A concentração de renda aparece na fatia que um grupo ocupa da renda total: poucos ricos com uma fatia grande indicam estratificação acentuada.",
+          "enunciado": "Em um país fictício, a renda total anual é de R$ {R} milhões, e os 10% mais ricos ficam com {x}% dela. Quantos milhões de reais correspondem à parcela desse grupo?",
+          "conta": "R*x/100",
+          "unidade": "milhões de reais",
+          "casas": 0,
+          "passos": [
+            "A porcentagem se refere à renda total, não à população.",
+            "Parcela = {{x}/100} × {R}.",
+            "{{x} × {R}/100} = {valor} milhões de reais."
+          ]
+        },
+        {
+          "vars": { "y": { "min": 3, "max": 8 }, "k": { "min": 4, "max": 7 } },
+          "deriv": { "x": "y*k" },
+          "conceito": "Comparar a renda do topo e da base por razão mostra o abismo entre os extremos da estratificação; com grupos do mesmo tamanho, a razão das fatias é a razão das rendas médias.",
+          "enunciado": "Em uma região fictícia, os 20% mais ricos concentram {x}% da renda e os 20% mais pobres, {y}%. Como os dois grupos têm o mesmo número de pessoas, quantas vezes a renda média do grupo mais rico é maior que a do mais pobre?",
+          "conta": "x/y",
+          "unidade": "vezes",
+          "casas": 0,
+          "passos": [
+            "Grupos de mesmo tamanho: a razão entre as fatias é a razão entre as rendas médias.",
+            "Razão = {{x}/{y}}.",
+            "Razão = {valor} vezes."
+          ]
+        },
+        {
+          "vars": { "m": { "min": 20, "max": 60 }, "p": { "min": 5, "max": 30, "step": 5 } },
+          "deriv": { "a": "20*m", "b": "a+m*p/5" },
+          "conceito": "Mobilidade ascendente de renda se mede pela variação percentual: a diferença entre a renda nova e a antiga, dividida pela antiga.",
+          "enunciado": "A renda média mensal de um grupo social fictício passou de R$ {a} para R$ {b}. Qual foi o aumento percentual?",
+          "conta": "(b-a)/a*100",
+          "unidade": "%",
+          "casas": 0,
+          "passos": [
+            "Aumento = {b} − {a}.",
+            "Variação = {{b} − {a}/{a}} × 100.",
+            "Variação = {valor}%."
+          ]
+        },
+        {
+          "vars": { "p1": { "min": 8, "max": 30 }, "d": { "min": 2, "max": 7 } },
+          "deriv": { "p2": "p1-d" },
+          "conceito": "Ponto percentual é a unidade da diferença entre duas taxas (por exemplo, a taxa de pobreza em dois anos); não é o mesmo que variação percentual.",
+          "enunciado": "Em uma pesquisa fictícia, a taxa de pobreza caiu de {p1}% para {p2}%. De quantos pontos percentuais foi a queda?",
+          "conta": "p1-p2",
+          "unidade": "pontos percentuais",
+          "casas": 0,
+          "passos": [
+            "As duas taxas são porcentagens da mesma população.",
+            "Diferença = {p1} − {p2}.",
+            "Diferença = {valor} pontos percentuais."
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "pesquisa-social-amostra-margem-erro",
+    "nivel": "intermediario",
+    "dia": 2,
+    "titulo": "Pesquisa social: amostra, margem de erro e leitura de indicadores",
+    "competencia": "C5",
+    "habilidades": ["H24"],
+    "antes": "desigualdade-social-renda-proporcoes",
+    "conceito": [
+      "A pesquisa social transforma fenômenos da vida coletiva em dados. Durkheim, em O Suicídio, usou estatísticas para mostrar que um fenômeno que parece individual tem causas sociais: o método sociológico trata os fatos sociais como “coisas”, isto é, objetos observáveis. Weber, por sua vez, destaca a compreensão do sentido que as pessoas dão às suas ações, o que dá espaço à pesquisa qualitativa.",
+      "Na pesquisa quantitativa, o universo é o conjunto de todos os elementos estudados (por exemplo, todos os eleitores de uma cidade) e a amostra é a parte dele efetivamente entrevistada. O censo pesquisa o universo inteiro (como o Censo Demográfico do IBGE); as pesquisas por amostragem, como a PNAD Contínua, entrevistam uma parte. Uma amostra é representativa quando reflete as características do universo, e a seleção aleatória (por sorteio) é o caminho que torna isso mais provável.",
+      "Como a amostra não é o universo, todo resultado tem incerteza. A margem de erro indica o intervalo, para mais ou para menos, dentro do qual o valor verdadeiro provavelmente está, com um nível de confiança (frequentemente 95%). Um resultado de 40% com margem de 3 pontos percentuais significa algo entre 37% e 43%. Quando a diferença entre dois resultados cabe na margem de erro, fala-se em empate técnico.",
+      "Indicadores sociais, como a taxa de desocupação, resumem a realidade em um número, mas é preciso conhecer a definição: a taxa de desocupação é a razão entre pessoas desocupadas e a força de trabalho. Quem lê pesquisa de forma crítica verifica quem foi ouvido, como a amostra foi escolhida, quando e qual a margem de erro."
+    ],
+    "quando": {
+      "sinais": [
+        "“amostra de n pessoas”: o percentual da amostra é parte entre os entrevistados",
+        "“margem de erro de x pontos percentuais”: some e subtraia x do resultado para o intervalo",
+        "“empate técnico”: diferença dentro da margem de erro",
+        "“estima-se que x% dos moradores”: projeção da amostra para o universo",
+        "“taxa de”: razão entre um grupo e o total de referência definido pelo indicador"
+      ],
+      "formula": "% da amostra = {a/n} × 100; intervalo = resultado ± margem; estimativa no universo = {p/100} × N",
+      "armadilhas": [
+        "Tratar a margem de erro como porcentagem do resultado (3% de 40%): ela é em pontos percentuais.",
+        "Esquecer que a amostra só vale para o universo se for representativa: amostra de conveniência (como quem passa na praça) não permite generalizar."
+      ]
+    },
+    "ler": {
+      "passos": [
+        "Identifique o universo (quem a pesquisa quer descrever) e a amostra (quem foi ouvido).",
+        "Veja como os entrevistados foram escolhidos: sorteio ou conveniência.",
+        "Anote o resultado e a margem de erro, e diga em qual unidade a pergunta quer a resposta.",
+        "Separe dados que só descrevem a pesquisa, como o tamanho do universo, quando a pergunta é sobre o intervalo.",
+        "Calcule o intervalo (resultado ± margem) e confira o sentido do que foi pedido."
+      ],
+      "exemplo": {
+        "enunciado": "Uma pesquisa fictícia entrevistou 800 moradores, escolhidos por sorteio, de uma cidade de 40.000 habitantes. Em 56% das respostas houve aprovação ao transporte público, com margem de erro de 4 pontos percentuais para mais ou para menos. Qual é o menor percentual de aprovação compatível com a pesquisa?",
+        "anotacoes": [
+          { "trecho": "800 moradores", "papel": "dado", "nota": "o tamanho da amostra, que não entra na conta do intervalo" },
+          { "trecho": "escolhidos por sorteio", "papel": "condicao", "nota": "amostra aleatória: permite generalizar para o universo" },
+          { "trecho": "40.000 habitantes", "papel": "distracao", "nota": "tamanho do universo, não necessário para o intervalo" },
+          { "trecho": "56%", "papel": "dado", "nota": "o resultado da pesquisa" },
+          { "trecho": "margem de erro de 4 pontos percentuais", "papel": "dado", "nota": "o intervalo vai de 56 − 4 até 56 + 4" },
+          { "trecho": "menor percentual", "papel": "pede", "nota": "limite inferior: 56 − 4 = 52" }
+        ]
+      }
+    },
+    "formulas": [
+      {
+        "nome": "Percentual na amostra",
+        "f": "% = {a/n} × 100",
+        "uso": "Quando o texto dá quantos entrevistados (a) responderam algo entre n entrevistados."
+      },
+      {
+        "nome": "Intervalo com margem de erro",
+        "f": "resultado ± margem",
+        "uso": "Para dar o limite inferior (resultado − margem) e o superior (resultado + margem)."
+      },
+      {
+        "nome": "Estimativa no universo",
+        "f": "estimativa = {p/100} × N",
+        "uso": "Para projetar o percentual de uma amostra representativa sobre o universo de N pessoas."
+      },
+      {
+        "nome": "Taxa de um indicador",
+        "f": "taxa = {grupo/referência} × 100",
+        "uso": "Para indicadores como a taxa de desocupação: desocupados divididos pela força de trabalho."
+      }
+    ],
+    "exemplos": [
+      {
+        "enunciado": "Em uma pesquisa fictícia com 500 pessoas, 150 disseram participar de associação de moradores. Qual o percentual da amostra que participa?",
+        "formula": "{150/500} × 100",
+        "passos": [
+          "Parte = 150 entrevistados; total da amostra = 500.",
+          "Percentual = {150/500} × 100.",
+          "Percentual = 30%."
+        ]
+      },
+      {
+        "enunciado": "Uma pesquisa fictícia mostra 45% de apoio a uma proposta, com margem de erro de 3 pontos percentuais. Dentro de que intervalo está o apoio?",
+        "formula": "45 ± 3",
+        "passos": [
+          "Limite inferior: 45 − 3 = 42%.",
+          "Limite superior: 45 + 3 = 48%.",
+          "O apoio está entre 42% e 48%, com o nível de confiança informado."
+        ]
+      }
+    ],
+    "truque": "Sempre escreva o intervalo (de 42% a 48%) antes de comparar resultados. Se dois intervalos se sobrepõem, a pesquisa não permite afirmar que um resultado é maior que o outro.",
+    "erroComum": "Achar que uma diferença de 2 pontos percentuais entre dois resultados prova que um está à frente quando a margem de erro é de 3 pontos. Nesse caso o resultado é compatível com empate técnico.",
+    "exercicios": [
+      {
+        "enunciado": "Em uma amostra fictícia de 1.200 pessoas, 540 disseram aprovar a gestão do bairro. Qual o percentual de aprovação na amostra?",
+        "passos": [
+          "Parte = 540; total da amostra = 1.200.",
+          "Percentual = {540/1200} × 100.",
+          "Percentual = 45%."
+        ],
+        "resposta": "45%",
+        "conta": "540/1200*100",
+        "valor": 45
+      },
+      {
+        "enunciado": "Uma pesquisa fictícia mostra 48% de intenção de voto em um candidato, com margem de erro de 3 pontos percentuais para mais ou para menos. Qual é o limite superior do intervalo?",
+        "passos": [
+          "Limite superior = resultado + margem.",
+          "48 + 3 = 51."
+        ],
+        "resposta": "51%",
+        "conta": "48+3",
+        "valor": 51
+      },
+      {
+        "enunciado": "Em uma pesquisa fictícia com margem de erro de 2 pontos percentuais, o candidato A tem 41% e o candidato B, 38%. Qual é a diferença entre eles, em pontos percentuais?",
+        "passos": [
+          "Diferença = 41 − 38.",
+          "Diferença = 3 pontos percentuais.",
+          "Observação: com margem de 2 pontos para cada um, a diferença de até 4 pontos cabe na margem somada, sugerindo empate técnico."
+        ],
+        "resposta": "3 pontos percentuais",
+        "conta": "41-38",
+        "valor": 3
+      },
+      {
+        "enunciado": "Uma pesquisa fictícia, com amostra representativa, estima que 34% dos 50.000 eleitores de uma cidade apoiam uma proposta. Quantos eleitores isso representa?",
+        "passos": [
+          "Projeção: percentual × universo.",
+          "{34/100} × 50.000.",
+          "{34 × 50000/100} = 17.000."
+        ],
+        "resposta": "17.000 eleitores",
+        "conta": "34*50000/100",
+        "valor": 17000
+      },
+      {
+        "enunciado": "Em uma região fictícia, a força de trabalho é de 4.000 pessoas e 320 estão desocupadas. Qual a taxa de desocupação?",
+        "passos": [
+          "Taxa = desocupados ÷ força de trabalho.",
+          "{320/4000} × 100.",
+          "Taxa = 8%."
+        ],
+        "resposta": "8%",
+        "conta": "320/4000*100",
+        "valor": 8
+      }
+    ],
+    "cartoes": [
+      {
+        "p": "O que torna uma amostra representativa?",
+        "r": "Ela reproduz as características do universo. A escolha aleatória (sorteio) é o caminho mais seguro para isso."
+      },
+      {
+        "p": "O que a margem de erro de 3 pontos percentuais significa?",
+        "r": "Que o valor verdadeiro provavelmente está de 3 pontos abaixo a 3 pontos acima do resultado, com um nível de confiança informado."
+      },
+      {
+        "p": "Qual a diferença entre censo e pesquisa por amostragem?",
+        "r": "O censo investiga todo o universo; a amostragem investiga só uma parte e usa a margem de erro para indicar a incerteza."
+      },
+      {
+        "p": "Como Durkheim usou dados em O Suicídio?",
+        "r": "Mostrou, com estatísticas, que as taxas de suicídio variam entre grupos sociais, tratando o fenômeno como fato social e não só como caso individual."
+      }
+    ],
+    "gerador": {
+      "vars": {},
+      "questoes": [
+        {
+          "vars": { "m": { "min": 10, "max": 50 }, "p": { "min": 10, "max": 80, "step": 5 } },
+          "deriv": { "n": "20*m", "a": "m*p/5" },
+          "restricoes": [["inteiro", "a"]],
+          "conceito": "Em uma amostra, o resultado é dado em porcentagem dos entrevistados: parte dividida pelo total da amostra.",
+          "enunciado": "Em uma amostra de {n} pessoas escolhidas por sorteio, {a} disseram aprovar o serviço de saúde do bairro. Qual o percentual de aprovação na amostra?",
+          "conta": "a/n*100",
+          "unidade": "%",
+          "casas": 0,
+          "passos": [
+            "Parte = {a} entrevistados; total da amostra = {n}.",
+            "Percentual = {{a}/{n}} × 100.",
+            "Percentual = {valor}%."
+          ]
+        },
+        {
+          "vars": { "p": { "min": 20, "max": 70 }, "e": { "min": 2, "max": 4 } },
+          "conceito": "A margem de erro cria um intervalo em torno do resultado: o limite inferior é o resultado menos a margem, e o superior é o resultado mais a margem.",
+          "enunciado": "Uma pesquisa fictícia indica {p}% de intenção de voto em um candidato, com margem de erro de {e} pontos percentuais para mais ou para menos. Qual é o limite inferior da intenção de voto?",
+          "conta": "p-e",
+          "unidade": "%",
+          "casas": 0,
+          "passos": [
+            "O intervalo vai de {p} − {e} até {p} + {e}.",
+            "Limite inferior = resultado − margem = {p} − {e}.",
+            "Limite inferior = {valor}%."
+          ]
+        },
+        {
+          "vars": { "e": { "min": 2, "max": 4 }, "d": { "min": 1, "max": 3 }, "b": { "min": 30, "max": 40 } },
+          "deriv": { "a": "b+d" },
+          "negativo": false,
+          "conceito": "Empate técnico: quando a diferença entre dois resultados é pequena demais para ser distinguida da incerteza da amostra. Aqui, adota-se o critério de até o dobro da margem de erro.",
+          "enunciado": "Os candidatos A e B têm {a}% e {b}% das intenções de voto, com margem de erro de {e} pontos percentuais. Considere empate técnico quando a diferença é de até o dobro da margem. Em quantos pontos percentuais a diferença ainda poderia aumentar sem deixar de ser empate técnico?",
+          "conta": "2*e-(a-b)",
+          "unidade": "pontos percentuais",
+          "casas": 0,
+          "passos": [
+            "O limite do empate técnico é 2 × {e}.",
+            "A diferença atual é {a} − {b} = {d} pontos percentuais.",
+            "Folga = 2 × {e} − {d} = {valor} pontos percentuais."
+          ]
+        },
+        {
+          "vars": { "k": { "min": 2, "max": 20 }, "p": { "min": 10, "max": 60 } },
+          "deriv": { "N": "k*10000" },
+          "conceito": "Quando a amostra é representativa, o percentual encontrado pode ser projetado para o universo: multiplica-se a taxa pelo número total de elementos.",
+          "enunciado": "Uma pesquisa com amostra representativa estima que {p}% dos {N} moradores de uma cidade fictícia usam transporte público diariamente. Quantos moradores isso representa?",
+          "conta": "N*p/100",
+          "unidade": "moradores",
+          "casas": 0,
+          "passos": [
+            "Projeção para o universo: percentual × total.",
+            "Moradores = {{p}/100} × {N}.",
+            "{{p} × {N}/100} = {valor} moradores."
+          ]
+        },
+        {
+          "vars": { "m": { "min": 5, "max": 40 }, "t": { "min": 4, "max": 15 } },
+          "deriv": { "F": "100*m", "d": "m*t" },
+          "conceito": "Indicador social é um número que resume uma realidade, e é preciso conhecer sua definição: a taxa de desocupação é desocupados divididos pela força de trabalho.",
+          "enunciado": "Em uma região fictícia, a força de trabalho é de {F} pessoas e {d} delas estão desocupadas. Qual a taxa de desocupação?",
+          "conta": "d/F*100",
+          "unidade": "%",
+          "casas": 0,
+          "passos": [
+            "Taxa = desocupados ÷ força de trabalho.",
+            "Taxa = {{d}/{F}} × 100.",
+            "Taxa = {valor}%."
+          ]
+        }
+      ]
+    }
+  }
+]

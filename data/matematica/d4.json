@@ -1,0 +1,1449 @@
+[
+  {
+    "id": "areas-perimetros",
+    "nivel": "basico",
+    "titulo": "Áreas e perímetros",
+    "competencia": "C2",
+    "habilidades": ["H7", "H8"],
+    "conceito": [
+      "O perímetro é a soma dos lados de uma figura (o contorno, medido em m, cm...). A área mede a superfície de dentro (medida em m^{2}, cm^{2}...). Cerca pede perímetro; piso, tinta e grama pedem área.",
+      "Retângulo: A = base × altura. Triângulo: A = {b × h/2}. Trapézio: A = {(B + b) × h/2}, com B a base maior e b a menor.",
+      "Círculo de raio r: área A = π r^{2} e comprimento da circunferência C = 2 π r. Em toda questão, use o valor de π que o enunciado pedir."
+    ],
+    "quando": {
+      "sinais": [
+        "“gramar”, “pintar”, “revestir com piso”: superfície, ou seja, área (m^{2})",
+        "“cercar”, “colocar rodapé”, “contornar”: comprimento do contorno, ou seja, perímetro (m)",
+        "“preço por metro quadrado”: calcule a área e multiplique pelo preço",
+        "“figura composta”: divida em retângulos e triângulos, ou subtraia o que falta"
+      ],
+      "formula": "retângulo: A = b × h; triângulo: A = {b × h/2}; trapézio: A = {(B + b) × h/2}",
+      "armadilhas": [
+        "Usar perímetro quando o problema pede área, e vice-versa.",
+        "Esquecer de converter cm em m antes de multiplicar pelo preço por m^{2}."
+      ]
+    },
+    "ler": {
+      "passos": [
+        "Circule o que se quer: superfície (área) ou contorno (perímetro).",
+        "Anote as medidas e confira se estão na mesma unidade.",
+        "Escolha a figura e a fórmula; se for composta, divida em partes.",
+        "Risque o que não entra, como ano de compra ou cor.",
+        "Calcule a área, multiplique pelo preço se houver e confira a unidade."
+      ],
+      "exemplo": {
+        "enunciado": "Um terreno retangular de 20 m por 15 m será totalmente gramado, e a grama custa R$ 8,00 o metro quadrado. O terreno foi comprado em 2020. Qual será o gasto apenas com a grama?",
+        "anotacoes": [
+          {
+            "trecho": "20 m por 15 m",
+            "papel": "dado",
+            "nota": "base e altura, ambas em metros"
+          },
+          {
+            "trecho": "totalmente gramado",
+            "papel": "condicao",
+            "nota": "pede a área da superfície, não o contorno"
+          },
+          {
+            "trecho": "R$ 8,00 o metro quadrado",
+            "papel": "dado",
+            "nota": "preço por m^{2}"
+          },
+          {
+            "trecho": "comprado em 2020",
+            "papel": "distracao",
+            "nota": "não entra na conta"
+          },
+          {
+            "trecho": "Qual será o gasto",
+            "papel": "pede",
+            "nota": "A = 20 × 15 = 300 m^{2}; 300 × 8 = R$ 2.400,00"
+          }
+        ]
+      }
+    },
+    "formulas": [
+      {
+        "nome": "Retângulo",
+        "f": "A = b · h  e  P = 2 · (b + h)",
+        "uso": "Quando se pede piso, tinta (área) ou cerca (perímetro) de um terreno retangular."
+      },
+      {
+        "nome": "Triângulo e trapézio",
+        "f": "A = {b · h/2}  e  A = {(B + b) · h/2}",
+        "uso": "Quando a figura é triangular ou tem duas bases paralelas."
+      },
+      {
+        "nome": "Círculo",
+        "f": "A = π · r^{2}  e  C = 2 · π · r",
+        "uso": "Quando há roda, praça ou prato circular: área para cobrir, comprimento para contornar."
+      }
+    ],
+    "exemplos": [
+      {
+        "enunciado": "Uma sala retangular mede 6 m por 4 m. Calcule o perímetro e a área.",
+        "formula": "P = 2 × (6 + 4) = 20 m e A = 6 × 4 = 24 m^{2}",
+        "passos": ["Perímetro: soma dos quatro lados, 6 + 4 + 6 + 4 = 20 m.", "Área: base × altura = 6 × 4 = 24 m^{2}."]
+      },
+      {
+        "enunciado": "Um triângulo tem base 8 cm e altura 5 cm. Qual é a área?",
+        "formula": "A = {8 × 5/2} = 20 cm^{2}",
+        "passos": ["A = {b × h/2}.", "A = {8 × 5/2} = {40/2} = 20 cm^{2}."]
+      }
+    ],
+    "truque": "Antes de calcular, pergunte: preciso do contorno (perímetro) ou da superfície (área)? Depois confira a unidade: se a resposta pede m^{2}, as medidas têm de estar em metros.",
+    "erroComum": "Esquecer o 2 no triângulo (a área é metade do retângulo) ou confundir perímetro com área.",
+    "exercicios": [
+      {
+        "enunciado": "Um terreno retangular mede 15 m por 20 m. Quantos metros de cerca são necessários para contornar todo o terreno?",
+        "passos": ["Cerca é contorno, ou seja, perímetro.", "P = 2 × (15 + 20) = 2 × 35 = 70."],
+        "resposta": "70 m",
+        "conta": "2*(15+20)",
+        "valor": 70
+      },
+      {
+        "enunciado": "O piso de uma sala de 5 m por 4 m será coberto com cerâmica que custa R$ 45,00 o m^{2}. Qual é o custo total?",
+        "passos": ["Área = 5 × 4 = 20 m^{2}.", "Custo = 20 × 45 = 900."],
+        "resposta": "R$ 900,00",
+        "conta": "5*4*45",
+        "valor": 900
+      },
+      {
+        "enunciado": "Qual é a área de um triângulo de base 10 cm e altura 6 cm?",
+        "passos": ["A = {b × h/2}.", "A = {10 × 6/2} = {60/2} = 30."],
+        "resposta": "30 cm^{2}",
+        "conta": "10*6/2",
+        "valor": 30
+      },
+      {
+        "enunciado": "Uma praça circular tem raio de 5 m. Use π = 3,14. Qual é a área da praça?",
+        "passos": ["A = π r^{2}.", "A = 3,14 × 5 × 5 = 3,14 × 25 = 78,5."],
+        "resposta": "78,5 m^{2}",
+        "conta": "3.14*5*5",
+        "valor": 78.5
+      },
+      {
+        "enunciado": "Um canteiro tem forma de trapézio com bases de 8 m e 4 m e altura de 5 m. Qual é a área do canteiro?",
+        "passos": ["A = {(B + b) × h/2}.", "A = {(8 + 4) × 5/2} = {60/2} = 30."],
+        "resposta": "30 m^{2}",
+        "conta": "(8+4)*5/2",
+        "valor": 30
+      }
+    ],
+    "cartoes": [
+      {"p": "Qual é a diferença entre perímetro e área?", "r": "Perímetro é o contorno (soma dos lados, em m); área é a superfície (em m^{2})."},
+      {"p": "Qual é a área de um triângulo?", "r": "A = {b × h/2}: base vezes altura, dividido por 2."},
+      {"p": "Qual é a fórmula da área do trapézio?", "r": "A = {(B + b) × h/2}."},
+      {"p": "Quais são a área e o comprimento do círculo de raio r?", "r": "Área π r^{2}; comprimento 2 π r."}
+    ],
+    "gerador": {
+      "vars": {},
+      "questoes": [
+        {
+          "vars": {
+            "a": {
+              "min": 3,
+              "max": 15
+            },
+            "b": {
+              "min": 2,
+              "max": 12
+            }
+          },
+          "enunciado": "Um retângulo mede {a} m de comprimento por {b} m de largura. Qual é a sua área?",
+          "conta": "a*b",
+          "unidade": "m²",
+          "casas": 0,
+          "passos": [
+            "Área do retângulo = comprimento × largura.",
+            "A = {a} × {b} = {valor} m²."
+          ]
+        },
+        {
+          "vars": {
+            "b": {
+              "min": 3,
+              "max": 16
+            },
+            "h": {
+              "min": 3,
+              "max": 16
+            }
+          },
+          "restricoes": [
+            [
+              "inteiro",
+              "b*h/2"
+            ]
+          ],
+          "enunciado": "Um triângulo tem base de {b} cm e altura de {h} cm. Qual é a sua área?",
+          "conta": "b*h/2",
+          "unidade": "cm²",
+          "casas": 0,
+          "passos": [
+            "Área do triângulo = base × altura ÷ 2.",
+            "A = {b} × {h} ÷ 2 = {valor} cm²."
+          ]
+        },
+        {
+          "vars": {
+            "b": {
+              "min": 4,
+              "max": 12
+            },
+            "c": {
+              "min": 5,
+              "max": 20
+            }
+          },
+          "deriv": {
+            "A": "b*c"
+          },
+          "enunciado": "Um terreno retangular tem área de {A} m² e a frente mede {b} m. Quantos metros de cerca são necessários para contornar todo o terreno?",
+          "conta": "2*(b+A/b)",
+          "unidade": "m",
+          "casas": 0,
+          "passos": [
+            "A área é frente × lado: {b} × lado = {A}, então o lado mede {A} ÷ {b} = {c} m.",
+            "Perímetro = soma de todos os lados = 2 × (frente + lado).",
+            "P = 2 × ({b} + {c}) = {valor} m."
+          ]
+        },
+        {
+          "vars": {
+            "B": {
+              "min": 10,
+              "max": 20
+            },
+            "b": {
+              "min": 4,
+              "max": 9
+            },
+            "h": {
+              "min": 2,
+              "max": 12
+            }
+          },
+          "restricoes": [
+            [
+              "inteiro",
+              "(B+b)*h/2"
+            ]
+          ],
+          "enunciado": "Um canteiro tem forma de trapézio, com bases de {B} m e {b} m e altura de {h} m. Qual é a sua área?",
+          "conta": "(B+b)*h/2",
+          "unidade": "m²",
+          "casas": 0,
+          "passos": [
+            "Área do trapézio = (base maior + base menor) × altura ÷ 2.",
+            "Soma das bases: {B} + {b}.",
+            "A = ({B} + {b}) × {h} ÷ 2 = {valor} m²."
+          ]
+        },
+        {
+          "vars": {
+            "a": {
+              "min": 20,
+              "max": 40
+            },
+            "b": {
+              "min": 15,
+              "max": 30
+            },
+            "c": {
+              "min": 5,
+              "max": 12
+            },
+            "d": {
+              "min": 4,
+              "max": 10
+            },
+            "p": {
+              "min": 3,
+              "max": 9
+            }
+          },
+          "enunciado": "Um terreno retangular de {a} m por {b} m tem, em seu interior, uma casa retangular de {c} m por {d} m. O restante será coberto de grama, a R$ {p} o metro quadrado. Quanto custará a grama, em reais?",
+          "conta": "(a*b-c*d)*p",
+          "unidade": "reais",
+          "casas": 0,
+          "passos": [
+            "A área a gramar é a área do terreno menos a área da casa.",
+            "Terreno: {a} × {b}. Casa: {c} × {d}.",
+            "Área com grama: {a} × {b} − {c} × {d}.",
+            "Custo = ({a} × {b} − {c} × {d}) × {p} = {valor} reais."
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "pitagoras-semelhanca",
+    "nivel": "intermediario",
+    "titulo": "Pitágoras e semelhança",
+    "competencia": "C2",
+    "habilidades": ["H7", "H8"],
+    "antes": "areas-perimetros",
+    "conceito": [
+      "No triângulo retângulo, o quadrado da hipotenusa (lado oposto ao ângulo reto) é a soma dos quadrados dos catetos: a^{2} = b^{2} + c^{2}.",
+      "Duas figuras são semelhantes quando têm os mesmos ângulos e lados proporcionais. A razão entre lados correspondentes é a razão de semelhança k.",
+      "Se a razão entre os lados é k, a razão entre as áreas é k^{2}. Sombras ao mesmo tempo do dia formam triângulos semelhantes."
+    ],
+    "quando": {
+      "sinais": [
+        "“escada apoiada na parede” ou “rampa”: triângulo retângulo, use Pitágoras",
+        "“sombra” e “poste” no mesmo instante: triângulos semelhantes, lados proporcionais",
+        "“a distância em linha reta” ou “diagonal”: hipotenusa de um triângulo retângulo",
+        "“ampliação de razão k”: lados multiplicados por k, áreas por k^{2}"
+      ],
+      "formula": "a^{2} = b^{2} + c^{2}; semelhança: {lado/lado correspondente} = k",
+      "armadilhas": [
+        "Somar os catetos em vez de somar os quadrados.",
+        "Tratar a hipotenusa como cateto: ela é o maior lado e fica oposta ao ângulo reto."
+      ]
+    },
+    "ler": {
+      "passos": [
+        "Circule o lado que a pergunta pede.",
+        "Faça um desenho e marque o ângulo reto.",
+        "Identifique a hipotenusa (oposta ao ângulo reto) e os catetos.",
+        "Risque o que não entra, como material e número de degraus.",
+        "Aplique Pitágoras (ou a proporção) e confira se a hipotenusa é o maior lado."
+      ],
+      "exemplo": {
+        "enunciado": "Uma escada de 5 m de comprimento está apoiada em uma parede, com o pé a 3 m da base da parede. A escada é de alumínio e tem 12 degraus. A que altura da parede a escada toca?",
+        "anotacoes": [
+          {
+            "trecho": "5 m de comprimento",
+            "papel": "dado",
+            "nota": "hipotenusa, pois a escada é o lado oposto ao ângulo reto"
+          },
+          {
+            "trecho": "a 3 m da base da parede",
+            "papel": "dado",
+            "nota": "um cateto, o chão"
+          },
+          {
+            "trecho": "de alumínio e tem 12 degraus",
+            "papel": "distracao",
+            "nota": "não entra na conta"
+          },
+          {
+            "trecho": "A que altura",
+            "papel": "pede",
+            "nota": "o outro cateto: h^{2} = 5^{2} − 3^{2} = 16, logo h = 4 m"
+          }
+        ]
+      }
+    },
+    "formulas": [
+      {
+        "nome": "Teorema de Pitágoras",
+        "f": "a^{2} = b^{2} + c^{2}",
+        "uso": "Quando há triângulo retângulo, rampa ou escada e falta um lado."
+      },
+      {
+        "nome": "Semelhança",
+        "f": "{lado/lado correspondente} = k",
+        "uso": "Quando há sombras ao mesmo tempo ou figuras em ampliação ou redução."
+      },
+      {
+        "nome": "Razão das áreas",
+        "f": "razão das áreas = k^{2}",
+        "uso": "Quando a semelhança é dada e se pergunta pela área."
+      }
+    ],
+    "exemplos": [
+      {
+        "enunciado": "Os catetos de um triângulo retângulo medem 6 cm e 8 cm. Qual é a hipotenusa?",
+        "formula": "a = sqrt{6^{2} + 8^{2}} = sqrt{100} = 10",
+        "passos": ["a^{2} = 6^{2} + 8^{2} = 36 + 64 = 100.", "a = sqrt{100} = 10 cm."]
+      },
+      {
+        "enunciado": "Um poste de 2 m projeta sombra de 3 m. No mesmo instante, uma árvore projeta sombra de 12 m. Qual é a altura da árvore?",
+        "formula": "{2/3} = {h/12} → h = 8",
+        "passos": ["Os triângulos são semelhantes: {altura/sombra} é igual nos dois.", "{2/3} = {h/12}, logo h = {2 × 12/3} = 8 m."]
+      }
+    ],
+    "truque": "Em semelhança, monte a proporção com a mesma ordem nos dois lados: altura sobre sombra de um lado, altura sobre sombra do outro. Depois é regra de três.",
+    "erroComum": "Somar os catetos sem elevar ao quadrado, ou usar a razão de semelhança direto na área sem elevá-la ao quadrado.",
+    "exercicios": [
+      {
+        "enunciado": "Os catetos de um triângulo retângulo medem 9 cm e 12 cm. Quanto mede a hipotenusa?",
+        "passos": ["a^{2} = 9^{2} + 12^{2} = 81 + 144 = 225.", "a = sqrt{225} = 15."],
+        "resposta": "15 cm",
+        "conta": "sqrt(9*9+12*12)",
+        "valor": 15
+      },
+      {
+        "enunciado": "Uma escada de 5 m está apoiada em uma parede, com o pé a 3 m da parede. A que altura da parede ela toca?",
+        "passos": ["A escada é a hipotenusa: 5^{2} = 3^{2} + h^{2}.", "h^{2} = 25 − 9 = 16, logo h = 4."],
+        "resposta": "4 m",
+        "conta": "sqrt(5*5-3*3)",
+        "valor": 4
+      },
+      {
+        "enunciado": "Um prédio projeta sombra de 30 m. No mesmo instante, uma vara de 2 m projeta sombra de 5 m. Qual é a altura do prédio?",
+        "passos": ["{h/30} = {2/5}.", "h = {2 × 30/5} = {60/5} = 12."],
+        "resposta": "12 m",
+        "conta": "2*30/5",
+        "valor": 12
+      },
+      {
+        "enunciado": "Dois triângulos são semelhantes, com razão de semelhança 3 do menor para o maior. O menor tem área de 10 cm^{2}. Qual é a área do maior?",
+        "passos": ["Razão entre as áreas = 3^{2} = 9.", "Área do maior = 10 × 9 = 90."],
+        "resposta": "90 cm^{2}",
+        "conta": "10*3*3",
+        "valor": 90
+      },
+      {
+        "enunciado": "A diagonal de um quadrado de lado 10 m mede 10 × sqrt{2}. Use sqrt{2} = 1,41. Quanto mede a diagonal?",
+        "passos": ["A diagonal é a hipotenusa de um triângulo com catetos 10 e 10: d = sqrt{10^{2} + 10^{2}} = 10 sqrt{2}.", "d = 10 × 1,41 = 14,1."],
+        "resposta": "14,1 m",
+        "conta": "10*1.41",
+        "valor": 14.1
+      }
+    ],
+    "cartoes": [
+      {"p": "Enuncie o teorema de Pitágoras.", "r": "No triângulo retângulo, a^{2} = b^{2} + c^{2}, com a a hipotenusa e b, c os catetos."},
+      {"p": "O que é a hipotenusa?", "r": "O maior lado do triângulo retângulo, oposto ao ângulo reto."},
+      {"p": "Quando dois triângulos são semelhantes?", "r": "Quando têm os mesmos ângulos e os lados correspondentes são proporcionais."},
+      {"p": "Se a razão de semelhança é k, qual é a razão entre as áreas?", "r": "k^{2}."},
+      {"p": "Triplas pitagóricas mais comuns?", "r": "3-4-5, 5-12-13 e 6-8-10 (múltiplos da 3-4-5)."}
+    ],
+    "gerador": {
+      "vars": {},
+      "questoes": [
+        {
+          "vars": {
+            "k": {
+              "min": 1,
+              "max": 10
+            }
+          },
+          "deriv": {
+            "a": "3*k",
+            "b": "4*k",
+            "sa": "a*a",
+            "sb": "b*b",
+            "sh": "a*a+b*b"
+          },
+          "enunciado": "Uma rampa tem {a} m de base horizontal e {b} m de altura. Qual é o comprimento da rampa, na linha inclinada?",
+          "conta": "sqrt(a*a+b*b)",
+          "unidade": "m",
+          "casas": 0,
+          "passos": [
+            "A rampa é a hipotenusa de um triângulo retângulo de catetos {a} m e {b} m.",
+            "h² = {a}² + {b}² = {sa} + {sb} = {sh}.",
+            "h = sqrt{sh} = {valor} m."
+          ]
+        },
+        {
+          "vars": {
+            "k": {
+              "min": 1,
+              "max": 8
+            }
+          },
+          "deriv": {
+            "a": "5*k",
+            "c": "13*k",
+            "sa": "a*a",
+            "sc": "c*c",
+            "sd": "c*c-a*a"
+          },
+          "enunciado": "Uma escada de {c} m de comprimento está apoiada em uma parede, com o pé a {a} m da parede. A que altura da parede a escada encosta?",
+          "conta": "sqrt(c*c-a*a)",
+          "unidade": "m",
+          "casas": 0,
+          "passos": [
+            "A escada é a hipotenusa; a distância ao pé da parede e a altura são os catetos.",
+            "b² = c² − a² = {sc} − {sa} = {sd}.",
+            "b = sqrt{sd} = {valor} m."
+          ]
+        },
+        {
+          "vars": {
+            "k": {
+              "min": 1,
+              "max": 6
+            }
+          },
+          "deriv": {
+            "a": "8*k",
+            "b": "15*k",
+            "sa": "a*a",
+            "sb": "b*b",
+            "sd": "a*a+b*b"
+          },
+          "enunciado": "Uma tela retangular mede {a} cm de largura por {b} cm de altura. Qual é o comprimento da diagonal da tela?",
+          "conta": "sqrt(a*a+b*b)",
+          "unidade": "cm",
+          "casas": 0,
+          "passos": [
+            "A diagonal divide o retângulo em dois triângulos retângulos e é a hipotenusa de cada um.",
+            "d² = {a}² + {b}² = {sa} + {sb} = {sd}.",
+            "d = sqrt{sd} = {valor} cm."
+          ]
+        },
+        {
+          "vars": {
+            "p": {
+              "min": 2,
+              "max": 4
+            },
+            "t": {
+              "min": 2,
+              "max": 5
+            },
+            "k": {
+              "min": 3,
+              "max": 12
+            }
+          },
+          "deriv": {
+            "s": "t*k"
+          },
+          "enunciado": "No mesmo instante, uma pessoa de {p} m de altura projeta uma sombra de {t} m e um poste projeta uma sombra de {s} m. Qual é a altura do poste?",
+          "conta": "p*s/t",
+          "unidade": "m",
+          "casas": 0,
+          "passos": [
+            "Os triângulos formados pelos raios de sol são semelhantes, então a razão entre as sombras é a razão entre as alturas.",
+            "Razão de semelhança: {s} ÷ {t} = {k}.",
+            "Altura do poste = {p} × {k} = {valor} m."
+          ]
+        },
+        {
+          "vars": {
+            "a": {
+              "min": 2,
+              "max": 6
+            },
+            "k": {
+              "min": 2,
+              "max": 4
+            },
+            "ar": {
+              "min": 5,
+              "max": 30
+            }
+          },
+          "deriv": {
+            "b": "a*k",
+            "kk": "k*k"
+          },
+          "enunciado": "Dois terrenos triangulares são semelhantes. Um lado do menor mede {a} m e o lado correspondente do maior mede {b} m. O terreno menor tem {ar} m² de área. Qual é a área do terreno maior?",
+          "conta": "ar*b*b/(a*a)",
+          "unidade": "m²",
+          "casas": 0,
+          "passos": [
+            "Razão de semelhança entre os lados: {b} ÷ {a} = {k}.",
+            "A razão entre as áreas é o quadrado da razão entre os lados: {k}² = {kk}.",
+            "Área do maior = {ar} × {kk} = {valor} m²."
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "escalas-unidades-medida",
+    "nivel": "basico",
+    "titulo": "Escalas e unidades de medida",
+    "competencia": "C3",
+    "habilidades": ["H10", "H11", "H12"],
+    "antes": "razao-proporcao-regra-de-tres",
+    "conceito": [
+      "Escala 1:n significa que 1 unidade no desenho vale n unidades na realidade. Comprimento real = comprimento no desenho × n. Converta para uma unidade só antes de calcular.",
+      "Conversões úteis: 1 m = 100 cm; 1 km = 1 000 m; 1 m^{2} = 10 000 cm^{2}; 1 m^{3} = 1 000 L; 1 L = 1 000 mL; 1 cm^{3} = 1 mL; 1 h = 3 600 s.",
+      "Em área, a escala vale ao quadrado: numa escala 1:50, cada lado é dividido por 50 e a área por 50^{2}. De km/h para m/s, divida por 3,6."
+    ],
+    "quando": {
+      "sinais": [
+        "“escala 1:n” ou “1 cm no mapa corresponde a”: distância real = distância no desenho × n",
+        "“quantos litros cabem” com medidas em m ou cm: converta volume (1 m^{3} = 1 000 L)",
+        "“em km” e dado em cm: converta a unidade antes de responder",
+        "“área” com unidades diferentes: 1 m^{2} = 10 000 cm^{2}, não 100"
+      ],
+      "formula": "real = desenho × n; 1 m = 100 cm; 1 km = 1 000 m; 1 m^{3} = 1 000 L",
+      "armadilhas": [
+        "Dividir pela escala em vez de multiplicar ao ir do desenho para o real.",
+        "Converter área e volume como se fossem comprimento (100 em vez de 10 000 ou 1 000 000)."
+      ]
+    },
+    "ler": {
+      "passos": [
+        "Circule a unidade em que a resposta deve sair.",
+        "Anote a escala e a medida do desenho, cada uma com sua unidade.",
+        "Multiplique o desenho pela escala para obter o real, ainda na unidade do desenho.",
+        "Risque o que não entra, como tipo de papel.",
+        "Converta para a unidade pedida e confira se o valor é razoável."
+      ],
+      "exemplo": {
+        "enunciado": "Em um mapa de escala 1:500 000, a distância entre duas cidades é de 6 cm. O mapa foi impresso em papel A4. Qual é a distância real entre as cidades, em quilômetros?",
+        "anotacoes": [
+          {
+            "trecho": "escala 1:500 000",
+            "papel": "condicao",
+            "nota": "1 cm do mapa vale 500 000 cm reais"
+          },
+          {
+            "trecho": "6 cm",
+            "papel": "dado",
+            "nota": "medida no desenho"
+          },
+          {
+            "trecho": "papel A4",
+            "papel": "distracao",
+            "nota": "não entra na conta"
+          },
+          {
+            "trecho": "em quilômetros",
+            "papel": "unidade",
+            "nota": "a resposta deve sair em km"
+          },
+          {
+            "trecho": "Qual é a distância real",
+            "papel": "pede",
+            "nota": "6 × 500 000 = 3 000 000 cm = 30 km"
+          }
+        ]
+      }
+    },
+    "formulas": [
+      {
+        "nome": "Escala",
+        "f": "real = desenho · n",
+        "uso": "Quando o mapa ou a planta traz “escala 1:n”."
+      },
+      {
+        "nome": "Escala em área",
+        "f": "área real = área do desenho · n^{2}",
+        "uso": "Quando se pede a área real a partir da área no desenho."
+      },
+      {
+        "nome": "Conversões",
+        "f": "1 m = 100 cm; 1 km = 1 000 m; 1 m^{3} = 1 000 L",
+        "uso": "Quando as unidades do enunciado e da resposta diferem."
+      },
+      {
+        "nome": "km/h para m/s",
+        "f": "m/s = km/h ÷ 3,6",
+        "uso": "Quando a velocidade vem em km/h e o tempo em segundos."
+      }
+    ],
+    "exemplos": [
+      {
+        "enunciado": "Em um mapa de escala 1:50 000, a distância entre duas cidades é de 4 cm. Qual é a distância real?",
+        "formula": "4 × 50 000 = 200 000 cm = 2 km",
+        "passos": ["Real = 4 × 50 000 = 200 000 cm.", "200 000 cm = 2 000 m = 2 km."]
+      },
+      {
+        "enunciado": "Converta 3,5 km para metros.",
+        "formula": "3,5 × 1 000 = 3 500 m",
+        "passos": ["1 km = 1 000 m.", "3,5 × 1 000 = 3 500 m."]
+      }
+    ],
+    "truque": "Passe tudo para centímetros ao usar escala e só no fim converta para m ou km. Cortar zeros pelo caminho é onde se erra.",
+    "erroComum": "Aplicar a escala simples numa área (esquecendo de elevar ao quadrado) ou misturar unidades na mesma conta.",
+    "exercicios": [
+      {
+        "enunciado": "Em uma planta de escala 1:200, uma parede mede 5 cm. Qual é o comprimento real da parede, em metros?",
+        "passos": ["Real = 5 × 200 = 1 000 cm.", "1 000 cm = 10 m."],
+        "resposta": "10 m",
+        "conta": "5*200/100",
+        "valor": 10
+      },
+      {
+        "enunciado": "A distância real entre duas cidades é de 250 km. Em um mapa de escala 1:1 000 000, qual é a distância, em cm, entre elas?",
+        "passos": ["250 km = 250 × 100 000 = 25 000 000 cm.", "No mapa: 25 000 000 ÷ 1 000 000 = 25."],
+        "resposta": "25 cm",
+        "conta": "250*100000/1000000",
+        "valor": 25
+      },
+      {
+        "enunciado": "Uma caixa-d'água tem volume de 2,5 m^{3}. Quantos litros cabem nela?",
+        "passos": ["1 m^{3} = 1 000 L.", "2,5 × 1 000 = 2 500."],
+        "resposta": "2.500 litros",
+        "conta": "2.5*1000",
+        "valor": 2500
+      },
+      {
+        "enunciado": "Um salão tem 80 m^{2} de área real. Em uma planta de escala 1:50, qual é a área do salão no desenho, em cm^{2}?",
+        "passos": ["80 m^{2} = 80 × 10 000 = 800 000 cm^{2}.", "Na planta a área é dividida por 50^{2} = 2 500: 800 000 ÷ 2 500 = 320."],
+        "resposta": "320 cm^{2}",
+        "conta": "80*10000/(50*50)",
+        "valor": 320
+      },
+      {
+        "enunciado": "Um carro anda a 72 km/h. Qual é a velocidade em m/s?",
+        "passos": ["De km/h para m/s, divida por 3,6.", "72 ÷ 3,6 = 20."],
+        "resposta": "20 m/s",
+        "conta": "72/3.6",
+        "valor": 20
+      }
+    ],
+    "cartoes": [
+      {"p": "Como calcular a medida real numa escala 1:n?", "r": "Multiplique a medida do desenho por n (e converta a unidade no fim)."},
+      {"p": "Quantos litros tem 1 m^{3}?", "r": "1 000 litros. E 1 cm^{3} = 1 mL."},
+      {"p": "Como a escala age sobre a área?", "r": "Ao quadrado: numa escala 1:n, a área do desenho é a real dividida por n^{2}."},
+      {"p": "Como passar km/h para m/s?", "r": "Divida por 3,6 (e m/s para km/h, multiplique por 3,6)."}
+    ],
+    "gerador": {
+      "vars": {},
+      "questoes": [
+        {
+          "vars": {
+            "a": {
+              "min": 2,
+              "max": 15,
+              "casas": 1
+            }
+          },
+          "enunciado": "Um atleta correu {a} km em um treino. Quantos metros ele correu?",
+          "conta": "a*1000",
+          "unidade": "m",
+          "casas": 0,
+          "passos": [
+            "1 km = 1000 m, então multiplicamos por 1000.",
+            "{a} × 1000 = {valor} m."
+          ]
+        },
+        {
+          "vars": {
+            "d": {
+              "min": 2,
+              "max": 9
+            },
+            "m": {
+              "min": 1,
+              "max": 8
+            }
+          },
+          "deriv": {
+            "e": "m*1000",
+            "dr": "d*m*1000"
+          },
+          "enunciado": "Em um mapa de escala 1:{e}, dois pontos distam {d} cm. Qual é a distância real entre eles, em metros?",
+          "conta": "d*e/100",
+          "unidade": "m",
+          "casas": 0,
+          "passos": [
+            "Distância real = distância no desenho × escala = {d} × {e} = {dr} cm.",
+            "Como 1 m = 100 cm, dividimos por 100.",
+            "{dr} ÷ 100 = {valor} m."
+          ]
+        },
+        {
+          "vars": {
+            "m": {
+              "min": 1,
+              "max": 6
+            },
+            "q": {
+              "min": 3,
+              "max": 15
+            }
+          },
+          "deriv": {
+            "e": "m*50000",
+            "r": "m*q",
+            "rc": "m*q*100000"
+          },
+          "enunciado": "Dois pontos distam {r} km na realidade. Em um mapa de escala 1:{e}, qual é a distância entre eles no mapa, em cm?",
+          "conta": "r*100000/e",
+          "unidade": "cm",
+          "casas": 0,
+          "passos": [
+            "Converta para cm: 1 km = 100000 cm, logo {r} km = {rc} cm.",
+            "Distância no mapa = distância real ÷ escala = {rc} ÷ {e} = {valor} cm."
+          ]
+        },
+        {
+          "vars": {
+            "a": {
+              "min": 2,
+              "max": 6,
+              "step": 0.5,
+              "casas": 1
+            },
+            "b": {
+              "min": 1,
+              "max": 4
+            },
+            "c": {
+              "min": 1,
+              "max": 3
+            }
+          },
+          "deriv": {
+            "vol": "a*b*c"
+          },
+          "enunciado": "Um tanque em forma de bloco retangular mede {a} m de comprimento, {b} m de largura e {c} m de altura. Quantos litros de água cabem no tanque quando está cheio?",
+          "conta": "a*b*c*1000",
+          "unidade": "L",
+          "casas": 0,
+          "passos": [
+            "Volume em m³ = comprimento × largura × altura = {a} × {b} × {c} = {vol} m³.",
+            "Como 1 m³ = 1000 L, multiplicamos por 1000.",
+            "{vol} × 1000 = {valor} L."
+          ]
+        },
+        {
+          "vars": {
+            "j": {
+              "min": 1,
+              "max": 4
+            },
+            "d": {
+              "min": 4,
+              "max": 20
+            },
+            "v": {
+              "min": 30,
+              "max": 90,
+              "step": 30
+            }
+          },
+          "deriv": {
+            "e": "j*50000",
+            "dr": "d*j*50000",
+            "dk": "d*j/2"
+          },
+          "restricoes": [
+            [
+              "inteiro",
+              "30*d*j/v"
+            ]
+          ],
+          "enunciado": "Em um mapa de escala 1:{e}, o trajeto entre duas cidades mede {d} cm. Um ônibus faz esse trajeto a {v} km/h, em velocidade constante. Quantos minutos dura a viagem?",
+          "conta": "d*e/100000/v*60",
+          "unidade": "min",
+          "casas": 0,
+          "passos": [
+            "Distância real = {d} × {e} = {dr} cm.",
+            "Em km: 1 km = 100000 cm, então {dr} cm = {dk} km.",
+            "Tempo em horas = {dk} ÷ {v}; em minutos, multiplicamos por 60.",
+            "t = {dk} ÷ {v} × 60 = {valor} min."
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "angulos-circunferencia",
+    "nivel": "intermediario",
+    "titulo": "Ângulos e circunferência",
+    "competencia": "C2",
+    "habilidades": [
+      "H7",
+      "H8"
+    ],
+    "antes": "areas-perimetros",
+    "quando": {
+      "sinais": [
+        "“soma dos ângulos”, “ângulo interno” ou “ângulo externo”: use as somas fixas (180° no triângulo, 360° nos externos)",
+        "“ângulo central” e “ângulo inscrito” no mesmo arco: o inscrito é a metade do central",
+        "polígono regular com n lados: cada ângulo interno vale {(n − 2) · 180/n}",
+        "retas paralelas cortadas por uma transversal: ângulos alternos ou correspondentes são iguais"
+      ],
+      "formula": "S_{i} = (n − 2) · 180°; inscrito = {arco/2}",
+      "armadilhas": [
+        "Confundir ângulo central (igual ao arco) com inscrito (metade do arco).",
+        "Usar n em vez de n − 2 na soma dos ângulos internos."
+      ]
+    },
+    "ler": {
+      "passos": [
+        "Circule o que se pede: um ângulo, um arco ou o número de lados.",
+        "Marque a figura: triângulo, polígono ou circunferência com centro.",
+        "Anote os ângulos dados e escreva a soma conhecida que se aplica.",
+        "Risque nomes de lugares e anos, que não entram na conta.",
+        "Resolva a equação simples e confira se o ângulo faz sentido (positivo e menor que 360°)."
+      ],
+      "exemplo": {
+        "enunciado": "Em uma praça de Belém, inaugurada em 1998, uma fonte circular tem centro O. Os pontos A e B estão na borda e o ângulo central AÔB mede 80°. Qual é a medida do ângulo inscrito que enxerga o mesmo arco AB a partir de outro ponto da borda?",
+        "anotacoes": [
+          {
+            "trecho": "inaugurada em 1998",
+            "papel": "distracao",
+            "nota": "o ano não entra na conta"
+          },
+          {
+            "trecho": "o ângulo central AÔB mede 80°",
+            "papel": "dado",
+            "nota": "o arco AB também mede 80°"
+          },
+          {
+            "trecho": "mesmo arco AB",
+            "papel": "condicao",
+            "nota": "o inscrito e o central enxergam o mesmo arco"
+          },
+          {
+            "trecho": "outro ponto da borda",
+            "papel": "condicao",
+            "nota": "o vértice do inscrito está na circunferência, não no centro"
+          },
+          {
+            "trecho": "Qual é a medida do ângulo inscrito",
+            "papel": "pede",
+            "nota": "{80°/2} = 40°"
+          }
+        ]
+      }
+    },
+    "conceito": [
+      "A soma dos ângulos internos de um triângulo é 180°. Em um polígono de n lados, a soma dos internos é (n − 2) · 180°, pois ele se divide em n − 2 triângulos. Em qualquer polígono convexo, a soma dos ângulos externos é 360°.",
+      "Em um polígono regular todos os ângulos são iguais: cada interno vale {(n − 2) · 180°/n} e cada externo vale {360°/n}. Interno e externo no mesmo vértice somam 180°.",
+      "Em uma circunferência, o ângulo central tem o vértice no centro e mede o mesmo que o arco que enxerga. O ângulo inscrito tem o vértice na borda e mede a metade do arco. Retas paralelas cortadas por uma transversal formam ângulos alternos e correspondentes iguais."
+    ],
+    "exemplos": [
+      {
+        "enunciado": "Dois ângulos de um triângulo medem 50° e 65°. Quanto mede o terceiro?",
+        "formula": "soma = 180°",
+        "passos": [
+          "A soma dos três é 180°.",
+          "50° + 65° = 115°.",
+          "O terceiro mede 180° − 115° = 65°."
+        ]
+      },
+      {
+        "enunciado": "Quantos graus mede cada ângulo interno de um pentágono regular?",
+        "formula": "{(n − 2) · 180°/n}",
+        "passos": [
+          "Pentágono: n = 5, soma dos internos = 3 · 180° = 540°.",
+          "Dividindo por 5 ângulos iguais: 540° ÷ 5.",
+          "Cada ângulo mede 108°."
+        ]
+      }
+    ],
+    "formulas": [
+      {
+        "nome": "Soma dos internos",
+        "f": "S_{i} = (n − 2) · 180°",
+        "uso": "Quando se pergunta a soma ou um ângulo de um polígono."
+      },
+      {
+        "nome": "Ângulo externo regular",
+        "f": "e = {360°/n}",
+        "uso": "Quando o polígono é regular e se quer o número de lados ou o ângulo externo."
+      },
+      {
+        "nome": "Inscrito e central",
+        "f": "inscrito = {arco/2}; central = arco",
+        "uso": "Quando há um arco de circunferência e ângulos que o enxergam."
+      },
+      {
+        "nome": "Triângulo",
+        "f": "A + B + C = 180°",
+        "uso": "Quando faltar um ângulo de um triângulo."
+      }
+    ],
+    "truque": "Para saber quantos lados tem um polígono regular, divida 360° pelo ângulo externo. Um ângulo externo de 30° dá 12 lados.",
+    "erroComum": "Dizer que o ângulo inscrito é igual ao arco. Ele é a metade: um arco de 100° é visto de um ponto da borda sob um ângulo de 50°.",
+    "exercicios": [
+      {
+        "enunciado": "Um hexágono tem 6 lados. Qual é a soma dos seus ângulos internos, em graus?",
+        "passos": [
+          "Hexágono: n = 6, logo n − 2 = 4 triângulos.",
+          "4 · 180°."
+        ],
+        "resposta": "720°",
+        "conta": "(6-2)*180",
+        "valor": 720
+      },
+      {
+        "enunciado": "Quantos graus mede cada ângulo interno de um octógono regular?",
+        "passos": [
+          "Soma: (8 − 2) · 180° = 1080°.",
+          "Dividindo por 8 ângulos iguais: 1080° ÷ 8."
+        ],
+        "resposta": "135°",
+        "conta": "(8-2)*180/8",
+        "valor": 135
+      },
+      {
+        "enunciado": "Um arco de uma circunferência mede 140°. Quanto mede o ângulo inscrito que o enxerga, em graus?",
+        "passos": [
+          "O inscrito é a metade do arco.",
+          "{140°/2}."
+        ],
+        "resposta": "70°",
+        "conta": "140/2",
+        "valor": 70
+      },
+      {
+        "enunciado": "Cada ângulo externo de um polígono regular mede 30°. Quantos lados ele tem?",
+        "passos": [
+          "Os externos somam 360° e são todos iguais.",
+          "n = {360/30}."
+        ],
+        "resposta": "12 lados",
+        "conta": "360/30",
+        "valor": 12
+      },
+      {
+        "enunciado": "Em um triângulo isósceles, o ângulo do vértice mede 40°. Quanto mede cada ângulo da base, em graus?",
+        "passos": [
+          "Os outros dois somam 180° − 40° = 140°.",
+          "Como são iguais, cada um mede {140/2}."
+        ],
+        "resposta": "70°",
+        "conta": "(180-40)/2",
+        "valor": 70
+      }
+    ],
+    "cartoes": [
+      {
+        "p": "Quanto soma os ângulos internos de um triângulo?",
+        "r": "180°."
+      },
+      {
+        "p": "Como obter a soma dos internos de um polígono de n lados?",
+        "r": "(n − 2) · 180°."
+      },
+      {
+        "p": "Quanto mede o ângulo inscrito em relação ao arco?",
+        "r": "A metade do arco; o central é igual ao arco."
+      },
+      {
+        "p": "Quanto somam os ângulos externos de um polígono convexo?",
+        "r": "360°."
+      },
+      {
+        "p": "Como achar o número de lados de um polígono regular?",
+        "r": "Divida 360° pelo ângulo externo."
+      }
+    ],
+    "gerador": {
+      "vars": {},
+      "questoes": [
+        {
+          "vars": {
+            "x": {
+              "min": 15,
+              "max": 85
+            }
+          },
+          "deriv": {
+            "a": "2*x"
+          },
+          "enunciado": "Em uma circunferência, um arco mede {a}°. Qual é a medida de um ângulo inscrito que enxerga esse arco?",
+          "conta": "a/2",
+          "unidade": "°",
+          "casas": 0,
+          "passos": [
+            "O ângulo inscrito mede a metade do arco que ele enxerga.",
+            "{a}° ÷ 2 = {valor}°."
+          ]
+        },
+        {
+          "vars": {
+            "n": {
+              "min": 5,
+              "max": 14
+            }
+          },
+          "enunciado": "Um polígono convexo tem {n} lados. Qual é a soma dos seus ângulos internos?",
+          "conta": "(n-2)*180",
+          "unidade": "°",
+          "casas": 0,
+          "passos": [
+            "A soma dos ângulos internos é (n − 2) × 180°, em que n é o número de lados.",
+            "S = ({n} − 2) × 180° = {valor}°."
+          ]
+        },
+        {
+          "vars": {
+            "n": {
+              "min": 5,
+              "max": 20
+            }
+          },
+          "deriv": {
+            "s": "(n-2)*180"
+          },
+          "restricoes": [
+            [
+              "inteiro",
+              "180*(n-2)/n"
+            ]
+          ],
+          "enunciado": "Quanto mede cada ângulo interno de um polígono regular de {n} lados?",
+          "conta": "180*(n-2)/n",
+          "unidade": "°",
+          "casas": 0,
+          "passos": [
+            "Soma dos ângulos internos = ({n} − 2) × 180° = {s}°.",
+            "No polígono regular os {n} ângulos são iguais.",
+            "Cada ângulo = {s}° ÷ {n} = {valor}°."
+          ]
+        },
+        {
+          "vars": {
+            "n": {
+              "min": 5,
+              "max": 40
+            }
+          },
+          "deriv": {
+            "e": "360/n"
+          },
+          "restricoes": [
+            [
+              "inteiro",
+              "360/n"
+            ]
+          ],
+          "enunciado": "O ângulo externo de um polígono regular mede {e}°. Quantos lados tem esse polígono?",
+          "conta": "360/e",
+          "unidade": "lados",
+          "casas": 0,
+          "passos": [
+            "A soma dos ângulos externos de qualquer polígono convexo é 360°.",
+            "Número de lados = 360° ÷ {e}° = {valor}."
+          ]
+        },
+        {
+          "vars": {
+            "n": {
+              "min": 5,
+              "max": 15
+            }
+          },
+          "deriv": {
+            "s": "(n-2)*180",
+            "m": "n-2",
+            "n3": "n-3"
+          },
+          "enunciado": "A soma dos ângulos internos de um polígono convexo é {s}°. Quantas diagonais ele tem?",
+          "conta": "(s/180+2)*(s/180-1)/2",
+          "unidade": "diagonais",
+          "casas": 0,
+          "passos": [
+            "Como S = (n − 2) × 180°, temos n − 2 = {s} ÷ 180 = {m}, logo n = {n} lados.",
+            "Número de diagonais = n × (n − 3) ÷ 2.",
+            "D = {n} × {n3} ÷ 2 = {valor}."
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "escala-area-mapas",
+    "nivel": "avancado",
+    "titulo": "Escala e área em mapas",
+    "competencia": "C3",
+    "habilidades": [
+      "H11",
+      "H12"
+    ],
+    "antes": "escalas-unidades-medida",
+    "quando": {
+      "sinais": [
+        "“escala 1:n” em mapa, planta ou maquete: comprimentos reais são n vezes o do desenho",
+        "“área real” a partir de área no desenho: a área é multiplicada por n², e não por n",
+        "“volume” da maquete ou do modelo: o volume é multiplicado por n³",
+        "unidades misturadas (cm no papel, km ou m na realidade): converta antes de calcular"
+      ],
+      "formula": "comprimento real = desenho × n; área real = área do desenho × n^{2}",
+      "armadilhas": [
+        "Multiplicar a área só por n, esquecendo que a escala age ao quadrado.",
+        "Esquecer de converter cm² em m² ou km² (1 m^{2} = 10000 cm^{2})."
+      ]
+    },
+    "ler": {
+      "passos": [
+        "Circule o que se pede: comprimento, área ou volume reais.",
+        "Anote a escala 1:n e a medida do desenho com a unidade.",
+        "Decida a potência: n para comprimento, n² para área, n³ para volume.",
+        "Risque datas e nomes que não entram.",
+        "Converta as unidades no final (cm para m ou km) e confira se o resultado é razoável."
+      ],
+      "exemplo": {
+        "enunciado": "Uma planta de um terreno em Curitiba, feita em 2019, usa a escala 1:100. No papel, o terreno ocupa 20 cm². Qual é a área real do terreno, em m²?",
+        "anotacoes": [
+          {
+            "trecho": "feita em 2019",
+            "papel": "distracao",
+            "nota": "o ano não entra na conta"
+          },
+          {
+            "trecho": "escala 1:100",
+            "papel": "dado",
+            "nota": "n = 100"
+          },
+          {
+            "trecho": "20 cm²",
+            "papel": "dado",
+            "nota": "área do desenho, e não do terreno real"
+          },
+          {
+            "trecho": "em m²",
+            "papel": "unidade",
+            "nota": "converta no final: 10000 cm² = 1 m²"
+          },
+          {
+            "trecho": "Qual é a área real",
+            "papel": "pede",
+            "nota": "20 · 100^{2} = 200000 cm² = 20 m²"
+          }
+        ]
+      }
+    },
+    "conceito": [
+      "Em uma escala 1:n, cada 1 cm do desenho representa n cm na realidade. Comprimentos reais são o do desenho vezes n. Por exemplo, em um mapa 1:50000, 4 cm valem 200000 cm, ou 2 km.",
+      "Como a área mistura duas dimensões, a escala age ao quadrado: a área real é a área do desenho vezes n². O volume mistura três dimensões e usa n³. Dobrar a escala linear quadruplica a área.",
+      "Cuide das unidades: 1 m = 100 cm, 1 km = 100000 cm, 1 m^{2} = 10000 cm^{2} e 1 km^{2} = 10^{10} cm^{2}. Em figuras semelhantes, a razão entre áreas é o quadrado da razão entre os lados."
+    ],
+    "exemplos": [
+      {
+        "enunciado": "Em um mapa de escala 1:50000, a distância entre duas cidades é 6 cm. Qual é a distância real, em km?",
+        "formula": "real = desenho × n",
+        "passos": [
+          "6 · 50000 = 300000 cm.",
+          "1 km = 100000 cm, logo 300000 cm = 3 km."
+        ]
+      },
+      {
+        "enunciado": "Em uma maquete de escala 1:20, o piso mede 0,5 m². Qual é a área real do piso, em m²?",
+        "formula": "área real = área do desenho × n^{2}",
+        "passos": [
+          "n² = 20² = 400.",
+          "0,5 · 400 = 200 m²."
+        ]
+      }
+    ],
+    "formulas": [
+      {
+        "nome": "Comprimento",
+        "f": "real = desenho × n",
+        "uso": "Quando se quer uma distância real a partir do desenho."
+      },
+      {
+        "nome": "Área",
+        "f": "A_{real} = A_{desenho} × n^{2}",
+        "uso": "Quando o dado é uma área no papel ou na maquete."
+      },
+      {
+        "nome": "Volume",
+        "f": "V_{real} = V_{modelo} × n^{3}",
+        "uso": "Quando o dado é o volume de um modelo em escala."
+      },
+      {
+        "nome": "Conversões",
+        "f": "1 m^{2} = 10^{4} cm^{2}; 1 km^{2} = 10^{10} cm^{2}",
+        "uso": "Quando a área sai em cm² e a resposta pede m² ou km²."
+      }
+    ],
+    "truque": "Quadrado da escala: se 1 cm vale 2 km, então 1 cm² vale 4 km². Ache o que vale 1 cm² e multiplique pelas áreas medidas.",
+    "erroComum": "Aplicar a escala direto na área. Em 1:100, 20 cm² não viram 2000 cm², e sim 20 · 100^{2} = 200000 cm², ou seja, 20 m².",
+    "exercicios": [
+      {
+        "enunciado": "Em um mapa de escala 1:50000, a distância entre duas cidades é 4 cm. Qual é a distância real, em km?",
+        "passos": [
+          "4 · 50000 = 200000 cm.",
+          "Como 1 km = 100000 cm, temos {200000/100000} km."
+        ],
+        "resposta": "2 km",
+        "conta": "4*50000/100000",
+        "valor": 2
+      },
+      {
+        "enunciado": "Em um mapa de escala 1:200000, uma represa ocupa 3 cm². Qual é a área real, em km²?",
+        "passos": [
+          "Em cm²: 3 · 200000^{2} = 1,2 · 10^{11} cm².",
+          "Como 1 km^{2} = 10^{10} cm^{2}, divida por 10^{10}."
+        ],
+        "resposta": "12 km²",
+        "conta": "3*200000**2/10**10",
+        "valor": 12
+      },
+      {
+        "enunciado": "Uma maquete de escala 1:20 representa uma parede de 6 m² de área real. Qual é a área da parede na maquete, em cm²?",
+        "passos": [
+          "Área da maquete = {6/20^{2}} = 0,015 m².",
+          "Como 1 m^{2} = 10000 cm^{2}, são 0,015 · 10000."
+        ],
+        "resposta": "150 cm²",
+        "conta": "6*10000/20**2",
+        "valor": 150
+      },
+      {
+        "enunciado": "Em uma planta de escala 1:100, uma sala mede 5 cm por 4 cm. Qual é a área real da sala, em m²?",
+        "passos": [
+          "Real: 5 m por 4 m, pois cada cm vale 100 cm = 1 m.",
+          "Área: 5 · 4."
+        ],
+        "resposta": "20 m²",
+        "conta": "5*4*100**2/10000",
+        "valor": 20
+      },
+      {
+        "enunciado": "A razão entre as áreas de duas figuras semelhantes é 9. Quantas vezes o lado da maior é o lado da menor?",
+        "passos": [
+          "A razão entre áreas é o quadrado da razão entre lados.",
+          "Razão entre lados = raiz de 9."
+        ],
+        "resposta": "3 vezes",
+        "conta": "sqrt(9)",
+        "valor": 3
+      }
+    ],
+    "cartoes": [
+      {
+        "p": "O que a escala 1:n faz com comprimentos?",
+        "r": "O real é n vezes o do desenho."
+      },
+      {
+        "p": "Como a escala age na área?",
+        "r": "Ao quadrado: área real = área do desenho × n²."
+      },
+      {
+        "p": "E no volume?",
+        "r": "Ao cubo: n³."
+      },
+      {
+        "p": "Quantos cm² há em 1 m²?",
+        "r": "10000 cm²."
+      },
+      {
+        "p": "Dobrar a escala linear faz a área crescer quantas vezes?",
+        "r": "4 vezes."
+      }
+    ],
+    "gerador": {
+      "vars": {},
+      "questoes": [
+        {
+          "vars": {
+            "j": {
+              "min": 1,
+              "max": 5
+            },
+            "d": {
+              "min": 2,
+              "max": 12
+            }
+          },
+          "deriv": {
+            "e": "j*100000",
+            "dr": "d*j*100000"
+          },
+          "enunciado": "Em um mapa de escala 1:{e}, a distância entre duas cidades é de {d} cm. Qual é a distância real, em km?",
+          "conta": "d*e/100000",
+          "unidade": "km",
+          "casas": 0,
+          "passos": [
+            "Distância real = {d} × {e} = {dr} cm.",
+            "1 km = 100000 cm, então {dr} ÷ 100000 = {valor} km."
+          ]
+        },
+        {
+          "vars": {
+            "j": {
+              "min": 1,
+              "max": 4
+            },
+            "a": {
+              "min": 2,
+              "max": 12
+            }
+          },
+          "deriv": {
+            "e": "j*100000",
+            "jj": "j*j"
+          },
+          "enunciado": "Em um mapa de escala 1:{e}, um lago ocupa {a} cm². Qual é a área real do lago, em km²?",
+          "conta": "a*e*e/10000000000",
+          "unidade": "km²",
+          "casas": 0,
+          "passos": [
+            "Em escala 1:{e}, 1 cm no mapa equivale a {j} km reais.",
+            "A área usa o quadrado da escala: 1 cm² equivale a {j}² = {jj} km².",
+            "Área real = {a} × {jj} = {valor} km²."
+          ]
+        },
+        {
+          "vars": {
+            "s": {
+              "min": 1,
+              "max": 4
+            },
+            "u": {
+              "min": 2,
+              "max": 9
+            }
+          },
+          "deriv": {
+            "n": "50*s",
+            "r": "u*s*s",
+            "rc": "u*s*s*10000",
+            "nn": "n*n"
+          },
+          "enunciado": "Uma sala tem {r} m² de área real. Em uma planta de escala 1:{n}, qual é a área da sala desenhada, em cm²?",
+          "conta": "r*10000/(n*n)",
+          "unidade": "cm²",
+          "casas": 0,
+          "passos": [
+            "Converta a área real: 1 m² = 10000 cm², logo {r} m² = {rc} cm².",
+            "A área no desenho é a área real dividida por n²: {n}² = {nn}.",
+            "Área na planta = {rc} ÷ {nn} = {valor} cm²."
+          ]
+        },
+        {
+          "vars": {
+            "s": {
+              "min": 2,
+              "max": 5
+            },
+            "w": {
+              "min": 2,
+              "max": 12
+            }
+          },
+          "deriv": {
+            "n": "100*s",
+            "nc": "n*n*n",
+            "wc": "w*n*n*n"
+          },
+          "enunciado": "Um modelo de reservatório, na escala 1:{n}, tem volume de {w} cm³. Qual é o volume real do reservatório, em m³?",
+          "conta": "w*n*n*n/1000000",
+          "unidade": "m³",
+          "casas": 0,
+          "passos": [
+            "O volume usa o cubo da escala: cada 1 cm³ do modelo vale {n}³ = {nc} cm³ reais.",
+            "Volume real = {w} × {nc} = {wc} cm³.",
+            "Como 1 m³ = 1000000 cm³: {wc} ÷ 1000000 = {valor} m³."
+          ]
+        },
+        {
+          "vars": {
+            "a": {
+              "min": 2,
+              "max": 12
+            },
+            "j": {
+              "min": 2,
+              "max": 9
+            }
+          },
+          "deriv": {
+            "A": "a*j*j",
+            "Ac": "a*j*j*10000000000",
+            "nn": "j*j*10000000000"
+          },
+          "enunciado": "Um lago tem {A} km² de área real e ocupa {a} cm² em um mapa. Qual é o valor de n na escala 1:n desse mapa?",
+          "conta": "sqrt(A*10000000000/a)",
+          "unidade": "",
+          "casas": 0,
+          "passos": [
+            "Converta a área real: 1 km² = 10000000000 cm², então {A} km² = {Ac} cm².",
+            "A razão entre as áreas é n²: n² = {Ac} ÷ {a} = {nn}.",
+            "n = sqrt{nn} = {valor}."
+          ]
+        }
+      ]
+    }
+  }
+]

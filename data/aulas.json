@@ -1,0 +1,73 @@
+[
+  {"id": "c1", "titulo": "C1: domínio da norma culta", "competencia": "C1",
+   "blocos": [
+     {"rotulo": "O que avalia", "texto": "O domínio da modalidade escrita formal da língua portuguesa."},
+     {"rotulo": "Como perder pontos", "itens": ["Desvios de norma (ortografia, acentuação, concordância, regência).", "Pontuação inadequada.", "Registro inadequado (oralidade, gírias, tom informal)."]},
+     {"rotulo": "Exemplo", "texto": "Frase ilustrativa: em vez de \"a galera não tem acesso\", prefira \"parcela da população não tem acesso\"."}
+   ],
+   "fontes": ["https://vestibulares.estrategia.com/portal/noticias/edital-enem-2026-completo-datas-inscricoes-provas-e-resultado/", "https://www.opovo.com.br/noticias/brasil/2025/11/05/conheca-as-regras-para-a-prova-de-redacao-do-enem-2025-no-domingo.html"]},
+  {"id": "c2", "titulo": "C2: tema, tipo de texto e repertório", "competencia": "C2",
+   "blocos": [
+     {"rotulo": "O que avalia", "texto": "A compreensão da proposta e o uso de repertório sociocultural de várias áreas, em texto dissertativo-argumentativo, sem fugir ao tema."},
+     {"rotulo": "Como perder pontos", "itens": ["Fugir ao tema ou ao tipo dissertativo-argumentativo.", "Repertório de bolso: genérico, reaproveitável em qualquer tema, alerta explícito da Cartilha 2026.", "Repertório decorativo: citado, mas não usado no argumento."]},
+     {"rotulo": "Como acertar", "texto": "Repertório legitimado, pertinente ao tema e produtivo, isto é, usado para sustentar o argumento."},
+     {"rotulo": "Exemplo", "texto": "Frase ilustrativa: \"A lei garante o direito, mas a prática o nega, e é essa distância que sustenta o problema.\""}
+   ],
+   "fontes": ["https://vestibulares.estrategia.com/portal/noticias/edital-enem-2026-completo-datas-inscricoes-provas-e-resultado/", "https://www.dgabc.com.br/Noticia/4347787/inep-divulga-cartilha-do-enem-2026-e-alerta-sobre-repertorio-de-bolso"]},
+  {"id": "c3", "titulo": "C3: projeto de texto e argumentação", "competencia": "C3",
+   "blocos": [
+     {"rotulo": "O que avalia", "texto": "A seleção, a relação, a organização e a interpretação de informações, fatos e argumentos em defesa de um ponto de vista."},
+     {"rotulo": "Como perder pontos", "itens": ["Falta de projeto de texto: ideias soltas, sem tese clara.", "Falta de progressão: repetir a mesma ideia em outras palavras.", "Falta de autoria: copiar os textos motivadores ou usar argumento genérico."]},
+     {"rotulo": "Exemplo", "texto": "Frase ilustrativa de tópico frasal: \"Em primeiro lugar, a invisibilidade social impede o acesso a direitos básicos.\""}
+   ],
+   "fontes": ["https://vestibulares.estrategia.com/portal/noticias/edital-enem-2026-completo-datas-inscricoes-provas-e-resultado/"]},
+  {"id": "c4", "titulo": "C4: coesão e mecanismos linguísticos", "competencia": "C4",
+   "blocos": [
+     {"rotulo": "O que avalia", "texto": "Os mecanismos linguísticos usados na argumentação, ou seja, a coesão do texto."},
+     {"rotulo": "Como perder pontos", "itens": ["Poucos conectivos ou sempre os mesmos.", "Conectivos só entre parágrafos, sem articular as ideias dentro deles.", "Referenciação falha: pronomes e retomadas ambíguos ou repetição da mesma palavra."]},
+     {"rotulo": "Exemplo", "texto": "Frase ilustrativa: \"Nesse sentido, tal omissão agrava o quadro; ademais, ela reforça o estigma.\""}
+   ],
+   "fontes": ["https://vestibulares.estrategia.com/portal/noticias/edital-enem-2026-completo-datas-inscricoes-provas-e-resultado/"]},
+  {"id": "c5", "titulo": "C5: proposta de intervenção", "competencia": "C5",
+   "blocos": [
+     {"rotulo": "O que avalia", "texto": "A proposta de intervenção para o problema, respeitando os direitos humanos."},
+     {"rotulo": "Como perder pontos", "itens": ["Apontar o problema ou dizer \"faltam investimentos\" sem propor ação.", "Faltar elementos: agente, ação, meio, finalidade ou detalhamento.", "Propor algo que fere os direitos humanos."]},
+     {"rotulo": "Exemplo", "texto": "Frase ilustrativa: \"O Ministério da Educação deve ampliar a formação de professores por meio de cursos gratuitos, a fim de preparar a escola para o tema.\""}
+   ],
+   "fontes": ["https://www.vestibulandoweb.com.br/enem/redacao-enem-2026-proposta-de-intervencao-orientacao-inep/", "https://descomplica.com.br/blog/feche-com-nota-maxima-propostas-que-nao-zeram-sua-redacao-2/"]},
+  {"id": "estrutura", "titulo": "Estrutura do texto",
+   "blocos": [
+     {"rotulo": "Introdução", "texto": "Apresenta o tema e a tese, isto é, o ponto de vista que o texto vai defender."},
+     {"rotulo": "Desenvolvimento 1 (D1)", "texto": "Tópico frasal, argumento, repertório e fechamento que retoma a tese."},
+     {"rotulo": "Desenvolvimento 2 (D2)", "texto": "Segundo argumento, com a mesma lógica: tópico frasal, argumento, repertório e fechamento."},
+     {"rotulo": "Conclusão", "texto": "Retoma a tese e apresenta a proposta de intervenção."}
+   ],
+   "fontes": ["https://querobolsa.com.br/revista/enem-o-que-todas-as-redacoes-nota-mil-tem-em-comum"]},
+  {"id": "proposta", "titulo": "Proposta de intervenção",
+   "blocos": [
+     {"rotulo": "Agente", "texto": "Quem executa a ação."},
+     {"rotulo": "Ação", "texto": "O que deve ser feito."},
+     {"rotulo": "Meio", "texto": "Como ou de que modo a ação será feita."},
+     {"rotulo": "Finalidade", "texto": "Para quê, ou qual o efeito esperado."},
+     {"rotulo": "Detalhamento", "texto": "Informação extra sobre qualquer um dos quatro elementos anteriores."},
+     {"rotulo": "Atenção", "texto": "Só a proposta mais completa é avaliada. Terminologia: conferir Cartilha 2026.", "status": "a verificar na cartilha do INEP"}
+   ],
+   "fontes": ["https://www.vestibulandoweb.com.br/enem/redacao-enem-2026-proposta-de-intervencao-orientacao-inep/", "https://descomplica.com.br/blog/feche-com-nota-maxima-propostas-que-nao-zeram-sua-redacao-2/", "https://www.folhavitoria.com.br/educacao/proposta-intervencao-enem/"]},
+  {"id": "nota-zero", "titulo": "Nota zero",
+   "blocos": [
+     {"rotulo": "Casos de nota zero", "itens": [
+       "Fuga total ao tema ou não atender ao tipo dissertativo-argumentativo.",
+       "Texto manuscrito com até 7 linhas (10 em braille).",
+       "Cópia dos textos motivadores sem ao menos 8 linhas próprias.",
+       "Folha em branco, mesmo com rascunho preenchido.",
+       "Parte deliberadamente desconectada do tema.",
+       "Identificação (nome, assinatura, apelido, marca) fora do local, ou números e símbolos sem propósito.",
+       "Insulto, desenho ou marcas propositais; desrespeito ao exame.",
+       "Texto majoritariamente em língua estrangeira.",
+       "Texto ilegível para dois corretores."
+     ]},
+     {"rotulo": "Proposta que fere direitos humanos", "texto": "Zera a redação inteira ou só a C5? Fontes divergem; conferir a Cartilha do INEP.", "status": "a confirmar"},
+     {"rotulo": "Atenção", "texto": "Lista baseada na Cartilha de anos anteriores, segundo as fontes; não confirmada para 2026.", "status": "não confirmado"}
+   ],
+   "fontes": ["https://www.opovo.com.br/noticias/brasil/2025/11/05/conheca-as-regras-para-a-prova-de-redacao-do-enem-2025-no-domingo.html", "https://vestibulares.estrategia.com/portal/enem-e-vestibulares/enem/o-que-pode-zerar-redacao-enem/", "https://www.infoescola.com/educacao/nota-zero-em-redacao-no-enem/"]}
+]

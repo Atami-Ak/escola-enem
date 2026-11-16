@@ -1,0 +1,1340 @@
+[
+  {
+    "id": "principio-multiplicativo",
+    "nivel": "basico",
+    "titulo": "Princípio multiplicativo",
+    "competencia": "C1",
+    "habilidades": ["H2", "H3", "H4"],
+    "conceito": [
+      "Se uma escolha pode ser feita de m maneiras e, para cada uma delas, outra escolha pode ser feita de n maneiras, o total de possibilidades é m × n. Com mais etapas, multiplique todas.",
+      "Quando não pode repetir, cada etapa tem uma opção a menos: 5 pessoas disputando 1º, 2º e 3º lugar dão 5 × 4 × 3 possibilidades.",
+      "Fatorial: n! = n × (n − 1) × ... × 2 × 1. Serve para contar ordens possíveis de n elementos distintos."
+    ],
+    "quando": {
+      "sinais": [
+        "“de quantas maneiras” com várias escolhas em etapas (pão, recheio, molho): multiplique as opções de cada etapa",
+        "“combinar”, “montar”, “formar” com categorias distintas: princípio multiplicativo",
+        "“sem repetir”: cada etapa tem uma opção a menos",
+        "“ou” entre casos que não acontecem juntos: some; “e” em sequência: multiplique"
+      ],
+      "formula": "total = n_{1} × n_{2} × n_{3} × ...",
+      "armadilhas": [
+        "Somar as opções de etapas diferentes em vez de multiplicar.",
+        "Esquecer que, sem repetição, o número de opções diminui a cada etapa."
+      ]
+    },
+    "ler": {
+      "passos": [
+        "Circule o que se quer contar e se há restrição, como não repetir.",
+        "Liste as etapas da escolha em ordem.",
+        "Anote quantas opções há em cada etapa.",
+        "Risque o que não entra, como preço.",
+        "Multiplique as opções das etapas e confira se o total é razoável."
+      ],
+      "exemplo": {
+        "enunciado": "Uma lanchonete oferece 3 tipos de pão, 4 recheios e 2 molhos. O combo custa R$ 15,00. De quantas formas diferentes um cliente pode montar um sanduíche com um pão, um recheio e um molho?",
+        "anotacoes": [
+          {
+            "trecho": "3 tipos de pão",
+            "papel": "dado",
+            "nota": "primeira etapa, 3 opções"
+          },
+          {
+            "trecho": "4 recheios",
+            "papel": "dado",
+            "nota": "segunda etapa, 4 opções"
+          },
+          {
+            "trecho": "2 molhos",
+            "papel": "dado",
+            "nota": "terceira etapa, 2 opções"
+          },
+          {
+            "trecho": "O combo custa R$ 15,00",
+            "papel": "distracao",
+            "nota": "o preço não entra na contagem"
+          },
+          {
+            "trecho": "De quantas formas",
+            "papel": "pede",
+            "nota": "3 × 4 × 2 = 24"
+          }
+        ]
+      }
+    },
+    "formulas": [
+      {
+        "nome": "Princípio multiplicativo",
+        "f": "total = n_{1} · n_{2} · n_{3}",
+        "uso": "Quando a escolha tem várias etapas seguidas (“e”): camisa e calça, dezena e unidade."
+      },
+      {
+        "nome": "Sem repetição",
+        "f": "n · (n − 1) · (n − 2)",
+        "uso": "Quando um elemento escolhido não pode voltar a ser usado."
+      },
+      {
+        "nome": "Fatorial",
+        "f": "n! = n · (n − 1) · ... · 2 · 1",
+        "uso": "Quando todos os n elementos distintos entram em fila ou ordem."
+      }
+    ],
+    "exemplos": [
+      {
+        "enunciado": "Uma loja tem 3 camisas e 4 calças. De quantas maneiras é possível se vestir com uma camisa e uma calça?",
+        "formula": "3 × 4 = 12",
+        "passos": ["Etapa 1: 3 camisas. Etapa 2: 4 calças.", "Total = 3 × 4 = 12."]
+      },
+      {
+        "enunciado": "Quantos números de 2 algarismos distintos podem ser formados com 1, 2, 3 e 4?",
+        "formula": "4 × 3 = 12",
+        "passos": ["Dezena: 4 opções.", "Unidade: sobram 3 opções.", "Total = 4 × 3 = 12."]
+      }
+    ],
+    "truque": "Desenhe uma casinha para cada escolha e escreva quantas opções cada uma tem. Se as escolhas se combinam (e), multiplique; se são alternativas (ou), some.",
+    "erroComum": "Somar as opções das etapas em vez de multiplicar, ou esquecer que, sem repetição, as opções diminuem.",
+    "exercicios": [
+      {
+        "enunciado": "Uma pessoa tem 3 camisas e 4 calças. De quantas maneiras diferentes ela pode se vestir usando uma camisa e uma calça?",
+        "passos": ["Duas etapas: camisa (3) e calça (4).", "3 × 4 = 12."],
+        "resposta": "12 maneiras",
+        "conta": "3*4",
+        "valor": 12
+      },
+      {
+        "enunciado": "Uma senha tem 4 dígitos, cada um de 0 a 9, e os dígitos podem se repetir. Quantas senhas são possíveis?",
+        "passos": ["Cada dígito tem 10 opções.", "10 × 10 × 10 × 10 = 10 000."],
+        "resposta": "10.000 senhas",
+        "conta": "10*10*10*10",
+        "valor": 10000
+      },
+      {
+        "enunciado": "Sete corredores disputam uma prova. De quantas formas podem ser distribuídos o 1º, o 2º e o 3º lugares?",
+        "passos": ["1º lugar: 7 opções; 2º: 6; 3º: 5.", "7 × 6 × 5 = 210."],
+        "resposta": "210 formas",
+        "conta": "7*6*5",
+        "valor": 210
+      },
+      {
+        "enunciado": "Um código tem 2 letras (entre 26) seguidas de 3 algarismos (de 0 a 9), todos podendo se repetir. Quantos códigos existem?",
+        "passos": ["Letras: 26 × 26 = 676.", "Algarismos: 10 × 10 × 10 = 1 000.", "Total = 676 × 1 000 = 676 000."],
+        "resposta": "676.000 códigos",
+        "conta": "26*26*10*10*10",
+        "valor": 676000
+      },
+      {
+        "enunciado": "Quantos números de 3 algarismos existem, sem restrição de repetição? (O primeiro algarismo não pode ser zero.)",
+        "passos": ["Centena: 9 opções (1 a 9).", "Dezena: 10. Unidade: 10.", "9 × 10 × 10 = 900."],
+        "resposta": "900 números",
+        "conta": "9*10*10",
+        "valor": 900
+      }
+    ],
+    "cartoes": [
+      {"p": "Como funciona o princípio multiplicativo?", "r": "Se há m maneiras para uma etapa e n para outra, o total é m × n. Multiplique as opções de cada etapa."},
+      {"p": "Quando somar e quando multiplicar as possibilidades?", "r": "Multiplique quando as escolhas acontecem juntas (e); some quando são alternativas excludentes (ou)."},
+      {"p": "O que é n!?", "r": "n! = n × (n − 1) × ... × 1. Por exemplo, 4! = 24."},
+      {"p": "Num número, o que cuidar com o primeiro algarismo?", "r": "Ele não pode ser zero: dá 9 opções, não 10."}
+    ],
+    "gerador": {
+      "vars": {},
+      "questoes": [
+        {
+          "vars": {
+            "a": {
+              "min": 2,
+              "max": 6
+            },
+            "b": {
+              "min": 2,
+              "max": 6
+            }
+          },
+          "enunciado": "Marcos tem {a} camisas e {b} calças diferentes. De quantas maneiras ele pode se vestir usando uma camisa e uma calça?",
+          "conta": "a*b",
+          "unidade": "maneiras",
+          "casas": 0,
+          "passos": [
+            "Cada camisa pode ser combinada com qualquer uma das calças.",
+            "Total = {a} × {b} = {valor} maneiras."
+          ]
+        },
+        {
+          "vars": {
+            "a": {
+              "min": 2,
+              "max": 5
+            },
+            "b": {
+              "min": 3,
+              "max": 6
+            },
+            "c": {
+              "min": 2,
+              "max": 4
+            }
+          },
+          "enunciado": "Uma lanchonete oferece {a} tipos de pão, {b} tipos de recheio e {c} tipos de suco. Quantos lanches diferentes, com um pão, um recheio e um suco, podem ser montados?",
+          "conta": "a*b*c",
+          "unidade": "lanches",
+          "casas": 0,
+          "passos": [
+            "São três escolhas independentes: pão, recheio e suco.",
+            "Multiplique as possibilidades de cada etapa: {a} × {b} × {c} = {valor} lanches."
+          ]
+        },
+        {
+          "vars": {
+            "n": {
+              "min": 5,
+              "max": 12
+            }
+          },
+          "enunciado": "Em uma corrida com {n} atletas, de quantas formas diferentes podem ser ocupados o 1º, o 2º e o 3º lugares do pódio?",
+          "conta": "n*(n-1)*(n-2)",
+          "unidade": "formas",
+          "casas": 0,
+          "passos": [
+            "Ninguém pode ocupar duas posições: a cada escolha, sobra um atleta a menos.",
+            "1º lugar: {n} opções. 2º lugar: {n} − 1 opções. 3º lugar: {n} − 2 opções.",
+            "Total = {n} × ({n} − 1) × ({n} − 2) = {valor} formas."
+          ]
+        },
+        {
+          "vars": {
+            "n": {
+              "min": 5,
+              "max": 9
+            }
+          },
+          "enunciado": "Quantos números de 3 algarismos distintos podem ser formados com os algarismos de 0 a {n}?",
+          "conta": "n*n*(n-1)",
+          "unidade": "números",
+          "casas": 0,
+          "passos": [
+            "O algarismo das centenas não pode ser 0: restam {n} opções (de 1 a {n}).",
+            "Dezenas: sobram {n} algarismos, pois o 0 já pode entrar. Unidades: {n} − 1 opções.",
+            "Total = {n} × {n} × ({n} − 1) = {valor} números."
+          ]
+        },
+        {
+          "vars": {
+            "n": {
+              "min": 5,
+              "max": 9
+            }
+          },
+          "enunciado": "Uma senha tem 2 letras distintas, escolhidas entre {n} letras disponíveis, seguidas de 3 algarismos quaisquer (de 0 a 9, podendo repetir). Quantas senhas diferentes existem?",
+          "conta": "n*(n-1)*10*10*10",
+          "unidade": "senhas",
+          "casas": 0,
+          "passos": [
+            "Letras: sem repetição, então {n} opções para a 1ª e {n} − 1 para a 2ª.",
+            "Algarismos: podem repetir, então são 10 opções para cada um dos 3.",
+            "Total = {n} × ({n} − 1) × 10 × 10 × 10 = {valor} senhas."
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "combinacao-arranjo",
+    "nivel": "intermediario",
+    "titulo": "Combinação e arranjo simples",
+    "competencia": "C1",
+    "habilidades": ["H2", "H3", "H4"],
+    "antes": "principio-multiplicativo",
+    "conceito": [
+      "Permutação: as n! ordens possíveis de n elementos distintos. Arranjo: escolher p dos n elementos em que a ordem importa, A(n, p) = {n!/(n − p)!}.",
+      "Combinação: escolher p dos n elementos em que a ordem não importa, C(n, p) = {n!/p! × (n − p)!}. Ela é o arranjo dividido pelas p! ordens repetidas.",
+      "Pergunta-chave: trocar a ordem muda o resultado? Pódio, senha e fila mudam (arranjo, permutação). Comissão, time e grupo não mudam (combinação)."
+    ],
+    "quando": {
+      "sinais": [
+        "“escolher uma comissão” ou “formar uma dupla”: a ordem não importa, combinação",
+        "“eleger presidente e vice” ou “pódio”: a ordem importa, arranjo",
+        "“de quantas maneiras podem se sentar em fila”: permutação, n!",
+        "“grupo de n pessoas, escolher p”: C(n, p)"
+      ],
+      "formula": "C(n, p) = {n!/p! × (n − p)!}; A(n, p) = {n!/(n − p)!}",
+      "armadilhas": [
+        "Usar arranjo quando a ordem não faz diferença (dupla A-B é igual a B-A).",
+        "Esquecer de dividir por p! e contar a mesma escolha várias vezes."
+      ]
+    },
+    "ler": {
+      "passos": [
+        "Circule o que se quer contar.",
+        "Pergunte: se trocar a ordem dos escolhidos, muda a situação?",
+        "Se não muda, é combinação; se muda, é arranjo.",
+        "Risque o que não entra, como dia da reunião.",
+        "Calcule com n e p e confira se o resultado é razoável."
+      ],
+      "exemplo": {
+        "enunciado": "Em um grupo de 6 amigos, 2 serão sorteados para formar uma dupla de limpeza. O grupo se reúne toda sexta-feira. Quantas duplas diferentes podem ser formadas?",
+        "anotacoes": [
+          {
+            "trecho": "6 amigos",
+            "papel": "dado",
+            "nota": "n = 6"
+          },
+          {
+            "trecho": "2 serão sorteados",
+            "papel": "dado",
+            "nota": "p = 2"
+          },
+          {
+            "trecho": "dupla de limpeza",
+            "papel": "condicao",
+            "nota": "a ordem não importa, então é combinação"
+          },
+          {
+            "trecho": "toda sexta-feira",
+            "papel": "distracao",
+            "nota": "não entra na conta"
+          },
+          {
+            "trecho": "Quantas duplas diferentes",
+            "papel": "pede",
+            "nota": "C(6, 2) = {6 × 5/2} = 15"
+          }
+        ]
+      }
+    },
+    "formulas": [
+      {
+        "nome": "Permutação",
+        "f": "P = n!",
+        "uso": "Quando todos os elementos entram e a ordem importa (fila)."
+      },
+      {
+        "nome": "Arranjo",
+        "f": "A(n, p) = {n!/(n − p)!}",
+        "uso": "Quando se escolhe p de n e a ordem importa: pódio, senha."
+      },
+      {
+        "nome": "Combinação",
+        "f": "C(n, p) = {n!/p! · (n − p)!}",
+        "uso": "Quando se escolhe p de n e a ordem não importa: comissão, time, grupo."
+      }
+    ],
+    "exemplos": [
+      {
+        "enunciado": "De quantas maneiras 3 amigos podem ficar em fila?",
+        "formula": "3! = 3 × 2 × 1 = 6",
+        "passos": ["A ordem importa e entram todos.", "3! = 6."]
+      },
+      {
+        "enunciado": "De 5 alunos, escolhem-se 2 para uma comissão. Quantas comissões são possíveis?",
+        "formula": "C(5, 2) = {5 × 4/2} = 10",
+        "passos": ["Comissão: a ordem não importa, é combinação.", "C(5, 2) = {5!/2! × 3!} = {5 × 4/2} = 10."]
+      }
+    ],
+    "truque": "Teste trocar duas pessoas de lugar. Se muda o resultado, é arranjo ou permutação; se não muda, é combinação e você divide pelas ordens repetidas.",
+    "erroComum": "Usar arranjo para comissão (contando a mesma comissão várias vezes) ou combinação para pódio.",
+    "exercicios": [
+      {
+        "enunciado": "Quantos anagramas (ordens das letras) tem a palavra ROMA, que tem 4 letras distintas?",
+        "passos": ["Permutação de 4 elementos distintos.", "4! = 4 × 3 × 2 × 1 = 24."],
+        "resposta": "24 anagramas",
+        "conta": "factorial(4)",
+        "valor": 24
+      },
+      {
+        "enunciado": "De 8 alunos, 3 serão escolhidos para formar uma comissão. De quantas maneiras isso pode ser feito?",
+        "passos": ["A ordem não importa: C(8, 3).", "C(8, 3) = {8 × 7 × 6/3 × 2 × 1} = {336/6} = 56."],
+        "resposta": "56 maneiras",
+        "conta": "comb(8,3)",
+        "valor": 56
+      },
+      {
+        "enunciado": "Em uma gincana, 6 equipes disputam e as 3 primeiras ganham medalhas de ouro, prata e bronze. De quantas formas as medalhas podem ser distribuídas?",
+        "passos": ["A ordem importa: A(6, 3).", "A(6, 3) = 6 × 5 × 4 = 120."],
+        "resposta": "120 formas",
+        "conta": "6*5*4",
+        "valor": 120
+      },
+      {
+        "enunciado": "De quantas maneiras 5 pessoas distintas podem formar uma fila?",
+        "passos": ["Permutação de 5 elementos.", "5! = 5 × 4 × 3 × 2 × 1 = 120."],
+        "resposta": "120 maneiras",
+        "conta": "factorial(5)",
+        "valor": 120
+      },
+      {
+        "enunciado": "De um grupo de 5 homens e 4 mulheres, formam-se comissões com 2 homens e 2 mulheres. Quantas comissões são possíveis?",
+        "passos": ["Homens: C(5, 2) = 10.", "Mulheres: C(4, 2) = 6.", "As escolhas se combinam: 10 × 6 = 60."],
+        "resposta": "60 comissões",
+        "conta": "comb(5,2)*comb(4,2)",
+        "valor": 60
+      }
+    ],
+    "cartoes": [
+      {"p": "Qual é a diferença entre arranjo e combinação?", "r": "No arranjo a ordem importa (pódio, senha); na combinação não importa (comissão, time)."},
+      {"p": "Qual é a fórmula da combinação C(n, p)?", "r": "C(n, p) = {n!/p! × (n − p)!}."},
+      {"p": "Quantas ordens têm n elementos distintos?", "r": "n! (permutação)."},
+      {"p": "Como saber se é combinação?", "r": "Troque dois elementos de lugar: se o resultado é o mesmo, é combinação."}
+    ],
+    "gerador": {
+      "vars": {},
+      "questoes": [
+        {
+          "vars": {
+            "n": {
+              "min": 4,
+              "max": 12
+            }
+          },
+          "enunciado": "Em um grupo de {n} amigos, cada dois trocam um aperto de mão. Quantos apertos de mão acontecem?",
+          "conta": "comb(n,2)",
+          "unidade": "apertos",
+          "casas": 0,
+          "passos": [
+            "Cada aperto envolve 2 pessoas e a ordem não importa: é uma combinação.",
+            "C({n}, 2) = {n} × ({n} − 1) ÷ 2 = {valor} apertos."
+          ]
+        },
+        {
+          "vars": {
+            "n": {
+              "min": 5,
+              "max": 15
+            }
+          },
+          "enunciado": "Em uma eleição com {n} candidatos, serão escolhidos um presidente e um vice-presidente. De quantas maneiras isso pode acontecer?",
+          "conta": "n*(n-1)",
+          "unidade": "maneiras",
+          "casas": 0,
+          "passos": [
+            "Os cargos são diferentes, então a ordem importa: é um arranjo.",
+            "Presidente: {n} opções. Vice: {n} − 1 opções.",
+            "Total = {n} × ({n} − 1) = {valor} maneiras."
+          ]
+        },
+        {
+          "vars": {
+            "n": {
+              "min": 6,
+              "max": 14
+            }
+          },
+          "enunciado": "De quantas maneiras uma comissão de 3 alunos pode ser escolhida entre {n} alunos de uma turma?",
+          "conta": "comb(n,3)",
+          "unidade": "comissões",
+          "casas": 0,
+          "passos": [
+            "Em uma comissão a ordem não importa: é uma combinação de {n} escolhendo 3.",
+            "C({n}, 3) = {n} × ({n} − 1) × ({n} − 2) ÷ 6 = {valor} comissões."
+          ]
+        },
+        {
+          "vars": {
+            "h": {
+              "min": 4,
+              "max": 8
+            },
+            "m": {
+              "min": 3,
+              "max": 7
+            }
+          },
+          "deriv": {
+            "ch": "comb(h,2)",
+            "cm": "comb(m,2)"
+          },
+          "enunciado": "Uma equipe tem {h} homens e {m} mulheres. Quantas comissões de 4 pessoas, com exatamente 2 homens e 2 mulheres, podem ser formadas?",
+          "conta": "comb(h,2)*comb(m,2)",
+          "unidade": "comissões",
+          "casas": 0,
+          "passos": [
+            "Escolhem-se os homens e as mulheres separadamente, e os resultados se multiplicam.",
+            "Homens: C({h}, 2) = {ch}. Mulheres: C({m}, 2) = {cm}.",
+            "Total = {ch} × {cm} = {valor} comissões."
+          ]
+        },
+        {
+          "vars": {
+            "h": {
+              "min": 4,
+              "max": 8
+            },
+            "m": {
+              "min": 3,
+              "max": 7
+            }
+          },
+          "deriv": {
+            "t": "h+m",
+            "tt": "comb(h+m,3)",
+            "th": "comb(h,3)"
+          },
+          "enunciado": "Uma equipe tem {h} homens e {m} mulheres. Quantas comissões de 3 pessoas têm pelo menos 1 mulher?",
+          "conta": "comb(h+m,3)-comb(h,3)",
+          "unidade": "comissões",
+          "casas": 0,
+          "passos": [
+            "É mais fácil contar o contrário: do total de comissões, tirar as que não têm nenhuma mulher.",
+            "Total de comissões: C({t}, 3) = {tt}. Só homens: C({h}, 3) = {th}.",
+            "Com pelo menos 1 mulher: {tt} − {th} = {valor} comissões."
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "probabilidade-basica",
+    "nivel": "intermediario",
+    "titulo": "Probabilidade básica",
+    "competencia": "C7",
+    "habilidades": ["H28", "H29"],
+    "antes": "combinacao-arranjo",
+    "conceito": [
+      "Probabilidade de um evento = {casos favoráveis/casos possíveis}. Ela fica entre 0 (impossível) e 1 (certo), e pode ser escrita como fração, decimal ou porcentagem.",
+      "Evento complementar: P(não ocorrer) = 1 − P(ocorrer). Eventos independentes, um depois do outro (e): multiplique as probabilidades. Eventos que não podem ocorrer juntos (ou): some.",
+      "Para contar casos favoráveis e possíveis em sorteios sem reposição, use combinação."
+    ],
+    "quando": {
+      "sinais": [
+        "“ao acaso” ou “escolhida aleatoriamente”: todos os casos têm a mesma chance, P = {favoráveis/possíveis}",
+        "“qual a chance de” ou “qual a probabilidade de”: divida favoráveis por possíveis",
+        "“pelo menos um”: use o complementar, 1 menos a chance de nenhum",
+        "“e depois” (eventos em sequência e independentes): multiplique as probabilidades"
+      ],
+      "formula": "P = {casos favoráveis/casos possíveis}; P(não A) = 1 − P(A)",
+      "armadilhas": [
+        "Dividir os favoráveis pelos desfavoráveis em vez de pelo total.",
+        "Somar probabilidades de eventos em sequência, em vez de multiplicar."
+      ]
+    },
+    "ler": {
+      "passos": [
+        "Circule o evento cuja probabilidade se pede.",
+        "Conte os casos possíveis (o total).",
+        "Conte os casos favoráveis ao evento.",
+        "Risque o que não entra, como material da urna.",
+        "Divida favoráveis por possíveis, simplifique e confira que está entre 0 e 1."
+      ],
+      "exemplo": {
+        "enunciado": "Uma urna tem 5 bolas vermelhas, 3 azuis e 2 verdes, todas do mesmo tamanho. A urna é de madeira. Retirando uma bola ao acaso, qual é a probabilidade de ela ser azul?",
+        "anotacoes": [
+          {
+            "trecho": "5 bolas vermelhas, 3 azuis e 2 verdes",
+            "papel": "dado",
+            "nota": "total de 10 bolas possíveis; 3 favoráveis"
+          },
+          {
+            "trecho": "ao acaso",
+            "papel": "condicao",
+            "nota": "todas têm a mesma chance"
+          },
+          {
+            "trecho": "de madeira",
+            "papel": "distracao",
+            "nota": "não entra na conta"
+          },
+          {
+            "trecho": "qual é a probabilidade",
+            "papel": "pede",
+            "nota": "P = {3/10} = 0,3, ou seja, 30%"
+          }
+        ]
+      }
+    },
+    "formulas": [
+      {
+        "nome": "Probabilidade",
+        "f": "P = {casos favoráveis/casos possíveis}",
+        "uso": "Quando o enunciado pergunta “qual a chance de” sair certo resultado."
+      },
+      {
+        "nome": "Evento complementar",
+        "f": "P(não A) = 1 − P(A)",
+        "uso": "Quando é mais fácil calcular “não ocorrer” ou há o termo “pelo menos”."
+      },
+      {
+        "nome": "E e OU",
+        "f": "e: P(A) · P(B); ou: P(A) + P(B)",
+        "uso": "Quando há eventos independentes em sequência (e) ou que não ocorrem juntos (ou)."
+      }
+    ],
+    "exemplos": [
+      {
+        "enunciado": "Ao lançar um dado comum, qual é a probabilidade de sair um número par?",
+        "formula": "P = {3/6} = 0,5",
+        "passos": ["Favoráveis: 2, 4 e 6, ou seja, 3 casos.", "Possíveis: 6. P = {3/6} = 0,5 = 50%."]
+      },
+      {
+        "enunciado": "A chance de chuva é de 30%. Qual é a chance de não chover?",
+        "formula": "100% − 30% = 70%",
+        "passos": ["Complementar: 1 − 0,3 = 0,7.", "Chance de não chover: 70%."]
+      }
+    ],
+    "truque": "Escreva favoráveis sobre possíveis antes de qualquer conta. Se a probabilidade der maior que 1 (ou 100%), há erro de contagem.",
+    "erroComum": "Dividir favoráveis por não favoráveis em vez de por todos os casos possíveis.",
+    "exercicios": [
+      {
+        "enunciado": "Ao lançar um dado comum de 6 faces, qual é a probabilidade de sair um número par? Dê em decimal.",
+        "passos": ["Favoráveis: 2, 4 e 6 (3 casos).", "P = {3/6} = 0,5."],
+        "resposta": "0,5",
+        "conta": "3/6",
+        "valor": 0.5
+      },
+      {
+        "enunciado": "Uma urna tem 4 bolas vermelhas e 6 azuis. Sorteando uma bola, qual é a probabilidade, em porcentagem, de ela ser vermelha?",
+        "passos": ["Favoráveis: 4. Possíveis: 4 + 6 = 10.", "P = {4/10} = 0,4 = 40%."],
+        "resposta": "40%",
+        "conta": "4/10*100",
+        "valor": 40
+      },
+      {
+        "enunciado": "Uma moeda honesta é lançada duas vezes. Qual é a probabilidade, em porcentagem, de saírem duas caras?",
+        "passos": ["Eventos independentes: multiplique.", "P = 0,5 × 0,5 = 0,25 = 25%."],
+        "resposta": "25%",
+        "conta": "0.5*0.5*100",
+        "valor": 25
+      },
+      {
+        "enunciado": "A previsão indica 30% de chance de chuva. Qual é a probabilidade, em porcentagem, de não chover?",
+        "passos": ["Evento complementar.", "100 − 30 = 70."],
+        "resposta": "70%",
+        "conta": "100-30",
+        "valor": 70
+      },
+      {
+        "enunciado": "De 5 homens e 4 mulheres, sorteiam-se 2 pessoas ao acaso. Qual é a probabilidade, em porcentagem, de as duas serem mulheres? Arredonde para uma casa decimal.",
+        "passos": ["Casos possíveis: C(9, 2) = 36.", "Casos favoráveis: C(4, 2) = 6.", "P = {6/36} ≈ 0,167, ou seja, cerca de 16,7%."],
+        "resposta": "cerca de 16,7%",
+        "conta": "comb(4,2)/comb(9,2)*100",
+        "valor": 16.7
+      }
+    ],
+    "cartoes": [
+      {"p": "Qual é a fórmula da probabilidade?", "r": "P = {casos favoráveis/casos possíveis}, sempre entre 0 e 1."},
+      {"p": "Como calcular a probabilidade do evento complementar?", "r": "P(não ocorrer) = 1 − P(ocorrer)."},
+      {"p": "Dois eventos independentes acontecendo em sequência: como combinar?", "r": "Multiplique as probabilidades."},
+      {"p": "Como contar casos num sorteio de p entre n elementos?", "r": "Combinação C(n, p), pois a ordem do sorteio não importa."}
+    ],
+    "gerador": {
+      "vars": {},
+      "questoes": [
+        {
+          "vars": {
+            "a": {
+              "min": 1,
+              "max": 19
+            }
+          },
+          "enunciado": "Uma urna tem 20 bolas, das quais {a} são azuis. Sorteando uma bola ao acaso, qual é a probabilidade, em porcentagem, de ela ser azul?",
+          "conta": "a/20*100",
+          "unidade": "%",
+          "casas": 0,
+          "passos": [
+            "Probabilidade = casos favoráveis ÷ casos possíveis = {a} ÷ 20.",
+            "Em porcentagem: {a} ÷ 20 × 100 = {valor}%."
+          ]
+        },
+        {
+          "vars": {
+            "k": {
+              "min": 1,
+              "max": 7
+            }
+          },
+          "enunciado": "Uma roleta tem 8 setores iguais, dos quais {k} são verdes. Girando a roleta, qual é a probabilidade, em porcentagem, de parar em um setor verde? Use 1 casa decimal.",
+          "conta": "k/8*100",
+          "unidade": "%",
+          "casas": 1,
+          "passos": [
+            "Os 8 setores têm a mesma chance, então a probabilidade é {k} ÷ 8.",
+            "Em porcentagem: {k} ÷ 8 × 100 = {valor}%."
+          ]
+        },
+        {
+          "vars": {
+            "a": {
+              "min": 2,
+              "max": 8
+            },
+            "b": {
+              "min": 2,
+              "max": 8
+            }
+          },
+          "deriv": {
+            "c": "20-a-b",
+            "nv": "a+b"
+          },
+          "enunciado": "Uma urna tem 20 bolas: {a} azuis, {b} vermelhas e {c} verdes. Sorteando uma bola, qual é a probabilidade, em porcentagem, de ela não ser verde?",
+          "conta": "(a+b)/20*100",
+          "unidade": "%",
+          "casas": 0,
+          "passos": [
+            "Bolas que não são verdes: {a} + {b} = {nv}.",
+            "Probabilidade = {nv} ÷ 20. Em porcentagem: {nv} ÷ 20 × 100 = {valor}%."
+          ]
+        },
+        {
+          "vars": {
+            "a": {
+              "min": 10,
+              "max": 25
+            },
+            "b": {
+              "min": 10,
+              "max": 25
+            },
+            "c": {
+              "min": 2,
+              "max": 9
+            }
+          },
+          "deriv": {
+            "u": "a+b-c"
+          },
+          "enunciado": "Em uma turma de 50 alunos, {a} gostam de futebol, {b} gostam de vôlei e {c} gostam dos dois esportes. Sorteando um aluno, qual é a probabilidade, em porcentagem, de ele gostar de pelo menos um dos dois?",
+          "conta": "(a+b-c)*2",
+          "unidade": "%",
+          "casas": 0,
+          "passos": [
+            "Somar {a} + {b} conta duas vezes quem gosta dos dois ({c} alunos).",
+            "Alunos que gostam de pelo menos um: {a} + {b} − {c} = {u}.",
+            "Probabilidade = {u} ÷ 50 × 100 = {valor}%."
+          ]
+        },
+        {
+          "vars": {
+            "n": {
+              "min": 2,
+              "max": 6
+            },
+            "k": {
+              "min": 1,
+              "max": 5
+            }
+          },
+          "deriv": {
+            "tot": "2**n",
+            "f": "comb(n,k)"
+          },
+          "restricoes": [
+            [
+              "positivo",
+              "n-k"
+            ],
+            [
+              "inteiro",
+              "comb(n,k)/2**n*10000"
+            ]
+          ],
+          "enunciado": "Uma moeda honesta é lançada {n} vezes. Qual é a probabilidade, em porcentagem, de saírem cara em exatamente {k} dos lançamentos? Use 2 casas decimais, se necessário.",
+          "conta": "comb(n,k)/2**n*100",
+          "unidade": "%",
+          "casas": 2,
+          "passos": [
+            "Há 2^{n} resultados possíveis, todos com a mesma chance: {tot} resultados.",
+            "Resultados com cara em exatamente {k} dos lançamentos: C({n}, {k}) = {f}.",
+            "Probabilidade = {f} ÷ {tot} × 100 = {valor}%."
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "permutacao-anagramas",
+    "nivel": "intermediario",
+    "titulo": "Permutação e anagramas",
+    "competencia": "C1",
+    "habilidades": [
+      "H2",
+      "H3",
+      "H4"
+    ],
+    "antes": "combinacao-arranjo",
+    "quando": {
+      "sinais": [
+        "“de quantas maneiras podem ser organizados” usando todos os elementos: permutação, n!",
+        "“anagramas” de uma palavra com letras repetidas: divida por fatorial de cada repetição",
+        "“sentados em volta de uma mesa”: permutação circular, (n − 1)!",
+        "“sempre juntos” ou “um na ponta”: trate o grupo como um bloco ou fixe o elemento"
+      ],
+      "formula": "P_{n} = n!; com repetição: {n!/(a! · b!)}",
+      "armadilhas": [
+        "Esquecer de dividir pelas letras repetidas nos anagramas.",
+        "Esquecer de multiplicar pelas trocas internas do bloco quando duas pessoas ficam juntas."
+      ]
+    },
+    "ler": {
+      "passos": [
+        "Circule o que se quer contar: organizar todos os elementos.",
+        "Anote o total n e se há elementos repetidos ou restrições.",
+        "Escolha: n!, com repetição, circular ou bloco.",
+        "Risque dados que não alteram a contagem.",
+        "Calcule com fatorial e confira se o resultado é inteiro e plausível."
+      ],
+      "exemplo": {
+        "enunciado": "Cinco amigos de uma turma de 2020 vão sentar-se em fila para uma foto. Quantas são as ordens possíveis?",
+        "anotacoes": [
+          {
+            "trecho": "de uma turma de 2020",
+            "papel": "distracao",
+            "nota": "o ano não entra na contagem"
+          },
+          {
+            "trecho": "Cinco amigos",
+            "papel": "dado",
+            "nota": "n = 5 elementos distintos"
+          },
+          {
+            "trecho": "em fila",
+            "papel": "condicao",
+            "nota": "a ordem importa e todos entram"
+          },
+          {
+            "trecho": "Quantas são as ordens possíveis",
+            "papel": "pede",
+            "nota": "5! = 120"
+          }
+        ]
+      }
+    },
+    "conceito": [
+      "Permutação é a troca de ordem de todos os elementos. Para n elementos distintos há n! = n · (n − 1) · ... · 2 · 1 ordens. Cinco pessoas em fila podem se organizar de 5! = 120 modos.",
+      "Quando há elementos repetidos, como as letras de ARARA, divida n! pelo fatorial de cada repetição: {5!/(3! · 2!)} = 10 anagramas. Em uma mesa redonda, a rotação não conta como nova ordem, e o total é (n − 1)!.",
+      "Para restrições, junte quem deve ficar junto em um bloco, conte as ordens dos blocos e multiplique pelas trocas dentro do bloco. Para uma posição fixa, preencha-a primeiro e permute o resto."
+    ],
+    "exemplos": [
+      {
+        "enunciado": "Quantos anagramas tem a palavra AMOR?",
+        "formula": "P_{4} = 4!",
+        "passos": [
+          "Letras distintas: n = 4.",
+          "4! = 4 · 3 · 2 · 1 = 24."
+        ]
+      },
+      {
+        "enunciado": "Quantos anagramas tem a palavra OVO?",
+        "formula": "{n!/a!}",
+        "passos": [
+          "n = 3, com a letra O repetida 2 vezes.",
+          "{3!/2!} = 3."
+        ]
+      }
+    ],
+    "formulas": [
+      {
+        "nome": "Permutação simples",
+        "f": "P_{n} = n!",
+        "uso": "Quando todos os elementos são distintos e todos entram."
+      },
+      {
+        "nome": "Com repetição",
+        "f": "{n!/(a! · b!)}",
+        "uso": "Quando algumas letras ou itens se repetem, como em anagramas."
+      },
+      {
+        "nome": "Circular",
+        "f": "(n − 1)!",
+        "uso": "Quando a organização é em volta de uma mesa ou roda."
+      },
+      {
+        "nome": "Bloco",
+        "f": "(n − k + 1)! · k!",
+        "uso": "Quando k elementos devem ficar sempre juntos."
+      }
+    ],
+    "truque": "Para “sempre juntos”, cole os dois em um bloco, conte as ordens dos blocos e multiplique pelas trocas dentro dele.",
+    "erroComum": "Contar n! em anagramas com letras repetidas. Em ARARA, 5! = 120 conta cada ordem várias vezes; divida por 3! e 2!.",
+    "exercicios": [
+      {
+        "enunciado": "De quantas maneiras 5 pessoas podem se organizar em fila?",
+        "passos": [
+          "Permutação de 5 elementos distintos.",
+          "5! = 5 · 4 · 3 · 2 · 1."
+        ],
+        "resposta": "120 maneiras",
+        "conta": "factorial(5)",
+        "valor": 120
+      },
+      {
+        "enunciado": "Quantos anagramas tem a palavra ARARA?",
+        "passos": [
+          "n = 5, com A repetida 3 vezes e R repetida 2 vezes.",
+          "{5!/(3! · 2!)}."
+        ],
+        "resposta": "10 anagramas",
+        "conta": "factorial(5)/(factorial(3)*factorial(2))",
+        "valor": 10
+      },
+      {
+        "enunciado": "Cinco amigos formam uma fila, e Ana e Bia devem ficar sempre juntas. De quantas maneiras isso pode ocorrer?",
+        "passos": [
+          "Junte as duas em um bloco: 4 elementos, 4! ordens.",
+          "Dentro do bloco, Ana e Bia trocam de lugar de 2 modos: 4! · 2."
+        ],
+        "resposta": "48 maneiras",
+        "conta": "factorial(4)*2",
+        "valor": 48
+      },
+      {
+        "enunciado": "De quantos modos 6 pessoas podem sentar em volta de uma mesa redonda?",
+        "passos": [
+          "Permutação circular: (n − 1)!.",
+          "(6 − 1)! = 5!."
+        ],
+        "resposta": "120 modos",
+        "conta": "factorial(5)",
+        "valor": 120
+      },
+      {
+        "enunciado": "Quantos anagramas da palavra BRASIL começam com vogal?",
+        "passos": [
+          "Há 2 vogais (A e I) para a primeira letra.",
+          "As outras 5 letras se organizam de 5! modos: 2 · 5!."
+        ],
+        "resposta": "240 anagramas",
+        "conta": "2*factorial(5)",
+        "valor": 240
+      }
+    ],
+    "cartoes": [
+      {
+        "p": "Quantas ordens têm n elementos distintos?",
+        "r": "n! ordens."
+      },
+      {
+        "p": "Como contar anagramas com letras repetidas?",
+        "r": "n! dividido pelo fatorial de cada repetição."
+      },
+      {
+        "p": "Quantas ordens em uma mesa redonda?",
+        "r": "(n − 1)!."
+      },
+      {
+        "p": "Como tratar dois elementos sempre juntos?",
+        "r": "Como um bloco, e multiplique por 2! pelas trocas internas."
+      },
+      {
+        "p": "Quanto vale 5!?",
+        "r": "120."
+      }
+    ],
+    "gerador": {
+      "vars": {},
+      "questoes": [
+        {
+          "vars": {
+            "n": {
+              "min": 3,
+              "max": 10
+            }
+          },
+          "enunciado": "Quantos anagramas tem uma palavra formada por {n} letras todas diferentes?",
+          "conta": "factorial(n)",
+          "unidade": "anagramas",
+          "casas": 0,
+          "passos": [
+            "Cada anagrama é uma ordem diferente das {n} letras: uma permutação.",
+            "{n}! = {valor} anagramas."
+          ]
+        },
+        {
+          "vars": {
+            "n": {
+              "min": 3,
+              "max": 10
+            }
+          },
+          "enunciado": "Uma palavra tem {n} letras, e uma delas aparece 2 vezes (as demais são diferentes). Quantos anagramas ela tem?",
+          "conta": "factorial(n)/2",
+          "unidade": "anagramas",
+          "casas": 0,
+          "passos": [
+            "Se as letras fossem todas diferentes, seriam {n}! anagramas.",
+            "A letra repetida troca de lugar consigo mesma sem gerar anagrama novo: divide-se por 2!.",
+            "{n}! ÷ 2 = {valor} anagramas."
+          ]
+        },
+        {
+          "vars": {
+            "a": {
+              "min": 2,
+              "max": 3
+            },
+            "b": {
+              "min": 2,
+              "max": 3
+            },
+            "e": {
+              "min": 1,
+              "max": 3
+            }
+          },
+          "deriv": {
+            "n": "a+b+e"
+          },
+          "enunciado": "Uma palavra tem {n} letras: uma letra aparece {a} vezes, outra aparece {b} vezes e as demais são todas diferentes. Quantos anagramas ela tem?",
+          "conta": "factorial(n)/(factorial(a)*factorial(b))",
+          "unidade": "anagramas",
+          "casas": 0,
+          "passos": [
+            "Fórmula com letras repetidas: n! ÷ (a! × b!).",
+            "Aqui: {n}! ÷ ({a}! × {b}!).",
+            "Resultado: {valor} anagramas."
+          ]
+        },
+        {
+          "vars": {
+            "n": {
+              "min": 4,
+              "max": 10
+            }
+          },
+          "deriv": {
+            "m": "n-1",
+            "k": "n-2"
+          },
+          "enunciado": "Quantos anagramas de uma palavra com {n} letras diferentes, entre elas A e B, têm as letras A e B juntas (em qualquer ordem)?",
+          "conta": "2*factorial(n-1)",
+          "unidade": "anagramas",
+          "casas": 0,
+          "passos": [
+            "Trate A e B como um bloco: sobram {m} objetos para permutar, o bloco e as outras {k} letras.",
+            "Ordens possíveis: {m}!.",
+            "Dentro do bloco, A e B podem trocar de lugar: 2 ordens. Total = 2 × {m}! = {valor} anagramas."
+          ]
+        },
+        {
+          "vars": {
+            "n": {
+              "min": 6,
+              "max": 10
+            },
+            "a": {
+              "min": 2,
+              "max": 4
+            }
+          },
+          "deriv": {
+            "m": "n-a+1"
+          },
+          "enunciado": "Uma palavra tem {n} letras: uma letra aparece {a} vezes e as demais são todas diferentes. Quantos anagramas dela têm as {a} letras repetidas juntas?",
+          "conta": "factorial(n-a+1)",
+          "unidade": "anagramas",
+          "casas": 0,
+          "passos": [
+            "Junte as {a} letras repetidas em um bloco: ele conta como um único objeto.",
+            "Objetos a permutar: {n} − {a} + 1 = {m}, todos diferentes.",
+            "{m}! = {valor} anagramas."
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "probabilidade-condicional-independentes",
+    "nivel": "avancado",
+    "titulo": "Probabilidade condicional e eventos independentes",
+    "competencia": "C7",
+    "habilidades": [
+      "H28",
+      "H29"
+    ],
+    "antes": "probabilidade-basica",
+    "quando": {
+      "sinais": [
+        "“dado que” ou “sabendo que” já ocorreu algo: probabilidade condicional, o universo diminui",
+        "“independentes” ou eventos que não influenciam um ao outro: multiplique as probabilidades",
+        "“A ou B”: some as probabilidades e subtraia a parte comum",
+        "“pelo menos um”: calcule o complementar, 1 menos a chance de nenhum"
+      ],
+      "formula": "P(A|B) = {P(A e B)/P(B)}; independentes: P(A e B) = P(A) · P(B)",
+      "armadilhas": [
+        "Somar probabilidades de eventos “e” em vez de multiplicar.",
+        "Usar o total geral como base na condicional, em vez do grupo já conhecido."
+      ]
+    },
+    "ler": {
+      "passos": [
+        "Circule o que se pede: uma probabilidade, e se há condição (“dado que”).",
+        "Anote o universo: na condicional, só o grupo que já aconteceu.",
+        "Decida: “e” independente multiplica, “ou” soma menos a interseção, “pelo menos um” usa o complementar.",
+        "Risque dados que não entram, como datas e nomes.",
+        "Calcule, escreva como decimal ou porcentagem e confira se está entre 0 e 1."
+      ],
+      "exemplo": {
+        "enunciado": "Em uma pesquisa feita em 2023, entre 200 moradores de uma cidade, 80 são homens e, destes, 20 vão ao trabalho de bicicleta. Escolhido um morador ao acaso, sabendo que é homem, qual é a probabilidade de ele ir de bicicleta?",
+        "anotacoes": [
+          {
+            "trecho": "feita em 2023",
+            "papel": "distracao",
+            "nota": "o ano não entra na conta"
+          },
+          {
+            "trecho": "200 moradores",
+            "papel": "distracao",
+            "nota": "o total geral não é a base, pois já se sabe que é homem"
+          },
+          {
+            "trecho": "80 são homens",
+            "papel": "dado",
+            "nota": "novo universo: 80"
+          },
+          {
+            "trecho": "20 vão ao trabalho de bicicleta",
+            "papel": "dado",
+            "nota": "casos favoráveis dentro do grupo"
+          },
+          {
+            "trecho": "sabendo que é homem",
+            "papel": "condicao",
+            "nota": "probabilidade condicional"
+          },
+          {
+            "trecho": "qual é a probabilidade",
+            "papel": "pede",
+            "nota": "{20/80} = 0,25"
+          }
+        ]
+      }
+    },
+    "conceito": [
+      "A probabilidade condicional P(A|B) é a chance de A ocorrer sabendo que B já ocorreu. Como o universo passa a ser só B, P(A|B) = {P(A e B)/P(B)}. Com tabelas, basta contar dentro do grupo B.",
+      "Dois eventos são independentes quando um não altera a chance do outro, como duas jogadas de moeda. Nesse caso, P(A e B) = P(A) · P(B). Em sorteios sem reposição os eventos deixam de ser independentes.",
+      "Para “A ou B”, P(A ou B) = P(A) + P(B) − P(A e B), pois a interseção foi contada duas vezes. Para “pelo menos um”, use o complementar: 1 − P(nenhum)."
+    ],
+    "exemplos": [
+      {
+        "enunciado": "Dois dados distintos são lançados. Qual é a probabilidade de sair 6 no primeiro e 6 no segundo?",
+        "formula": "P(A e B) = P(A) · P(B)",
+        "passos": [
+          "Os lançamentos são independentes.",
+          "{1/6} · {1/6} = {1/36}."
+        ]
+      },
+      {
+        "enunciado": "Se P(B) = 0,5 e P(A e B) = 0,2, qual é P(A|B)?",
+        "formula": "P(A|B) = {P(A e B)/P(B)}",
+        "passos": [
+          "Aplique a definição: {0,2/0,5}.",
+          "P(A|B) = 0,4."
+        ]
+      }
+    ],
+    "formulas": [
+      {
+        "nome": "Condicional",
+        "f": "P(A|B) = {P(A e B)/P(B)}",
+        "uso": "Quando o enunciado diz “dado que” ou “sabendo que”."
+      },
+      {
+        "nome": "Independentes",
+        "f": "P(A e B) = P(A) · P(B)",
+        "uso": "Quando um evento não muda a chance do outro."
+      },
+      {
+        "nome": "União",
+        "f": "P(A ou B) = P(A) + P(B) − P(A e B)",
+        "uso": "Quando se pede “A ou B” e os eventos podem ocorrer juntos."
+      },
+      {
+        "nome": "Complementar",
+        "f": "P(pelo menos um) = 1 − P(nenhum)",
+        "uso": "Quando “pelo menos um” daria muitos casos para somar."
+      }
+    ],
+    "truque": "Em “pelo menos um”, calcule a chance de nenhum e subtraia de 1. É mais curto que somar todos os casos.",
+    "erroComum": "Usar o total geral na condicional. Em “sabendo que é homem”, o denominador é o número de homens, e não de todos os moradores.",
+    "exercicios": [
+      {
+        "enunciado": "Dois eventos independentes têm P(A) = 0,4 e P(B) = 0,5. Qual é P(A e B)?",
+        "passos": [
+          "Para independentes, multiplique.",
+          "0,4 · 0,5."
+        ],
+        "resposta": "0,2",
+        "conta": "0.4*0.5",
+        "valor": 0.2
+      },
+      {
+        "enunciado": "Uma moeda honesta é lançada duas vezes. Qual é a probabilidade de sair cara nas duas vezes?",
+        "passos": [
+          "Cada lançamento tem probabilidade 0,5 de cara e são independentes.",
+          "0,5 · 0,5."
+        ],
+        "resposta": "0,25",
+        "conta": "0.5*0.5",
+        "valor": 0.25
+      },
+      {
+        "enunciado": "Em um grupo, 80 pessoas são homens e, destes, 20 usam bicicleta. Escolhido um homem ao acaso, qual é a probabilidade de ele usar bicicleta?",
+        "passos": [
+          "O universo é só o grupo de homens: 80.",
+          "{20/80}."
+        ],
+        "resposta": "0,25",
+        "conta": "20/80",
+        "valor": 0.25
+      },
+      {
+        "enunciado": "Sendo P(A) = 0,6, P(B) = 0,5 e P(A e B) = 0,3, qual é P(A ou B)?",
+        "passos": [
+          "P(A ou B) = P(A) + P(B) − P(A e B).",
+          "0,6 + 0,5 − 0,3."
+        ],
+        "resposta": "0,8",
+        "conta": "0.6+0.5-0.3",
+        "valor": 0.8
+      },
+      {
+        "enunciado": "Dois alarmes independentes falham, cada um, com probabilidade 0,1. Qual é a probabilidade de pelo menos um funcionar?",
+        "passos": [
+          "Nenhum funcionar: 0,1 · 0,1 = 0,01.",
+          "Complementar: 1 − 0,01."
+        ],
+        "resposta": "0,99",
+        "conta": "1-0.1*0.1",
+        "valor": 0.99
+      }
+    ],
+    "cartoes": [
+      {
+        "p": "Como se lê P(A|B)?",
+        "r": "Probabilidade de A dado que B ocorreu."
+      },
+      {
+        "p": "Como calcular P(A|B)?",
+        "r": "P(A e B) dividido por P(B)."
+      },
+      {
+        "p": "Quando multiplicar probabilidades?",
+        "r": "Em eventos independentes que devem ocorrer juntos (“e”)."
+      },
+      {
+        "p": "Como calcular P(A ou B)?",
+        "r": "P(A) + P(B) − P(A e B)."
+      },
+      {
+        "p": "Como tratar “pelo menos um”?",
+        "r": "1 menos a probabilidade de nenhum."
+      }
+    ],
+    "gerador": {
+      "vars": {},
+      "questoes": [
+        {
+          "vars": {
+            "a": {
+              "min": 10,
+              "max": 90,
+              "step": 10
+            },
+            "b": {
+              "min": 10,
+              "max": 90,
+              "step": 10
+            }
+          },
+          "enunciado": "Dois eventos independentes A e B têm probabilidades de {a}% e {b}%. Qual é a probabilidade, em porcentagem, de os dois ocorrerem?",
+          "conta": "a*b/100",
+          "unidade": "%",
+          "casas": 0,
+          "passos": [
+            "Eventos independentes: P(A e B) = P(A) × P(B).",
+            "Em porcentagem: {a} × {b} ÷ 100 = {valor}%."
+          ]
+        },
+        {
+          "vars": {
+            "p": {
+              "min": 10,
+              "max": 90,
+              "step": 10
+            }
+          },
+          "enunciado": "Um jogador acerta {p}% de suas cobranças de falta. Qual é a probabilidade, em porcentagem, de ele acertar as 3 próximas cobranças seguidas? Use 1 casa decimal.",
+          "conta": "p*p*p/10000",
+          "unidade": "%",
+          "casas": 1,
+          "passos": [
+            "As cobranças são independentes: multiplicam-se as probabilidades.",
+            "Em forma decimal, {p}% = {p}/100. Em porcentagem: ({p}/100)^{3} × 100 = {p}^{3} ÷ 10000 = {valor}%."
+          ]
+        },
+        {
+          "vars": {
+            "pa": {
+              "min": 20,
+              "max": 60,
+              "step": 10
+            },
+            "r": {
+              "min": 10,
+              "max": 90,
+              "step": 10
+            }
+          },
+          "deriv": {
+            "pab": "pa*r/100"
+          },
+          "enunciado": "Sabe-se que P(A) = {pa}% e P(A e B) = {pab}%. Qual é a probabilidade, em porcentagem, de B ocorrer sabendo que A ocorreu?",
+          "conta": "pab*100/pa",
+          "unidade": "%",
+          "casas": 0,
+          "passos": [
+            "Probabilidade condicional: P(B | A) = P(A e B) ÷ P(A).",
+            "P(B | A) = {pab} ÷ {pa}.",
+            "Em porcentagem: {pab} ÷ {pa} × 100 = {valor}%."
+          ]
+        },
+        {
+          "vars": {
+            "a": {
+              "min": 10,
+              "max": 90,
+              "step": 10
+            },
+            "b": {
+              "min": 10,
+              "max": 90,
+              "step": 10
+            }
+          },
+          "deriv": {
+            "ab": "a*b/100"
+          },
+          "enunciado": "Dois eventos independentes A e B têm probabilidades de {a}% e {b}%. Qual é a probabilidade, em porcentagem, de pelo menos um dos dois ocorrer?",
+          "conta": "a+b-a*b/100",
+          "unidade": "%",
+          "casas": 0,
+          "passos": [
+            "P(A ou B) = P(A) + P(B) − P(A e B).",
+            "Como são independentes, P(A e B) = {a} × {b} ÷ 100 = {ab}%.",
+            "P(A ou B) = {a} + {b} − {ab} = {valor}%."
+          ]
+        },
+        {
+          "vars": {
+            "p": {
+              "min": 10,
+              "max": 90,
+              "step": 10
+            }
+          },
+          "deriv": {
+            "q": "100-p",
+            "e": "(100-p)**3/10000"
+          },
+          "enunciado": "Um atirador acerta o alvo com probabilidade {p}% em cada tiro, independentemente dos outros. Em 3 tiros, qual é a probabilidade, em porcentagem, de ele acertar pelo menos um? Use 1 casa decimal.",
+          "conta": "100-(100-p)**3/10000",
+          "unidade": "%",
+          "casas": 1,
+          "passos": [
+            "É mais fácil calcular o contrário: errar os 3 tiros.",
+            "Probabilidade de errar um tiro: {q}%. Errar os três: ({q}/100)^{3} × 100 = {e}%.",
+            "Acertar pelo menos um = 100 − {e} = {valor}%."
+          ]
+        }
+      ]
+    }
+  }
+]

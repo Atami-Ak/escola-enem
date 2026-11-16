@@ -1,0 +1,490 @@
+[
+  {
+    "id": "logica-argumentacao-tabela-verdade",
+    "nivel": "basico",
+    "dia": 1,
+    "titulo": "Lógica e argumentação: premissas, conclusão e tabela-verdade",
+    "competencia": "C5",
+    "habilidades": ["H24", "H25"],
+    "conceito": [
+      "Argumentar é sustentar uma conclusão com razões. As razões são as premissas; o que se quer provar é a conclusão. Aristóteles, na tradição que deu origem à lógica formal, estudou o silogismo: um argumento com duas premissas e uma conclusão, como “todo humano é mortal; Sócrates é humano; logo, Sócrates é mortal”.",
+      "Um argumento é válido quando a conclusão decorre necessariamente das premissas: se elas fossem verdadeiras, a conclusão não poderia ser falsa. Validade depende da forma, não do assunto. Um argumento é sólido quando é válido e tem premissas realmente verdadeiras. Um argumento pode ser válido e ter conclusão falsa, se alguma premissa for falsa.",
+      "A lógica proposicional usa conectivos para ligar proposições simples: negação (¬p), conjunção (p ∧ q, “p e q”), disjunção (p ∨ q, “p ou q”) e condicional (p → q, “se p, então q”). A tabela-verdade lista todas as combinações de V e F e mostra o valor do resultado em cada uma. Com n proposições simples independentes, a tabela tem 2^n linhas.",
+      "Regras que mais caem: a conjunção só é verdadeira se as duas partes forem verdadeiras; a disjunção só é falsa se as duas forem falsas; a condicional só é falsa quando o antecedente é verdadeiro e o consequente é falso."
+    ],
+    "quando": {
+      "sinais": [
+        "“premissa”, “conclusão”, “logo”, “portanto”: o texto pede para separar as razões do que se conclui",
+        "“é válido”, “decorre necessariamente”: pergunta sobre a forma do argumento, não sobre a verdade dos fatos",
+        "“se... então...”: condicional, que só falha em V → F",
+        "“quantas linhas” ou “quantas combinações”: contagem de linhas da tabela-verdade, 2^n"
+      ],
+      "formula": "linhas = 2^n; conjunção: 1 linha V; disjunção: 1 linha F; condicional: falsa só em V → F",
+      "armadilhas": [
+        "Confundir validade com verdade: argumento válido pode ter conclusão falsa se uma premissa for falsa.",
+        "Achar que “se p, então q” permite concluir p a partir de q (afirmação do consequente, falácia)."
+      ]
+    },
+    "ler": {
+      "passos": [
+        "Localize a pergunta e diga se ela trata de forma (validade) ou de fatos (verdade).",
+        "Marque as premissas e a conclusão; palavras como “logo” e “portanto” anunciam a conclusão.",
+        "Traduza as frases em proposições simples (p, q, r) e conectivos.",
+        "Se pedir contagem, conte as proposições simples distintas: o número de linhas é 2^n.",
+        "Descarte dados biográficos ou de contexto que não entram na lógica do argumento."
+      ],
+      "exemplo": {
+        "enunciado": "Um professor, formado em 1998, propõe o argumento: “se chove, a rua molha; chove; logo, a rua molha”. Para testar a validade por tabela-verdade, quantas linhas terá a tabela, sabendo que há duas proposições simples: p (“chove”) e q (“a rua molha”)?",
+        "anotacoes": [
+          {
+            "trecho": "formado em 1998",
+            "papel": "distracao",
+            "nota": "dado biográfico, não entra na lógica"
+          },
+          {
+            "trecho": "se chove, a rua molha; chove; logo, a rua molha",
+            "papel": "dado",
+            "nota": "duas premissas e a conclusão (modus ponens): p → q, p, logo q"
+          },
+          {
+            "trecho": "validade por tabela-verdade",
+            "papel": "condicao",
+            "nota": "o método exige listar todas as combinações de V e F"
+          },
+          {
+            "trecho": "duas proposições simples",
+            "papel": "dado",
+            "nota": "n = 2, logo 2^2 combinações"
+          },
+          {
+            "trecho": "quantas linhas",
+            "papel": "pede",
+            "nota": "2^2 = 4 linhas"
+          }
+        ]
+      }
+    },
+    "formulas": [
+      {
+        "nome": "Linhas da tabela-verdade",
+        "f": "linhas = 2^{n}",
+        "uso": "n é o número de proposições simples independentes: 2 dão 4 linhas, 3 dão 8, 4 dão 16."
+      },
+      {
+        "nome": "Conjunção e disjunção",
+        "f": "p ∧ q: V só em (V, V);  p ∨ q: F só em (F, F)",
+        "uso": "Para contar linhas verdadeiras de uma disjunção, subtraia 1 do total: 2^n - 1."
+      },
+      {
+        "nome": "Condicional",
+        "f": "p → q: F só quando p = V e q = F",
+        "uso": "Em tabelas com mais proposições, as demais ficam livres: 2^{n-2} linhas falsas."
+      }
+    ],
+    "exemplos": [
+      {
+        "enunciado": "Todo humano é mortal. Sócrates é humano. Logo, Sócrates é mortal. Identifique premissas e conclusão e diga se o argumento é válido.",
+        "formula": "silogismo: premissa maior + premissa menor, logo conclusão",
+        "passos": [
+          "Premissa maior: todo humano é mortal. Premissa menor: Sócrates é humano.",
+          "Conclusão (anunciada por “logo”): Sócrates é mortal.",
+          "Se as premissas são verdadeiras, a conclusão não pode ser falsa: o argumento é válido e, com premissas verdadeiras, sólido."
+        ]
+      },
+      {
+        "enunciado": "Se estudo, passo. Passei. Logo, estudei. Esse argumento é válido?",
+        "formula": "p → q, q, logo p",
+        "passos": [
+          "Forma do argumento: p → q; q; logo p.",
+          "Uma linha com p falso e q verdadeiro torna as premissas verdadeiras e a conclusão falsa.",
+          "Logo, o argumento é inválido: é a falácia da afirmação do consequente."
+        ]
+      }
+    ],
+    "truque": "Para testar validade, procure um contraexemplo: uma situação em que todas as premissas são verdadeiras e a conclusão é falsa. Se existir, o argumento é inválido; se não existir, é válido.",
+    "erroComum": "Dizer que um argumento é válido só porque a conclusão é verdadeira (ou inválido porque é absurda). Validade é sobre a ligação entre premissas e conclusão; a verdade das premissas é outra pergunta.",
+    "exercicios": [
+      {
+        "enunciado": "Uma tabela-verdade tem 4 proposições simples independentes. Quantas linhas ela possui?",
+        "passos": [
+          "Cada proposição tem 2 valores possíveis.",
+          "Total: 2 × 2 × 2 × 2 = 2^4 = 16."
+        ],
+        "resposta": "16 linhas",
+        "conta": "2**4",
+        "valor": 16
+      },
+      {
+        "enunciado": "Na tabela da disjunção p ∨ q ∨ r, em quantas linhas o resultado é verdadeiro?",
+        "passos": [
+          "Total de linhas: 2^3 = 8.",
+          "A disjunção só é falsa quando todas são falsas: 1 linha.",
+          "Verdadeiras: 8 - 1 = 7."
+        ],
+        "resposta": "7 linhas",
+        "conta": "2**3-1",
+        "valor": 7
+      },
+      {
+        "enunciado": "Em uma tabela com 3 proposições simples (p, q e r), em quantas linhas a condicional p → q é falsa?",
+        "passos": [
+          "A condicional é falsa só com p verdadeiro e q falso.",
+          "A proposição r fica livre: 2 possibilidades.",
+          "Linhas falsas: 2^(3-2) = 2."
+        ],
+        "resposta": "2 linhas",
+        "conta": "2**(3-2)",
+        "valor": 2
+      },
+      {
+        "enunciado": "“Todo ateniense é grego. Péricles é ateniense. Logo, Péricles é grego.” O argumento é válido? Explique em uma frase.",
+        "passos": [
+          "Premissas: todo ateniense é grego; Péricles é ateniense.",
+          "A conclusão decorre necessariamente delas, pela forma do silogismo."
+        ],
+        "resposta": "Válido: a conclusão decorre necessariamente das premissas, pela forma."
+      },
+      {
+        "enunciado": "“Se chove, a rua molha. A rua está molhada. Logo, choveu.” O argumento é válido?",
+        "passos": [
+          "Forma: p → q; q; logo p.",
+          "A rua pode estar molhada por outro motivo (um caminhão-pipa, por exemplo): premissas verdadeiras e conclusão falsa são possíveis."
+        ],
+        "resposta": "Inválido: é a falácia da afirmação do consequente."
+      }
+    ],
+    "cartoes": [
+      {
+        "p": "Qual a diferença entre argumento válido e argumento sólido?",
+        "r": "Válido: a conclusão decorre necessariamente das premissas (a forma está correta). Sólido: é válido e as premissas são verdadeiras."
+      },
+      {
+        "p": "Quantas linhas tem a tabela-verdade de n proposições simples?",
+        "r": "2^n linhas, porque cada proposição pode ser V ou F de forma independente."
+      },
+      {
+        "p": "Quando uma condicional p → q é falsa?",
+        "r": "Somente quando p é verdadeiro e q é falso."
+      },
+      {
+        "p": "O que Aristóteles chamou de silogismo?",
+        "r": "Um argumento com duas premissas e uma conclusão que decorre delas, como “todo humano é mortal; Sócrates é humano; logo, Sócrates é mortal”."
+      }
+    ],
+    "gerador": {
+      "vars": {},
+      "questoes": [
+        {
+          "vars": { "n": { "min": 2, "max": 6 } },
+          "conceito": "A tabela-verdade lista todas as combinações de V e F. Cada proposição simples dobra o número de linhas, então n proposições independentes geram 2^n linhas.",
+          "enunciado": "Um grupo de estudos analisa um argumento com {n} proposições simples independentes, cada uma podendo ser verdadeira ou falsa. Quantas linhas tem a tabela-verdade completa?",
+          "conta": "2**n",
+          "unidade": "linhas",
+          "casas": 0,
+          "passos": [
+            "Cada proposição simples tem 2 valores possíveis: V ou F.",
+            "As {n} proposições combinam-se de forma independente: 2 × 2 × ... com {n} fatores, ou seja, 2^{n}.",
+            "2^{n} = {valor} linhas."
+          ]
+        },
+        {
+          "vars": { "a": { "min": 2, "max": 8 }, "p": { "min": 2, "max": 5 } },
+          "deriv": { "s": "p+1" },
+          "conceito": "Premissas são as razões e a conclusão é o que se sustenta com elas. Para contar proposições de um argumento, some as premissas à conclusão.",
+          "enunciado": "Em um debate fictício, cada um dos {a} argumentos apresentados tem {p} premissas e 1 conclusão. Quantas proposições aparecem ao todo, contando premissas e conclusões?",
+          "conta": "a*(p+1)",
+          "unidade": "proposições",
+          "casas": 0,
+          "passos": [
+            "Cada argumento tem {p} premissas + 1 conclusão = {s} proposições.",
+            "Com {a} argumentos: {a} × {s} = {valor} proposições."
+          ]
+        },
+        {
+          "vars": { "n": { "min": 2, "max": 6 } },
+          "deriv": { "t": "2**n" },
+          "conceito": "A disjunção inclusiva (p ou q) só é falsa quando todas as partes são falsas. Todas as outras linhas da tabela são verdadeiras.",
+          "enunciado": "Na tabela-verdade da disjunção inclusiva de {n} proposições simples independentes (p1 ∨ p2 ∨ ...), em quantas linhas o resultado é verdadeiro?",
+          "conta": "2**n-1",
+          "unidade": "linhas",
+          "casas": 0,
+          "passos": [
+            "O total de linhas é 2^{n} = {t}.",
+            "A disjunção é falsa em uma única linha: aquela em que todas as proposições são falsas.",
+            "Verdadeiras: {t} - 1 = {valor} linhas."
+          ]
+        },
+        {
+          "vars": { "n": { "min": 3, "max": 6 } },
+          "deriv": { "m": "n-2" },
+          "conceito": "A condicional p → q só é falsa quando p é verdadeiro e q é falso. As demais proposições da tabela não alteram essa condição e ficam livres.",
+          "enunciado": "Uma tabela-verdade traz {n} proposições simples independentes, entre elas p e q. Em quantas linhas a condicional p → q é falsa?",
+          "conta": "2**(n-2)",
+          "unidade": "linhas",
+          "casas": 0,
+          "passos": [
+            "A condicional é falsa só com p verdadeiro e q falso: isso fixa 2 das {n} proposições.",
+            "As outras {m} proposições ficam livres: 2^{m} possibilidades.",
+            "Linhas falsas: {valor}."
+          ]
+        },
+        {
+          "vars": { "k": { "min": 2, "max": 4 } },
+          "conceito": "Na lógica aristotélica, toda proposição categórica é de um de 4 tipos: A (universal afirmativa), E (universal negativa), I (particular afirmativa) e O (particular negativa). Um silogismo clássico tem 3 proposições, o que dá 4^3 = 64 combinações de tipos.",
+          "enunciado": "Um manual classifica proposições categóricas em 4 tipos (A, E, I, O). Se uma cadeia de raciocínio tem {k} proposições encadeadas, cada uma de um desses tipos, quantas combinações de tipos existem?",
+          "conta": "4**k",
+          "unidade": "combinações",
+          "casas": 0,
+          "passos": [
+            "Cada proposição pode ser de 4 tipos.",
+            "Com {k} proposições independentes: 4 × 4 × ... com {k} fatores, ou seja, 4^{k}.",
+            "4^{k} = {valor} combinações."
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "democracia-maioria-quorum",
+    "nivel": "intermediario",
+    "dia": 2,
+    "titulo": "Democracia e decisão coletiva: maioria simples, qualificada e quórum",
+    "competencia": "C5",
+    "habilidades": ["H21", "H22"],
+    "conceito": [
+      "Democracia significa governo do povo: as decisões coletivas devem ter a participação dos cidadãos. Na Atenas antiga, os cidadãos votavam diretamente na assembleia. Nas democracias modernas, predomina a representação, e as regras de votação definem quando uma decisão vale para todos.",
+      "No pensamento político moderno, Hobbes justificou um soberano forte para escapar da guerra de todos contra todos; Locke defendeu governo por consentimento, em que a decisão da maioria vale para a comunidade; Rousseau, no contrato social, afirmou que a soberania pertence ao povo e deve exprimir a vontade geral, voltada ao bem comum e distinta da soma de interesses particulares.",
+      "Regras comuns de votação: maioria simples (mais votos a favor do que contra entre os que votam, ou mais da metade dos presentes, conforme a regra do órgão); maioria absoluta (mais da metade de todos os membros, estejam presentes ou não); maioria qualificada (fração maior, como dois terços ou três quintos dos membros). Quórum é o número mínimo de presentes para a sessão funcionar ou deliberar.",
+      "A regra da maioria tem um risco, apontado por Tocqueville e Stuart Mill: a tirania da maioria, quando a maioria oprime minorias. Por isso decisões graves ou que mudam as regras do jogo exigem maioria qualificada, e direitos fundamentais ficam protegidos, mesmo diante de votações apertadas."
+    ],
+    "quando": {
+      "sinais": [
+        "“mais da metade de todos os membros”: maioria absoluta, N/2 + 1 se N é par",
+        "“dois terços dos membros”: maioria qualificada, 2N/3",
+        "“dos presentes” ou “dos votos válidos”: a base de cálculo é o grupo que votou, não o total de membros",
+        "“para instalar a sessão” ou “para deliberar”: pergunta sobre quórum, não sobre votos de aprovação",
+        "“quantos votos faltam”: calcule o necessário e subtraia os votos que já existem"
+      ],
+      "formula": "absoluta: N/2 + 1 (N par); qualificada: 2N/3; quórum: N × percentual",
+      "armadilhas": [
+        "Usar o total de membros quando a regra manda usar apenas os presentes (ou o contrário).",
+        "Confundir quórum (presença mínima) com maioria (votos mínimos para aprovar)."
+      ]
+    },
+    "ler": {
+      "passos": [
+        "Descubra qual é a regra: maioria simples, absoluta, qualificada ou quórum.",
+        "Identifique a base de cálculo: todos os membros, presentes ou votos válidos.",
+        "Anote o total N e o que a pergunta pede (votos a favor, presentes, votos que faltam).",
+        "Descarte dados que não entram na conta, como o tempo de mandato ou nomes.",
+        "Aplique a fração e confira se o resultado é inteiro e cabe no total."
+      ],
+      "exemplo": {
+        "enunciado": "Um conselho de moradores fictício tem 60 membros e, há 12 anos, é presidido por Marta. O estatuto diz que mudanças em seu texto exigem maioria qualificada de dois terços dos membros. Quantos votos favoráveis são necessários, no mínimo?",
+        "anotacoes": [
+          {
+            "trecho": "60 membros",
+            "papel": "dado",
+            "nota": "N = 60, base de cálculo: todos os membros"
+          },
+          {
+            "trecho": "há 12 anos, é presidido por Marta",
+            "papel": "distracao",
+            "nota": "não entra na conta"
+          },
+          {
+            "trecho": "maioria qualificada de dois terços dos membros",
+            "papel": "condicao",
+            "nota": "regra: {2/3} de N"
+          },
+          {
+            "trecho": "Quantos votos favoráveis são necessários, no mínimo?",
+            "papel": "pede",
+            "nota": "{2/3} × 60 = 40"
+          }
+        ]
+      }
+    },
+    "formulas": [
+      {
+        "nome": "Maioria absoluta",
+        "f": "votos = N/2 + 1  (N par)",
+        "uso": "Mais da metade de todos os membros. Com N ímpar, é o inteiro seguinte a N/2."
+      },
+      {
+        "nome": "Maioria qualificada",
+        "f": "votos = {2/3} × N",
+        "uso": "Quando a regra pede dois terços dos membros; outras frações, como {3/5}, seguem a mesma conta."
+      },
+      {
+        "nome": "Quórum percentual",
+        "f": "presentes = N × p / 100",
+        "uso": "Quando o regimento fixa uma porcentagem de presentes para instalar ou deliberar."
+      }
+    ],
+    "exemplos": [
+      {
+        "enunciado": "Um conselho tem 24 membros e uma proposta exige maioria absoluta. Quantos votos favoráveis são necessários?",
+        "formula": "24/2 + 1",
+        "passos": [
+          "Maioria absoluta é mais da metade de todos os membros.",
+          "Metade de 24 é 12; mais da metade é 13.",
+          "Logo, 13 votos."
+        ]
+      },
+      {
+        "enunciado": "Um conselho tem 45 membros e uma regra pede dois terços deles. Quantos votos são necessários?",
+        "formula": "2 × 45 / 3",
+        "passos": [
+          "{2/3} dos membros: {2 × 45/3}.",
+          "{90/3} = 30 votos."
+        ]
+      }
+    ],
+    "truque": "Sempre pergunte primeiro: “dois terços (ou metade) de quê?”. Se a base é o total de membros, use N; se é presentes ou votos válidos, use essa base. Depois confira se o número de votos faz sentido: nunca passa de N.",
+    "erroComum": "Calcular a maioria absoluta como N/2 exatos. Com 40 membros, 20 votos é empate com os demais, não mais da metade: são necessários 21.",
+    "exercicios": [
+      {
+        "enunciado": "Um conselho tem 40 membros. Qual o número mínimo de votos para a maioria absoluta?",
+        "passos": [
+          "Metade de 40 é 20.",
+          "Mais da metade: 20 + 1 = 21."
+        ],
+        "resposta": "21 votos",
+        "conta": "40/2+1",
+        "valor": 21
+      },
+      {
+        "enunciado": "Uma assembleia tem 90 associados e a regra exige dois terços para aprovar uma mudança. Quantos votos são necessários?",
+        "passos": [
+          "{2/3} de 90 = {2 × 90/3}.",
+          "{180/3} = 60."
+        ],
+        "resposta": "60 votos",
+        "conta": "2*90/3",
+        "valor": 60
+      },
+      {
+        "enunciado": "Estão presentes 56 vereadores e 6 se abstêm. Pela maioria simples dos votos válidos (sim ou não), quantos votos favoráveis são necessários?",
+        "passos": [
+          "Votos válidos: 56 - 6 = 50.",
+          "Mais da metade de 50: 25 + 1 = 26."
+        ],
+        "resposta": "26 votos",
+        "conta": "(56-6)/2+1",
+        "valor": 26
+      },
+      {
+        "enunciado": "O regimento de um grêmio com 50 membros exige 60% de presentes para instalar a sessão. Quantos membros precisam estar presentes?",
+        "passos": [
+          "60% de 50 = {60 × 50/100}.",
+          "{3000/100} = 30."
+        ],
+        "resposta": "30 membros",
+        "conta": "50*60/100",
+        "valor": 30
+      },
+      {
+        "enunciado": "Por que as constituições exigem maioria qualificada para mudar regras fundamentais, em vez de maioria simples?",
+        "passos": [
+          "Tocqueville e Mill alertaram para a tirania da maioria.",
+          "Uma regra mais exigente protege minorias e dá estabilidade ao pacto político."
+        ],
+        "resposta": "Para evitar a tirania da maioria e proteger minorias e as regras básicas do pacto político."
+      }
+    ],
+    "cartoes": [
+      {
+        "p": "Qual a diferença entre maioria simples e maioria absoluta?",
+        "r": "Simples: mais votos a favor do que contra entre os que votam (ou mais da metade dos presentes, conforme a regra). Absoluta: mais da metade de todos os membros, estejam presentes ou não."
+      },
+      {
+        "p": "O que é quórum?",
+        "r": "O número mínimo de presentes para a sessão ser instalada ou poder deliberar; não é o número de votos para aprovar."
+      },
+      {
+        "p": "O que é a tirania da maioria?",
+        "r": "A opressão de minorias por uma maioria que decide sem limites; Tocqueville e Stuart Mill chamaram atenção para esse risco."
+      },
+      {
+        "p": "Para Rousseau, o que a soberania expressa?",
+        "r": "A vontade geral do povo, voltada ao bem comum, distinta da soma dos interesses particulares."
+      }
+    ],
+    "gerador": {
+      "vars": {},
+      "questoes": [
+        {
+          "vars": { "k": { "min": 5, "max": 40 } },
+          "deriv": { "N": "2*k" },
+          "conceito": "Maioria absoluta é mais da metade de todos os membros do órgão, estejam presentes ou não. Com um número par de membros, é a metade mais 1.",
+          "enunciado": "O conselho fictício de uma associação tem {N} membros. Uma proposta exige maioria absoluta, isto é, mais da metade de todos os membros. Quantos votos favoráveis são necessários, no mínimo?",
+          "conta": "N/2+1",
+          "unidade": "votos",
+          "casas": 0,
+          "passos": [
+            "Maioria absoluta é mais da metade de todos os {N} membros.",
+            "Metade de {N} é {k}; mais da metade é {k} + 1.",
+            "Votos necessários: {valor}."
+          ]
+        },
+        {
+          "vars": { "k": { "min": 4, "max": 30 } },
+          "deriv": { "N": "3*k" },
+          "conceito": "Maioria qualificada é uma fração maior que a metade, como dois terços dos membros, exigida em decisões importantes. A conta usa a fração sobre o total de membros.",
+          "enunciado": "A assembleia de um sindicato fictício tem {N} associados com direito a voto. A mudança do estatuto exige maioria qualificada de dois terços dos associados. Quantos votos favoráveis são necessários, no mínimo?",
+          "conta": "2*N/3",
+          "unidade": "votos",
+          "casas": 0,
+          "passos": [
+            "Um terço de {N} é {k}.",
+            "Dois terços: 2 × {k}.",
+            "Votos necessários: {valor}."
+          ]
+        },
+        {
+          "vars": { "j": { "min": 5, "max": 30 }, "ab": { "min": 2, "max": 9 } },
+          "deriv": { "P": "2*j+ab", "V": "2*j" },
+          "conceito": "Na maioria simples dos votos válidos, a base são apenas os votos sim ou não; as abstenções ficam de fora do cálculo.",
+          "enunciado": "Na sessão de uma câmara fictícia estão presentes {P} vereadores e {ab} se abstêm. Considere a maioria simples dos votos válidos (sim ou não), ou seja, mais da metade de quem votou sim ou não, sem contar as abstenções. Quantos votos favoráveis são necessários, no mínimo?",
+          "conta": "(P-ab)/2+1",
+          "unidade": "votos",
+          "casas": 0,
+          "passos": [
+            "Votos válidos: {P} - {ab} = {V}.",
+            "Metade de {V} é {j}.",
+            "Mais da metade: {j} + 1 = {valor}."
+          ]
+        },
+        {
+          "vars": { "k": { "min": 6, "max": 25 }, "d": { "min": 1, "max": 5 } },
+          "deriv": { "N": "3*k", "n2": "2*k", "y": "2*k-d" },
+          "conceito": "Quando a regra pede uma fração dos membros e já há votos contados, calcule o total necessário e subtraia os votos que o grupo já tem para saber o que falta.",
+          "enunciado": "Uma proposta exige dois terços dos {N} membros do conselho universitário. Ela recebeu {y} votos favoráveis. Quantos votos ainda faltam para atingir a maioria qualificada?",
+          "conta": "2*N/3-y",
+          "unidade": "votos",
+          "casas": 0,
+          "passos": [
+            "Votos necessários: dois terços de {N} = {n2}.",
+            "Já obtidos: {y}.",
+            "Faltam {n2} - {y} = {valor} votos."
+          ]
+        },
+        {
+          "vars": { "k": { "min": 2, "max": 10 }, "j": { "min": 6, "max": 15 } },
+          "deriv": { "N": "20*k", "P": "5*j" },
+          "conceito": "Quórum é o número mínimo de presentes para a sessão ser instalada ou deliberar. Ele é diferente da maioria necessária para aprovar uma proposta.",
+          "enunciado": "O regimento de um grêmio fictício com {N} membros exige, para instalar a sessão, a presença de {P}% dos membros. Quantos membros precisam estar presentes?",
+          "conta": "N*P/100",
+          "unidade": "membros",
+          "casas": 0,
+          "passos": [
+            "O quórum é {P}% de {N}.",
+            "{P}% de {N} = {N} × {P} / 100.",
+            "Presentes necessários: {valor} membros."
+          ]
+        }
+      ]
+    }
+  }
+]

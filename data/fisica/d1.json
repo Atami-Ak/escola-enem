@@ -1,0 +1,675 @@
+[
+  {
+    "id": "cinematica-velocidade-media-mru-mruv",
+    "dia": 1,
+    "nivel": "basico",
+    "titulo": "Cinemática: velocidade média e MRU/MRUV",
+    "competencia": "C6",
+    "habilidades": [
+      "H20",
+      "H21"
+    ],
+    "conceito": [
+      "Cinemática descreve o movimento sem perguntar a causa. Velocidade média é a razão entre o deslocamento e o intervalo de tempo: v_{m} = {Δs/Δt}. No SI, a distância sai em metros (m), o tempo em segundos (s) e a velocidade em m/s.",
+      "Para converter, divida km/h por 3,6 para obter m/s e multiplique m/s por 3,6 para obter km/h. Isso vem de 1 km = 1000 m e 1 h = 3600 s.",
+      "No MRU (movimento retilíneo uniforme) a velocidade é constante e a posição é s = s_{0} + v · t. No MRUV (movimento retilíneo uniformemente variado) a aceleração a é constante: v = v_{0} + a · t, e, quando o tempo não aparece, vale a equação de Torricelli, v^{2} = v_{0}^{2} + 2 · a · Δs."
+    ],
+    "quando": {
+      "sinais": [
+        "“velocidade média” ou “em média”: divida o deslocamento total pelo tempo total",
+        "“velocidade constante” ou “mesma velocidade”: MRU, com s = s_{0} + v · t",
+        "“parte do repouso”, “acelera” ou “freia”: MRUV, com a constante",
+        "“freia até parar” e nenhum tempo no enunciado: equação de Torricelli",
+        "km/h no enunciado e m/s ou s na pergunta: converta antes de calcular"
+      ],
+      "formula": "v_{m} = {Δs/Δt}; MRU: s = s_{0} + v · t; MRUV: v = v_{0} + a · t e v^{2} = v_{0}^{2} + 2 · a · Δs",
+      "armadilhas": [
+        "Fazer a média aritmética das velocidades de dois trechos que duraram tempos diferentes.",
+        "Misturar km/h com m/s² na mesma conta: converta tudo para o SI antes."
+      ]
+    },
+    "ler": {
+      "passos": [
+        "Circule o que a pergunta pede (velocidade, tempo ou distância) e a unidade da resposta.",
+        "Anote cada dado com a sua unidade, separando km/h de m/s e horas de segundos.",
+        "Decida o modelo: velocidade constante (MRU), aceleração constante (MRUV) ou velocidade média de vários trechos.",
+        "Converta tudo para o SI e risque o que não entra na conta.",
+        "Resolva e confira se a ordem de grandeza é plausível: um carro a 300 m/s seria absurdo."
+      ],
+      "exemplo": {
+        "enunciado": "Um motorista, com 15 anos de habilitação, percorre 180 km de uma rodovia em 2 horas, em velocidade constante. Qual é essa velocidade, em m/s?",
+        "anotacoes": [
+          {
+            "trecho": "com 15 anos de habilitação",
+            "papel": "distracao",
+            "nota": "não entra na conta"
+          },
+          {
+            "trecho": "180 km",
+            "papel": "dado",
+            "nota": "o deslocamento, em quilômetros"
+          },
+          {
+            "trecho": "2 horas",
+            "papel": "dado",
+            "nota": "o intervalo de tempo, em horas"
+          },
+          {
+            "trecho": "em velocidade constante",
+            "papel": "condicao",
+            "nota": "indica MRU: vale v = {Δs/Δt}"
+          },
+          {
+            "trecho": "Qual é essa velocidade",
+            "papel": "pede",
+            "nota": "v = {180/2} = 90 km/h"
+          },
+          {
+            "trecho": "em m/s",
+            "papel": "unidade",
+            "nota": "a resposta pede m/s: 90 ÷ 3,6 = 25"
+          }
+        ]
+      }
+    },
+    "formulas": [
+      {
+        "nome": "Velocidade média",
+        "f": "v_{m} = {Δs/Δt}",
+        "uso": "Distância total dividida pelo tempo total, em qualquer movimento."
+      },
+      {
+        "nome": "Conversão de unidades",
+        "f": "km/h ÷ 3,6 = m/s  e  m/s × 3,6 = km/h",
+        "uso": "Sempre que o enunciado mistura quilômetros por hora com metros por segundo."
+      },
+      {
+        "nome": "Posição no MRU",
+        "f": "s = s_{0} + v · t",
+        "uso": "Velocidade constante: posição final a partir da inicial."
+      },
+      {
+        "nome": "Velocidade no MRUV",
+        "f": "v = v_{0} + a · t",
+        "uso": "Aceleração constante e tempo conhecido."
+      },
+      {
+        "nome": "Torricelli",
+        "f": "v^{2} = v_{0}^{2} + 2 · a · Δs",
+        "uso": "MRUV sem o tempo, como em freadas até parar."
+      }
+    ],
+    "exemplos": [
+      {
+        "enunciado": "Um carro percorre 240 km em 3 h. Qual é a velocidade média, em km/h e em m/s?",
+        "formula": "v_{m} = {Δs/Δt}",
+        "passos": [
+          "Deslocamento Δs = 240 km e intervalo Δt = 3 h.",
+          "v_{m} = {240/3} = 80 km/h.",
+          "Em m/s: 80 ÷ 3,6 ≈ 22,2 m/s."
+        ]
+      },
+      {
+        "enunciado": "Um carro parte do repouso com aceleração constante de 2 m/s². Qual é a sua velocidade após 8 s e que distância ele percorreu nesse tempo?",
+        "formula": "v = v_{0} + a · t",
+        "passos": [
+          "Partiu do repouso: v_{0} = 0.",
+          "v = 0 + 2 · 8 = 16 m/s.",
+          "Distância: Δs = {a · t^{2}/2} = {2 · 8^{2}/2} = 64 m (confere: velocidade média 8 m/s vezes 8 s)."
+        ]
+      }
+    ],
+    "truque": "Decore que 36 km/h equivalem a 10 m/s. Assim 72 km/h são 20 m/s e 108 km/h são 30 m/s, sem dividir por 3,6.",
+    "erroComum": "Tirar a média aritmética das velocidades de dois trechos. Com 60 km/h por 1 hora e 90 km/h por 2 horas, a velocidade média é {60 · 1 + 90 · 2/3} = 80 km/h, e não 75 km/h, porque o tempo gasto em cada trecho é diferente.",
+    "exercicios": [
+      {
+        "enunciado": "Um ciclista percorre 45 km em 3 h. Qual é a sua velocidade média, em km/h?",
+        "passos": [
+          "v_{m} = {Δs/Δt} = {45/3}.",
+          "v_{m} = 15 km/h."
+        ],
+        "resposta": "15 km/h",
+        "conta": "45/3",
+        "valor": 15
+      },
+      {
+        "enunciado": "Um trem viaja a 108 km/h. Qual é essa velocidade, em m/s?",
+        "passos": [
+          "Para passar de km/h para m/s, divida por 3,6.",
+          "108 ÷ 3,6 = 30 m/s."
+        ],
+        "resposta": "30 m/s",
+        "conta": "108/3.6",
+        "valor": 30
+      },
+      {
+        "enunciado": "Um carro parte do repouso com aceleração constante de 3 m/s². Qual é a sua velocidade após 10 s, em m/s?",
+        "passos": [
+          "MRUV: v = v_{0} + a · t, com v_{0} = 0.",
+          "v = 0 + 3 · 10 = 30 m/s."
+        ],
+        "resposta": "30 m/s",
+        "conta": "3*10",
+        "valor": 30
+      },
+      {
+        "enunciado": "Um carro percorre 120 km a 60 km/h e, em seguida, outros 120 km a 120 km/h. Qual é a velocidade média em todo o percurso, em km/h?",
+        "passos": [
+          "Tempo do 1º trecho: {120/60} = 2 h. Tempo do 2º trecho: {120/120} = 1 h.",
+          "Distância total: 240 km. Tempo total: 3 h.",
+          "v_{m} = {240/3} = 80 km/h (e não 90 km/h, a média aritmética)."
+        ],
+        "resposta": "80 km/h",
+        "conta": "(120+120)/(120/60+120/120)",
+        "valor": 80
+      },
+      {
+        "enunciado": "Um carro a 20 m/s freia com aceleração de módulo 5 m/s² até parar. Que distância ele percorre durante a freada, em metros?",
+        "passos": [
+          "Sem o tempo, use Torricelli com v final nula: 0 = 20^{2} − 2 · 5 · Δs.",
+          "Δs = {20^{2}/2 · 5} = {400/10} = 40 m."
+        ],
+        "resposta": "40 m",
+        "conta": "20**2/(2*5)",
+        "valor": 40
+      }
+    ],
+    "cartoes": [
+      {
+        "p": "Como converter km/h em m/s?",
+        "r": "Divida por 3,6. No caminho inverso, multiplique por 3,6."
+      },
+      {
+        "p": "Como calcular a velocidade média de uma viagem com vários trechos?",
+        "r": "Divida a distância total pelo tempo total. Não é a média aritmética das velocidades."
+      },
+      {
+        "p": "Quando usar a equação de Torricelli?",
+        "r": "No MRUV, quando o tempo não aparece: v^{2} = v_{0}^{2} + 2 · a · Δs."
+      },
+      {
+        "p": "O que diferencia o MRU do MRUV?",
+        "r": "No MRU a velocidade é constante (aceleração nula). No MRUV a aceleração é constante e diferente de zero."
+      }
+    ],
+    "gerador": {
+      "vars": {},
+      "questoes": [
+        {
+          "vars": {
+            "k": {
+              "min": 2,
+              "max": 12
+            }
+          },
+          "deriv": {
+            "v": "18*k"
+          },
+          "conceito": "Conversão de unidades: 1 m/s equivale a 3,6 km/h, pois 1 km são 1000 m e 1 h são 3600 s. De km/h para m/s, divide-se por 3,6.",
+          "enunciado": "O velocímetro de um ônibus intermunicipal marca {v} km/h em um trecho reto da rodovia. Qual é essa velocidade, em m/s?",
+          "conta": "v/3.6",
+          "unidade": "m/s",
+          "casas": 0,
+          "passos": [
+            "Para passar de km/h para m/s, divida por 3,6 (1 km = 1000 m e 1 h = 3600 s).",
+            "{v} ÷ 3,6 = {valor} m/s."
+          ]
+        },
+        {
+          "vars": {
+            "a": {
+              "min": 60,
+              "max": 100,
+              "step": 10
+            },
+            "b": {
+              "min": 60,
+              "max": 100,
+              "step": 10
+            },
+            "t1": {
+              "min": 1,
+              "max": 4
+            },
+            "t2": {
+              "min": 1,
+              "max": 4
+            }
+          },
+          "deriv": {
+            "d1": "a*t1",
+            "d2": "b*t2",
+            "dt": "d1+d2",
+            "tt": "t1+t2"
+          },
+          "restricoes": [
+            [
+              "inteiro",
+              "(d1+d2)/(t1+t2)"
+            ]
+          ],
+          "conceito": "Velocidade média de vários trechos: distância total dividida pelo tempo total, e não a média das velocidades dos trechos.",
+          "enunciado": "Em uma viagem, um motorista percorre {d1} km em {t1} h e, em seguida, {d2} km em {t2} h. Qual é a velocidade média de toda a viagem, em km/h?",
+          "conta": "(d1+d2)/(t1+t2)",
+          "unidade": "km/h",
+          "casas": 0,
+          "passos": [
+            "A velocidade média é a distância total dividida pelo tempo total.",
+            "Distância total: {d1} + {d2} = {dt} km. Tempo total: {t1} + {t2} = {tt} h.",
+            "vm = {{dt}/{tt}} = {valor} km/h."
+          ]
+        },
+        {
+          "vars": {
+            "v1": {
+              "min": 4,
+              "max": 10
+            },
+            "v2": {
+              "min": 4,
+              "max": 10
+            },
+            "t": {
+              "min": 10,
+              "max": 60,
+              "step": 10
+            }
+          },
+          "deriv": {
+            "vr": "v1+v2",
+            "D": "vr*t"
+          },
+          "conceito": "MRU com dois móveis que se aproximam: as velocidades relativas se somam, e o tempo de encontro é a distância dividida por essa soma.",
+          "enunciado": "Dois ciclistas partem ao mesmo tempo, um em direção ao outro, de pontos de uma pista reta separados por {D} m. Um mantém {v1} m/s e o outro, {v2} m/s, ambos em velocidade constante. Após quantos segundos eles se encontram?",
+          "conta": "D/(v1+v2)",
+          "unidade": "s",
+          "casas": 0,
+          "passos": [
+            "Como se aproximam, a velocidade relativa é a soma: {v1} + {v2} = {vr} m/s.",
+            "Tempo de encontro: t = {{D}/{vr}} = {valor} s."
+          ]
+        },
+        {
+          "vars": {
+            "v0": {
+              "min": 5,
+              "max": 20,
+              "step": 5
+            },
+            "a": {
+              "min": 1,
+              "max": 4
+            },
+            "t": {
+              "min": 3,
+              "max": 10
+            }
+          },
+          "conceito": "MRUV: a velocidade varia de modo uniforme, v = v_{0} + a · t, com a em m/s² e t em s.",
+          "enunciado": "Ao sair de um pedágio a {v0} m/s, um carro acelera uniformemente a {a} m/s² durante {t} s. Qual é a velocidade do carro ao final desse intervalo, em m/s?",
+          "conta": "v0+a*t",
+          "unidade": "m/s",
+          "casas": 0,
+          "passos": [
+            "No MRUV, v = v_{0} + a · t.",
+            "v = {v0} + {a} · {t} = {valor} m/s."
+          ]
+        },
+        {
+          "vars": {
+            "k": {
+              "min": 1,
+              "max": 3
+            },
+            "a": {
+              "min": 2,
+              "max": 5
+            }
+          },
+          "deriv": {
+            "V": "36*k",
+            "u": "10*k"
+          },
+          "restricoes": [
+            [
+              "inteiro",
+              "u**2/(2*a)"
+            ]
+          ],
+          "conceito": "Freada até parar: sem o tempo no enunciado, use Torricelli com velocidade final nula, Δs = {v_{0}^{2}/2 · a}.",
+          "enunciado": "Um carro trafega a {V} km/h quando o motorista vê um obstáculo e freia com desaceleração constante de {a} m/s² até parar. Considerando apenas a freada, que distância o carro percorre, em metros? (Use as unidades do SI.)",
+          "conta": "u**2/(2*a)",
+          "unidade": "m",
+          "casas": 0,
+          "passos": [
+            "Converta: {V} km/h ÷ 3,6 = {u} m/s.",
+            "Torricelli com velocidade final nula: 0 = {u}^{2} − 2 · {a} · Δs.",
+            "Δs = {{u}^{2}/2 · {a}} = {valor} m."
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "eletricidade-ohm-potencia",
+    "dia": 2,
+    "nivel": "intermediario",
+    "titulo": "Eletricidade: corrente, tensão, resistência e potência (Ohm)",
+    "competencia": "C6",
+    "habilidades": [
+      "H21",
+      "H23"
+    ],
+    "conceito": [
+      "Corrente elétrica (i) é o fluxo ordenado de cargas: i = {Q/Δt}, medida em ampère (1 A = 1 C/s). Tensão (U) é a diferença de potencial que empurra as cargas, em volt (V). Resistência (R) mede a oposição à passagem da corrente, em ohm (Ω).",
+      "A primeira lei de Ohm, válida para resistores ôhmicos, diz que U = R · i. Com R constante, dobrar a tensão dobra a corrente.",
+      "Potência elétrica é a energia transformada por segundo: P = U · i, em watt (W). Combinando com Ohm, P = R · i^{2} = {U^{2}/R}. A energia é E = P · Δt; na conta de luz usa-se o quilowatt-hora (kWh), com a potência em kW e o tempo em horas."
+    ],
+    "quando": {
+      "sinais": [
+        "“tensão da rede” (110 V ou 220 V) ou “diferença de potencial”: é o U",
+        "“quanta corrente passa” com U e R dados: i = {U/R}",
+        "“potência do aparelho”, em W: P = U · i",
+        "“consumo em kWh” ou “custo na conta de luz”: E = P · Δt, com P em kW",
+        "“calor dissipado em um fio ou resistor”: P = R · i^{2} (efeito Joule)"
+      ],
+      "formula": "U = R · i; P = U · i; E = P · Δt",
+      "armadilhas": [
+        "Multiplicar watts por horas e chamar de kWh: divida a potência por 1000 antes.",
+        "Escolher a fórmula pela vontade e não pelos dados: veja quais duas grandezas o enunciado já deu e qual falta."
+      ]
+    },
+    "ler": {
+      "passos": [
+        "Circule o que se pede (corrente, tensão, potência ou custo) e a unidade da resposta.",
+        "Liste os dados com unidade: V, A, Ω, W, horas.",
+        "Veja quais duas grandezas já estão dadas e escolha a fórmula que entrega a terceira.",
+        "Converta antes de calcular: W em kW, minutos em horas.",
+        "Calcule e teste o sentido: aparelhos de casa usam de poucos ampères a algumas dezenas."
+      ],
+      "exemplo": {
+        "enunciado": "Um chuveiro elétrico, comprado em uma promoção de 2022, tem potência de 4400 W e é ligado à rede de 220 V. Qual é a corrente elétrica, em ampères, que passa pelo chuveiro?",
+        "anotacoes": [
+          {
+            "trecho": "comprado em uma promoção de 2022",
+            "papel": "distracao",
+            "nota": "não entra na conta"
+          },
+          {
+            "trecho": "potência de 4400 W",
+            "papel": "dado",
+            "nota": "P = 4400 W"
+          },
+          {
+            "trecho": "rede de 220 V",
+            "papel": "dado",
+            "nota": "a tensão U = 220 V"
+          },
+          {
+            "trecho": "Qual é a corrente elétrica",
+            "papel": "pede",
+            "nota": "de P = U · i: i = {4400/220} = 20"
+          },
+          {
+            "trecho": "em ampères",
+            "papel": "unidade",
+            "nota": "a resposta sai em A"
+          }
+        ]
+      }
+    },
+    "formulas": [
+      {
+        "nome": "Corrente elétrica",
+        "f": "i = {Q/Δt}",
+        "uso": "Quando o enunciado dá a carga que atravessa o condutor em certo tempo."
+      },
+      {
+        "nome": "Primeira lei de Ohm",
+        "f": "U = R · i",
+        "uso": "Resistor ôhmico: relaciona tensão, resistência e corrente."
+      },
+      {
+        "nome": "Potência elétrica",
+        "f": "P = U · i",
+        "uso": "Potência do aparelho a partir da tensão e da corrente."
+      },
+      {
+        "nome": "Potência dissipada",
+        "f": "P = R · i^{2} = {U^{2}/R}",
+        "uso": "Calor em resistores e fios, quando se conhece R."
+      },
+      {
+        "nome": "Energia consumida",
+        "f": "E = P · Δt",
+        "uso": "Com P em kW e Δt em h, a energia sai em kWh."
+      }
+    ],
+    "exemplos": [
+      {
+        "enunciado": "Um resistor de 15 Ω é percorrido por uma corrente de 4 A. Qual é a tensão entre seus terminais e a potência dissipada?",
+        "formula": "U = R · i",
+        "passos": [
+          "Lei de Ohm: U = R · i = 15 · 4 = 60 V.",
+          "Potência: P = U · i = 60 · 4 = 240 W.",
+          "Conferência: P = R · i^{2} = 15 · 16 = 240 W."
+        ]
+      },
+      {
+        "enunciado": "Um aparelho de 2000 W fica ligado 3 h por dia durante 30 dias. Qual é o consumo no mês, em kWh?",
+        "formula": "E = P · Δt",
+        "passos": [
+          "Potência em kW: 2000 W = 2 kW.",
+          "Tempo total: 3 · 30 = 90 h.",
+          "E = 2 · 90 = 180 kWh."
+        ]
+      }
+    ],
+    "truque": "Para a conta de luz, converta antes: W ÷ 1000 = kW e minutos ÷ 60 = horas. Depois é só multiplicar kW × h × tarifa.",
+    "erroComum": "Calcular energia mantendo watts e horas: 2000 W × 3 h = 6000 não é kWh. Divida os watts por 1000: 2 kW × 3 h = 6 kWh.",
+    "exercicios": [
+      {
+        "enunciado": "Um resistor de 8 Ω é percorrido por uma corrente de 5 A. Qual é a tensão entre seus terminais, em volts?",
+        "passos": [
+          "Lei de Ohm: U = R · i.",
+          "U = 8 · 5 = 40 V."
+        ],
+        "resposta": "40 V",
+        "conta": "8*5",
+        "valor": 40
+      },
+      {
+        "enunciado": "Um ferro de passar de 1100 W é ligado a uma tomada de 110 V. Qual é a corrente que o atravessa, em ampères?",
+        "passos": [
+          "De P = U · i, tem-se i = {P/U}.",
+          "i = {1100/110} = 10 A."
+        ],
+        "resposta": "10 A",
+        "conta": "1100/110",
+        "valor": 10
+      },
+      {
+        "enunciado": "Uma lâmpada de 60 W fica acesa 5 h por dia durante 30 dias. Qual é a energia consumida, em kWh?",
+        "passos": [
+          "Potência em kW: 60 W = 0,06 kW.",
+          "Tempo total: 5 · 30 = 150 h.",
+          "E = 0,06 · 150 = 9 kWh."
+        ],
+        "resposta": "9 kWh",
+        "conta": "60*5*30/1000",
+        "valor": 9
+      },
+      {
+        "enunciado": "Um resistor de 10 Ω é percorrido por uma corrente de 3 A. Qual é a potência dissipada, em watts?",
+        "passos": [
+          "P = R · i^{2}.",
+          "P = 10 · 3^{2} = 10 · 9 = 90 W."
+        ],
+        "resposta": "90 W",
+        "conta": "10*3**2",
+        "valor": 90
+      },
+      {
+        "enunciado": "Uma carga de 120 C atravessa a seção de um fio em 40 s, de modo constante. Qual é a corrente, em ampères?",
+        "passos": [
+          "i = {Q/Δt} = {120/40}.",
+          "i = 3 A."
+        ],
+        "resposta": "3 A",
+        "conta": "120/40",
+        "valor": 3
+      }
+    ],
+    "cartoes": [
+      {
+        "p": "Qual é a primeira lei de Ohm?",
+        "r": "U = R · i: a tensão é o produto da resistência pela corrente."
+      },
+      {
+        "p": "Como calcular a potência elétrica?",
+        "r": "P = U · i. Também vale P = R · i^{2} e P = {U^{2}/R}."
+      },
+      {
+        "p": "Como calcular o custo na conta de luz?",
+        "r": "Energia em kWh = potência em kW × tempo em h. Custo = energia × tarifa por kWh."
+      },
+      {
+        "p": "O que significa 1 ampère?",
+        "r": "1 coulomb de carga passando por segundo: 1 A = 1 C/s."
+      }
+    ],
+    "gerador": {
+      "vars": {},
+      "questoes": [
+        {
+          "vars": {
+            "i": {
+              "min": 2,
+              "max": 12
+            },
+            "t": {
+              "min": 5,
+              "max": 30,
+              "step": 5
+            }
+          },
+          "deriv": {
+            "q": "i*t"
+          },
+          "conceito": "Corrente elétrica é a carga que atravessa a seção do condutor por unidade de tempo: i = {Q/Δt}, em ampère (1 A = 1 C/s).",
+          "enunciado": "Em um fio de cobre de uma instalação, uma carga total de {q} C atravessa a seção do condutor em {t} s, de forma constante. Qual é a intensidade da corrente elétrica, em ampères?",
+          "conta": "q/t",
+          "unidade": "A",
+          "casas": 0,
+          "passos": [
+            "A corrente é a carga dividida pelo tempo: i = {Q/Δt}.",
+            "i = {{q}/{t}} = {valor} A."
+          ]
+        },
+        {
+          "vars": {
+            "R": {
+              "min": 5,
+              "max": 50,
+              "step": 5
+            },
+            "i": {
+              "min": 2,
+              "max": 12
+            }
+          },
+          "conceito": "Primeira lei de Ohm: em um resistor ôhmico, a tensão é U = R · i, com R em ohm, i em ampère e U em volt.",
+          "enunciado": "Um técnico mede que o resistor de um aquecedor de ambiente, de {R} Ω, é percorrido por uma corrente de {i} A. Qual é a tensão elétrica entre os terminais do resistor, em volts?",
+          "conta": "R*i",
+          "unidade": "V",
+          "casas": 0,
+          "passos": [
+            "Lei de Ohm: U = R · i.",
+            "U = {R} · {i} = {valor} V."
+          ]
+        },
+        {
+          "vars": {
+            "U": {
+              "min": 110,
+              "max": 220,
+              "step": 110
+            },
+            "i": {
+              "min": 5,
+              "max": 20
+            }
+          },
+          "conceito": "Potência elétrica é a energia transformada por segundo: P = U · i, em watts (1 W = 1 V · 1 A).",
+          "enunciado": "Um forno elétrico ligado à rede de {U} V é percorrido por uma corrente de {i} A. Qual é a potência do forno, em watts?",
+          "conta": "U*i",
+          "unidade": "W",
+          "casas": 0,
+          "passos": [
+            "A potência é o produto da tensão pela corrente: P = U · i.",
+            "P = {U} · {i} = {valor} W."
+          ]
+        },
+        {
+          "vars": {
+            "P": {
+              "min": 1000,
+              "max": 5000,
+              "step": 500
+            },
+            "h": {
+              "min": 1,
+              "max": 4
+            },
+            "d": {
+              "min": 10,
+              "max": 30,
+              "step": 10
+            },
+            "tar": {
+              "min": 0.6,
+              "max": 1,
+              "step": 0.05,
+              "casas": 2
+            }
+          },
+          "deriv": {
+            "pk": "P/1000",
+            "e": "P*h*d/1000"
+          },
+          "conceito": "Energia e custo: E = P · Δt, com P em kW e Δt em horas, dá a energia em kWh; o custo é a energia vezes a tarifa por kWh.",
+          "enunciado": "Um chuveiro elétrico de {P} W é usado por {h} h por dia, durante {d} dias. A tarifa é de R$ {tar} por kWh. Qual é o custo da energia consumida, em reais?",
+          "conta": "P*h*d*tar/1000",
+          "unidade": "reais",
+          "casas": 2,
+          "passos": [
+            "Potência em kW: {P} W = {pk} kW.",
+            "Energia: E = P · Δt = {pk} · {h} · {d} = {e} kWh.",
+            "Custo: {e} kWh · R$ {tar} = R$ {valor}."
+          ]
+        },
+        {
+          "vars": {
+            "R": {
+              "min": 2,
+              "max": 20
+            },
+            "i": {
+              "min": 2,
+              "max": 10
+            }
+          },
+          "conceito": "Efeito Joule: a potência dissipada em um resistor é P = R · i^{2}, equivalente a U · i com U = R · i.",
+          "enunciado": "Em um fio de uma instalação precária, de resistência {R} Ω, passa uma corrente de {i} A. Qual é a potência dissipada em forma de calor, em watts?",
+          "conta": "R*i**2",
+          "unidade": "W",
+          "casas": 0,
+          "passos": [
+            "Potência dissipada em um resistor: P = R · i^{2}.",
+            "P = {R} · {i}^{2} = {valor} W."
+          ]
+        }
+      ]
+    }
+  }
+]

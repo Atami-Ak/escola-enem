@@ -1,0 +1,486 @@
+[
+  {
+    "id": "genetica-primeira-lei-mendel",
+    "titulo": "Genética: 1ª lei de Mendel e probabilidade",
+    "nivel": "basico",
+    "dia": 1,
+    "competencia": "C4",
+    "habilidades": ["H13", "H15"],
+    "conceito": [
+      "A 1ª lei de Mendel (lei da segregação) diz que cada característica é determinada por um par de alelos, um recebido de cada genitor. Na formação dos gametas os dois alelos se separam, e cada gameta leva apenas um deles.",
+      "Quando os alelos são diferentes (Aa), o alelo dominante (A) se manifesta no fenótipo e o recessivo (a) só aparece em dupla (aa). Um heterozigoto Aa tem fenótipo dominante, mas pode transmitir o alelo recessivo: é um portador.",
+      "O cruzamento Aa × Aa gera 1 AA : 2 Aa : 1 aa, isto é, {3/4} de fenótipo dominante e {1/4} de fenótipo recessivo. Cada filho é um evento independente: a chance não “se compensa” de um filho para o outro, e eventos seguidos se multiplicam (regra do E)."
+    ],
+    "quando": {
+      "sinais": [
+        "“pais normais tiveram filho afetado”: os pais são heterozigotos (Aa) e o caráter afetado é recessivo",
+        "“probabilidade de o próximo filho”: cada filho é independente, use a chance do cruzamento",
+        "“e” entre eventos (menino e albino): multiplique as probabilidades",
+        "“filho de fenótipo dominante, qual a chance de ser portador”: o espaço amostral é só o fenótipo dominante, ou seja, {2/3}",
+        "“cruzamento-teste”: o indivíduo de fenótipo dominante é cruzado com um homozigoto recessivo (aa)"
+      ],
+      "formula": "P(evento) = casos favoráveis / casos possíveis; eventos independentes: P(A e B) = P(A) · P(B)",
+      "armadilhas": [
+        "Achar que, depois de um filho afetado, o próximo “tem menos chance”: a chance de cada filho continua a mesma.",
+        "Esquecer de restringir o espaço amostral: se já se sabe que o filho é normal, os casos possíveis são 3 (AA, Aa, Aa), não 4."
+      ]
+    },
+    "ler": {
+      "passos": [
+        "Identifique qual fenótipo é dominante e qual é recessivo (pistas: pais normais com filho afetado).",
+        "Escreva o genótipo dos pais; se houver filho recessivo, os pais fenotipicamente dominantes são Aa.",
+        "Monte o quadro de Punnett ou liste os gametas de cada genitor.",
+        "Veja se há condição extra (por exemplo, “já sendo normal” ou “do sexo masculino”) que reduza os casos possíveis.",
+        "Calcule a probabilidade e multiplique se houver mais de um evento independente."
+      ],
+      "exemplo": {
+        "enunciado": "Em uma fazenda de 30 hectares, um criador cruza dois coelhos de pelagem preta, ambos heterozigotos (Aa, em que A é o alelo dominante para a cor preta e a é o recessivo, que determina o albinismo). Ele quer saber a probabilidade de o próximo filhote ser albino.",
+        "anotacoes": [
+          { "trecho": "30 hectares", "papel": "distracao", "nota": "o tamanho da fazenda não entra na conta" },
+          { "trecho": "ambos heterozigotos (Aa", "papel": "dado", "nota": "os dois genitores são Aa: cruzamento Aa × Aa" },
+          { "trecho": "a é o recessivo, que determina o albinismo", "papel": "condicao", "nota": "albino é aa: precisa receber a de cada genitor" },
+          { "trecho": "a probabilidade de o próximo filhote ser albino", "papel": "pede", "nota": "{1/2} · {1/2} = {1/4}, ou seja, 25%" }
+        ]
+      }
+    },
+    "formulas": [
+      {
+        "nome": "Proporção do cruzamento Aa × Aa",
+        "f": "1 AA : 2 Aa : 1 aa  (fenótipos: {3/4} dominante, {1/4} recessivo)",
+        "uso": "Quando os dois genitores são heterozigotos para um par de alelos."
+      },
+      {
+        "nome": "Cruzamento-teste",
+        "f": "Aa × aa gera {1/2} Aa : {1/2} aa",
+        "uso": "Quando se quer descobrir se o indivíduo dominante é AA ou Aa."
+      },
+      {
+        "nome": "Regra do E (eventos independentes)",
+        "f": "P(A e B) = P(A) · P(B)",
+        "uso": "Quando se pede a chance de dois eventos acontecerem ao mesmo tempo ou em filhos seguidos."
+      },
+      {
+        "nome": "Probabilidade condicional (restrição do espaço amostral)",
+        "f": "P = casos favoráveis ÷ casos possíveis, só entre os que satisfazem a condição",
+        "uso": "Quando o enunciado já informa o fenótipo do indivíduo (por exemplo, “normal, qual a chance de ser portador”)."
+      }
+    ],
+    "exemplos": [
+      {
+        "enunciado": "Um casal de pigmentação normal tem um filho albino (aa). Qual é a probabilidade de o próximo filho também ser albino?",
+        "formula": "P(aa) = {1/2} · {1/2} = {1/4}",
+        "passos": [
+          "O filho albino (aa) recebeu a de cada genitor, portanto os pais normais são Aa.",
+          "Cada genitor transmite a com probabilidade {1/2}.",
+          "{1/2} × {1/2} = {1/4} = 25%. A chance não muda por já ter nascido um filho albino."
+        ]
+      },
+      {
+        "enunciado": "Uma criança de pigmentação normal é filha de pais Aa. Qual é a probabilidade de ela ser portadora do alelo do albinismo?",
+        "formula": "P(Aa | normal) = {2/3}",
+        "passos": [
+          "Do cruzamento Aa × Aa saem 1 AA, 2 Aa e 1 aa.",
+          "Como a criança é normal, descarta-se aa: restam 3 casos possíveis (AA, Aa, Aa).",
+          "Portadores (Aa) são 2 dos 3 casos: {2/3}, aproximadamente 66,7%."
+        ]
+      }
+    ],
+    "truque": "Monte sempre o quadro de Punnett com 4 quadradinhos para Aa × Aa. Depois conte: se o enunciado já diz o fenótipo do indivíduo, risque os quadradinhos que não servem antes de dividir.",
+    "erroComum": "Dizer que o portador entre os filhos normais de Aa × Aa tem probabilidade {1/2}: o certo é {2/3}, porque o genótipo aa já foi descartado pelo fenótipo normal.",
+    "exercicios": [
+      {
+        "enunciado": "Um casal de pigmentação normal, ambos Aa, quer ter filhos. Qual é a probabilidade, em %, de uma criança ser albina (aa)?",
+        "passos": [
+          "Aa × Aa gera 1 AA : 2 Aa : 1 aa.",
+          "Albino é só aa: {1/4} = 0,25.",
+          "0,25 = 25%."
+        ],
+        "resposta": "25%",
+        "conta": "1/4*100",
+        "valor": 25
+      },
+      {
+        "enunciado": "Em um cruzamento-teste (Aa × aa) em cobaias, nasceram 60 filhotes. Quantos se esperam de fenótipo recessivo (aa)?",
+        "passos": [
+          "Aa × aa gera {1/2} Aa e {1/2} aa.",
+          "{1/2} × 60 = 30."
+        ],
+        "resposta": "30 filhotes",
+        "conta": "60/2",
+        "valor": 30
+      },
+      {
+        "enunciado": "Um casal normal, ambos Aa para o albinismo, planeja ter um filho do sexo masculino e albino. Qual é a probabilidade, em %, desse evento?",
+        "passos": [
+          "Albino: {1/4}. Menino: {1/2}.",
+          "Eventos independentes: {1/4} × {1/2} = {1/8}.",
+          "{1/8} = 0,125 = 12,5%."
+        ],
+        "resposta": "12,5%",
+        "conta": "1/4*1/2*100",
+        "valor": 12.5
+      },
+      {
+        "enunciado": "Uma criança de pigmentação normal é filha de pais Aa. Qual é a probabilidade, em %, aproximada com uma casa decimal, de ela ser portadora (Aa)?",
+        "passos": [
+          "Entre os descendentes normais restam AA, Aa e Aa.",
+          "Portadores: {2/3}.",
+          "{2/3} ≈ 0,667 = 66,7%."
+        ],
+        "resposta": "66,7%",
+        "conta": "2/3*100",
+        "valor": 66.7
+      },
+      {
+        "enunciado": "Uma planta de ervilha de semente amarela Aa é autofecundada e produz 400 sementes. Quantas sementes amarelas (fenótipo dominante) se esperam?",
+        "passos": [
+          "Aa × Aa: {3/4} dos descendentes têm fenótipo dominante.",
+          "{3/4} × 400 = 300."
+        ],
+        "resposta": "300 sementes",
+        "conta": "400*3/4",
+        "valor": 300
+      }
+    ],
+    "cartoes": [
+      {
+        "p": "O que diz a 1ª lei de Mendel?",
+        "r": "Cada característica é determinada por um par de alelos, que se separam na formação dos gametas: cada gameta recebe só um deles."
+      },
+      {
+        "p": "Qual é a proporção fenotípica de Aa × Aa?",
+        "r": "3 de fenótipo dominante para 1 de recessivo."
+      },
+      {
+        "p": "Pais normais têm um filho afetado. O que se conclui?",
+        "r": "O caráter afetado é recessivo e os pais são heterozigotos (Aa)."
+      },
+      {
+        "p": "Qual é a probabilidade de um normal filho de Aa × Aa ser portador?",
+        "r": "{2/3}, pois o genótipo aa é descartado."
+      }
+    ],
+    "gerador": {
+      "vars": {},
+      "questoes": [
+        {
+          "vars": { "n": { "min": 8, "max": 80, "step": 4 } },
+          "conceito": "Cruzamento Aa × Aa: {3/4} dos descendentes têm fenótipo dominante e {1/4} têm fenótipo recessivo.",
+          "enunciado": "Em um experimento inspirado em Mendel, duas plantas de ervilha de sementes amarelas, ambas heterozigotas (Aa, em que A é o alelo dominante para a cor amarela), foram cruzadas e geraram {n} sementes. Quantas sementes amarelas são esperadas?",
+          "conta": "n*3/4",
+          "unidade": "sementes",
+          "casas": 0,
+          "passos": [
+            "Aa × Aa gera 1 AA : 2 Aa : 1 aa.",
+            "São amarelas (fenótipo dominante) as sementes AA e Aa: {3/4} do total.",
+            "{3/4} × {n} = {valor} sementes."
+          ]
+        },
+        {
+          "vars": { "n": { "min": 10, "max": 100, "step": 2 } },
+          "conceito": "Cruzamento-teste: o indivíduo dominante é cruzado com um homozigoto recessivo (aa). Se for Aa, metade da prole é recessiva.",
+          "enunciado": "Um criador faz um cruzamento-teste (Aa × aa) para saber se um touro de pelagem dominante é heterozigoto. A prole totalizou {n} bezerros. Quantos bezerros de fenótipo recessivo se esperam?",
+          "conta": "n/2",
+          "unidade": "bezerros",
+          "casas": 0,
+          "passos": [
+            "O cruzamento Aa × aa gera {1/2} Aa e {1/2} aa.",
+            "Os de fenótipo recessivo são os aa: {1/2} da prole.",
+            "{1/2} × {n} = {valor} bezerros."
+          ]
+        },
+        {
+          "vars": { "n": { "min": 6, "max": 60, "step": 3 } },
+          "conceito": "Probabilidade condicional: se já se sabe que o descendente tem fenótipo dominante, o espaço amostral é AA, Aa e Aa, e {2/3} são portadores.",
+          "enunciado": "Um casal de pigmentação normal, ambos heterozigotos para o albinismo (Aa), teve {n} filhos de pigmentação normal. Em média, quantos desses filhos são portadores do alelo do albinismo?",
+          "conta": "n*2/3",
+          "unidade": "filhos",
+          "casas": 0,
+          "passos": [
+            "Entre os filhos normais, descarta-se aa: restam AA, Aa e Aa.",
+            "Portadores (Aa) são {2/3} dos filhos normais.",
+            "{2/3} × {n} = {valor} filhos."
+          ]
+        },
+        {
+          "vars": { "k": { "min": 2, "max": 4 } },
+          "conceito": "Regra do E: em eventos independentes, como filhos de um mesmo casal, as probabilidades se multiplicam.",
+          "enunciado": "Um casal em que ambos são heterozigotos (Aa) para o albinismo quer ter {k} filhos. Qual é a probabilidade, em %, de todos terem pigmentação normal?",
+          "conta": "0.75**k*100",
+          "unidade": "%",
+          "casas": 2,
+          "passos": [
+            "Cada filho tem {3/4} = 0,75 de chance de ter pigmentação normal.",
+            "Os filhos são eventos independentes: multiplique 0,75 por ele mesmo {k} vezes, ou seja, 0,75^{{k}}.",
+            "0,75^{{k}} × 100 = {valor}%."
+          ]
+        },
+        {
+          "vars": { "n": { "min": 8, "max": 80, "step": 4 } },
+          "conceito": "Genótipos de Aa × Aa: 1 AA : 2 Aa : 1 aa. Os homozigotos (AA e aa) somam metade dos descendentes.",
+          "enunciado": "Dois cães heterozigotos (Aa) para uma característica de pelagem tiveram {n} filhotes. Quantos filhotes homozigotos (AA ou aa) se esperam?",
+          "conta": "n/2",
+          "unidade": "filhotes",
+          "casas": 0,
+          "passos": [
+            "A proporção genotípica é 1 AA : 2 Aa : 1 aa.",
+            "Homozigotos são AA e aa: {1/4} + {1/4} = {1/2} do total.",
+            "{1/2} × {n} = {valor} filhotes."
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "ecologia-cadeias-energia-densidade",
+    "titulo": "Ecologia: cadeias alimentares, energia (regra dos 10%) e densidade populacional",
+    "nivel": "intermediario",
+    "dia": 2,
+    "competencia": "C3",
+    "habilidades": ["H12", "H8"],
+    "conceito": [
+      "Em uma cadeia alimentar, a energia entra pelos produtores (fotossíntese) e passa aos consumidores primários, secundários e assim por diante. Cada nível trófico perde a maior parte da energia como calor da respiração e em partes não aproveitadas.",
+      "Pela regra dos 10%, em média apenas cerca de 10% da energia de um nível trófico chega ao seguinte. Por isso as cadeias são curtas e as pirâmides de energia nunca se invertem: o nível mais alto dispõe de pouquíssima energia.",
+      "A densidade populacional é o número de indivíduos por unidade de área (ou de volume): densidade = N ÷ A. Quando não dá para contar todos os indivíduos, estima-se N por captura e recaptura: N ≈ (marcados · segunda captura) ÷ marcados recapturados."
+    ],
+    "quando": {
+      "sinais": [
+        "“quanta energia chega ao nível seguinte”: multiplique por {1/10}",
+        "“quanta energia os produtores precisam fixar”: caminho inverso, multiplique por 10 a cada nível",
+        "“consumidor secundário, terciário”: conte os níveis a partir dos produtores (nível 1)",
+        "“indivíduos por km²” ou “por hectare”: é densidade, divida o número de indivíduos pela área",
+        "“marcados e soltos, depois recapturados”: estimativa por captura e recaptura"
+      ],
+      "formula": "energia no nível n: E_{n} = E_{1} / 10^{n−1}; densidade d = N / A",
+      "armadilhas": [
+        "Contar o consumidor primário como nível 1: o nível 1 é sempre o produtor, e o consumidor primário é o nível 2.",
+        "Aplicar a regra dos 10% à matéria que não é energia, ou usar 10% quando o enunciado dá outra eficiência."
+      ]
+    },
+    "ler": {
+      "passos": [
+        "Identifique o que se pede: energia, biomassa ou densidade?",
+        "Numere os níveis tróficos: produtor = 1, consumidor primário = 2, secundário = 3 e assim por diante.",
+        "Descubra a eficiência de transferência (10% se o enunciado mandar usar a regra dos 10%).",
+        "Conte quantas transferências existem entre o nível dado e o pedido.",
+        "Multiplique (ou divida) pela eficiência uma vez por transferência e confira a unidade."
+      ],
+      "exemplo": {
+        "enunciado": "Em um lago de 5 km², a energia fixada pelos produtores é de 40.000 kcal por m² ao ano. Considere que, a cada nível trófico, apenas 10% da energia passa ao seguinte. Qual é a energia, em kcal por m² ao ano, disponível para os peixes carnívoros, que são consumidores secundários?",
+        "anotacoes": [
+          { "trecho": "5 km²", "papel": "distracao", "nota": "a área do lago não entra no cálculo da energia por m²" },
+          { "trecho": "40.000 kcal por m² ao ano", "papel": "dado", "nota": "energia do nível 1 (produtores)" },
+          { "trecho": "apenas 10% da energia passa ao seguinte", "papel": "condicao", "nota": "fator {1/10} a cada nível" },
+          { "trecho": "consumidores secundários", "papel": "condicao", "nota": "nível 3: duas transferências a partir dos produtores" },
+          { "trecho": "Qual é a energia", "papel": "pede", "nota": "40.000 · 0,1 · 0,1 = 400" },
+          { "trecho": "em kcal por m² ao ano", "papel": "unidade", "nota": "a resposta mantém a unidade do dado" }
+        ]
+      }
+    },
+    "formulas": [
+      {
+        "nome": "Energia no nível trófico n",
+        "f": "E_{n} = E_{1} · {1/10}^{n−1}",
+        "uso": "Quando se pede a energia que chega a um nível a partir dos produtores, com 10% de eficiência."
+      },
+      {
+        "nome": "Energia nos produtores (caminho inverso)",
+        "f": "E_{1} = E_{n} · 10^{n−1}",
+        "uso": "Quando se conhece a energia de um nível alto e se pergunta quanto os produtores precisam fixar."
+      },
+      {
+        "nome": "Densidade populacional",
+        "f": "d = N / A",
+        "uso": "Quando se pede indivíduos por unidade de área (por km², por hectare, por m²)."
+      },
+      {
+        "nome": "Captura e recaptura",
+        "f": "N ≈ M · C / R",
+        "uso": "Quando M indivíduos são marcados, depois C são capturados e R deles estão marcados."
+      }
+    ],
+    "exemplos": [
+      {
+        "enunciado": "Os produtores de uma cadeia fixam 50.000 kJ. Quanta energia, pela regra dos 10%, chega aos consumidores terciários (4º nível)?",
+        "formula": "E_{4} = 50.000 / 10^{3} = 50",
+        "passos": [
+          "Produtores = nível 1; consumidores terciários = nível 4.",
+          "Entre o nível 1 e o 4 há 3 transferências, cada uma com 10%.",
+          "50.000 ÷ 1.000 = 50 kJ."
+        ]
+      },
+      {
+        "enunciado": "Em uma reserva de 25 km², vivem 500 capivaras. Qual é a densidade populacional?",
+        "formula": "d = 500 / 25 = 20",
+        "passos": [
+          "Densidade é número de indivíduos dividido pela área.",
+          "500 ÷ 25 = 20 capivaras por km²."
+        ]
+      }
+    ],
+    "truque": "Cada seta da cadeia alimentar divide a energia por 10. Conte as setas, não os organismos: do produtor ao consumidor terciário são 3 setas, ou seja, 3 zeros a menos.",
+    "erroComum": "Contar o consumidor primário como nível 1 e errar o número de transferências. O nível 1 é o produtor; do produtor ao consumidor secundário são 2 transferências, não 3.",
+    "exercicios": [
+      {
+        "enunciado": "Em um campo, os produtores (capim) fixam 20.000 kcal por ano. Pela regra dos 10%, quantas kcal chegam aos herbívoros (consumidores primários)?",
+        "passos": [
+          "Produtor → consumidor primário: uma transferência de 10%.",
+          "20.000 × 0,10 = 2.000."
+        ],
+        "resposta": "2.000 kcal",
+        "conta": "20000*0.1",
+        "valor": 2000
+      },
+      {
+        "enunciado": "Em um lago, os produtores fixam 50.000 kJ por m² ao ano. Pela regra dos 10%, quantos kJ por m² ao ano chegam ao consumidor terciário (4º nível)?",
+        "passos": [
+          "Do nível 1 ao nível 4 há 3 transferências.",
+          "50.000 × 0,1 × 0,1 × 0,1 = 50."
+        ],
+        "resposta": "50 kJ",
+        "conta": "50000/10**3",
+        "valor": 50
+      },
+      {
+        "enunciado": "Em uma reserva de 12 km², foram contados 600 indivíduos de lobo-guará. Qual é a densidade populacional, em indivíduos por km²?",
+        "passos": [
+          "d = N ÷ A.",
+          "600 ÷ 12 = 50."
+        ],
+        "resposta": "50 indivíduos por km²",
+        "conta": "600/12",
+        "valor": 50
+      },
+      {
+        "enunciado": "Uma cobra (consumidora secundária, 3º nível) recebe 80 kcal. Pela regra dos 10%, quantas kcal os produtores precisaram fixar?",
+        "passos": [
+          "Do nível 1 ao nível 3 há 2 transferências.",
+          "Caminho inverso: multiplique por 10 duas vezes.",
+          "80 × 10 × 10 = 8.000."
+        ],
+        "resposta": "8.000 kcal",
+        "conta": "80*10**2",
+        "valor": 8000
+      },
+      {
+        "enunciado": "Para estimar a população de peixes de um açude, pesquisadores marcaram 40 peixes e os soltaram. Na segunda captura, pegaram 30 peixes, dos quais 6 estavam marcados. Qual é a estimativa do total de peixes?",
+        "passos": [
+          "A proporção de marcados na amostra, {6/30}, é igual à de marcados na população, {40/N}.",
+          "N = {40 × 30/6}.",
+          "N = 200 peixes."
+        ],
+        "resposta": "200 peixes",
+        "conta": "40*30/6",
+        "valor": 200
+      }
+    ],
+    "cartoes": [
+      {
+        "p": "O que diz a regra dos 10%?",
+        "r": "Em média, só cerca de 10% da energia de um nível trófico passa ao nível seguinte; o restante se perde, principalmente como calor."
+      },
+      {
+        "p": "Por que as cadeias alimentares são curtas?",
+        "r": "Porque a energia disponível cai muito a cada nível, e nos últimos níveis sobra pouca para sustentar outro."
+      },
+      {
+        "p": "Como se calcula a densidade populacional?",
+        "r": "Dividindo o número de indivíduos pela área (ou volume) que ocupam: d = N ÷ A."
+      },
+      {
+        "p": "Para que serve o método de captura e recaptura?",
+        "r": "Para estimar o tamanho de uma população quando é impossível contar todos os indivíduos."
+      }
+    ],
+    "gerador": {
+      "vars": {},
+      "questoes": [
+        {
+          "vars": {
+            "E": { "min": 10000, "max": 100000, "step": 5000 },
+            "k": { "min": 2, "max": 4 }
+          },
+          "deriv": { "kk": "k-1" },
+          "conceito": "Regra dos 10%: a energia cai a um décimo a cada nível trófico. No nível k há k − 1 transferências desde os produtores.",
+          "enunciado": "Em uma lagoa, as algas (produtores) fixam {E} kcal por m² ao ano. Considerando que apenas 10% da energia passa de um nível trófico ao seguinte, quantas kcal por m² ao ano chegam ao {k}º nível trófico? (O 1º nível é o dos produtores.)",
+          "conta": "E/10**kk",
+          "unidade": "kcal por m² ao ano",
+          "casas": 0,
+          "passos": [
+            "Do 1º ao {k}º nível há {kk} transferências, cada uma com 10%.",
+            "A energia fica dividida por 10^{{kk}}.",
+            "{E} ÷ 10^{{kk}} = {valor} kcal por m² ao ano."
+          ]
+        },
+        {
+          "vars": {
+            "X": { "min": 5, "max": 50, "step": 5 },
+            "k": { "min": 2, "max": 4 }
+          },
+          "deriv": { "kk": "k-1" },
+          "conceito": "Caminho inverso: para saber quanta energia os produtores fixaram, multiplique por 10 a cada transferência contada de trás para a frente.",
+          "enunciado": "Em um ecossistema, os organismos do {k}º nível trófico dispõem de {X} kJ de energia por dia. Pela regra dos 10%, quantos kJ por dia os produtores precisaram fixar? (O 1º nível é o dos produtores.)",
+          "conta": "X*10**kk",
+          "unidade": "kJ por dia",
+          "casas": 0,
+          "passos": [
+            "Do 1º ao {k}º nível há {kk} transferências.",
+            "No caminho inverso, multiplica-se por 10 a cada uma: 10^{{kk}}.",
+            "{X} × 10^{{kk}} = {valor} kJ por dia."
+          ]
+        },
+        {
+          "vars": {
+            "E": { "min": 2000, "max": 20000, "step": 2000 },
+            "p": { "min": 5, "max": 20, "step": 5 }
+          },
+          "conceito": "A eficiência de transferência varia conforme o ecossistema (cerca de 5% a 20%); a regra dos 10% é só uma média.",
+          "enunciado": "Em uma cadeia alimentar marinha, o fitoplâncton fixa {E} kcal por m² ao ano. A eficiência de transferência de energia para o zooplâncton (consumidor primário) é de {p}%. Quantas kcal por m² ao ano chegam ao zooplâncton?",
+          "conta": "E*p/100",
+          "unidade": "kcal por m² ao ano",
+          "casas": 0,
+          "passos": [
+            "{p}% = {{p}/100}.",
+            "Energia no nível seguinte = energia do nível anterior × eficiência.",
+            "{E} × {{p}/100} = {valor} kcal por m² ao ano."
+          ]
+        },
+        {
+          "vars": {
+            "A": { "min": 5, "max": 40, "step": 5 },
+            "d": { "min": 3, "max": 25 }
+          },
+          "deriv": { "N": "A*d" },
+          "conceito": "Densidade populacional é o número de indivíduos por unidade de área: d = N ÷ A.",
+          "enunciado": "Em uma área de cerrado de {A} hectares, pesquisadores contaram {N} pequizeiros. Qual é a densidade populacional dessa espécie, em indivíduos por hectare?",
+          "conta": "N/A",
+          "unidade": "indivíduos por hectare",
+          "casas": 0,
+          "passos": [
+            "Densidade = número de indivíduos ÷ área.",
+            "{N} ÷ {A} = {valor}.",
+            "A densidade é de {valor} indivíduos por hectare."
+          ]
+        },
+        {
+          "vars": {
+            "M": { "min": 20, "max": 100, "step": 10 },
+            "C": { "min": 30, "max": 90, "step": 10 },
+            "R": { "min": 2, "max": 10 }
+          },
+          "restricoes": [["inteiro", "M*C/R"]],
+          "conceito": "Captura e recaptura: a proporção de marcados na segunda amostra é igual à proporção de marcados na população, o que permite estimar N.",
+          "enunciado": "Para estimar a população de peixes de um açude, pesquisadores capturaram e marcaram {M} peixes e os soltaram. Dias depois, capturaram {C} peixes, dos quais {R} estavam marcados. Qual é a estimativa do número total de peixes do açude?",
+          "conta": "M*C/R",
+          "unidade": "peixes",
+          "casas": 0,
+          "passos": [
+            "A proporção de marcados na amostra é {{R}/{C}}; na população, é {{M}/N}.",
+            "Igualando: N = {{M} × {C}/{R}}.",
+            "N = {valor} peixes."
+          ]
+        }
+      ]
+    }
+  }
+]

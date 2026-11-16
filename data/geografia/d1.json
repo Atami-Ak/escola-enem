@@ -1,0 +1,454 @@
+[
+  {
+    "id": "demografia-densidade-natalidade-mortalidade",
+    "dia": 1,
+    "nivel": "basico",
+    "titulo": "Demografia: densidade, taxas de natalidade/mortalidade e crescimento",
+    "competencia": "C2",
+    "habilidades": ["H6", "H7"],
+    "conceito": [
+      "A densidade demográfica mede quantas pessoas vivem, em média, em cada unidade de área: {população/área}, em habitantes por km². É uma média: uma cidade pode ter densidade baixa e, ainda assim, ter bairros muito lotados.",
+      "A taxa de natalidade e a taxa de mortalidade comparam nascimentos e óbitos de um ano com a população total. Costumam ser expressas em ‰ (por mil habitantes): {nascidos/população} × 1000.",
+      "O crescimento vegetativo (ou natural) é a diferença entre natalidade e mortalidade. Ele não conta migrações. Se natalidade > mortalidade, a população cresce; 10‰ equivalem a 1%."
+    ],
+    "quando": {
+      "sinais": [
+        "“habitantes por km²”, “concentração” ou “ocupação do território”: densidade demográfica",
+        "“para cada mil habitantes” ou “‰”: taxa de natalidade ou de mortalidade",
+        "“crescimento natural” ou “vegetativo”: natalidade menos mortalidade",
+        "“desconsiderando a migração”: o crescimento vem só de nascimentos e óbitos"
+      ],
+      "formula": "densidade = {população/área}; taxa = {casos/população} × 1000; CV = natalidade − mortalidade",
+      "armadilhas": [
+        "Confundir densidade (média por área) com população absoluta: um território grande e vazio pode ter muita gente e baixa densidade.",
+        "Esquecer de converter ‰ em % (divida por 10) ou de multiplicar por 1000 ao calcular a taxa."
+      ]
+    },
+    "ler": {
+      "passos": [
+        "Circule o que a pergunta pede: densidade, taxa ou crescimento.",
+        "Anote população, área e/ou número de nascimentos e óbitos, com as unidades.",
+        "Risque datas e dados que não entram na conta.",
+        "Monte a divisão certa: população ÷ área, ou casos ÷ população × 1000.",
+        "Confira a unidade pedida (hab/km², ‰ ou %) e se o resultado é plausível."
+      ],
+      "exemplo": {
+        "enunciado": "Uma cidade fictícia, fundada em 1950, tem 480.000 habitantes distribuídos em 600 km². Qual é a densidade demográfica, em habitantes por km²?",
+        "anotacoes": [
+          { "trecho": "fundada em 1950", "papel": "distracao", "nota": "a data não entra na conta" },
+          { "trecho": "480.000 habitantes", "papel": "dado", "nota": "numerador da densidade" },
+          { "trecho": "600 km²", "papel": "unidade", "nota": "a área está em km², a unidade pedida" },
+          { "trecho": "Qual é a densidade demográfica, em habitantes por km²", "papel": "pede", "nota": "{480000/600} = 800 hab/km²" }
+        ]
+      }
+    },
+    "formulas": [
+      {
+        "nome": "Densidade demográfica",
+        "f": "d = {população/área}",
+        "uso": "Quando o enunciado dá habitantes e área e pede a média por km²."
+      },
+      {
+        "nome": "Taxa de natalidade (ou mortalidade)",
+        "f": "taxa = {nascidos/população} × 1000",
+        "uso": "Resultado em ‰; para mortalidade, troque nascidos por óbitos."
+      },
+      {
+        "nome": "Crescimento vegetativo",
+        "f": "CV = natalidade − mortalidade",
+        "uso": "Em ‰; divida por 10 para obter %."
+      }
+    ],
+    "exemplos": [
+      {
+        "enunciado": "Um país hipotético tem 1.000.000 de habitantes. Em um ano, houve 15.000 nascimentos e 9.000 óbitos. Qual é o crescimento vegetativo, em ‰ e em %?",
+        "formula": "CV = {15000/1000000} × 1000 − {9000/1000000} × 1000",
+        "passos": [
+          "Natalidade: {15000/1000000} × 1000 = 15‰.",
+          "Mortalidade: {9000/1000000} × 1000 = 9‰.",
+          "CV = 15 − 9 = 6‰, ou seja, 0,6% ao ano."
+        ]
+      },
+      {
+        "enunciado": "Uma cidade fictícia de 900.000 habitantes ocupa 300 km². Qual é a densidade demográfica?",
+        "formula": "d = {900000/300}",
+        "passos": [
+          "Divida a população pela área: {900000/300}.",
+          "d = 3.000 hab/km²."
+        ]
+      }
+    ],
+    "truque": "Taxa por mil é só uma regra de três: se 15.000 nascimentos ocorrem em 1.000.000 de pessoas, então a cada 1.000 pessoas ocorrem 15. Divida a população por 1.000 antes e depois divida os casos por esse resultado.",
+    "erroComum": "Chamar crescimento vegetativo de 'crescimento da população'. O crescimento total inclui também a migração; o vegetativo considera só nascimentos menos óbitos. Outro erro é ler 8‰ como 8%: 8‰ são 0,8%.",
+    "exercicios": [
+      {
+        "enunciado": "Uma cidade fictícia tem 250.000 habitantes em uma área de 500 km². Qual é a densidade demográfica, em hab/km²?",
+        "passos": [
+          "Densidade = população ÷ área.",
+          "d = {250000/500} = 500."
+        ],
+        "resposta": "500 hab/km²",
+        "conta": "250000/500",
+        "valor": 500
+      },
+      {
+        "enunciado": "Em uma cidade fictícia de 2.000.000 de habitantes houve 28.000 nascimentos em um ano. Qual é a taxa de natalidade, em ‰?",
+        "passos": [
+          "Taxa = {nascidos/população} × 1000.",
+          "{28000/2000000} × 1000 = 14."
+        ],
+        "resposta": "14‰",
+        "conta": "28000/2000000*1000",
+        "valor": 14
+      },
+      {
+        "enunciado": "Um país hipotético com 2.500.000 habitantes teve 40.000 nascimentos e 25.000 óbitos em um ano. Qual foi o crescimento vegetativo, em ‰?",
+        "passos": [
+          "Diferença entre nascimentos e óbitos: 40.000 − 25.000 = 15.000.",
+          "CV = {15000/2500000} × 1000 = 6‰."
+        ],
+        "resposta": "6‰",
+        "conta": "(40000-25000)/2500000*1000",
+        "valor": 6
+      },
+      {
+        "enunciado": "Em um país hipotético, o crescimento vegetativo foi de 8‰ ao ano. Quanto é isso em porcentagem?",
+        "passos": [
+          "1% = 10‰, então divida por 10.",
+          "{8/10} = 0,8%."
+        ],
+        "resposta": "0,8%",
+        "conta": "8/10",
+        "valor": 0.8
+      },
+      {
+        "enunciado": "Uma cidade fictícia de 800.000 habitantes tem crescimento vegetativo de 1,2% ao ano. Quantos habitantes a mais ela ganha em um ano por esse crescimento?",
+        "passos": [
+          "Aplique a porcentagem sobre a população: 800.000 × {1,2/100}.",
+          "800000 × 1,2 ÷ 100 = 9.600."
+        ],
+        "resposta": "9.600 habitantes",
+        "conta": "800000*1.2/100",
+        "valor": 9600
+      }
+    ],
+    "cartoes": [
+      {
+        "p": "Como se calcula a densidade demográfica?",
+        "r": "População dividida pela área (hab/km²). É uma média, não mostra onde as pessoas se concentram."
+      },
+      {
+        "p": "O que significa 12‰ de natalidade?",
+        "r": "12 nascimentos por ano para cada 1.000 habitantes."
+      },
+      {
+        "p": "Como se obtém o crescimento vegetativo?",
+        "r": "Natalidade menos mortalidade. Se der positivo, a população cresce naturalmente; 10‰ = 1%."
+      }
+    ],
+    "gerador": {
+      "vars": {},
+      "restricoes": [],
+      "questoes": [
+        {
+          "vars": { "d": { "min": 50, "max": 400, "step": 10 }, "A": { "min": 100, "max": 900, "step": 100 } },
+          "deriv": { "pop": "d*A" },
+          "conceito": "Densidade demográfica é população dividida pela área: {população/área}, em hab/km².",
+          "enunciado": "Uma cidade fictícia tem {pop} habitantes em {A} km². Qual é a densidade demográfica?",
+          "conta": "pop/A",
+          "unidade": "hab/km²",
+          "casas": 0,
+          "passos": [
+            "Densidade = população ÷ área.",
+            "d = {{pop}/{A}} = {valor} hab/km²."
+          ]
+        },
+        {
+          "vars": { "d": { "min": 20, "max": 300, "step": 10 }, "A": { "min": 50, "max": 500, "step": 50 } },
+          "conceito": "Conhecendo a densidade e a área, a população total é o produto das duas: população = densidade × área.",
+          "enunciado": "Um país hipotético tem densidade demográfica de {d} hab/km² em uma região de {A} km². Quantos habitantes vivem nela?",
+          "conta": "d*A",
+          "unidade": "habitantes",
+          "casas": 0,
+          "passos": [
+            "A densidade é {população/área}, então população = densidade × área.",
+            "{d} × {A} = {valor} habitantes."
+          ]
+        },
+        {
+          "vars": { "M": { "min": 100, "max": 900, "step": 100 }, "tm": { "min": 4, "max": 14 } },
+          "deriv": { "pop": "M*1000", "o": "tm*M" },
+          "conceito": "Taxa de mortalidade é a razão entre óbitos e população, multiplicada por 1000 para sair em ‰.",
+          "enunciado": "Uma cidade fictícia de {pop} habitantes registrou {o} óbitos em um ano. Qual é a taxa de mortalidade, em ‰?",
+          "conta": "o/pop*1000",
+          "unidade": "‰",
+          "casas": 0,
+          "passos": [
+            "Taxa = {óbitos/população} × 1000.",
+            "{{o}/{pop}} × 1000 = {valor}‰."
+          ]
+        },
+        {
+          "vars": { "M": { "min": 100, "max": 900, "step": 100 }, "tn": { "min": 14, "max": 30 }, "tm": { "min": 4, "max": 12 } },
+          "deriv": { "pop": "M*1000", "n": "tn*M", "o": "tm*M", "sn": "n-o" },
+          "restricoes": [["positivo", "n-o"]],
+          "conceito": "Crescimento vegetativo é natalidade menos mortalidade; migrações não entram. Com nascimentos e óbitos, calcule a diferença e divida pela população.",
+          "enunciado": "Um país hipotético de {pop} habitantes teve {n} nascimentos e {o} óbitos em um ano. Qual foi o crescimento vegetativo, em ‰?",
+          "conta": "(n-o)/pop*1000",
+          "unidade": "‰",
+          "casas": 0,
+          "passos": [
+            "Saldo natural: {n} − {o} = {sn}.",
+            "CV = {{sn}/{pop}} × 1000 = {valor}‰."
+          ]
+        },
+        {
+          "vars": { "M": { "min": 200, "max": 900, "step": 100 }, "cv": { "min": 4, "max": 15 } },
+          "deriv": { "pop": "M*1000" },
+          "conceito": "Uma taxa em ‰ aplicada à população total dá o número de pessoas: ganho = população × {taxa/1000}.",
+          "enunciado": "Uma cidade fictícia de {pop} habitantes tem crescimento vegetativo de {cv}‰ ao ano. Quantos habitantes a mais ela ganha em um ano, só por esse crescimento?",
+          "conta": "pop*cv/1000",
+          "unidade": "habitantes",
+          "casas": 0,
+          "passos": [
+            "{cv}‰ significam {cv} para cada 1.000 habitantes.",
+            "{pop} × {{cv}/1000} = {valor} habitantes."
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "fusos-horarios-coordenadas",
+    "dia": 2,
+    "nivel": "intermediario",
+    "titulo": "Fusos horários e coordenadas",
+    "competencia": "C2",
+    "habilidades": ["H6", "H7"],
+    "conceito": [
+      "A Terra gira 360° em 24 horas, então cada hora corresponde a 15° de longitude: {360/24} = 15. Cada fuso horário tem, em média, 15° de largura, e o meridiano de Greenwich (0°) é a referência.",
+      "Quem está a leste de outro lugar vê o Sol antes: tem horas adiantadas (soma). Quem está a oeste tem horas atrasadas (subtrai). Se as cidades ficam em hemisférios opostos em relação a Greenwich, some as longitudes; se ficam do mesmo lado, subtraia.",
+      "A localização é dada por coordenadas: latitude (0° no Equador, até 90° N ou S) e longitude (0° em Greenwich, até 180° L ou O). Aqui consideramos os fusos regulares, sem exceções políticas ou horário de verão."
+    ],
+    "quando": {
+      "sinais": [
+        "“que horas são em…” ou “diferença de horário”: fusos horários",
+        "“a leste” ou “a oeste”: define se o horário adianta ou atrasa",
+        "“meridiano de X°” ou “longitude”: converta para horas dividindo por 15",
+        "“latitude” ou “paralelo”: posição norte-sul, não afeta o fuso"
+      ],
+      "formula": "Δh = {Δlongitude/15}; leste: hora + Δh; oeste: hora − Δh",
+      "armadilhas": [
+        "Somar quando deveria subtrair: a oeste o relógio atrasa, a leste adianta.",
+        "Usar a latitude no cálculo de horário: o fuso depende só da longitude."
+      ]
+    },
+    "ler": {
+      "passos": [
+        "Circule o que se pede: diferença de horário, hora local ou coordenada.",
+        "Anote as longitudes com a letra (L ou O) e o horário de referência.",
+        "Risque informações de decoração (eventos, nomes, latitudes) quando o pedido é de horário.",
+        "Calcule a diferença de longitude e divida por 15 para obter as horas.",
+        "Decida a direção: leste soma, oeste subtrai; confira se o resultado passou de 24h."
+      ],
+      "exemplo": {
+        "enunciado": "Uma cidade fictícia está a 45° O e outra a 75° O, e em cada uma há uma feira de livros marcada para domingo. Na primeira são 14h. Que horas são na segunda?",
+        "anotacoes": [
+          { "trecho": "45° O", "papel": "dado", "nota": "longitude da cidade de referência" },
+          { "trecho": "75° O", "papel": "dado", "nota": "diferença de 30°, que são {30/15} = 2 horas" },
+          { "trecho": "uma feira de livros marcada para domingo", "papel": "distracao", "nota": "não entra na conta" },
+          { "trecho": "são 14h", "papel": "dado", "nota": "horário de referência, na cidade mais a leste" },
+          { "trecho": "Que horas são na segunda", "papel": "pede", "nota": "75° O está a oeste: 14 − 2 = 12h" }
+        ]
+      }
+    },
+    "formulas": [
+      {
+        "nome": "Diferença de horas",
+        "f": "Δh = {Δlongitude/15}",
+        "uso": "Converte diferença de longitude em horas."
+      },
+      {
+        "nome": "Diferença de longitude",
+        "f": "Δlongitude = Δh × 15",
+        "uso": "Quando se conhece a diferença de horário e se quer a distância angular."
+      },
+      {
+        "nome": "Hora local",
+        "f": "hora = hora de referência ± Δh",
+        "uso": "Soma a leste, subtrai a oeste."
+      },
+      {
+        "nome": "Meridiano central do fuso",
+        "f": "longitude = 15 × n",
+        "uso": "Para um fuso UTC+n (leste) ou UTC−n (oeste)."
+      }
+    ],
+    "exemplos": [
+      {
+        "enunciado": "Em uma cidade fictícia a 30° O são 15h. Que horas são em outra a 75° O?",
+        "formula": "Δh = {(75-30)/15}",
+        "passos": [
+          "Mesmo hemisfério: subtraia as longitudes, 75 − 30 = 45°.",
+          "Δh = {45/15} = 3 horas.",
+          "75° O está mais a oeste, então o relógio está atrasado: 15 − 3 = 12h."
+        ]
+      },
+      {
+        "enunciado": "Em uma cidade fictícia a 45° O são 20h. Que horas são em outra a 60° L?",
+        "formula": "Δh = {(45+60)/15}",
+        "passos": [
+          "Hemisférios opostos: some as longitudes, 45 + 60 = 105°.",
+          "Δh = {105/15} = 7 horas.",
+          "60° L está a leste, então adianta: 20 + 7 = 27, ou seja, 3h do dia seguinte."
+        ]
+      }
+    ],
+    "truque": "Uma frase resolve o sinal: 'a leste, o Sol nasce primeiro, logo é mais tarde'. Se o resultado passou de 24h, subtraia 24 e avance um dia; se ficou negativo, some 24 e volte um dia.",
+    "erroComum": "Subtrair as longitudes quando as cidades estão em lados opostos de Greenwich. De 45° O para 60° L são 105°, não 15°. O outro erro frequente é inverter o sentido: a oeste o horário atrasa.",
+    "exercicios": [
+      {
+        "enunciado": "Duas cidades fictícias estão separadas por 90° de longitude. Qual é a diferença de horário entre elas, em horas?",
+        "passos": [
+          "Cada hora vale 15° de longitude.",
+          "Δh = {90/15} = 6 horas."
+        ],
+        "resposta": "6 horas",
+        "conta": "90/15",
+        "valor": 6
+      },
+      {
+        "enunciado": "Uma cidade fictícia X está a 15° L e outra, Y, a 60° O. Qual é a diferença de horário entre elas, em horas?",
+        "passos": [
+          "Hemisférios opostos: some as longitudes, 15 + 60 = 75°.",
+          "Δh = {75/15} = 5 horas."
+        ],
+        "resposta": "5 horas",
+        "conta": "(15+60)/15",
+        "valor": 5
+      },
+      {
+        "enunciado": "Em uma cidade fictícia a 0° são 10h. Que horas são em outra, a 45° O?",
+        "passos": [
+          "Diferença: {45/15} = 3 horas.",
+          "45° O está a oeste: atrasa, 10 − 3 = 7.",
+          "São 7h."
+        ],
+        "resposta": "7h",
+        "conta": "10-45/15",
+        "valor": 7
+      },
+      {
+        "enunciado": "Um voo hipotético sai às 22h (horário local) de uma cidade e dura 8 horas. O destino fica em um fuso 3 horas à frente (a leste). Que horas, no destino, o avião chega? Dê só as horas do relógio, de 0 a 23.",
+        "passos": [
+          "Chegada pelo horário de origem: 22 + 8 = 30.",
+          "No destino, adianta 3 horas: 33, ou seja, 33 − 24 = 9.",
+          "Chega às 9h do dia seguinte."
+        ],
+        "resposta": "9h do dia seguinte",
+        "conta": "22+8+3-24",
+        "valor": 9
+      },
+      {
+        "enunciado": "Duas cidades fictícias estão no mesmo meridiano, uma a 10° N e outra a 4° S. Considerando 1° de latitude como cerca de 111 km (valor arredondado), qual é a distância entre elas, em km?",
+        "passos": [
+          "Latitudes em lados opostos do Equador: some, 10 + 4 = 14°.",
+          "Distância ≈ 14 × 111 = 1.554 km."
+        ],
+        "resposta": "1.554 km",
+        "conta": "(10+4)*111",
+        "valor": 1554
+      }
+    ],
+    "cartoes": [
+      {
+        "p": "Quantos graus de longitude correspondem a 1 hora?",
+        "r": "15°, porque 360° ÷ 24 h = 15° por hora."
+      },
+      {
+        "p": "A leste o horário adianta ou atrasa?",
+        "r": "Adianta: soma-se a diferença. A oeste, atrasa: subtrai-se."
+      },
+      {
+        "p": "Como achar a diferença de longitude entre cidades?",
+        "r": "No mesmo hemisfério (ambas L ou ambas O), subtraia. Em hemisférios opostos, some."
+      },
+      {
+        "p": "A latitude afeta o fuso horário?",
+        "r": "Não. O fuso depende da longitude."
+      }
+    ],
+    "gerador": {
+      "vars": {},
+      "restricoes": [],
+      "questoes": [
+        {
+          "vars": { "a": { "min": 1, "max": 5 }, "b": { "min": 1, "max": 5 } },
+          "deriv": { "lo": "15*a", "ll": "15*b", "s": "lo+ll" },
+          "conceito": "Cidades em hemisférios opostos em relação a Greenwich têm as longitudes somadas; cada 15° valem 1 hora.",
+          "enunciado": "Uma cidade fictícia A está no meridiano de {lo}° O e outra, B, no de {ll}° L. Qual é a diferença de horário entre elas, em horas?",
+          "conta": "(lo+ll)/15",
+          "unidade": "horas",
+          "casas": 0,
+          "passos": [
+            "Hemisférios opostos: some as longitudes, {lo} + {ll} = {s}°.",
+            "Δh = {{s}/15} = {valor} horas."
+          ]
+        },
+        {
+          "vars": { "H": { "min": 6, "max": 22 }, "k": { "min": 1, "max": 5 } },
+          "deriv": { "d": "15*k" },
+          "restricoes": [["positivo", "H-k"]],
+          "conceito": "A oeste de uma cidade o relógio está atrasado: subtrai-se Δh, com Δh = {Δlongitude/15}.",
+          "enunciado": "Em uma cidade fictícia são {H}h. Em outra, {d}° de longitude a oeste da primeira, que horas são?",
+          "conta": "H-d/15",
+          "unidade": "h",
+          "casas": 0,
+          "negativo": false,
+          "passos": [
+            "Diferença: {{d}/15} = {k} horas.",
+            "A oeste atrasa: {H} − {k} = {valor}h."
+          ]
+        },
+        {
+          "vars": { "H": { "min": 6, "max": 16 }, "k": { "min": 1, "max": 7 } },
+          "deriv": { "d": "15*k" },
+          "conceito": "A leste de uma cidade o relógio está adiantado: soma-se Δh, com Δh = {Δlongitude/15}.",
+          "enunciado": "Em uma cidade fictícia são {H}h. Em outra, {d}° de longitude a leste da primeira, que horas são (no mesmo dia)?",
+          "conta": "H+d/15",
+          "unidade": "h",
+          "casas": 0,
+          "passos": [
+            "Diferença: {{d}/15} = {k} horas.",
+            "A leste adianta: {H} + {k} = {valor}h."
+          ]
+        },
+        {
+          "vars": { "n": { "min": 1, "max": 9 } },
+          "conceito": "O meridiano central de um fuso UTC−n está a 15 × n graus a oeste de Greenwich.",
+          "enunciado": "Um país hipotético adota um fuso UTC−{n}, ou seja, {n} horas atrás de Greenwich. Qual é a longitude do meridiano central desse fuso, em graus a oeste?",
+          "conta": "15*n",
+          "unidade": "° O",
+          "casas": 0,
+          "passos": [
+            "Cada hora vale 15° de longitude.",
+            "{n} × 15 = {valor}° a oeste de Greenwich."
+          ]
+        },
+        {
+          "vars": { "la": { "min": 5, "max": 40, "step": 5 }, "lb": { "min": 5, "max": 40, "step": 5 } },
+          "deriv": { "sl": "la+lb" },
+          "conceito": "A latitude mede a posição norte-sul: em lados opostos do Equador, soma-se; cada grau equivale a cerca de 111 km (arredondado).",
+          "enunciado": "Duas cidades fictícias estão no mesmo meridiano, uma a {la}° N e outra a {lb}° S. Com 1° de latitude valendo cerca de 111 km (valor arredondado), qual é a distância entre elas?",
+          "conta": "(la+lb)*111",
+          "unidade": "km",
+          "casas": 0,
+          "passos": [
+            "Lados opostos do Equador: some, {la} + {lb} = {sl}°.",
+            "Distância ≈ {sl} × 111 = {valor} km."
+          ]
+        }
+      ]
+    }
+  }
+]

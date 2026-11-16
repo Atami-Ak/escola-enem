@@ -1,0 +1,490 @@
+[
+  {
+    "id": "cronologia-seculos-milenios-intervalos",
+    "nivel": "basico",
+    "dia": 1,
+    "titulo": "Cronologia: séculos, milênios e intervalos de tempo",
+    "competencia": "C1",
+    "habilidades": ["H1", "H2"],
+    "conceito": [
+      "Um século tem 100 anos e um milênio tem 1.000 anos. O primeiro século d.C. vai do ano 1 ao ano 100, o segundo do 101 ao 200, e assim por diante: o século N termina no ano 100 × N e começa no ano (N − 1) × 100 + 1. Por isso 1500 ainda é do século XV (o século XVI começa em 1501) e 1900 ainda é do século XIX.",
+      "Para descobrir o século de um ano, divida por 100 e arredonde para cima: 1822 ÷ 100 = 18,22, logo século XIX. Anos terminados em 00 (1800, 1900, 2000) são o último ano do século que acaba, não o primeiro do novo.",
+      "Antes de Cristo (a.C.) a contagem anda de trás para frente: 500 a.C. é mais antigo que 300 a.C. Entre dois anos a.C., subtraia (maior − menor). Entre um ano a.C. e um d.C., some os dois e subtraia 1, porque o calendário não tem ano zero (de 1 a.C. para 1 d.C. passa 1 ano)."
+    ],
+    "quando": {
+      "sinais": [
+        "“em que século”, “pertence ao século”: divida o ano por 100 e arredonde para cima",
+        "“quantos anos se passaram entre”: subtração entre os dois anos",
+        "“a.C.” ou “antes de Cristo”: a contagem é invertida, cuidado com a ordem",
+        "números romanos (XVI, XIX, XX): converta para o século em algarismos antes de comparar",
+        "“milênio” ou “séculos completos”: divida o intervalo em anos por 1.000 ou por 100"
+      ],
+      "formula": "século = ano ÷ 100, arredondado para cima; intervalo = ano maior − ano menor (a.C. com d.C.: soma − 1)",
+      "armadilhas": [
+        "Arredondar para baixo: 1822 está no século XIX, não no XVIII.",
+        "Esquecer que a.C. conta ao contrário: de 300 a.C. a 100 a.C. passam 200 anos, e não −200.",
+        "Tratar o ano 1900 como parte do século XX: ele é o último ano do século XIX."
+      ]
+    },
+    "ler": {
+      "passos": [
+        "Circule o que o enunciado pede: século, intervalo em anos ou o ano de um evento.",
+        "Marque cada ano ou data citada e se é a.C. ou d.C.",
+        "Risque datas que não entram na pergunta, pois enunciados históricos trazem muitos acontecimentos.",
+        "Escolha a operação: dividir por 100 para século, subtrair para intervalo.",
+        "Confira se a resposta faz sentido na linha do tempo."
+      ],
+      "exemplo": {
+        "enunciado": "O Brasil proclamou sua Independência em 1822, e a escravidão foi abolida pela Lei Áurea em 1888. Considere que a primeira Constituição foi outorgada em 1824. Quantos anos separam a Independência da Lei Áurea?",
+        "anotacoes": [
+          { "trecho": "1822", "papel": "dado", "nota": "ano do primeiro evento, o mais antigo" },
+          { "trecho": "1888", "papel": "dado", "nota": "ano do segundo evento, o mais recente" },
+          { "trecho": "Considere que a primeira Constituição foi outorgada em 1824.", "papel": "distracao", "nota": "fato histórico verdadeiro, mas não entra na conta" },
+          { "trecho": "Quantos anos separam", "papel": "pede", "nota": "intervalo entre os dois anos: 1888 − 1822 = 66" }
+        ]
+      }
+    },
+    "formulas": [
+      {
+        "nome": "Século de um ano (d.C.)",
+        "f": "século = ano ÷ 100, arredondado para cima",
+        "uso": "Quando o enunciado dá um ano e pergunta o século."
+      },
+      {
+        "nome": "Início e fim de um século",
+        "f": "início = (N − 1) × 100 + 1;  fim = N × 100",
+        "uso": "Quando o enunciado dá o século N e pede o ano em que ele começou ou terminou."
+      },
+      {
+        "nome": "Intervalo entre dois anos d.C. ou dois anos a.C.",
+        "f": "intervalo = ano maior − ano menor",
+        "uso": "Em a.C., o ano maior em número é o mais antigo."
+      },
+      {
+        "nome": "Intervalo entre a.C. e d.C.",
+        "f": "intervalo = (ano a.C.) + (ano d.C.) − 1",
+        "uso": "Quando o período cruza o marco do ano 1, que não tem ano zero."
+      }
+    ],
+    "exemplos": [
+      {
+        "enunciado": "Em que século o Brasil proclamou sua Independência, em 1822?",
+        "formula": "1822 ÷ 100 = 18,22",
+        "passos": [
+          "Divida o ano por 100: 1822 ÷ 100 = 18,22.",
+          "Arredonde para cima: 19.",
+          "Século XIX, que vai de 1801 a 1900."
+        ]
+      },
+      {
+        "enunciado": "Quantos anos se passaram entre a Independência do Brasil (1822) e a Proclamação da República (1889)?",
+        "formula": "1889 − 1822",
+        "passos": [
+          "Os dois anos são d.C., então basta subtrair.",
+          "1889 − 1822 = 67 anos."
+        ]
+      }
+    ],
+    "truque": "Século pelo dedo: ignore os dois últimos algarismos e some 1. Em 1822, ignore o 22, fica 18, soma 1 e dá 19 (século XIX). Exceção: anos terminados em 00 não somam 1.",
+    "erroComum": "Dizer que 1500 está no século XVI só porque o número começa com 15. A conta correta é arredondar para cima, e o ano 1500, por terminar em 00, fecha o século XV (o XVI vai de 1501 a 1600).",
+    "exercicios": [
+      {
+        "enunciado": "A Lei Áurea foi assinada em 1888. Em que século isso ocorreu? Responda com o número romano.",
+        "passos": [
+          "Divida por 100: 1888 ÷ 100 = 18,88.",
+          "Arredonde para cima: 19, ou seja, século XIX."
+        ],
+        "resposta": "Século XIX"
+      },
+      {
+        "enunciado": "Quantos anos se passaram entre a chegada dos portugueses ao Brasil (1500) e a Independência (1822)?",
+        "passos": [
+          "Os dois anos são d.C.: subtraia o menor do maior.",
+          "1822 − 1500 = 322."
+        ],
+        "resposta": "322 anos",
+        "conta": "1822-1500",
+        "valor": 322
+      },
+      {
+        "enunciado": "Entre a Independência (1822) e a Proclamação da República (1889), quantos anos se passaram?",
+        "passos": [
+          "Os dois anos são d.C.: 1889 − 1822.",
+          "1889 − 1822 = 67."
+        ],
+        "resposta": "67 anos",
+        "conta": "1889-1822",
+        "valor": 67
+      },
+      {
+        "enunciado": "César foi assassinado em 44 a.C. e o Império Romano do Ocidente é tradicionalmente considerado extinto em 476 d.C. Quantos anos separam os dois fatos? (Não existe ano zero.)",
+        "passos": [
+          "Um fato é a.C. e o outro d.C.: some os dois anos e subtraia 1.",
+          "44 + 476 − 1 = 519."
+        ],
+        "resposta": "519 anos",
+        "conta": "44+476-1",
+        "valor": 519
+      },
+      {
+        "enunciado": "Quantos séculos completos se passaram entre a chegada dos portugueses ao Brasil (1500) e o ano 2000?",
+        "passos": [
+          "Calcule o intervalo: 2000 − 1500 = 500 anos.",
+          "Cada século tem 100 anos: 500 ÷ 100 = 5."
+        ],
+        "resposta": "5 séculos",
+        "conta": "(2000-1500)/100",
+        "valor": 5
+      }
+    ],
+    "cartoes": [
+      {
+        "p": "Como descobrir o século de um ano d.C.?",
+        "r": "Divida o ano por 100 e arredonde para cima. Ano terminado em 00 é o último do século que acaba."
+      },
+      {
+        "p": "Como calcular o tempo entre um ano a.C. e um ano d.C.?",
+        "r": "Some os dois anos e subtraia 1, pois não existe ano zero."
+      },
+      {
+        "p": "Quantos anos tem um milênio e quantos séculos cabem nele?",
+        "r": "Um milênio tem 1.000 anos, ou seja, 10 séculos."
+      }
+    ],
+    "gerador": {
+      "vars": {},
+      "questoes": [
+        {
+          "vars": {
+            "k": { "min": 15, "max": 19 },
+            "r": { "min": 1, "max": 100 }
+          },
+          "deriv": { "ano": "100*k+r", "ini": "100*k+1", "fim": "100*k+100" },
+          "conceito": "O século N começa no ano (N − 1) × 100 + 1 e termina no ano N × 100. Para achar o século, divida o ano por 100 e arredonde para cima.",
+          "enunciado": "Um documento histórico foi datado do ano {ano} d.C. Em qual século ele foi produzido? Responda com o número do século (ex.: 16 para o século XVI).",
+          "conta": "(ano-r)/100+1",
+          "unidade": "º século",
+          "casas": 0,
+          "passos": [
+            "Divida o ano por 100 e arredonde para cima.",
+            "O ano {ano} está entre {ini} e {fim}.",
+            "Esse intervalo corresponde ao século {valor}."
+          ]
+        },
+        {
+          "vars": {
+            "a": { "min": 1550, "max": 1850, "step": 10 }
+          },
+          "conceito": "O intervalo entre dois anos d.C. é a subtração do ano mais recente pelo mais antigo.",
+          "enunciado": "Uma vila fictícia foi fundada em {a}. Quantos anos se passaram entre a fundação da vila e a Lei Áurea, assinada em 1888?",
+          "conta": "1888-a",
+          "unidade": "anos",
+          "casas": 0,
+          "passos": [
+            "Os dois anos são d.C.: subtraia o menor do maior.",
+            "1888 − {a} = {valor}.",
+            "Passaram-se {valor} anos."
+          ]
+        },
+        {
+          "vars": {
+            "a": { "min": 300, "max": 800, "step": 50 },
+            "b": { "min": 100, "max": 250, "step": 50 }
+          },
+          "conceito": "Em anos a.C. a contagem é invertida: o número maior é o ano mais antigo, e o intervalo é maior menos menor.",
+          "enunciado": "Uma cidade antiga foi fundada em {a} a.C. e uma muralha foi concluída em {b} a.C. Quantos anos se passaram entre a fundação e a conclusão da muralha?",
+          "conta": "a-b",
+          "unidade": "anos",
+          "casas": 0,
+          "passos": [
+            "Os dois anos são a.C.: o maior número é o mais antigo.",
+            "{a} − {b} = {valor}.",
+            "Passaram-se {valor} anos."
+          ]
+        },
+        {
+          "vars": {
+            "a": { "min": 100, "max": 800, "step": 50 },
+            "b": { "min": 50, "max": 900, "step": 50 }
+          },
+          "deriv": { "s": "a+b" },
+          "conceito": "Entre um ano a.C. e um ano d.C. soma-se os dois valores e subtrai-se 1, porque o calendário não tem ano zero.",
+          "enunciado": "Uma cidade fictícia foi fundada em {a} a.C. e destruída em {b} d.C. Considerando que não existe ano zero, quantos anos ela existiu?",
+          "conta": "a+b-1",
+          "unidade": "anos",
+          "casas": 0,
+          "passos": [
+            "Um ano é a.C. e o outro d.C.: some os dois valores.",
+            "{a} + {b} = {s}, e subtraia 1 por não existir ano zero.",
+            "Resultado: {valor} anos."
+          ]
+        },
+        {
+          "vars": {
+            "s": { "min": 5, "max": 21 }
+          },
+          "deriv": { "n": "s-1", "m": "(s-1)*100" },
+          "conceito": "Antes de começar o século N já passaram N − 1 séculos completos, então ele começa no ano (N − 1) × 100 + 1.",
+          "enunciado": "Os historiadores dividem o tempo em séculos. Em que ano começou o {s}º século d.C.?",
+          "conta": "(s-1)*100+1",
+          "unidade": "",
+          "casas": 0,
+          "passos": [
+            "Antes do século {s} já passaram {n} séculos completos.",
+            "{n} × 100 = {m} anos já passados.",
+            "O século {s} começa no ano {m} + 1 = {valor}."
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "dados-historicos-variacao-percentual-proporcao",
+    "nivel": "intermediario",
+    "dia": 2,
+    "titulo": "Lendo dados históricos: variação percentual e proporção em tabelas",
+    "competencia": "C2",
+    "habilidades": ["H6"],
+    "conceito": [
+      "Tabelas e gráficos históricos trazem números (população, produção, exportações) em datas diferentes. Para compará-los, use a variação percentual: variação = {valor final − valor inicial/valor inicial} × 100. O resultado é positivo no crescimento e negativo na queda.",
+      "A proporção (ou participação) compara uma parte com o todo: parte ÷ total × 100. Se, em uma população de 1.000 pessoas, 250 vivem na cidade, a participação urbana é {250/1000} = 25%.",
+      "Variações sucessivas não se somam: um aumento de 10% seguido de outro de 10% resulta em 1,1 × 1,1 = 1,21, ou seja, 21%. Cada variação incide sobre o valor já alterado. Também não confunda a variação em % com a diferença em pontos percentuais entre duas participações."
+    ],
+    "quando": {
+      "sinais": [
+        "“aumento de”, “crescimento de” ou “queda de” em %: variação percentual sobre o valor inicial",
+        "“em relação ao ano anterior” ou “no período”: o valor inicial é o do primeiro ano citado",
+        "“que porcentagem do total”: participação, parte dividida pelo todo",
+        "“sucessivos” ou “seguido de”: multiplique os fatores, nunca some as porcentagens",
+        "tabela com várias datas ou regiões: escolha só as linhas e colunas que a pergunta cita"
+      ],
+      "formula": "variação % = {final − inicial/inicial} × 100;  participação % = {parte/total} × 100",
+      "armadilhas": [
+        "Dividir pelo valor final em vez do inicial: a base da variação é sempre o valor inicial.",
+        "Somar percentuais sucessivos: +20% e −20% não dão zero, dão −4%.",
+        "Usar na conta dados de outra linha da tabela, que servem só de distração."
+      ]
+    },
+    "ler": {
+      "passos": [
+        "Circule o que a pergunta pede: variação %, participação % ou valor final.",
+        "Localize na tabela ou no texto o valor inicial e o valor final do período citado.",
+        "Risque dados de outras regiões ou anos que a pergunta não cita.",
+        "Monte a conta: diferença, divisão pelo valor inicial e multiplicação por 100.",
+        "Confira o sinal e a ordem de grandeza do resultado."
+      ],
+      "exemplo": {
+        "enunciado": "Uma cidade fictícia tinha 40.000 habitantes em 1900 e 50.000 em 1920. A cidade vizinha, no mesmo período, chegou a 90.000 habitantes. Qual foi o aumento percentual da população da primeira cidade nesse período?",
+        "anotacoes": [
+          { "trecho": "40.000 habitantes em 1900", "papel": "dado", "nota": "valor inicial, a base da conta" },
+          { "trecho": "50.000 em 1920", "papel": "dado", "nota": "valor final" },
+          { "trecho": "A cidade vizinha, no mesmo período, chegou a 90.000 habitantes.", "papel": "distracao", "nota": "dado de outra cidade, não entra na conta" },
+          { "trecho": "aumento percentual da população da primeira cidade", "papel": "pede", "nota": "{50.000 − 40.000/40.000} × 100 = 25%" }
+        ]
+      }
+    },
+    "formulas": [
+      {
+        "nome": "Variação percentual",
+        "f": "variação % = {final − inicial/inicial} × 100",
+        "uso": "Quando o enunciado dá dois valores e pede quanto cresceu ou caiu em %."
+      },
+      {
+        "nome": "Valor final após variação",
+        "f": "final = inicial × {100 + p/100}",
+        "uso": "Quando o enunciado dá o valor inicial e a variação p% (use −p para queda)."
+      },
+      {
+        "nome": "Participação no total",
+        "f": "participação % = {parte/total} × 100",
+        "uso": "Quando se pergunta que fatia do total uma região, grupo ou produto representa."
+      },
+      {
+        "nome": "Variações sucessivas",
+        "f": "fator total = {100 + a/100} × {100 + b/100}",
+        "uso": "Quando há duas variações em sequência: multiplique os fatores e subtraia 1."
+      }
+    ],
+    "exemplos": [
+      {
+        "enunciado": "A produção fictícia de café de uma região passou de 500 mil sacas, em 1880, para 700 mil, em 1900. Qual foi o aumento percentual?",
+        "formula": "{700 − 500/500} × 100",
+        "passos": [
+          "Variação absoluta: 700 − 500 = 200 mil sacas.",
+          "Divida pelo valor inicial: {200/500} = 0,4.",
+          "Multiplique por 100: 40%."
+        ]
+      },
+      {
+        "enunciado": "Em um censo fictício, 600 dos 2.000 habitantes de uma província viviam em áreas urbanas. Qual era a participação da população urbana?",
+        "formula": "{600/2000} × 100",
+        "passos": [
+          "A parte é 600 e o total é 2.000.",
+          "{600/2000} = 0,3.",
+          "Participação: 0,3 × 100 = 30%."
+        ]
+      }
+    ],
+    "truque": "Quando o valor dobra, o aumento é de 100%, e não de 200%. Use esse caso extremo para conferir se você dividiu pelo valor inicial e não pelo final.",
+    "erroComum": "Somar variações sucessivas. Um aumento de 20% seguido de queda de 20% não volta ao valor original: 1,2 × 0,8 = 0,96, uma perda de 4%, porque a segunda variação incide sobre um valor maior.",
+    "exercicios": [
+      {
+        "enunciado": "Uma cidade fictícia tinha 40.000 habitantes em 1900 e 50.000 em 1920. Qual foi o aumento percentual da população?",
+        "passos": [
+          "Diferença: 50.000 − 40.000 = 10.000.",
+          "Divida pelo valor inicial: {10000/40000} = 0,25.",
+          "Aumento: 25%."
+        ],
+        "resposta": "25%",
+        "conta": "(50000-40000)/40000*100",
+        "valor": 25
+      },
+      {
+        "enunciado": "A produção fictícia de café de uma região era de 500 mil sacas e aumentou 40%. Qual é a nova produção, em mil sacas?",
+        "passos": [
+          "Fator de aumento: {140/100} = 1,4.",
+          "500 × 1,4 = 700."
+        ],
+        "resposta": "700 mil sacas",
+        "conta": "500*140/100",
+        "valor": 700
+      },
+      {
+        "enunciado": "Em um censo fictício, de 2.000 habitantes de uma província, 500 viviam em áreas urbanas. Que porcentagem da população vivia na área urbana?",
+        "passos": [
+          "Participação = parte ÷ total × 100.",
+          "{500/2000} × 100 = 25%."
+        ],
+        "resposta": "25%",
+        "conta": "500/2000*100",
+        "valor": 25
+      },
+      {
+        "enunciado": "A produção fictícia de uma lavoura caiu de 800 para 600 toneladas. Qual foi a queda percentual?",
+        "passos": [
+          "Diferença: 800 − 600 = 200.",
+          "Divida pelo valor inicial: {200/800} = 0,25.",
+          "Queda: 25%."
+        ],
+        "resposta": "25%",
+        "conta": "(800-600)/800*100",
+        "valor": 25
+      },
+      {
+        "enunciado": "Os preços de um produto fictício subiram 20% em um ano e caíram 20% no ano seguinte. Qual foi a variação total do preço, em %?",
+        "passos": [
+          "Fatores: {120/100} e {80/100}.",
+          "Produto: 1,2 × 0,8 = 0,96.",
+          "Variação total: 96% − 100% = −4%."
+        ],
+        "resposta": "-4% (queda de 4%)",
+        "conta": "(100+20)*(100-20)/100-100",
+        "valor": -4
+      }
+    ],
+    "cartoes": [
+      {
+        "p": "Qual é a fórmula da variação percentual?",
+        "r": "{final − inicial/inicial} × 100. Positivo é crescimento, negativo é queda."
+      },
+      {
+        "p": "Por que +20% e −20% não se anulam?",
+        "r": "Porque cada variação incide sobre o valor já alterado: 1,2 × 0,8 = 0,96, uma queda de 4%."
+      },
+      {
+        "p": "Como calcular a participação de uma parte no total?",
+        "r": "Divida a parte pelo total e multiplique por 100."
+      }
+    ],
+    "gerador": {
+      "vars": {},
+      "questoes": [
+        {
+          "vars": {
+            "P": { "min": 100, "max": 1000, "step": 100 },
+            "p": { "min": 10, "max": 80, "step": 5 }
+          },
+          "deriv": { "F": "P*(100+p)/100", "D": "F-P" },
+          "conceito": "Variação percentual é a diferença entre o valor final e o inicial, dividida pelo inicial e multiplicada por 100.",
+          "enunciado": "O recenseamento de uma vila fictícia registrou {P} habitantes em 1900 e {F} habitantes em 1920. Qual foi o aumento percentual da população?",
+          "conta": "(F-P)/P*100",
+          "unidade": "%",
+          "casas": 0,
+          "passos": [
+            "Variação absoluta: {F} − {P} = {D} habitantes.",
+            "Divida pelo valor inicial: {{D}/{P}}.",
+            "Multiplique por 100: aumento de {valor}%."
+          ]
+        },
+        {
+          "vars": {
+            "P": { "min": 200, "max": 2000, "step": 100 },
+            "p": { "min": 10, "max": 50, "step": 10 }
+          },
+          "deriv": { "f": "100+p" },
+          "conceito": "Para aplicar um aumento de p%, multiplique o valor inicial pelo fator {100 + p/100}.",
+          "enunciado": "A produção fictícia de café de uma região era de {P} mil sacas e teve um aumento de {p}% na década seguinte. Qual passou a ser a produção, em mil sacas?",
+          "conta": "P*(100+p)/100",
+          "unidade": "mil sacas",
+          "casas": 0,
+          "passos": [
+            "O fator de aumento é {{f}/100}.",
+            "Multiplique a produção inicial pelo fator: {P} × {{f}/100}.",
+            "Nova produção: {valor} mil sacas."
+          ]
+        },
+        {
+          "vars": {
+            "T": { "min": 200, "max": 1000, "step": 100 },
+            "q": { "min": 10, "max": 60, "step": 5 }
+          },
+          "deriv": { "x": "T*q/100" },
+          "conceito": "Participação é a razão entre a parte e o total, expressa em porcentagem.",
+          "enunciado": "Em um censo fictício, de {T} habitantes de uma província, {x} viviam em áreas urbanas. Que porcentagem da população vivia nas áreas urbanas?",
+          "conta": "x*100/T",
+          "unidade": "%",
+          "casas": 0,
+          "passos": [
+            "A parte é {x} e o total é {T}.",
+            "{{x}/{T}} × 100.",
+            "A participação urbana era de {valor}%."
+          ]
+        },
+        {
+          "vars": {
+            "P": { "min": 200, "max": 2000, "step": 100 },
+            "p": { "min": 10, "max": 60, "step": 5 }
+          },
+          "deriv": { "F": "P*(100-p)/100", "D": "P-F" },
+          "conceito": "Em uma queda, a base também é o valor inicial: queda % = (inicial − final) ÷ inicial × 100.",
+          "enunciado": "A produção de uma lavoura fictícia caiu de {P} para {F} toneladas entre duas décadas. Qual foi a queda percentual da produção?",
+          "conta": "(P-F)/P*100",
+          "unidade": "%",
+          "casas": 0,
+          "passos": [
+            "Diferença: {P} − {F} = {D} toneladas.",
+            "Divida pelo valor inicial: {{D}/{P}}.",
+            "Multiplique por 100: queda de {valor}%."
+          ]
+        },
+        {
+          "vars": {
+            "a": { "min": 10, "max": 50, "step": 10 },
+            "b": { "min": 10, "max": 50, "step": 10 }
+          },
+          "deriv": { "fa": "100+a", "fb": "100+b", "prod": "(100+a)*(100+b)/100" },
+          "conceito": "Variações sucessivas não se somam: multiplicam-se os fatores, porque a segunda incide sobre o valor já alterado.",
+          "enunciado": "Os preços de um produto subiram {a}% em um ano e, no ano seguinte, mais {b}%. Qual foi o aumento total no período, em relação ao preço inicial?",
+          "conta": "(100+a)*(100+b)/100-100",
+          "unidade": "%",
+          "casas": 0,
+          "passos": [
+            "Os fatores são {{fa}/100} e {{fb}/100}.",
+            "Multiplicados dão {prod}% do preço inicial.",
+            "Aumento total: {prod} − 100 = {valor}%."
+          ]
+        }
+      ]
+    }
+  }
+]

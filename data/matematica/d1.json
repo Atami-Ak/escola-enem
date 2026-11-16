@@ -1,0 +1,1608 @@
+[
+  {
+    "id": "razao-proporcao-regra-de-tres",
+    "nivel": "basico",
+    "titulo": "Razão, proporção e regra de três",
+    "competencia": "C4",
+    "habilidades": ["H15", "H16"],
+    "conceito": [
+      "Razão é a comparação entre duas grandezas por divisão: a razão de 3 para 5 é {3/5}. Proporção é a igualdade entre duas razões, como {3/5} = {6/10}.",
+      "Na regra de três simples, três valores são conhecidos e o quarto é descoberto pela proporção. Antes de montar a conta, descubra se as grandezas são diretamente proporcionais (uma dobra quando a outra dobra) ou inversamente proporcionais (uma dobra quando a outra cai pela metade).",
+      "Em toda proporção, o produto dos meios é igual ao produto dos extremos: se {a/b} = {c/d}, então a × d = b × c (multiplicação cruzada)."
+    ],
+    "quando": {
+      "sinais": [
+        "“a cada” e “para cada”: relação fixa entre duas grandezas, ou seja, proporção",
+        "“mantendo o mesmo ritmo” ou “na mesma proporção”: a regra de três vale",
+        "“em relação a”: compare as grandezas na ordem em que aparecem",
+        "“mais pessoas, menos tempo” (trabalhadores, torneiras, velocidade): grandezas inversas, produto constante"
+      ],
+      "formula": "direta: {a/b} = {c/x}; inversa: a · b = c · x",
+      "armadilhas": [
+        "Montar uma razão de cabeça para baixo: confira se cada coluna tem a mesma grandeza e a mesma unidade.",
+        "Aplicar regra de três direta quando uma grandeza sobe e a outra desce."
+      ]
+    },
+    "ler": {
+      "passos": [
+        "Circule o que a pergunta pede e a unidade em que a resposta deve sair.",
+        "Liste as duas grandezas e os três valores conhecidos, cada um com sua unidade.",
+        "Decida se, ao aumentar uma, a outra aumenta (direta) ou diminui (inversa).",
+        "Risque o que não entra na conta, como datas e nomes.",
+        "Monte a proporção, resolva e confira se o resultado faz sentido."
+      ],
+      "exemplo": {
+        "enunciado": "Uma gráfica, em ritmo constante, imprime 450 folhas em 6 minutos. A diretora, que usa a máquina desde 2019, precisa imprimir 1.350 folhas. Em quantos minutos a máquina faz o serviço?",
+        "anotacoes": [
+          {
+            "trecho": "em ritmo constante",
+            "papel": "condicao",
+            "nota": "garante que folhas e tempo são diretamente proporcionais"
+          },
+          {
+            "trecho": "450 folhas",
+            "papel": "dado",
+            "nota": "primeira grandeza, com sua unidade"
+          },
+          {
+            "trecho": "6 minutos",
+            "papel": "unidade",
+            "nota": "o tempo está em minutos, e a resposta também deve sair em minutos"
+          },
+          {
+            "trecho": "que usa a máquina desde 2019",
+            "papel": "distracao",
+            "nota": "não entra na conta"
+          },
+          {
+            "trecho": "1.350 folhas",
+            "papel": "dado",
+            "nota": "valor para o qual se quer o tempo"
+          },
+          {
+            "trecho": "Em quantos minutos",
+            "papel": "pede",
+            "nota": "o tempo x: {450/1350} = {6/x}, logo x = 18"
+          }
+        ]
+      }
+    },
+    "formulas": [
+      {
+        "nome": "Regra de três direta",
+        "f": "{a/b} = {c/x}  →  x = {b · c/a}",
+        "uso": "Quando as duas grandezas crescem juntas: “mais pães, mais farinha”."
+      },
+      {
+        "nome": "Regra de três inversa",
+        "f": "a · b = c · x  →  x = {a · b/c}",
+        "uso": "Quando uma cresce e a outra cai: “mais pedreiros, menos dias”."
+      },
+      {
+        "nome": "Multiplicação cruzada",
+        "f": "{a/b} = {c/d}  →  a · d = b · c",
+        "uso": "Quando o enunciado dá uma proporção e falta um dos quatro valores."
+      }
+    ],
+    "exemplos": [
+      {
+        "enunciado": "Uma receita rende 12 pães com 3 xícaras de farinha. Quantas xícaras são necessárias para 40 pães?",
+        "formula": "{12/40} = {3/x}",
+        "passos": [
+          "Mais pães, mais farinha: as grandezas são diretas.",
+          "Monte a proporção: {12/40} = {3/x}.",
+          "Multiplicação cruzada: 12 × x = 40 × 3.",
+          "x = {120/12} = 10 xícaras."
+        ]
+      },
+      {
+        "enunciado": "Quatro pedreiros terminam um muro em 15 dias. Em quantos dias 6 pedreiros, no mesmo ritmo, terminam o mesmo muro?",
+        "formula": "4 × 15 = 6 × x",
+        "passos": [
+          "Mais pedreiros, menos dias: as grandezas são inversas.",
+          "Na relação inversa, o produto das duas grandezas se mantém: 4 × 15 = 6 × x.",
+          "x = {60/6} = 10 dias."
+        ]
+      }
+    ],
+    "truque": "Teste de sentido: se a grandeza que você procura deve aumentar, o resultado precisa ser maior que o dado correspondente. Se deu menor, a proporção foi montada ao contrário.",
+    "erroComum": "Tratar toda regra de três como direta. Mais torneiras enchem o mesmo tanque em menos tempo (relação inversa); multiplicar em cruz como se fosse direta dá um tempo maior, o que não faz sentido.",
+    "exercicios": [
+      {
+        "enunciado": "Um carro percorre 180 km com 15 litros de combustível. Mantido o consumo, quantos quilômetros ele percorre com 22 litros?",
+        "passos": [
+          "Mais combustível, mais distância: relação direta.",
+          "{180/x} = {15/22}.",
+          "15 × x = 180 × 22, logo x = {3960/15}.",
+          "x = 264 km."
+        ],
+        "resposta": "264 km",
+        "conta": "180*22/15",
+        "valor": 264
+      },
+      {
+        "enunciado": "Uma torneira enche um tanque em 6 horas. Com 4 torneiras iguais abertas juntas, em quantas horas o tanque enche?",
+        "passos": [
+          "Mais torneiras, menos tempo: relação inversa.",
+          "O produto se mantém: 1 × 6 = 4 × x.",
+          "x = {6/4} = 1,5 hora."
+        ],
+        "resposta": "1,5 hora (uma hora e meia)",
+        "conta": "6/4",
+        "valor": 1.5
+      },
+      {
+        "enunciado": "Em um mapa, 3 cm representam 45 km reais. Qual é a distância real, em km, entre duas cidades que estão a 8 cm no mapa?",
+        "passos": [
+          "Mais centímetros no mapa, mais quilômetros reais: relação direta.",
+          "{3/8} = {45/x}.",
+          "3 × x = 8 × 45, logo x = {360/3} = 120."
+        ],
+        "resposta": "120 km",
+        "conta": "8*45/3",
+        "valor": 120
+      },
+      {
+        "enunciado": "A razão entre meninas e meninos de uma turma é {3/4}. Se há 21 meninas, quantos alunos tem a turma no total?",
+        "passos": [
+          "Meninos: {21/m} = {3/4}, então m = {21 × 4/3} = 28.",
+          "Total: 21 + 28."
+        ],
+        "resposta": "49 alunos (21 meninas e 28 meninos)",
+        "conta": "21+21*4/3",
+        "valor": 49
+      },
+      {
+        "enunciado": "Para pintar uma parede de 24 m² gastam-se 3 litros de tinta. Quantos litros serão gastos em uma parede de 40 m², com a mesma tinta?",
+        "passos": [
+          "Mais área, mais tinta: relação direta.",
+          "{24/40} = {3/x}.",
+          "24 × x = 40 × 3, logo x = {120/24} = 5."
+        ],
+        "resposta": "5 litros",
+        "conta": "40*3/24",
+        "valor": 5
+      }
+    ],
+    "cartoes": [
+      { "p": "Como saber se duas grandezas são diretas ou inversas?", "r": "Se uma aumenta e a outra aumenta na mesma razão, são diretas. Se uma aumenta e a outra diminui na mesma razão, são inversas." },
+      { "p": "Como resolver {a/b} = {c/x} sem errar a conta?", "r": "Multiplique em cruz: a × x = b × c. Depois isole x." },
+      { "p": "Na regra de três inversa, o que se mantém constante?", "r": "O produto das duas grandezas." }
+    ],
+    "gerador": {
+      "vars": {},
+      "questoes": [
+        {
+          "vars": { "b": { "min": 2, "max": 10 }, "r": { "min": 4, "max": 15 }, "c": { "min": 12, "max": 40 } },
+          "deriv": { "a": "b*r" },
+          "conceito": "Regra de três direta: as grandezas crescem juntas, então a razão se mantém: {a/b} = {x/c}.",
+          "enunciado": "Uma impressora imprime {a} páginas em {b} minutos. Mantido o ritmo, quantas páginas ela imprime em {c} minutos?",
+          "conta": "a*c/b", "unidade": "páginas", "casas": 0,
+          "passos": [
+            "Mais tempo, mais páginas: as grandezas são diretamente proporcionais.",
+            "{{a}/{b}} = {x/{c}}, com x em páginas.",
+            "{b} × x = {a} × {c}, logo x = {{a} × {c}/{b}} = {valor} páginas."
+          ]
+        },
+        {
+          "vars": { "a": { "min": 3, "max": 8 }, "f": { "min": 2, "max": 4 }, "e": { "min": 2, "max": 9 } },
+          "deriv": { "w": "a*f", "b": "f*e" },
+          "conceito": "Regra de três inversa: mais de uma grandeza, menos da outra; o produto das duas se mantém e a conta é multiplicar em linha reta.",
+          "enunciado": "{a} pedreiros levantam um muro em {b} dias. Com {w} pedreiros trabalhando no mesmo ritmo, em quantos dias o muro fica pronto?",
+          "conta": "a*b/w", "unidade": "dias", "casas": 0,
+          "passos": [
+            "Mais pedreiros, menos dias: as grandezas são inversamente proporcionais.",
+            "O produto se mantém: {a} × {b} = {w} × x.",
+            "x = {{a} × {b}/{w}} = {valor} dias."
+          ]
+        },
+        {
+          "vars": { "a": { "min": 2, "max": 5 }, "b": { "min": 2, "max": 5 }, "k": { "min": 3, "max": 12 } },
+          "deriv": { "t": "k*(a+b)", "s": "a+b" },
+          "conceito": "Razão {a/b} entre as partes: o total é dividido em a + b partes iguais, e cada parte vale o total dividido por a + b.",
+          "enunciado": "Em uma oficina, a razão entre homens e mulheres é {{a}/{b}}. Se há {t} pessoas no total, quantas são mulheres?",
+          "conta": "t*b/s", "unidade": "mulheres", "casas": 0,
+          "passos": [
+            "A razão {{a}/{b}} divide o total em {a} + {b} = {s} partes.",
+            "Cada parte vale {{t}/{s}} = {k} pessoas.",
+            "Mulheres: {b} × {k} = {valor}."
+          ]
+        },
+        {
+          "vars": { "a": { "min": 2, "max": 6 }, "b": { "min": 2, "max": 5 }, "p": { "min": 3, "max": 9 }, "d": { "min": 3, "max": 8 }, "e": { "min": 2, "max": 9 } },
+          "deriv": { "c": "a*b*p" },
+          "conceito": "Regra de três composta: compare cada grandeza com a incógnita (direta ou inversa) e multiplique as razões.",
+          "enunciado": "Em {a} dias, {b} máquinas iguais produzem {c} peças. Mantido o ritmo, quantas peças {e} dessas máquinas produzem em {d} dias?",
+          "conta": "c*d*e/(a*b)", "unidade": "peças", "casas": 0,
+          "passos": [
+            "As peças aumentam com os dias e com o número de máquinas: as duas relações são diretas.",
+            "Uma máquina em um dia: {c} ÷ ({a} × {b}) = {p} peças.",
+            "{e} máquinas em {d} dias: {p} × {e} × {d} = {valor} peças."
+          ]
+        },
+        {
+          "vars": { "a": { "min": 2, "max": 6 }, "b": { "min": 4, "max": 8 }, "m": { "min": 2, "max": 3 }, "n": { "min": 1, "max": 2 }, "z": { "min": 3, "max": 9 } },
+          "deriv": { "e": "a*m", "f": "b*n", "d": "m*n*z" },
+          "conceito": "Regra de três composta com inversas: mais operários ou mais horas por dia significam menos dias; inverta essas razões antes de multiplicar.",
+          "enunciado": "{a} operários, trabalhando {b} horas por dia, terminam uma obra em {d} dias. Em quantos dias {e} operários, trabalhando {f} horas por dia, terminam a mesma obra?",
+          "conta": "a*b*d/(e*f)", "unidade": "dias", "casas": 0,
+          "passos": [
+            "Mais operários e mais horas por dia pedem menos dias: as duas grandezas são inversas dos dias.",
+            "Trabalho total: {a} × {b} × {d} operários-hora.",
+            "A nova equipe faz {e} × {f} operários-hora por dia.",
+            "x = {a} × {b} × {d} ÷ ({e} × {f}) = {valor} dias."
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "porcentagem",
+    "nivel": "basico",
+    "titulo": "Porcentagem",
+    "competencia": "C1",
+    "habilidades": ["H3", "H4"],
+    "antes": "razao-proporcao-regra-de-tres",
+    "conceito": [
+      "Porcentagem é uma razão com denominador 100. Assim, 35% significa {35/100} = 0,35.",
+      "Para calcular p% de um valor V, multiplique V pelo fator {p/100}: p% de V = {p/100} × V.",
+      "Aumento e desconto usam fatores: aumentar 20% é multiplicar por 1,20; descontar 20% é multiplicar por 0,80. Dois aumentos ou descontos seguidos se multiplicam, não se somam."
+    ],
+    "quando": {
+      "sinais": [
+        "“de desconto” ou “de abatimento”: multiplique por 1 menos a taxa",
+        "“aumento de”, “acréscimo de” ou “reajuste de”: multiplique por 1 mais a taxa",
+        "“em relação a”: a base da porcentagem é o valor que vem depois dessa expressão",
+        "“sobre o preço já reduzido” ou “em seguida”: aumentos e descontos seguidos se multiplicam",
+        "“quantos por cento”: divida a parte pelo todo e converta para porcentagem"
+      ],
+      "formula": "valor final = valor inicial · (1 ± {p/100})",
+      "armadilhas": [
+        "Somar ou subtrair porcentagens de bases diferentes em vez de multiplicar os fatores.",
+        "Usar como base o valor errado: o “em relação a” diz qual valor vale 100%."
+      ]
+    },
+    "ler": {
+      "passos": [
+        "Sublinhe a pergunta: preço final, porcentagem ou valor inicial?",
+        "Marque a base de cada porcentagem: sobre qual valor ela incide?",
+        "Anote a ordem dos acontecimentos: desconto primeiro, aumento depois muda o resultado.",
+        "Converta cada taxa em fator e multiplique na ordem.",
+        "Confira o sentido: desconto deixa o valor menor, aumento deixa maior."
+      ],
+      "exemplo": {
+        "enunciado": "Uma loja de bicicletas, aberta há 12 anos, vende um modelo por R$ 800,00. Na liquidação, o preço recebe desconto de 15%. Em seguida, por causa do frete, o valor sofre aumento de 10% em relação ao preço já descontado. Qual é o preço final, em reais?",
+        "anotacoes": [
+          {
+            "trecho": "aberta há 12 anos",
+            "papel": "distracao",
+            "nota": "a idade da loja não entra na conta"
+          },
+          {
+            "trecho": "R$ 800,00",
+            "papel": "dado",
+            "nota": "valor inicial"
+          },
+          {
+            "trecho": "desconto de 15%",
+            "papel": "dado",
+            "nota": "fator 0,85, aplicado sobre 800: 680"
+          },
+          {
+            "trecho": "aumento de 10% em relação ao preço já descontado",
+            "papel": "condicao",
+            "nota": "a base é 680, não 800: fator 1,10 sobre 680"
+          },
+          {
+            "trecho": "em reais",
+            "papel": "unidade",
+            "nota": "o preço final sai em reais"
+          },
+          {
+            "trecho": "Qual é o preço final",
+            "papel": "pede",
+            "nota": "800 · 0,85 · 1,10 = 748"
+          }
+        ]
+      }
+    },
+    "formulas": [
+      {
+        "nome": "Porcentagem de um valor",
+        "f": "p% de V = {p/100} · V",
+        "uso": "Quando se pede “35% de” um total."
+      },
+      {
+        "nome": "Fator de aumento ou desconto",
+        "f": "final = inicial · (1 ± {p/100})",
+        "uso": "Quando há reajuste, acréscimo ou desconto: soma o p% no aumento e subtrai no desconto."
+      },
+      {
+        "nome": "Aumentos ou descontos seguidos",
+        "f": "fator total = f_{1} · f_{2}",
+        "uso": "Quando o enunciado diz “depois sobe 10% e em seguida cai 10%”: os fatores se multiplicam."
+      }
+    ],
+    "exemplos": [
+      {
+        "enunciado": "Um produto de R$ 250,00 recebe desconto de 18%. Qual é o preço final?",
+        "formula": "preço final = 250 × 0,82 = 205",
+        "passos": [
+          "O desconto de 18% deixa 100% − 18% = 82% do preço.",
+          "O fator é 0,82.",
+          "250 × 0,82 = 205, ou seja, R$ 205,00."
+        ]
+      },
+      {
+        "enunciado": "Um preço sobe 10% e, depois, cai 10%. Ele volta ao valor original?",
+        "formula": "0,90 × 1,10 = 0,99",
+        "passos": [
+          "Seja P o preço inicial. Após subir 10%, vale 1,10 × P.",
+          "Após cair 10%, vale 0,90 × 1,10 × P = 0,99 × P.",
+          "O preço fica 1% abaixo do original: não volta."
+        ]
+      }
+    ],
+    "truque": "Para 10%, divida por 10 (ande uma casa com a vírgula). 5% é a metade de 10%; 1% é dividir por 100. Combine: 15% = 10% + 5%.",
+    "erroComum": "Somar percentuais de bases diferentes. Subir 20% e depois descontar 20% não devolve o valor: o desconto incide sobre um valor maior.",
+    "exercicios": [
+      {
+        "enunciado": "Qual é o valor de 35% de R$ 480,00?",
+        "passos": [
+          "35% = 0,35.",
+          "0,35 × 480 = 168."
+        ],
+        "resposta": "R$ 168,00",
+        "conta": "0.35*480",
+        "valor": 168
+      },
+      {
+        "enunciado": "Uma camiseta custava R$ 80,00 e passou a custar R$ 92,00. De quantos por cento foi o aumento?",
+        "passos": [
+          "Aumento em reais: 92 − 80 = 12.",
+          "Compare com o valor inicial: {12/80} = 0,15.",
+          "0,15 = 15%."
+        ],
+        "resposta": "15%",
+        "conta": "(92-80)/80*100",
+        "valor": 15
+      },
+      {
+        "enunciado": "Um salário de R$ 2.500,00 recebe aumento de 12%. Qual é o novo salário?",
+        "passos": [
+          "O fator de aumento é 1 + 0,12 = 1,12.",
+          "2500 × 1,12 = 2800."
+        ],
+        "resposta": "R$ 2.800,00",
+        "conta": "2500*1.12",
+        "valor": 2800
+      },
+      {
+        "enunciado": "Uma loja dá 20% de desconto e, sobre o preço já reduzido, mais 10%. Para um produto de R$ 200,00, qual é o preço final?",
+        "passos": [
+          "Fatores: 0,80 e 0,90.",
+          "200 × 0,80 × 0,90 = 144.",
+          "O desconto total é 28%, não 30%."
+        ],
+        "resposta": "R$ 144,00",
+        "conta": "200*0.8*0.9",
+        "valor": 144
+      },
+      {
+        "enunciado": "Em uma turma de 40 alunos, 14 tiraram nota máxima em uma prova. Que porcentagem da turma isso representa?",
+        "passos": [
+          "Razão: {14/40} = 0,35.",
+          "0,35 = 35%."
+        ],
+        "resposta": "35%",
+        "conta": "14/40*100",
+        "valor": 35
+      }
+    ],
+    "cartoes": [
+      { "p": "Como calcular 18% de um valor V na calculadora?", "r": "Multiplique V por 0,18." },
+      { "p": "Qual é o fator de um desconto de 15%?", "r": "0,85, pois 100% − 15% = 85%." },
+      { "p": "Dois aumentos de 10% seguidos equivalem a quanto?", "r": "A 21%, pois 1,10 × 1,10 = 1,21." }
+    ],
+    "gerador": {
+      "vars": {},
+      "questoes": [
+        {
+          "vars": {
+            "p": {
+              "min": 10,
+              "max": 60,
+              "step": 5
+            },
+            "v": {
+              "min": 40,
+              "max": 300,
+              "step": 20
+            }
+          },
+          "conceito": "Porcentagem de um valor: p% de v é p vezes v dividido por 100.",
+          "enunciado": "Um produto custa R$ {v}. Qual é, em reais, o valor de {p}% desse preço?",
+          "conta": "p*v/100",
+          "unidade": "reais",
+          "casas": 0,
+          "passos": [
+            "{p}% significa {{p}/100}.",
+            "Para achar {p}% de {v}, multiplique o valor pela razão: {{p}/100} × {v}.",
+            "{{p} × {v}/100} = {valor} reais."
+          ]
+        },
+        {
+          "vars": {
+            "s": {
+              "min": 1000,
+              "max": 3000,
+              "step": 100
+            },
+            "p": {
+              "min": 5,
+              "max": 30
+            }
+          },
+          "deriv": {
+            "au": "s*p/100"
+          },
+          "conceito": "Aumento de p%: o novo valor é o antigo multiplicado por (1 + p/100); o desconto usa (1 - p/100).",
+          "enunciado": "Um salário de R$ {s} recebe reajuste de {p}%. Qual é o novo salário, em reais?",
+          "conta": "s+s*p/100",
+          "unidade": "reais",
+          "casas": 0,
+          "passos": [
+            "O aumento é {p}% do salário: {{p}/100} × {s} = {au} reais.",
+            "Novo salário = salário antigo + aumento.",
+            "{s} + {au} = {valor} reais."
+          ]
+        },
+        {
+          "vars": {
+            "t": {
+              "min": 40,
+              "max": 200,
+              "step": 20
+            },
+            "p": {
+              "min": 5,
+              "max": 95,
+              "step": 5
+            }
+          },
+          "deriv": {
+            "a": "t*p/100"
+          },
+          "conceito": "Porcentagem de um todo: divida a parte pelo total e multiplique por 100.",
+          "enunciado": "Em uma turma de {t} alunos, {a} foram aprovados em uma prova. Que porcentagem da turma foi aprovada?",
+          "conta": "a*100/t",
+          "unidade": "%",
+          "casas": 0,
+          "passos": [
+            "Porcentagem = parte ÷ todo, e o resultado é multiplicado por 100.",
+            "Aqui a parte é {a} e o todo é {t}: razão {{a}/{t}}.",
+            "{{a} × 100/{t}} = {valor}%."
+          ]
+        },
+        {
+          "vars": {
+            "p": {
+              "min": 200,
+              "max": 1000,
+              "step": 100
+            },
+            "i": {
+              "min": 10,
+              "max": 50,
+              "step": 10
+            },
+            "d": {
+              "min": 10,
+              "max": 40,
+              "step": 10
+            }
+          },
+          "deriv": {
+            "f1": "100+i",
+            "f2": "100-d",
+            "m1": "p*f1/100"
+          },
+          "conceito": "Aumentos e descontos sucessivos não se somam: cada taxa age sobre o valor já alterado, multiplicando os fatores.",
+          "enunciado": "O preço de uma mercadoria, R$ {p}, sofreu aumento de {i}% e, em seguida, desconto de {d}% sobre o novo preço. Qual é o preço final, em reais?",
+          "conta": "m1*f2/100",
+          "unidade": "reais",
+          "casas": 0,
+          "passos": [
+            "Os dois ajustes se multiplicam: o aumento de {i}% dá o fator {{f1}/100} e o desconto de {d}% dá o fator {{f2}/100}.",
+            "Depois do aumento: {p} × {{f1}/100} = {m1} reais.",
+            "Depois do desconto: {m1} × {{f2}/100} = {valor} reais."
+          ]
+        },
+        {
+          "vars": {
+            "w": {
+              "min": 400,
+              "max": 2000,
+              "step": 50
+            },
+            "d": {
+              "min": 10,
+              "max": 40,
+              "step": 10
+            }
+          },
+          "deriv": {
+            "f": "100-d",
+            "x": "w*f/100"
+          },
+          "conceito": "Desconto de d%: o preço final é o original vezes (1 - d/100); para achar o original, divida o preço final pelo fator.",
+          "enunciado": "Depois de um desconto de {d}%, uma televisão passou a custar R$ {x}. Qual era o preço antes do desconto, em reais?",
+          "conta": "x*100/f",
+          "unidade": "reais",
+          "casas": 0,
+          "passos": [
+            "O preço com desconto é {f}% do preço original: {x} = {{f}/100} × preço.",
+            "Isole o preço original: preço = {x} ÷ {{f}/100}.",
+            "{{x} × 100/{f}} = {valor} reais."
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "juros-simples-compostos",
+    "nivel": "intermediario",
+    "titulo": "Juros simples e compostos",
+    "competencia": "C1",
+    "habilidades": ["H3", "H4"],
+    "antes": "porcentagem",
+    "conceito": [
+      "Juros são o valor pago pelo uso do dinheiro ao longo do tempo. No regime simples, os juros de cada período incidem sempre sobre o capital inicial C: J = C × i × t, e o montante é M = C + J.",
+      "No regime composto, os juros de cada período incidem sobre o montante do período anterior (juros sobre juros): M = C × (1 + i)^{t}.",
+      "A taxa i e o tempo t precisam estar na mesma unidade (taxa ao mês, tempo em meses). A taxa entra na conta em forma decimal: 2% = 0,02."
+    ],
+    "quando": {
+      "sinais": [
+        "“juros compostos” ou “juros sobre juros”: use a potência de (1 + i)",
+        "“juros simples” ou “taxa fixa sobre o capital inicial”: use a soma J = C · i · t",
+        "“ao mês”, “ao ano”: a unidade da taxa manda no tempo",
+        "“montante”: é o valor final, capital mais juros",
+        "“rendimento” ou “juros obtidos”: é só a parte dos juros, montante menos capital"
+      ],
+      "formula": "simples: M = C · (1 + i · t); composto: M = C · (1 + i)^{t}",
+      "armadilhas": [
+        "Usar a taxa em porcentagem na fórmula: 1% entra como 0,01.",
+        "Tempo e taxa em unidades diferentes (taxa ao mês e tempo em anos).",
+        "Responder o montante quando a pergunta pede só os juros."
+      ]
+    },
+    "ler": {
+      "passos": [
+        "Descubra o regime: a palavra composto ou simples costuma estar no enunciado.",
+        "Separe capital, taxa e tempo; escreva a unidade de cada um.",
+        "Converta a taxa para decimal e confira se tempo e taxa usam a mesma unidade.",
+        "Veja se a pergunta pede montante ou só os juros.",
+        "Estime: o montante tem de ser maior que o capital."
+      ],
+      "exemplo": {
+        "enunciado": "Marina, que trabalha como designer, aplicou R$ 2.000,00 em um fundo que paga juros compostos de 1% ao mês. Ela pretende retirar o dinheiro depois de 2 meses para comprar um notebook. Qual será o montante, em reais?",
+        "anotacoes": [
+          {
+            "trecho": "que trabalha como designer",
+            "papel": "distracao",
+            "nota": "a profissão não entra na conta"
+          },
+          {
+            "trecho": "R$ 2.000,00",
+            "papel": "dado",
+            "nota": "capital C"
+          },
+          {
+            "trecho": "juros compostos",
+            "papel": "condicao",
+            "nota": "regime: M = C · (1 + i)^{t}"
+          },
+          {
+            "trecho": "1%",
+            "papel": "dado",
+            "nota": "taxa i = 0,01"
+          },
+          {
+            "trecho": "ao mês",
+            "papel": "unidade",
+            "nota": "a taxa é mensal, então t deve estar em meses"
+          },
+          {
+            "trecho": "2 meses",
+            "papel": "dado",
+            "nota": "tempo t = 2"
+          },
+          {
+            "trecho": "Qual será o montante",
+            "papel": "pede",
+            "nota": "2000 · 1,01^{2} = 2040,20"
+          }
+        ]
+      }
+    },
+    "formulas": [
+      {
+        "nome": "Juros simples",
+        "f": "J = C · i · t  e  M = C + J",
+        "uso": "Quando o enunciado diz “juros simples” ou a taxa incide sempre sobre o capital inicial."
+      },
+      {
+        "nome": "Montante composto",
+        "f": "M = C · (1 + i)^{t}",
+        "uso": "Quando há “juros compostos” ou “juros sobre juros” por vários períodos."
+      },
+      {
+        "nome": "Taxa e tempo na mesma unidade",
+        "f": "i ao mês  ⇒  t em meses",
+        "uso": "Quando o enunciado mistura taxa ao ano com prazo em meses."
+      }
+    ],
+    "exemplos": [
+      {
+        "enunciado": "Aplicam-se R$ 1.000,00 a juros simples de 2% ao mês durante 5 meses. Qual é o montante?",
+        "formula": "J = C × i × t",
+        "passos": [
+          "Taxa decimal: 0,02.",
+          "J = 1000 × 0,02 × 5 = 100.",
+          "M = 1000 + 100 = 1100, ou seja, R$ 1.100,00."
+        ]
+      },
+      {
+        "enunciado": "Os mesmos R$ 1.000,00, a juros compostos de 2% ao mês, durante 3 meses. Qual é o montante?",
+        "formula": "M = C × (1 + i)^{t}",
+        "passos": [
+          "M = 1000 × (1,02)^{3}.",
+          "1,02^{3} = 1,061208.",
+          "M ≈ 1061,21, ou seja, cerca de R$ 1.061,21."
+        ]
+      }
+    ],
+    "truque": "Juros simples crescem em linha reta (somam a mesma quantia a cada período); os compostos crescem multiplicando pelo mesmo fator. No primeiro período os dois regimes dão o mesmo valor; depois, o composto passa na frente.",
+    "erroComum": "Usar 2 em vez de 0,02 na fórmula, ou misturar unidades (taxa ao mês com tempo em anos).",
+    "exercicios": [
+      {
+        "enunciado": "Qual é o juro simples de R$ 3.000,00 a 1,5% ao mês durante 8 meses?",
+        "passos": [
+          "Taxa decimal: 0,015.",
+          "J = 3000 × 0,015 × 8 = 360."
+        ],
+        "resposta": "R$ 360,00",
+        "conta": "3000*0.015*8",
+        "valor": 360
+      },
+      {
+        "enunciado": "Qual é o montante de R$ 2.000,00 a juros simples de 3% ao mês durante 6 meses?",
+        "passos": [
+          "J = 2000 × 0,03 × 6 = 360.",
+          "M = 2000 + 360 = 2360."
+        ],
+        "resposta": "R$ 2.360,00",
+        "conta": "2000+2000*0.03*6",
+        "valor": 2360
+      },
+      {
+        "enunciado": "Qual é o montante de R$ 5.000,00 a juros compostos de 10% ao ano durante 2 anos?",
+        "passos": [
+          "M = 5000 × (1,10)^{2}.",
+          "1,10^{2} = 1,21.",
+          "M = 5000 × 1,21 = 6050."
+        ],
+        "resposta": "R$ 6.050,00",
+        "conta": "5000*1.1**2",
+        "valor": 6050
+      },
+      {
+        "enunciado": "Um capital de R$ 800,00 rende juros compostos de 5% ao mês. Qual é o juro total após 2 meses?",
+        "passos": [
+          "M = 800 × (1,05)^{2} = 800 × 1,1025 = 882.",
+          "Juro = montante − capital = 882 − 800 = 82."
+        ],
+        "resposta": "R$ 82,00",
+        "conta": "800*1.05**2-800",
+        "valor": 82
+      },
+      {
+        "enunciado": "Em quantos meses R$ 1.200,00, a juros simples de 2,5% ao mês, rendem R$ 150,00 de juros?",
+        "passos": [
+          "J = C × i × t, então t = {J/C × i}.",
+          "t = {150/1200 × 0,025} = {150/30} = 5."
+        ],
+        "resposta": "5 meses",
+        "conta": "150/(1200*0.025)",
+        "valor": 5
+      }
+    ],
+    "cartoes": [
+      { "p": "Qual é a fórmula do montante a juros simples?", "r": "M = C + J, com J = C × i × t." },
+      { "p": "Qual é a fórmula do montante a juros compostos?", "r": "M = C × (1 + i)^{t}." },
+      { "p": "Por que a taxa de 2% entra como 0,02 na conta?", "r": "Porque 2% = {2/100} = 0,02: as fórmulas usam a taxa em forma decimal." }
+    ],
+    "gerador": {
+      "vars": {},
+      "questoes": [
+        {
+          "vars": {
+            "c": {
+              "min": 1000,
+              "max": 5000,
+              "step": 100
+            },
+            "i": {
+              "min": 2,
+              "max": 5
+            },
+            "n": {
+              "min": 3,
+              "max": 10
+            }
+          },
+          "conceito": "Juros simples: o juro é J = C × i × n, com a taxa sempre sobre o capital inicial e na mesma unidade de tempo.",
+          "enunciado": "Qual é o juro simples produzido por um capital de R$ {c}, aplicado a {i}% ao mês durante {n} meses? Responda em reais.",
+          "conta": "c*i*n/100",
+          "unidade": "reais",
+          "casas": 0,
+          "passos": [
+            "No juro simples, J = C × i × t, com a taxa na forma decimal.",
+            "A taxa é {i}% = {{i}/100}.",
+            "J = {c} × {{i}/100} × {n} = {valor} reais."
+          ]
+        },
+        {
+          "vars": {
+            "c": {
+              "min": 1000,
+              "max": 5000,
+              "step": 200
+            },
+            "i": {
+              "min": 1,
+              "max": 4,
+              "step": 0.5,
+              "casas": 1
+            },
+            "n": {
+              "min": 4,
+              "max": 12
+            }
+          },
+          "deriv": {
+            "j": "c*i*n/100"
+          },
+          "conceito": "Juros simples: o montante é o capital mais os juros, M = C + J.",
+          "enunciado": "Um capital de R$ {c} é aplicado a juros simples de {i}% ao mês. Qual é o montante, em reais, após {n} meses?",
+          "conta": "c+j",
+          "unidade": "reais",
+          "casas": 0,
+          "passos": [
+            "No juro simples, o montante é M = C + J, com J = C × i × t.",
+            "J = {c} × {{i}/100} × {n} = {j} reais.",
+            "M = {c} + {j} = {valor} reais."
+          ]
+        },
+        {
+          "vars": {
+            "c": {
+              "min": 1000,
+              "max": 5000,
+              "step": 100
+            },
+            "i": {
+              "min": 10,
+              "max": 20,
+              "step": 10
+            }
+          },
+          "deriv": {
+            "f": "100+i",
+            "m1": "c*f/100"
+          },
+          "conceito": "Juros compostos: a cada período o montante é multiplicado por (1 + i), pois os juros rendem juros.",
+          "enunciado": "Qual é o montante, em reais, de R$ {c} aplicados a juros compostos de {i}% ao ano durante 2 anos?",
+          "conta": "m1*f/100",
+          "unidade": "reais",
+          "casas": 0,
+          "passos": [
+            "No juro composto, a cada ano o valor é multiplicado pelo fator {{f}/100}.",
+            "Após o 1º ano: {c} × {{f}/100} = {m1} reais.",
+            "Após o 2º ano: {m1} × {{f}/100} = {valor} reais."
+          ]
+        },
+        {
+          "vars": {
+            "c": {
+              "min": 1000,
+              "max": 5000,
+              "step": 1000
+            },
+            "i": {
+              "min": 10,
+              "max": 20,
+              "step": 10
+            }
+          },
+          "deriv": {
+            "f": "1+i/100",
+            "m": "c*f**3"
+          },
+          "conceito": "Juros compostos: o juro total é o montante final menos o capital, J = M - C.",
+          "enunciado": "Um capital de R$ {c} rende juros compostos de {i}% ao ano. Qual é o juro total, em reais, ao final de 3 anos?",
+          "conta": "m-c",
+          "unidade": "reais",
+          "casas": 0,
+          "passos": [
+            "O montante composto é M = C × f^{3}, em que f = 1 + {{i}/100} = {f}.",
+            "M = {c} × {f}^{3} = {m} reais.",
+            "Juro = M - C = {m} - {c} = {valor} reais."
+          ]
+        },
+        {
+          "vars": {
+            "c": {
+              "min": 2000,
+              "max": 10000,
+              "step": 500
+            },
+            "i": {
+              "min": 10,
+              "max": 30,
+              "step": 10
+            }
+          },
+          "deriv": {
+            "sj": "c*i*2/100",
+            "mc": "c*((100+i)**2-10000)/10000"
+          },
+          "conceito": "Comparar juros simples e compostos: calcule cada montante e subtraia; no composto os juros incidem sobre o acumulado.",
+          "enunciado": "Um capital de R$ {c} é aplicado por 2 anos, à taxa de {i}% ao ano. Quantos reais a mais essa aplicação rende em juros compostos do que renderia em juros simples?",
+          "conta": "mc-sj",
+          "unidade": "reais",
+          "casas": 0,
+          "passos": [
+            "Calcule os dois juros no mesmo prazo, de 2 anos, e subtraia.",
+            "Juros simples: {c} × {{i}/100} × 2 = {sj} reais.",
+            "Juros compostos: {c} × [(1 + {{i}/100})^{2} - 1] = {mc} reais.",
+            "Diferença: {mc} - {sj} = {valor} reais."
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "fracoes-operacoes",
+    "nivel": "basico",
+    "titulo": "Frações e operações",
+    "competencia": "C1",
+    "habilidades": [
+      "H1",
+      "H3"
+    ],
+    "quando": {
+      "sinais": [
+        "“metade”, “um terço”, “três quartos de”: fração de uma quantidade, multiplique a fração pela quantidade",
+        "“o que restou” depois de usar uma parte: subtraia de 1 inteiro a fração já usada, quando a fração é do total; fração “do que restou” multiplica o resto",
+        "partes com denominadores diferentes que precisam ser juntadas: ache o mmc",
+        "“quantas porções de {1/4}”: divisão por fração, multiplique pelo inverso"
+      ],
+      "formula": "{a/b} + {c/d} = {a · d + c · b/b · d}",
+      "armadilhas": [
+        "Somar numerador com numerador e denominador com denominador: {1/2} + {1/3} não é {2/5}.",
+        "Esquecer que “de” entre uma fração e uma quantidade significa multiplicar.",
+        "“do que restou” multiplica o resto, não se subtrai do total."
+      ]
+    },
+    "ler": {
+      "passos": [
+        "Descubra o todo: a que quantidade total cada fração se refere?",
+        "Marque cada fração e decida a operação: “de” multiplica, juntar partes soma, o que sobra subtrai de 1.",
+        "Se as partes vêm em etapas (“do que restou”), o todo muda a cada etapa.",
+        "Risque o que não entra na conta, como datas e nomes.",
+        "Confira: nenhuma parte passa do todo e a soma das frações não passa de 1."
+      ],
+      "exemplo": {
+        "enunciado": "A escola de Marta, fundada em 1998, tem 240 alunos inscritos na feira de ciências. Um quarto deles apresenta projetos de física, e um terço apresenta projetos de química. Os demais apenas visitam os estandes. Quantos alunos visitam os estandes?",
+        "anotacoes": [
+          {
+            "trecho": "fundada em 1998",
+            "papel": "distracao",
+            "nota": "o ano não entra na conta"
+          },
+          {
+            "trecho": "240 alunos",
+            "papel": "dado",
+            "nota": "o todo, ao qual as frações se referem"
+          },
+          {
+            "trecho": "Um quarto deles",
+            "papel": "dado",
+            "nota": "{1/4} do todo apresenta física"
+          },
+          {
+            "trecho": "um terço",
+            "papel": "dado",
+            "nota": "{1/3} do todo apresenta química"
+          },
+          {
+            "trecho": "Os demais",
+            "papel": "condicao",
+            "nota": "o que sobra: 1 menos a soma das frações, 1 − {7/12} = {5/12}"
+          },
+          {
+            "trecho": "Quantos alunos visitam os estandes",
+            "papel": "pede",
+            "nota": "{5/12} · 240 = 100"
+          }
+        ]
+      }
+    },
+    "conceito": [
+      "Uma fração {a/b} representa a partes de um todo dividido em b partes iguais, e também é a divisão a ÷ b. Frações equivalentes saem de multiplicar numerador e denominador pelo mesmo número: {1/2} = {2/4} = {3/6}.",
+      "Para somar ou subtrair, os denominadores precisam ser iguais. Se forem diferentes, use o mmc: {1/4} + {1/6} = {3/12} + {2/12} = {5/12}. Só os numeradores se somam; o denominador fica.",
+      "Na multiplicação, multiplica-se numerador por numerador e denominador por denominador. Na divisão, multiplica-se pelo inverso da segunda fração. “{2/5} de 60” é {2/5} · 60 = 24."
+    ],
+    "exemplos": [
+      {
+        "enunciado": "Uma garrafa de 1,5 litro está com {2/3} do volume ocupado. Quantos litros de líquido há nela?",
+        "formula": "{2/3} · 1,5",
+        "passos": [
+          "“De” indica multiplicação: {2/3} de 1,5.",
+          "{2/3} · 1,5 = {2 · 1,5/3} = {3/3}.",
+          "Há 1 litro de líquido."
+        ]
+      },
+      {
+        "enunciado": "Uma receita usa {3/4} de xícara de açúcar e {1/2} de xícara de mel. Quanto de xícara há no total?",
+        "formula": "{3/4} + {1/2} = {3/4} + {2/4}",
+        "passos": [
+          "O mmc de 4 e 2 é 4, e {1/2} = {2/4}.",
+          "Soma: {3/4} + {2/4} = {5/4}.",
+          "São {5/4} de xícara, ou seja, 1,25 xícara."
+        ]
+      }
+    ],
+    "formulas": [
+      {
+        "nome": "Soma com denominadores diferentes",
+        "f": "{a/b} + {c/d} = {a · d + c · b/b · d}",
+        "uso": "Quando as partes têm denominadores diferentes e é preciso juntá-las."
+      },
+      {
+        "nome": "Fração de uma quantidade",
+        "f": "{a/b} de N = {a · N/b}",
+        "uso": "Quando o enunciado fala em “um terço de” ou “três quartos de” um total."
+      },
+      {
+        "nome": "Divisão de frações",
+        "f": "{a/b} ÷ {c/d} = {a/b} · {d/c}",
+        "uso": "Quando se pergunta quantas porções fracionárias cabem em um total."
+      },
+      {
+        "nome": "O que restou",
+        "f": "restou = 1 − (soma das frações usadas do total)",
+        "uso": "Quando as frações são do total: subtraia de 1. Se a fração é “do que restou”, multiplique o resto por ela, sem subtrair do total."
+      }
+    ],
+    "truque": "Para comparar frações, leve-as ao mesmo denominador ou transforme em decimal: {3/4} = 0,75 e {2/3} ≈ 0,67, logo {3/4} é maior.",
+    "erroComum": "Somar os denominadores: {1/2} + {1/3} = {2/5}. O resultado ficaria menor que {1/2}, o que é impossível ao somar algo positivo. O correto é {3/6} + {2/6} = {5/6}.",
+    "exercicios": [
+      {
+        "enunciado": "Em uma caixa há 48 bombons. A família comeu {3/8} deles. Quantos bombons restaram?",
+        "passos": [
+          "Comeram {3/8} · 48 = 18 bombons.",
+          "Restaram 48 − 18."
+        ],
+        "resposta": "30 bombons",
+        "conta": "48-48*3/8",
+        "valor": 30
+      },
+      {
+        "enunciado": "Um tanque tinha 360 litros de água. Pela manhã gastou-se um terço; à tarde, um quarto do que restou. Quantos litros ficaram?",
+        "passos": [
+          "Depois da manhã restam {2/3} · 360 = 240 litros.",
+          "À tarde sobram {3/4} do que restou: {3/4} · 240."
+        ],
+        "resposta": "180 litros",
+        "conta": "360*(2/3)*(3/4)",
+        "valor": 180
+      },
+      {
+        "enunciado": "Quantas porções de {1/4} de litro de suco saem de uma jarra de 3 litros?",
+        "passos": [
+          "Divisão por fração: 3 ÷ {1/4} = 3 · {4/1}.",
+          "3 · 4 = 12."
+        ],
+        "resposta": "12 porções",
+        "conta": "3/(1/4)",
+        "valor": 12
+      },
+      {
+        "enunciado": "Um terreno de 600 m² é dividido: {2/5} para a casa, {1/3} para o jardim e o resto para a garagem. Quantos m² tem a garagem?",
+        "passos": [
+          "Casa: {2/5} · 600 = 240 m². Jardim: {1/3} · 600 = 200 m².",
+          "Garagem: 600 − 240 − 200."
+        ],
+        "resposta": "160 m²",
+        "conta": "600-600*2/5-600/3",
+        "valor": 160
+      },
+      {
+        "enunciado": "Uma receita usa {3/4} de xícara de farinha e {5/8} de xícara de aveia. Quantas xícaras são, no total, em decimal?",
+        "passos": [
+          "O mmc de 4 e 8 é 8: {3/4} = {6/8}.",
+          "{6/8} + {5/8} = {11/8}.",
+          "{11/8} = 1,375."
+        ],
+        "resposta": "1,375 xícara ({11/8})",
+        "conta": "3/4+5/8",
+        "valor": 1.375
+      }
+    ],
+    "cartoes": [
+      {
+        "p": "Como somar frações com denominadores diferentes?",
+        "r": "Ache o mmc dos denominadores, converta cada fração e some só os numeradores."
+      },
+      {
+        "p": "O que significa “{2/5} de 60”?",
+        "r": "Multiplicar: {2/5} · 60 = 24."
+      },
+      {
+        "p": "Como dividir por uma fração?",
+        "r": "Multiplique pelo inverso: {a/b} ÷ {c/d} = {a/b} · {d/c}."
+      },
+      {
+        "p": "Como achar o que restou depois de usar frações do todo?",
+        "r": "Subtraia de 1 a soma das frações usadas, porque 1 representa o todo."
+      }
+    ],
+    "gerador": {
+      "vars": {},
+      "questoes": [
+        {
+          "vars": {
+            "a": {
+              "min": 1,
+              "max": 3
+            },
+            "b": {
+              "min": 4,
+              "max": 9
+            },
+            "k": {
+              "min": 3,
+              "max": 10
+            }
+          },
+          "deriv": {
+            "t": "b*k"
+          },
+          "conceito": "Fração de um valor: {a/b} de t é t × a dividido por b.",
+          "enunciado": "Um pacote tem {t} balas e {{a}/{b}} delas são de menta. Quantas balas de menta há no pacote?",
+          "conta": "t*a/b",
+          "unidade": "balas",
+          "casas": 0,
+          "passos": [
+            "Para achar uma fração de uma quantidade, divida pelo denominador e multiplique pelo numerador.",
+            "{t} ÷ {b} = {k} balas em cada parte.",
+            "{k} × {a} = {valor} balas."
+          ]
+        },
+        {
+          "vars": {
+            "a": {
+              "min": 1,
+              "max": 3
+            },
+            "b": {
+              "min": 4,
+              "max": 9
+            },
+            "k": {
+              "min": 2,
+              "max": 8
+            }
+          },
+          "deriv": {
+            "n": "a*k"
+          },
+          "conceito": "Dividir por fração: quantas vezes {a/b} cabe em n é n × {b/a}, o inverso da fração.",
+          "enunciado": "Uma jarra tem {n} litros de suco. Quantos copos de {{a}/{b}} de litro dá para servir com todo o suco?",
+          "conta": "n*b/a",
+          "unidade": "copos",
+          "casas": 0,
+          "passos": [
+            "O número de copos é {n} ÷ {{a}/{b}}.",
+            "Dividir por uma fração é multiplicar pelo inverso: {n} × {{b}/{a}}.",
+            "{{n} × {b}/{a}} = {valor} copos."
+          ]
+        },
+        {
+          "vars": {
+            "a": {
+              "min": 1,
+              "max": 2
+            },
+            "b": {
+              "min": 4,
+              "max": 6
+            },
+            "c": {
+              "min": 1,
+              "max": 2
+            },
+            "d": {
+              "min": 4,
+              "max": 6
+            },
+            "k": {
+              "min": 2,
+              "max": 6
+            }
+          },
+          "deriv": {
+            "t": "b*d*k",
+            "ca": "t*a/b",
+            "ja": "t*c/d"
+          },
+          "restricoes": [
+            [
+              "positivo",
+              "t-t*a/b-t*c/d"
+            ]
+          ],
+          "conceito": "Soma de frações de um todo: some as partes e subtraia do todo; o que sobra é o restante.",
+          "enunciado": "Um terreno de {t} m² é dividido: {{a}/{b}} para a casa, {{c}/{d}} para o jardim e o restante para a garagem. Quantos m² tem a garagem?",
+          "conta": "t-t*a/b-t*c/d",
+          "unidade": "m²",
+          "casas": 0,
+          "passos": [
+            "Calcule a parte da casa e a do jardim; o que sobra é a garagem.",
+            "Casa: {{a}/{b}} de {t} = {ca} m². Jardim: {{c}/{d}} de {t} = {ja} m².",
+            "Garagem: {t} - {ca} - {ja} = {valor} m²."
+          ]
+        },
+        {
+          "vars": {
+            "a": {
+              "min": 1,
+              "max": 2
+            },
+            "b": {
+              "min": 3,
+              "max": 5
+            },
+            "c": {
+              "min": 1,
+              "max": 3
+            },
+            "d": {
+              "min": 4,
+              "max": 6
+            },
+            "k": {
+              "min": 2,
+              "max": 8
+            }
+          },
+          "deriv": {
+            "t": "b*d*k",
+            "e": "b-a",
+            "r": "t*e/b",
+            "g": "r*c/d"
+          },
+          "conceito": "Fração do que restou: a segunda fração incide só sobre o que sobrou da primeira, não sobre o total.",
+          "enunciado": "Um tanque tinha {t} litros de água. Pela manhã gastou-se {{a}/{b}} do total; à tarde, {{c}/{d}} do que restou. Quantos litros ficaram no tanque?",
+          "conta": "t*(b-a)*(d-c)/(b*d)",
+          "unidade": "litros",
+          "casas": 0,
+          "passos": [
+            "Depois da manhã sobra {{e}/{b}} do tanque: {t} × {{e}/{b}} = {r} litros.",
+            "À tarde gastam-se {{c}/{d}} de {r}, isto é, {g} litros.",
+            "Ficaram {r} - {g} = {valor} litros."
+          ]
+        },
+        {
+          "vars": {
+            "a": {
+              "min": 1,
+              "max": 3
+            },
+            "b": {
+              "min": 2,
+              "max": 8
+            },
+            "c": {
+              "min": 1,
+              "max": 3
+            },
+            "d": {
+              "min": 2,
+              "max": 8
+            },
+            "n": {
+              "min": 2,
+              "max": 4
+            }
+          },
+          "restricoes": [
+            [
+              "positivo",
+              "b-a"
+            ],
+            [
+              "positivo",
+              "d-c"
+            ],
+            [
+              "inteiro",
+              "(a/b+c/d)*n*100"
+            ]
+          ],
+          "conceito": "Soma de frações: use denominador comum, some os numeradores e multiplique pelo número de repetições.",
+          "enunciado": "Uma receita usa {{a}/{b}} de xícara de farinha e {{c}/{d}} de xícara de aveia. Para fazer {n} receitas iguais, quantas xícaras desses dois ingredientes são usadas ao todo? Dê a resposta em decimal.",
+          "conta": "(a/b+c/d)*n",
+          "unidade": "xícaras",
+          "casas": 2,
+          "passos": [
+            "Some as frações usadas em uma receita: {{a}/{b}} + {{c}/{d}}.",
+            "Multiplique a soma por {n}: ({{a}/{b}} + {{c}/{d}}) × {n}.",
+            "Em decimal, o total é {valor} xícaras."
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "potencias-notacao-cientifica",
+    "nivel": "intermediario",
+    "titulo": "Potências e notação científica",
+    "competencia": "C1",
+    "habilidades": [
+      "H1",
+      "H3",
+      "H4"
+    ],
+    "antes": "fracoes-operacoes",
+    "quando": {
+      "sinais": [
+        "“milhões”, “bilhões”, “milésimo de”: número muito grande ou muito pequeno, use potências de 10",
+        "“notação científica” ou “ordem de grandeza”: escreva como a · 10^{n}",
+        "multiplicar ou dividir potências de mesma base: some ou subtraia os expoentes",
+        "prefixos como mili, micro e quilo: cada um é uma potência de 10"
+      ],
+      "formula": "N = a · 10^{n}, com 1 ≤ a < 10",
+      "armadilhas": [
+        "Contar errado ao mover a vírgula: cada casa decimal muda o expoente em 1.",
+        "Somar expoentes quando há soma de potências: 2^{3} + 2^{2} não é 2^{5}."
+      ]
+    },
+    "ler": {
+      "passos": [
+        "Circule o que se pede e em que forma a resposta deve sair (decimal ou notação científica).",
+        "Copie os números com suas unidades, sem contar zeros de cabeça.",
+        "Veja se as unidades combinam; se não, converta usando potências de 10.",
+        "Risque datas, nomes e dados que não entram na conta.",
+        "Confira: número grande tem expoente positivo, número pequeno tem expoente negativo."
+      ],
+      "exemplo": {
+        "enunciado": "Um laboratório de Campinas, aberto em 2008, mediu um vírus com 0,00000012 m de diâmetro. Em notação científica, qual é esse diâmetro, em metros?",
+        "anotacoes": [
+          {
+            "trecho": "aberto em 2008",
+            "papel": "distracao",
+            "nota": "o ano não entra na conta"
+          },
+          {
+            "trecho": "0,00000012 m",
+            "papel": "dado",
+            "nota": "número muito pequeno: expoente negativo"
+          },
+          {
+            "trecho": "Em notação científica",
+            "papel": "condicao",
+            "nota": "a forma pedida é a · 10^{n}, com 1 ≤ a < 10"
+          },
+          {
+            "trecho": "qual é esse diâmetro",
+            "papel": "pede",
+            "nota": "a vírgula anda 7 casas para a direita: 1,2 · 10^{−7}"
+          },
+          {
+            "trecho": "em metros",
+            "papel": "unidade",
+            "nota": "a unidade já está em metros, sem conversão"
+          }
+        ]
+      }
+    },
+    "conceito": [
+      "Uma potência a^{n} é a multiplicado por ele mesmo n vezes: 10^{3} = 10 · 10 · 10 = 1000. Por definição, a^{0} = 1 e a^{−n} = {1/a^{n}}, de modo que 10^{−3} = 0,001.",
+      "Com a mesma base, o produto soma expoentes (a^{m} · a^{n} = a^{m + n}), o quociente subtrai ({a^{m}/a^{n}} = a^{m − n}) e a potência de potência multiplica ((a^{m})^{n} = a^{m · n}).",
+      "A notação científica escreve um número como a · 10^{n}, com 1 ≤ a < 10: 45.000.000 = 4,5 · 10^{7} e 0,00032 = 3,2 · 10^{−4}. Ela facilita comparar, multiplicar e dividir números enormes ou minúsculos."
+    ],
+    "exemplos": [
+      {
+        "enunciado": "Escreva 3.400.000 em notação científica.",
+        "formula": "3.400.000 = 3,4 · 10^{6}",
+        "passos": [
+          "Mova a vírgula até restar um algarismo diferente de zero antes dela: 3,4.",
+          "A vírgula andou 6 casas para a esquerda, então o expoente é 6 (positivo).",
+          "3.400.000 = 3,4 · 10^{6}."
+        ]
+      },
+      {
+        "enunciado": "Calcule (2 · 10^{3}) · (4 · 10^{5}).",
+        "formula": "10^{m} · 10^{n} = 10^{m + n}",
+        "passos": [
+          "Multiplique os coeficientes: 2 · 4 = 8.",
+          "Some os expoentes de 10: 3 + 5 = 8.",
+          "O resultado é 8 · 10^{8}."
+        ]
+      }
+    ],
+    "formulas": [
+      {
+        "nome": "Produto de potências",
+        "f": "a^{m} · a^{n} = a^{m + n}",
+        "uso": "Quando multiplicar potências de mesma base, como 10^{3} · 10^{5}."
+      },
+      {
+        "nome": "Quociente de potências",
+        "f": "{a^{m}/a^{n}} = a^{m − n}",
+        "uso": "Quando dividir potências de mesma base."
+      },
+      {
+        "nome": "Expoente negativo",
+        "f": "a^{−n} = {1/a^{n}}",
+        "uso": "Quando aparecem números pequenos, como 10^{−3} = 0,001."
+      },
+      {
+        "nome": "Notação científica",
+        "f": "N = a · 10^{n}, com 1 ≤ a < 10",
+        "uso": "Quando o número é muito grande ou muito pequeno e a resposta pede essa forma."
+      }
+    ],
+    "truque": "Vírgula andando para a esquerda dá expoente positivo; andando para a direita, expoente negativo. Se o número é grande, o expoente é positivo.",
+    "erroComum": "Tratar 10^{3} como 10 · 3 = 30. O expoente indica repetição da multiplicação: 10^{3} = 10 · 10 · 10 = 1000.",
+    "exercicios": [
+      {
+        "enunciado": "Uma bactéria se divide em duas a cada hora. Partindo de 1 bactéria, quantas haverá após 10 horas?",
+        "passos": [
+          "A cada hora o número dobra: 2^{10}.",
+          "2^{10} = 1024."
+        ],
+        "resposta": "1.024 bactérias",
+        "conta": "2**10",
+        "valor": 1024
+      },
+      {
+        "enunciado": "A distância entre um satélite e a Terra é 1,5 · 10^{8} km. Uma nave a 5 · 10^{4} km/h levaria quantas horas para percorrê-la?",
+        "passos": [
+          "Tempo = {1,5 · 10^{8}/5 · 10^{4}}.",
+          "Coeficientes: 1,5/5 = 0,3. Potências: 10^{8 − 4} = 10^{4}.",
+          "0,3 · 10^{4} = 3000."
+        ],
+        "resposta": "3.000 horas",
+        "conta": "1.5*10**8/(5*10**4)",
+        "valor": 3000
+      },
+      {
+        "enunciado": "Um grão de pólen mede 3 · 10^{−5} m. Quantos grãos, enfileirados, cobrem 6 cm (0,06 m)?",
+        "passos": [
+          "Divida o comprimento total pelo tamanho de um grão.",
+          "{0,06/3 · 10^{−5}} = {6 · 10^{−2}/3 · 10^{−5}} = 2 · 10^{3}.",
+          "2 · 10^{3} = 2000."
+        ],
+        "resposta": "2.000 grãos",
+        "conta": "0.06/(3*10**-5)",
+        "valor": 2000
+      },
+      {
+        "enunciado": "Uma cidade tem 2,4 · 10^{6} habitantes e cada um gera 1,5 kg de lixo por dia. Quantas toneladas de lixo a cidade gera por dia? (1 t = 1.000 kg)",
+        "passos": [
+          "Total: 2,4 · 10^{6} · 1,5 = 3,6 · 10^{6} kg.",
+          "Converta para toneladas: dividir por 1.000 = 10^{3}.",
+          "{3,6 · 10^{6}/10^{3}} = 3,6 · 10^{3} = 3600."
+        ],
+        "resposta": "3.600 toneladas",
+        "conta": "2.4*10**6*1.5/1000",
+        "valor": 3600
+      },
+      {
+        "enunciado": "A luz percorre cerca de 3 · 10^{5} km em 1 segundo. Quantos quilômetros ela percorre em 1 hora (3.600 s)?",
+        "passos": [
+          "Distância = velocidade · tempo = 3 · 10^{5} · 3600.",
+          "3 · 3600 = 10800, e 10800 · 10^{5} = 1.080.000.000."
+        ],
+        "resposta": "1.080.000.000 km (1,08 · 10^{9} km)",
+        "conta": "3*10**5*3600",
+        "valor": 1080000000
+      }
+    ],
+    "cartoes": [
+      {
+        "p": "Como multiplicar 10^{3} · 10^{4}?",
+        "r": "Mesma base: some os expoentes, 10^{7}."
+      },
+      {
+        "p": "Quanto vale a^{0}, com a diferente de zero?",
+        "r": "1."
+      },
+      {
+        "p": "Quando um número está em notação científica?",
+        "r": "Quando é a · 10^{n} com 1 ≤ a < 10."
+      },
+      {
+        "p": "Como escrever 0,0005 em notação científica?",
+        "r": "5 · 10^{−4}: a vírgula andou 4 casas para a direita."
+      }
+    ],
+    "gerador": {
+      "vars": {},
+      "questoes": [
+        {
+          "vars": {
+            "b": {
+              "min": 2,
+              "max": 5
+            },
+            "e": {
+              "min": 2,
+              "max": 4
+            }
+          },
+          "conceito": "Potência: b^e é b multiplicado por si mesmo e vezes.",
+          "enunciado": "Qual é o valor de {b}^{e}?",
+          "conta": "b**e",
+          "unidade": "",
+          "casas": 0,
+          "passos": [
+            "Potência é multiplicação repetida: {b}^{e} é a base {b} multiplicada por ela mesma {e} vezes.",
+            "Multiplicando, {b}^{e} = {valor}."
+          ]
+        },
+        {
+          "vars": {
+            "b": {
+              "min": 2,
+              "max": 9
+            },
+            "m": {
+              "min": 3,
+              "max": 9
+            },
+            "n": {
+              "min": 2,
+              "max": 8
+            },
+            "k": {
+              "min": 1,
+              "max": 4
+            }
+          },
+          "deriv": {
+            "s": "m+n"
+          },
+          "conceito": "Propriedades: no produto de potências de mesma base somam-se os expoentes; na divisão, subtraem-se.",
+          "enunciado": "Escreva {b}^{m} × {b}^{n} ÷ {b}^{k} como uma única potência de {b}. Qual é o expoente dessa potência?",
+          "conta": "m+n-k",
+          "unidade": "",
+          "casas": 0,
+          "passos": [
+            "Na multiplicação de potências de mesma base, somam-se os expoentes: {m} + {n} = {s}.",
+            "Na divisão, subtraem-se os expoentes: {s} - {k} = {valor}."
+          ]
+        },
+        {
+          "vars": {
+            "d": {
+              "min": 12,
+              "max": 98
+            },
+            "e": {
+              "min": 2,
+              "max": 7
+            }
+          },
+          "deriv": {
+            "n": "d*10**e",
+            "k": "e+1"
+          },
+          "conceito": "Notação científica: a × 10^k com 1 ≤ a < 10; cada casa que a vírgula anda muda k em 1.",
+          "enunciado": "Um estádio recebeu {n} torcedores em um dia. Escrevendo esse número em notação científica, na forma a × 10^k com a entre 1 e 10, qual é o valor de k?",
+          "conta": "e+1",
+          "unidade": "",
+          "casas": 0,
+          "passos": [
+            "Em notação científica, o número fica com um só dígito antes da vírgula.",
+            "Em {n}, a vírgula anda para a esquerda até sobrar um dígito inteiro; k é o número de casas que ela anda.",
+            "A vírgula anda {k} casas, então k = {valor}."
+          ]
+        },
+        {
+          "vars": {
+            "v": {
+              "min": 2,
+              "max": 3
+            },
+            "r": {
+              "min": 2,
+              "max": 3
+            },
+            "m": {
+              "min": 5,
+              "max": 7
+            },
+            "n": {
+              "min": 2,
+              "max": 4
+            }
+          },
+          "deriv": {
+            "d": "v*r",
+            "e": "m-n"
+          },
+          "conceito": "Divisão de potências de 10: subtraem-se os expoentes, 10^m / 10^n = 10^{m-n}; divida também os coeficientes.",
+          "enunciado": "Uma sonda está a {d} × 10^{m} km da Terra e viaja a {v} × 10^{n} km/h. Quantas horas ela leva para chegar?",
+          "conta": "r*10**(m-n)",
+          "unidade": "horas",
+          "casas": 0,
+          "passos": [
+            "Tempo = distância ÷ velocidade = ({d} × 10^{m}) ÷ ({v} × 10^{n}).",
+            "Divida os números e as potências separadamente: {d} ÷ {v} = {r} e 10^{m} ÷ 10^{n} = 10^{e}.",
+            "Tempo = {r} × 10^{e} = {valor} horas."
+          ]
+        },
+        {
+          "vars": {
+            "a": {
+              "min": 2,
+              "max": 4
+            },
+            "c": {
+              "min": 2,
+              "max": 3
+            },
+            "r": {
+              "min": 2,
+              "max": 3
+            },
+            "m": {
+              "min": 2,
+              "max": 4
+            },
+            "n": {
+              "min": 1,
+              "max": 2
+            },
+            "p": {
+              "min": 1,
+              "max": 2
+            }
+          },
+          "deriv": {
+            "b": "c*r",
+            "ab": "a*b",
+            "mn": "m+n",
+            "w": "a*r",
+            "k": "m+n-p"
+          },
+          "conceito": "Em notação científica, multiplique os coeficientes e some os expoentes de 10; na divisão, divida os coeficientes e subtraia os expoentes.",
+          "enunciado": "Uma usina trata {a} × 10^{m} litros de água por dia. Em {b} × 10^{n} dias, toda essa água é dividida igualmente em {c} × 10^{p} reservatórios. Quantos litros recebe cada reservatório?",
+          "conta": "a*b*10**(m+n-p)/c",
+          "unidade": "litros",
+          "casas": 0,
+          "passos": [
+            "Total: ({a} × 10^{m}) × ({b} × 10^{n}) = {ab} × 10^{mn} litros.",
+            "Cada reservatório recebe ({ab} × 10^{mn}) ÷ ({c} × 10^{p}).",
+            "{ab} ÷ {c} = {w} e 10^{mn} ÷ 10^{p} = 10^{k}; portanto {w} × 10^{k} = {valor} litros."
+          ]
+        }
+      ]
+    }
+  }
+]

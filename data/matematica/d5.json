@@ -1,0 +1,1432 @@
+[
+  {
+    "id": "volumes-prisma-cilindro",
+    "nivel": "intermediario",
+    "titulo": "Volumes de prisma e cilindro",
+    "competencia": "C2",
+    "habilidades": ["H7", "H9"],
+    "antes": "areas-perimetros",
+    "conceito": [
+      "Prisma e cilindro têm a mesma ideia de volume: V = área da base × altura. Na caixa (paralelepípedo) a base é um retângulo, então V = comprimento × largura × altura.",
+      "Cilindro de raio r e altura h: V = π r^{2} h. Prisma de base triangular: calcule a área do triângulo e multiplique pelo comprimento do prisma.",
+      "Capacidade: 1 m^{3} = 1 000 L e 1 cm^{3} = 1 mL. Confira a unidade antes de converter."
+    ],
+    "quando": {
+      "sinais": [
+        "“caixa”, “piscina”, “reservatório em forma de paralelepípedo”: V = comprimento × largura × altura",
+        "“tanque cilíndrico” ou “lata”: V = π r^{2} h",
+        "“quantos litros cabem”: calcule o volume em m^{3} ou dm^{3} e converta",
+        "“o nível sobe” ou “a água transborda”: o volume do objeto é o da água deslocada"
+      ],
+      "formula": "V = área da base × altura; cilindro: V = π r^{2} h",
+      "armadilhas": [
+        "Usar o diâmetro no lugar do raio em π r^{2}.",
+        "Esquecer a conversão: 1 m^{3} = 1 000 L e 1 dm^{3} = 1 L."
+      ]
+    },
+    "ler": {
+      "passos": [
+        "Circule se pede volume, capacidade em litros ou altura de nível.",
+        "Identifique o sólido e a forma da base.",
+        "Anote raio (ou lados) e altura na mesma unidade, e o valor de π do enunciado.",
+        "Risque o que não entra, como cor e material.",
+        "Calcule área da base × altura, converta para litros e confira."
+      ],
+      "exemplo": {
+        "enunciado": "Um reservatório cilíndrico tem raio da base de 2 m e altura de 3 m. Ele foi pintado de azul por fora. Usando π = 3, quantos litros de água cabem no reservatório?",
+        "anotacoes": [
+          {
+            "trecho": "raio da base de 2 m",
+            "papel": "dado",
+            "nota": "é o raio, não o diâmetro"
+          },
+          {
+            "trecho": "altura de 3 m",
+            "papel": "dado",
+            "nota": "altura em metros"
+          },
+          {
+            "trecho": "pintado de azul por fora",
+            "papel": "distracao",
+            "nota": "não entra na conta"
+          },
+          {
+            "trecho": "π = 3",
+            "papel": "condicao",
+            "nota": "use esse valor de π"
+          },
+          {
+            "trecho": "quantos litros",
+            "papel": "pede",
+            "nota": "V = 3 × 2^{2} × 3 = 36 m^{3} = 36 000 L"
+          }
+        ]
+      }
+    },
+    "formulas": [
+      {
+        "nome": "Volume geral",
+        "f": "V = área da base · altura",
+        "uso": "Quando o sólido tem a mesma base de cima a baixo (prisma ou cilindro)."
+      },
+      {
+        "nome": "Caixa (paralelepípedo)",
+        "f": "V = c · l · h",
+        "uso": "Quando se pede a capacidade de uma caixa, piscina ou reservatório retangular."
+      },
+      {
+        "nome": "Cilindro",
+        "f": "V = π · r^{2} · h",
+        "uso": "Quando há lata, tubo ou tanque circular."
+      },
+      {
+        "nome": "Capacidade",
+        "f": "1 m^{3} = 1 000 L  e  1 cm^{3} = 1 mL",
+        "uso": "Quando o volume vem em m³ e a resposta pede litros."
+      }
+    ],
+    "exemplos": [
+      {
+        "enunciado": "Uma caixa mede 4 m, 3 m e 2 m. Qual é o volume?",
+        "formula": "V = 4 × 3 × 2 = 24 m^{3}",
+        "passos": ["Base: 4 × 3 = 12 m^{2}.", "V = 12 × 2 = 24 m^{3}."]
+      },
+      {
+        "enunciado": "Um cilindro tem raio 2 m e altura 5 m. Use π = 3,14. Qual é o volume?",
+        "formula": "V = 3,14 × 2^{2} × 5 = 62,8 m^{3}",
+        "passos": ["Base: π r^{2} = 3,14 × 4 = 12,56.", "V = 12,56 × 5 = 62,8 m^{3}."]
+      }
+    ],
+    "truque": "Volume é sempre área da base vezes altura. Calcule primeiro a base, depois multiplique pela altura, e só então converta para litros.",
+    "erroComum": "Usar o diâmetro no lugar do raio no cilindro, ou esquecer de converter m^{3} em litros.",
+    "exercicios": [
+      {
+        "enunciado": "Um paralelepípedo mede 5 cm, 4 cm e 3 cm. Qual é o volume?",
+        "passos": ["V = 5 × 4 × 3.", "V = 60."],
+        "resposta": "60 cm^{3}",
+        "conta": "5*4*3",
+        "valor": 60
+      },
+      {
+        "enunciado": "Uma piscina tem 10 m de comprimento, 5 m de largura e 2 m de profundidade. Quantos litros de água cabem nela quando está cheia?",
+        "passos": ["V = 10 × 5 × 2 = 100 m^{3}.", "100 × 1 000 = 100 000 litros."],
+        "resposta": "100.000 litros",
+        "conta": "10*5*2*1000",
+        "valor": 100000
+      },
+      {
+        "enunciado": "Um prisma tem base triangular, com base de 6 cm e altura de 4 cm no triângulo, e comprimento de 10 cm. Qual é o volume?",
+        "passos": ["Área da base = {6 × 4/2} = 12 cm^{2}.", "V = 12 × 10 = 120."],
+        "resposta": "120 cm^{3}",
+        "conta": "6*4/2*10",
+        "valor": 120
+      },
+      {
+        "enunciado": "Um reservatório cilíndrico tem raio de 3 m e altura de 10 m. Use π = 3,14. Qual é o volume?",
+        "passos": ["V = π r^{2} h.", "V = 3,14 × 3 × 3 × 10 = 282,6."],
+        "resposta": "282,6 m^{3}",
+        "conta": "3.14*3*3*10",
+        "valor": 282.6
+      },
+      {
+        "enunciado": "Uma lata cilíndrica tem raio de 5 cm e altura de 12 cm. Use π = 3,14. Quantos mL de suco cabem nela?",
+        "passos": ["V = 3,14 × 5 × 5 × 12 = 942 cm^{3}.", "1 cm^{3} = 1 mL, logo 942 mL."],
+        "resposta": "942 mL",
+        "conta": "3.14*5*5*12",
+        "valor": 942
+      }
+    ],
+    "cartoes": [
+      {"p": "Qual é a fórmula geral do volume de prisma e cilindro?", "r": "V = área da base × altura."},
+      {"p": "Qual é o volume do cilindro?", "r": "V = π r^{2} h."},
+      {"p": "Quantos litros tem 1 m^{3}? E quantos mL tem 1 cm^{3}?", "r": "1 m^{3} = 1 000 L; 1 cm^{3} = 1 mL."},
+      {"p": "Qual é o erro típico ao usar V = π r^{2} h?", "r": "Colocar o diâmetro no lugar do raio. Raio é metade do diâmetro."}
+    ],
+    "gerador": {
+      "vars": {},
+      "questoes": [
+        {
+          "vars": {
+            "a": {
+              "min": 2,
+              "max": 10
+            },
+            "b": {
+              "min": 2,
+              "max": 10
+            },
+            "c": {
+              "min": 2,
+              "max": 10
+            }
+          },
+          "enunciado": "Uma caixa em forma de paralelepípedo mede {a} cm de comprimento, {b} cm de largura e {c} cm de altura. Qual é o seu volume?",
+          "conta": "a*b*c",
+          "unidade": "cm³",
+          "casas": 0,
+          "passos": [
+            "Volume = área da base × altura = comprimento × largura × altura.",
+            "V = {a} × {b} × {c} = {valor} cm³."
+          ]
+        },
+        {
+          "vars": {
+            "a": {
+              "min": 30,
+              "max": 60,
+              "step": 10
+            },
+            "b": {
+              "min": 20,
+              "max": 40,
+              "step": 10
+            },
+            "c": {
+              "min": 20,
+              "max": 40,
+              "step": 10
+            }
+          },
+          "enunciado": "Um aquário em forma de paralelepípedo mede {a} cm de comprimento, {b} cm de largura e {c} cm de altura. Quantos litros de água cabem nele quando está cheio? (1 litro = 1 000 cm³)",
+          "conta": "a*b*c/1000",
+          "unidade": "litros",
+          "casas": 0,
+          "passos": [
+            "Primeiro o volume em cm³: {a} × {b} × {c}.",
+            "Cada litro equivale a 1 000 cm³, então divida por 1 000.",
+            "Capacidade = {a} × {b} × {c} ÷ 1 000 = {valor} litros."
+          ]
+        },
+        {
+          "vars": {
+            "r": {
+              "min": 2,
+              "max": 8
+            },
+            "h": {
+              "min": 5,
+              "max": 20
+            }
+          },
+          "enunciado": "Uma lata cilíndrica tem raio da base de {r} cm e altura de {h} cm. Considerando π = 3, qual é o seu volume?",
+          "conta": "3*r*r*h",
+          "unidade": "cm³",
+          "casas": 0,
+          "passos": [
+            "Volume do cilindro = área da base × altura = π × r² × h.",
+            "Área da base: 3 × {r}² (com π = 3).",
+            "V = 3 × {r}² × {h} = {valor} cm³."
+          ]
+        },
+        {
+          "vars": {
+            "r": {
+              "min": 2,
+              "max": 6
+            },
+            "h": {
+              "min": 2,
+              "max": 9
+            }
+          },
+          "deriv": {
+            "V": "3*r*r*h"
+          },
+          "enunciado": "Uma caixa-d'água cilíndrica tem capacidade de {V} m³ e raio da base de {r} m. Considerando π = 3, qual é a sua altura?",
+          "conta": "V/(3*r*r)",
+          "unidade": "m",
+          "casas": 0,
+          "passos": [
+            "V = π × r² × h. Com π = 3, a área da base é 3 × {r}².",
+            "Isole a altura: h = V ÷ (3 × r²).",
+            "h = {V} ÷ (3 × {r}²) = {valor} m."
+          ]
+        },
+        {
+          "vars": {
+            "a": {
+              "min": 2,
+              "max": 5
+            },
+            "b": {
+              "min": 2,
+              "max": 5
+            },
+            "c": {
+              "min": 2,
+              "max": 4
+            },
+            "v": {
+              "min": 100,
+              "max": 500,
+              "step": 100
+            }
+          },
+          "restricoes": [
+            [
+              "inteiro",
+              "a*b*c*1000/v"
+            ]
+          ],
+          "enunciado": "Um reservatório em forma de paralelepípedo tem base de {a} m por {b} m e altura de {c} m. Uma torneira enche o reservatório com vazão de {v} litros por minuto. Quantos minutos leva para enchê-lo totalmente? (1 m³ = 1 000 litros)",
+          "conta": "a*b*c*1000/v",
+          "unidade": "minutos",
+          "casas": 0,
+          "passos": [
+            "Volume do reservatório: {a} × {b} × {c} m³.",
+            "Em litros: multiplique por 1 000.",
+            "Tempo = volume ÷ vazão = {a} × {b} × {c} × 1 000 ÷ {v} = {valor} minutos."
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "volumes-cone-esfera",
+    "nivel": "intermediario",
+    "titulo": "Volumes de cone e esfera",
+    "competencia": "C2",
+    "habilidades": ["H7", "H9"],
+    "antes": "volumes-prisma-cilindro",
+    "conceito": [
+      "O cone tem um terço do volume do cilindro de mesma base e mesma altura: V = {π r^{2} h/3}.",
+      "A esfera de raio r tem volume V = {4 π r^{3}/3}. Se o enunciado der o diâmetro, divida por 2 para achar o raio.",
+      "Em todo exercício, use o valor de π que o enunciado indicar e mantenha as unidades iguais (cm com cm, m com m)."
+    ],
+    "quando": {
+      "sinais": [
+        "“casquinha”, “funil”, “tenda”: cone, V = {π r^{2} h/3}",
+        "“bola”, “globo”, “reservatório esférico”: esfera, V = {4 π r^{3}/3}",
+        "“diâmetro de”: divida por 2 para achar o raio",
+        "“derretida e transformada em”: o volume se conserva, iguale os dois volumes"
+      ],
+      "formula": "cone: V = {π r^{2} h/3}; esfera: V = {4 π r^{3}/3}",
+      "armadilhas": [
+        "Esquecer de dividir por 3 no cone.",
+        "Usar o diâmetro como raio, o que multiplica o resultado por 8 na esfera."
+      ]
+    },
+    "ler": {
+      "passos": [
+        "Circule o que se pede e a unidade (cm^{3}, mL, litros).",
+        "Identifique o sólido: cone ou esfera.",
+        "Anote raio e altura, atento a diâmetro dado no lugar do raio.",
+        "Risque o que não entra, como preço e sabor.",
+        "Aplique a fórmula com o π do enunciado e converta se necessário."
+      ],
+      "exemplo": {
+        "enunciado": "Uma casquinha de sorvete tem formato de cone com raio da base de 3 cm e altura de 10 cm, e será totalmente cheia de sorvete. A casquinha custa R$ 2,00. Usando π = 3, qual é o volume de sorvete, em cm^{3}?",
+        "anotacoes": [
+          {
+            "trecho": "raio da base de 3 cm",
+            "papel": "dado",
+            "nota": "é o raio, não o diâmetro"
+          },
+          {
+            "trecho": "altura de 10 cm",
+            "papel": "dado",
+            "nota": "altura do cone"
+          },
+          {
+            "trecho": "custa R$ 2,00",
+            "papel": "distracao",
+            "nota": "não entra na conta"
+          },
+          {
+            "trecho": "π = 3",
+            "papel": "condicao",
+            "nota": "use esse valor de π"
+          },
+          {
+            "trecho": "qual é o volume",
+            "papel": "pede",
+            "nota": "V = {3 × 3^{2} × 10/3} = 90 cm^{3}"
+          }
+        ]
+      }
+    },
+    "formulas": [
+      {
+        "nome": "Cone",
+        "f": "V = {π · r^{2} · h/3}",
+        "uso": "Quando há funil, casquinha ou pilha cônica."
+      },
+      {
+        "nome": "Esfera",
+        "f": "V = {4 · π · r^{3}/3}",
+        "uso": "Quando há bola, cisterna ou gota esférica."
+      },
+      {
+        "nome": "Raio pelo diâmetro",
+        "f": "r = {d/2}",
+        "uso": "Quando o enunciado dá o diâmetro em vez do raio."
+      }
+    ],
+    "exemplos": [
+      {
+        "enunciado": "Um cone tem raio 3 cm e altura 4 cm. Use π = 3,14. Qual é o volume?",
+        "formula": "V = {3,14 × 3^{2} × 4/3} = 37,68 cm^{3}",
+        "passos": ["V = {π r^{2} h/3}.", "V = {3,14 × 9 × 4/3} = {113,04/3} = 37,68."]
+      },
+      {
+        "enunciado": "Uma esfera tem raio 3 m. Use π = 3. Qual é o volume?",
+        "formula": "V = {4 × 3 × 3^{3}/3} = 108 m^{3}",
+        "passos": ["V = {4 π r^{3}/3}.", "V = {4 × 3 × 27/3} = {324/3} = 108 m^{3}."]
+      }
+    ],
+    "truque": "Cone é um terço do cilindro; guarde isso. Se você sabe o volume do cilindro de mesma base e altura, divida por 3.",
+    "erroComum": "Esquecer o 1/3 no cone, ou usar r^{2} na esfera no lugar de r^{3}.",
+    "exercicios": [
+      {
+        "enunciado": "Um cone tem raio de 3 cm e altura de 4 cm. Use π = 3,14. Qual é o volume?",
+        "passos": ["V = {π r^{2} h/3}.", "V = {3,14 × 3 × 3 × 4/3} = 37,68."],
+        "resposta": "37,68 cm^{3}",
+        "conta": "3.14*3*3*4/3",
+        "valor": 37.68
+      },
+      {
+        "enunciado": "Uma esfera tem raio de 3 m. Use π = 3. Qual é o volume?",
+        "passos": ["V = {4 π r^{3}/3}.", "V = {4 × 3 × 27/3} = 108."],
+        "resposta": "108 m^{3}",
+        "conta": "4*3*3*3*3/3",
+        "valor": 108
+      },
+      {
+        "enunciado": "Um cilindro e um cone têm a mesma base e a mesma altura. O cilindro tem volume de 90 cm^{3}. Qual é o volume do cone?",
+        "passos": ["O cone tem um terço do volume do cilindro.", "90 ÷ 3 = 30."],
+        "resposta": "30 cm^{3}",
+        "conta": "90/3",
+        "valor": 30
+      },
+      {
+        "enunciado": "Um funil em forma de cone tem raio de 6 cm e altura de 10 cm. Use π = 3. Quantos mL cabem no funil?",
+        "passos": ["V = {3 × 6 × 6 × 10/3} = 360 cm^{3}.", "1 cm^{3} = 1 mL, logo 360 mL."],
+        "resposta": "360 mL",
+        "conta": "3*6*6*10/3",
+        "valor": 360
+      },
+      {
+        "enunciado": "Uma bola esférica tem 12 cm de diâmetro. Use π = 3,14. Qual é o volume da bola?",
+        "passos": ["Raio = 12 ÷ 2 = 6 cm.", "V = {4 × 3,14 × 6^{3}/3} = {4 × 3,14 × 216/3} = 904,32."],
+        "resposta": "904,32 cm^{3}",
+        "conta": "4*3.14*6*6*6/3",
+        "valor": 904.32
+      }
+    ],
+    "cartoes": [
+      {"p": "Qual é o volume do cone?", "r": "V = {π r^{2} h/3}, um terço do cilindro de mesma base e altura."},
+      {"p": "Qual é o volume da esfera?", "r": "V = {4 π r^{3}/3}."},
+      {"p": "A questão dá o diâmetro de uma esfera. O que fazer?", "r": "Dividir por 2 para obter o raio antes de usar a fórmula."},
+      {"p": "Como conferir se o volume do cone faz sentido?", "r": "Ele deve ser menor que o do cilindro de mesma base e altura (exatamente um terço)."}
+    ],
+    "gerador": {
+      "vars": {},
+      "questoes": [
+        {
+          "vars": {
+            "r": {
+              "min": 1,
+              "max": 6
+            },
+            "h": {
+              "min": 2,
+              "max": 12
+            }
+          },
+          "enunciado": "Considere π = 3. Um cone tem raio da base de {r} cm e altura de {h} cm. Qual é o seu volume?",
+          "conta": "3*r*r*h/3",
+          "unidade": "cm³",
+          "casas": 0,
+          "passos": [
+            "Volume do cone = π × r² × h ÷ 3.",
+            "V = 3 × {r}² × {h} ÷ 3 = {valor} cm³."
+          ]
+        },
+        {
+          "vars": {
+            "r": {
+              "min": 2,
+              "max": 6
+            },
+            "t": {
+              "min": 1,
+              "max": 4
+            }
+          },
+          "deriv": {
+            "h": "3*t"
+          },
+          "enunciado": "Considere π = 3,14. Um cone tem raio da base de {r} cm e altura de {h} cm. Qual é o seu volume?",
+          "conta": "3.14*r*r*h/3",
+          "unidade": "cm³",
+          "casas": 2,
+          "passos": [
+            "Volume do cone = π × r² × h ÷ 3.",
+            "Como {h} ÷ 3 = {t}, V = 3,14 × {r}² × {t}.",
+            "V = {valor} cm³."
+          ]
+        },
+        {
+          "vars": {
+            "r": {
+              "min": 1,
+              "max": 12
+            }
+          },
+          "deriv": {
+            "d": "2*r"
+          },
+          "enunciado": "Considere π = 3. Uma bola esférica tem diâmetro de {d} cm. Qual é o volume da bola?",
+          "conta": "4*3*r*r*r/3",
+          "unidade": "cm³",
+          "casas": 0,
+          "passos": [
+            "O raio é a metade do diâmetro: {d} ÷ 2 = {r} cm.",
+            "Volume da esfera = 4 × π × r³ ÷ 3.",
+            "V = 4 × 3 × {r}³ ÷ 3 = {valor} cm³."
+          ]
+        },
+        {
+          "vars": {
+            "u": {
+              "min": 1,
+              "max": 6
+            }
+          },
+          "deriv": {
+            "r": "3*u",
+            "r3": "r*r*r"
+          },
+          "enunciado": "Considere π = 3,14. Uma esfera tem raio de {r} m. Qual é o volume da esfera?",
+          "conta": "4*3.14*r*r*r/3",
+          "unidade": "m³",
+          "casas": 2,
+          "passos": [
+            "Volume da esfera = 4 × π × r³ ÷ 3.",
+            "{r}³ = {r3}.",
+            "V = 4 × 3,14 × {r3} ÷ 3 = {valor} m³."
+          ]
+        },
+        {
+          "vars": {
+            "e": {
+              "min": 2,
+              "max": 6
+            },
+            "r": {
+              "min": 1,
+              "max": 3
+            },
+            "h": {
+              "min": 1,
+              "max": 12
+            }
+          },
+          "deriv": {
+            "ve": "4*e*e*e",
+            "vc": "r*r*h"
+          },
+          "restricoes": [
+            [
+              "inteiro",
+              "(4*e*e*e)/(r*r*h)"
+            ]
+          ],
+          "enunciado": "Considere π = 3. Uma esfera maciça de metal, de raio {e} cm, é derretida e todo o metal é usado para fazer cones iguais, cada um com raio da base de {r} cm e altura de {h} cm. Quantos cones são obtidos?",
+          "conta": "(4*3*e*e*e/3)/(3*r*r*h/3)",
+          "unidade": "cones",
+          "casas": 0,
+          "passos": [
+            "Volume da esfera = 4 × 3 × {e}³ ÷ 3 = {ve} cm³.",
+            "Volume de cada cone = 3 × {r}² × {h} ÷ 3 = {vc} cm³.",
+            "Número de cones = {ve} ÷ {vc} = {valor}."
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "trigonometria-triangulo-retangulo",
+    "nivel": "intermediario",
+    "titulo": "Seno, cosseno e tangente",
+    "competencia": "C2",
+    "habilidades": ["H7", "H8"],
+    "antes": "pitagoras-semelhanca",
+    "conceito": [
+      "Em um triângulo retângulo, para um ângulo agudo: seno = {cateto oposto/hipotenusa}; cosseno = {cateto adjacente/hipotenusa}; tangente = {cateto oposto/cateto adjacente}.",
+      "Valores que costumam ser dados: sen 30° = 0,5; cos 60° = 0,5; tg 45° = 1; sen 60° = cos 30° ≈ 0,87; tg 60° ≈ 1,73; tg 30° ≈ 0,58; sen 45° = cos 45° ≈ 0,71.",
+      "Use a razão que liga o que você tem ao que você quer: com a hipotenusa e o ângulo, seno ou cosseno; só com os catetos, tangente."
+    ],
+    "quando": {
+      "sinais": [
+        "“rampa que forma ângulo de 30° com o chão”: relação entre hipotenusa e altura, use seno",
+        "“a sombra mede” e “o ângulo de elevação do sol”: cateto adjacente e oposto, use tangente",
+        "“dado sen 30° = 0,5”: o enunciado entrega a razão a ser usada",
+        "“a que distância horizontal”: cateto adjacente ao ângulo, use cosseno ou tangente"
+      ],
+      "formula": "sen = {oposto/hipotenusa}; cos = {adjacente/hipotenusa}; tg = {oposto/adjacente}",
+      "armadilhas": [
+        "Escolher a razão errada: marque primeiro o lado oposto, o adjacente e a hipotenusa em relação ao ângulo.",
+        "Aplicar seno e cosseno em triângulo que não é retângulo."
+      ]
+    },
+    "ler": {
+      "passos": [
+        "Circule o lado que a pergunta pede.",
+        "Desenhe o triângulo retângulo e marque o ângulo dado.",
+        "Rotule oposto, adjacente e hipotenusa em relação a esse ângulo.",
+        "Risque o que não entra, como datas.",
+        "Escolha a razão que liga o lado conhecido e o pedido, resolva e confira."
+      ],
+      "exemplo": {
+        "enunciado": "Uma rampa forma um ângulo de 30° com o chão e tem 8 m de comprimento. A rampa foi inaugurada em 2021. Usando sen 30° = 0,5, qual é a altura que a rampa atinge?",
+        "anotacoes": [
+          {
+            "trecho": "ângulo de 30° com o chão",
+            "papel": "dado",
+            "nota": "o ângulo, com o chão como cateto adjacente"
+          },
+          {
+            "trecho": "8 m de comprimento",
+            "papel": "dado",
+            "nota": "hipotenusa, pois a rampa é oposta ao ângulo reto"
+          },
+          {
+            "trecho": "inaugurada em 2021",
+            "papel": "distracao",
+            "nota": "não entra na conta"
+          },
+          {
+            "trecho": "sen 30° = 0,5",
+            "papel": "condicao",
+            "nota": "razão fornecida para usar"
+          },
+          {
+            "trecho": "qual é a altura",
+            "papel": "pede",
+            "nota": "cateto oposto: sen 30° = {h/8}, logo h = 4 m"
+          }
+        ]
+      }
+    },
+    "formulas": [
+      {
+        "nome": "Seno",
+        "f": "sen = {oposto/hipotenusa}",
+        "uso": "Quando se conhece a hipotenusa (rampa, escada, cabo) e se quer a altura."
+      },
+      {
+        "nome": "Cosseno",
+        "f": "cos = {adjacente/hipotenusa}",
+        "uso": "Quando se conhece a hipotenusa e se quer a distância na horizontal."
+      },
+      {
+        "nome": "Tangente",
+        "f": "tg = {oposto/adjacente}",
+        "uso": "Quando só os catetos entram: altura e distância ao pé, sem a hipotenusa."
+      }
+    ],
+    "exemplos": [
+      {
+        "enunciado": "Uma rampa de 10 m forma 30° com o chão. Qual é a altura que ela alcança? (sen 30° = 0,5)",
+        "formula": "h = 10 × 0,5 = 5 m",
+        "passos": ["A rampa é a hipotenusa e a altura é o cateto oposto.", "sen 30° = {h/10}, logo h = 10 × 0,5 = 5 m."]
+      },
+      {
+        "enunciado": "Num triângulo retângulo, o cateto oposto a um ângulo mede 3 e o adjacente mede 4. Qual é a tangente do ângulo?",
+        "formula": "tg = {3/4} = 0,75",
+        "passos": ["tg = {oposto/adjacente}.", "tg = {3/4} = 0,75."]
+      }
+    ],
+    "truque": "Lembre de SOH-CAH-TOA: Seno = Oposto/Hipotenusa, Cosseno = Adjacente/Hipotenusa, Tangente = Oposto/Adjacente. Desenhe o triângulo e marque oposto e adjacente em relação ao ângulo dado.",
+    "erroComum": "Trocar cateto oposto por adjacente: eles dependem do ângulo escolhido, não do desenho.",
+    "exercicios": [
+      {
+        "enunciado": "Uma rampa de 10 m forma 30° com o solo. Use sen 30° = 0,5. Qual é a altura atingida pela rampa?",
+        "passos": ["sen 30° = {altura/10}.", "altura = 10 × 0,5 = 5."],
+        "resposta": "5 m",
+        "conta": "10*0.5",
+        "valor": 5
+      },
+      {
+        "enunciado": "Uma escada de 8 m forma 60° com o chão. Use cos 60° = 0,5. A que distância da parede está o pé da escada?",
+        "passos": ["O pé da escada é o cateto adjacente: cos 60° = {d/8}.", "d = 8 × 0,5 = 4."],
+        "resposta": "4 m",
+        "conta": "8*0.5",
+        "valor": 4
+      },
+      {
+        "enunciado": "Quando o sol está a 45° de altura, um poste projeta sombra de 7 m. Use tg 45° = 1. Qual é a altura do poste?",
+        "passos": ["tg 45° = {altura/sombra}.", "altura = 7 × 1 = 7."],
+        "resposta": "7 m",
+        "conta": "7*1",
+        "valor": 7
+      },
+      {
+        "enunciado": "Em um triângulo retângulo, o cateto oposto a um ângulo mede 3 cm e o adjacente mede 4 cm. Qual é a tangente desse ângulo?",
+        "passos": ["tg = {oposto/adjacente}.", "tg = {3/4} = 0,75."],
+        "resposta": "0,75",
+        "conta": "3/4",
+        "valor": 0.75
+      },
+      {
+        "enunciado": "De um ponto a 50 m da base de uma torre, vê-se o topo sob um ângulo de 60°. Use tg 60° = 1,73. Qual é a altura da torre?",
+        "passos": ["tg 60° = {altura/50}.", "altura = 50 × 1,73 = 86,5."],
+        "resposta": "86,5 m",
+        "conta": "50*1.73",
+        "valor": 86.5
+      }
+    ],
+    "cartoes": [
+      {"p": "Defina seno, cosseno e tangente no triângulo retângulo.", "r": "sen = {oposto/hipotenusa}; cos = {adjacente/hipotenusa}; tg = {oposto/adjacente}."},
+      {"p": "Quais são sen 30°, cos 60° e tg 45°?", "r": "sen 30° = 0,5; cos 60° = 0,5; tg 45° = 1."},
+      {"p": "Que razão usar com a hipotenusa e o ângulo?", "r": "Seno (para o cateto oposto) ou cosseno (para o adjacente)."},
+      {"p": "Que razão usar quando só aparecem os dois catetos?", "r": "A tangente: oposto dividido por adjacente."}
+    ],
+    "gerador": {
+      "vars": {},
+      "questoes": [
+        {
+          "vars": {
+            "H": {
+              "min": 4,
+              "max": 40,
+              "step": 2
+            }
+          },
+          "enunciado": "Uma rampa de {H} m de comprimento forma 30° com o solo. Sabendo que sen 30° = 0,5, qual é a altura que a rampa atinge?",
+          "conta": "H*0.5",
+          "unidade": "m",
+          "casas": 0,
+          "passos": [
+            "O seno liga o cateto oposto (altura) à hipotenusa (rampa): sen 30° = altura ÷ {H}.",
+            "Altura = {H} × 0,5 = {valor} m."
+          ]
+        },
+        {
+          "vars": {
+            "s": {
+              "min": 8,
+              "max": 48,
+              "step": 4
+            }
+          },
+          "enunciado": "Quando os raios de sol formam um ângulo de 37° com o solo, um prédio projeta uma sombra de {s} m. Sabendo que tg 37° = 0,75, qual é a altura do prédio?",
+          "conta": "s*0.75",
+          "unidade": "m",
+          "casas": 0,
+          "passos": [
+            "A tangente liga o cateto oposto (altura) ao adjacente (sombra): tg 37° = altura ÷ {s}.",
+            "Altura = {s} × 0,75 = {valor} m."
+          ]
+        },
+        {
+          "vars": {
+            "h": {
+              "min": 3,
+              "max": 30,
+              "step": 3
+            }
+          },
+          "enunciado": "Uma escada está encostada em uma parede, com o topo a {h} m do chão, e forma 37° com o chão. Sabendo que sen 37° = 0,6, qual é o comprimento da escada?",
+          "conta": "h/0.6",
+          "unidade": "m",
+          "casas": 0,
+          "passos": [
+            "O seno liga o cateto oposto (altura) à hipotenusa (escada): sen 37° = {h} ÷ L.",
+            "0,6 = {h} ÷ L, logo L = {h} ÷ 0,6 = {valor} m."
+          ]
+        },
+        {
+          "vars": {
+            "d": {
+              "min": 8,
+              "max": 40,
+              "step": 4
+            }
+          },
+          "deriv": {
+            "x": "d*0.75"
+          },
+          "enunciado": "Um observador está a {d} m de um prédio e enxerga o topo sob um ângulo de 37° com a horizontal. Seus olhos estão a 1,5 m do chão. Sabendo que tg 37° = 0,75, qual é a altura do prédio?",
+          "conta": "d*0.75+1.5",
+          "unidade": "m",
+          "casas": 1,
+          "passos": [
+            "A parte do prédio acima dos olhos é o cateto oposto: tg 37° = x ÷ {d}.",
+            "x = {d} × 0,75 = {x} m.",
+            "Altura do prédio = {x} + 1,5 = {valor} m."
+          ]
+        },
+        {
+          "vars": {
+            "h": {
+              "min": 15,
+              "max": 60,
+              "step": 3
+            }
+          },
+          "enunciado": "Do alto de um farol de {h} m de altura, um marinheiro vê um barco sob um ângulo de depressão de 37° em relação à horizontal. Sabendo que tg 37° = 0,75, qual é a distância do barco até o pé do farol?",
+          "conta": "h/0.75",
+          "unidade": "m",
+          "casas": 0,
+          "passos": [
+            "O ângulo de depressão é igual ao ângulo do triângulo no barco: a altura do farol é o cateto oposto e a distância é o adjacente.",
+            "tg 37° = {h} ÷ d, ou seja, 0,75 = {h} ÷ d.",
+            "d = {h} ÷ 0,75 = {valor} m."
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "geometria-analitica-basica",
+    "nivel": "intermediario",
+    "titulo": "Geometria analítica básica",
+    "competencia": "C2",
+    "habilidades": [
+      "H6",
+      "H8"
+    ],
+    "antes": "pitagoras-semelhanca",
+    "quando": {
+      "sinais": [
+        "pontos dados por coordenadas (x, y) e “distância entre” eles: use a fórmula da distância",
+        "“ponto médio” ou “ponto que divide ao meio” um segmento: média das coordenadas",
+        "“inclinação”, “declividade” ou “coeficiente angular” de uma reta: variação de y dividida pela de x",
+        "“equação da reta” por dois pontos ou “onde cruza o eixo”: use y = mx + n"
+      ],
+      "formula": "d = sqrt{(x_{2} − x_{1})^{2} + (y_{2} − y_{1})^{2}}",
+      "armadilhas": [
+        "Esquecer a raiz quadrada no final da distância.",
+        "Inverter x e y no coeficiente angular: é variação de y sobre variação de x."
+      ]
+    },
+    "ler": {
+      "passos": [
+        "Circule o que se pede: distância, ponto médio, inclinação ou equação.",
+        "Anote os pontos como pares (x, y), sem trocar a ordem.",
+        "Escolha a fórmula: distância, ponto médio ou coeficiente angular.",
+        "Risque o que não entra, como nomes de ruas e datas.",
+        "Substitua com cuidado nos sinais e confira com um desenho rápido dos eixos."
+      ],
+      "exemplo": {
+        "enunciado": "No mapa de uma cidade, desenhado em 2021, a escola está no ponto A(1, 2) e o posto de saúde em B(4, 6), com unidades de 1 km. Qual é a distância em linha reta entre os dois, em km?",
+        "anotacoes": [
+          {
+            "trecho": "desenhado em 2021",
+            "papel": "distracao",
+            "nota": "o ano não entra na conta"
+          },
+          {
+            "trecho": "A(1, 2)",
+            "papel": "dado",
+            "nota": "x_{1} = 1 e y_{1} = 2"
+          },
+          {
+            "trecho": "B(4, 6)",
+            "papel": "dado",
+            "nota": "x_{2} = 4 e y_{2} = 6"
+          },
+          {
+            "trecho": "unidades de 1 km",
+            "papel": "unidade",
+            "nota": "cada unidade do plano vale 1 km"
+          },
+          {
+            "trecho": "Qual é a distância em linha reta",
+            "papel": "pede",
+            "nota": "sqrt{3^{2} + 4^{2}} = 5 km"
+          }
+        ]
+      }
+    },
+    "conceito": [
+      "O plano cartesiano localiza cada ponto por um par (x, y): x é a posição horizontal e y a vertical. A distância entre A(x1, y1) e B(x2, y2) vem do teorema de Pitágoras: é a hipotenusa de um triângulo com catetos x2 − x1 e y2 − y1.",
+      "O ponto médio do segmento AB tem coordenadas que são as médias: {(x_{1} + x_{2})/2} e {(y_{1} + y_{2})/2}. O coeficiente angular da reta por A e B mede a inclinação: m = {(y_{2} − y_{1})/(x_{2} − x_{1})}.",
+      "A equação reduzida da reta é y = mx + n, em que m é o coeficiente angular e n é o valor de y quando x = 0. Para achar onde a reta cruza o eixo x, faça y = 0. Retas paralelas têm o mesmo m."
+    ],
+    "exemplos": [
+      {
+        "enunciado": "Qual é a distância entre A(0, 0) e B(6, 8)?",
+        "formula": "d = sqrt{Δx^{2} + Δy^{2}}",
+        "passos": [
+          "Δx = 6 e Δy = 8.",
+          "d = sqrt{36 + 64} = sqrt{100}.",
+          "d = 10."
+        ]
+      },
+      {
+        "enunciado": "Qual é o coeficiente angular da reta que passa por (2, 1) e (6, 9)?",
+        "formula": "m = {Δy/Δx}",
+        "passos": [
+          "Δy = 9 − 1 = 8 e Δx = 6 − 2 = 4.",
+          "m = {8/4} = 2."
+        ]
+      }
+    ],
+    "formulas": [
+      {
+        "nome": "Distância",
+        "f": "d = sqrt{(x_{2} − x_{1})^{2} + (y_{2} − y_{1})^{2}}",
+        "uso": "Quando se pede o comprimento do segmento entre dois pontos."
+      },
+      {
+        "nome": "Ponto médio",
+        "f": "M = ({(x_{1} + x_{2})/2}; {(y_{1} + y_{2})/2})",
+        "uso": "Quando se pede o meio do segmento ou o centro entre dois pontos."
+      },
+      {
+        "nome": "Coeficiente angular",
+        "f": "m = {(y_{2} − y_{1})/(x_{2} − x_{1})}",
+        "uso": "Quando se pede a inclinação da reta por dois pontos."
+      },
+      {
+        "nome": "Equação da reta",
+        "f": "y = m · x + n",
+        "uso": "Quando se pede y para um x dado, ou onde a reta cruza os eixos."
+      }
+    ],
+    "truque": "Monte o triângulo retângulo: a diferença em x é um cateto, a diferença em y é o outro, e a distância é a hipotenusa. Trincas como 3, 4, 5 e 6, 8, 10 aparecem muito.",
+    "erroComum": "Calcular x2 − x1 em uma conta e y1 − y2 na outra no coeficiente angular. Use a mesma ordem em cima e em baixo.",
+    "exercicios": [
+      {
+        "enunciado": "Qual é a distância entre A(1, 2) e B(4, 6) no plano cartesiano?",
+        "passos": [
+          "Δx = 3 e Δy = 4.",
+          "d = sqrt{3^{2} + 4^{2}} = sqrt{25}."
+        ],
+        "resposta": "5",
+        "conta": "sqrt((4-1)**2+(6-2)**2)",
+        "valor": 5
+      },
+      {
+        "enunciado": "Qual é a abscissa do ponto médio entre A(2, 8) e B(10, 4)?",
+        "passos": [
+          "Média dos x: {(2 + 10)/2}."
+        ],
+        "resposta": "6",
+        "conta": "(2+10)/2",
+        "valor": 6
+      },
+      {
+        "enunciado": "Qual é o coeficiente angular da reta que passa por (1, 3) e (5, 11)?",
+        "passos": [
+          "Δy = 11 − 3 = 8 e Δx = 5 − 1 = 4.",
+          "m = {8/4}."
+        ],
+        "resposta": "2",
+        "conta": "(11-3)/(5-1)",
+        "valor": 2
+      },
+      {
+        "enunciado": "Uma rampa é descrita pela reta y = 3x − 2. Qual é o valor de y quando x = 5?",
+        "passos": [
+          "Substitua x = 5.",
+          "y = 3 · 5 − 2."
+        ],
+        "resposta": "13",
+        "conta": "3*5-2",
+        "valor": 13
+      },
+      {
+        "enunciado": "A reta y = 2x − 6 cruza o eixo x em que valor de x?",
+        "passos": [
+          "No eixo x, y = 0: 2x − 6 = 0.",
+          "x = {6/2}."
+        ],
+        "resposta": "3",
+        "conta": "6/2",
+        "valor": 3
+      }
+    ],
+    "cartoes": [
+      {
+        "p": "Como calcular a distância entre dois pontos?",
+        "r": "Raiz de (Δx)² + (Δy)²."
+      },
+      {
+        "p": "Como achar o ponto médio?",
+        "r": "Média das abscissas e média das ordenadas."
+      },
+      {
+        "p": "O que é o coeficiente angular m?",
+        "r": "m = Δy ÷ Δx, a inclinação da reta."
+      },
+      {
+        "p": "O que é n em y = mx + n?",
+        "r": "O valor de y quando x = 0."
+      },
+      {
+        "p": "Como achar onde a reta cruza o eixo x?",
+        "r": "Faça y = 0 e resolva para x."
+      }
+    ],
+    "gerador": {
+      "vars": {},
+      "questoes": [
+        {
+          "vars": {
+            "x1": {
+              "min": 0,
+              "max": 10
+            },
+            "k": {
+              "min": 1,
+              "max": 8
+            }
+          },
+          "deriv": {
+            "x2": "x1+2*k"
+          },
+          "enunciado": "O segmento AB tem extremos A({x1}, 3) e B({x2}, 9). Qual é a abscissa (valor de x) do ponto médio de AB?",
+          "conta": "x1+k",
+          "unidade": "",
+          "casas": 0,
+          "passos": [
+            "O ponto médio tem coordenadas iguais à média das coordenadas dos extremos.",
+            "Abscissa = ({x1} + {x2}) ÷ 2 = {valor}."
+          ]
+        },
+        {
+          "vars": {
+            "x1": {
+              "min": 0,
+              "max": 6
+            },
+            "y1": {
+              "min": 0,
+              "max": 8
+            },
+            "dx": {
+              "min": 2,
+              "max": 6
+            },
+            "m": {
+              "min": 2,
+              "max": 6
+            }
+          },
+          "deriv": {
+            "x2": "x1+dx",
+            "y2": "y1+m*dx"
+          },
+          "enunciado": "Uma reta passa pelos pontos A({x1}, {y1}) e B({x2}, {y2}). Qual é o coeficiente angular dessa reta?",
+          "conta": "(y2-y1)/(x2-x1)",
+          "unidade": "",
+          "casas": 0,
+          "passos": [
+            "O coeficiente angular é a variação de y dividida pela variação de x: m = (yB − yA) ÷ (xB − xA).",
+            "m = ({y2} − {y1}) ÷ ({x2} − {x1}) = {valor}."
+          ]
+        },
+        {
+          "vars": {
+            "x1": {
+              "min": 0,
+              "max": 8
+            },
+            "y1": {
+              "min": 0,
+              "max": 8
+            },
+            "k": {
+              "min": 1,
+              "max": 6
+            }
+          },
+          "deriv": {
+            "dx": "3*k",
+            "dy": "4*k",
+            "x2": "x1+dx",
+            "y2": "y1+dy",
+            "s2": "dx**2+dy**2"
+          },
+          "enunciado": "Em um mapa com eixos em metros, o ponto A({x1}, {y1}) e o ponto B({x2}, {y2}) marcam duas árvores. Qual é a distância entre elas?",
+          "conta": "sqrt((x2-x1)**2+(y2-y1)**2)",
+          "unidade": "m",
+          "casas": 0,
+          "passos": [
+            "A distância entre dois pontos é a hipotenusa do triângulo retângulo formado pelas diferenças: d = sqrt{(x2 − x1)^{2} + (y2 − y1)^{2}}.",
+            "Diferenças: {dx} em x e {dy} em y. Como {dx}^{2} + {dy}^{2} = {s2}, a raiz é inteira.",
+            "d = sqrt{{s2}} = {valor} m."
+          ]
+        },
+        {
+          "vars": {
+            "m": {
+              "min": 1,
+              "max": 5
+            },
+            "n": {
+              "min": 1,
+              "max": 9
+            },
+            "x1": {
+              "min": 1,
+              "max": 4
+            },
+            "dx": {
+              "min": 1,
+              "max": 4
+            }
+          },
+          "deriv": {
+            "x2": "x1+dx",
+            "y1": "m*x1+n",
+            "y2": "m*(x1+dx)+n"
+          },
+          "enunciado": "A reta de equação y = ax + b passa pelos pontos P({x1}, {y1}) e Q({x2}, {y2}). Qual é o valor de b?",
+          "conta": "y1-((y2-y1)/(x2-x1))*x1",
+          "unidade": "",
+          "casas": 0,
+          "passos": [
+            "Primeiro ache a: a = ({y2} − {y1}) ÷ ({x2} − {x1}) = {m}.",
+            "Substitua P na equação: {y1} = {m} × {x1} + b.",
+            "b = {y1} − {m} × {x1} = {valor}."
+          ]
+        },
+        {
+          "vars": {
+            "x1": {
+              "min": 1,
+              "max": 5
+            },
+            "y1": {
+              "min": 1,
+              "max": 5
+            },
+            "k": {
+              "min": 1,
+              "max": 5
+            }
+          },
+          "deriv": {
+            "ab": "3*k",
+            "bc": "4*k",
+            "x2": "x1+ab",
+            "y3": "y1+bc",
+            "ac": "5*k"
+          },
+          "enunciado": "O triângulo ABC tem vértices A({x1}, {y1}), B({x2}, {y1}) e C({x2}, {y3}). Qual é o seu perímetro, em unidades do plano cartesiano?",
+          "conta": "(x2-x1)+(y3-y1)+sqrt((x2-x1)**2+(y3-y1)**2)",
+          "unidade": "unidades",
+          "casas": 0,
+          "passos": [
+            "AB é horizontal e BC é vertical: AB = {x2} − {x1} = {ab} e BC = {y3} − {y1} = {bc}.",
+            "O triângulo é retângulo em B, então AC = sqrt{{ab}^{2} + {bc}^{2}} = {ac}.",
+            "Perímetro = {ab} + {bc} + {ac} = {valor} unidades."
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "ciclo-trigonometrico",
+    "nivel": "avancado",
+    "titulo": "Ciclo trigonométrico e funções seno e cosseno",
+    "competencia": "C5",
+    "habilidades": [
+      "H21",
+      "H22"
+    ],
+    "antes": "trigonometria-triangulo-retangulo",
+    "quando": {
+      "sinais": [
+        "fenômeno que se repete (maré, estação do ano, roda-gigante, onda): função periódica, seno ou cosseno",
+        "ângulo dado em radianos (π/3, π/2): converta com 180° = π rad",
+        "“valor máximo” ou “mínimo” de uma função com seno: o seno varia entre −1 e 1",
+        "“período” ou “a cada quantas horas se repete”: período de sen(cx) é {360°/c}"
+      ],
+      "formula": "180° = π rad; −1 ≤ sen θ ≤ 1; período de sen(cx) = {360°/c} ou {2π/c}",
+      "armadilhas": [
+        "Esquecer que o seno nunca passa de 1 nem fica abaixo de −1.",
+        "Confundir graus com radianos: π rad é 180°, e não 360°."
+      ]
+    },
+    "ler": {
+      "passos": [
+        "Circule o que se pede: valor da função, máximo, mínimo ou período.",
+        "Veja se o ângulo está em graus ou radianos e converta se preciso.",
+        "Anote os valores de seno e cosseno que o enunciado fornece.",
+        "Risque nomes e datas que não entram na conta.",
+        "Substitua na função e use −1 ≤ sen ≤ 1 para achar máximo e mínimo."
+      ],
+      "exemplo": {
+        "enunciado": "A altura da maré em um porto de Santos, medida em 2022, é dada por h = 3 + 2 · sen θ, em metros, em que θ é um ângulo em graus. Quando θ = 30°, sen 30° = 0,5. Qual é a altura da maré nesse instante, em metros?",
+        "anotacoes": [
+          {
+            "trecho": "medida em 2022",
+            "papel": "distracao",
+            "nota": "o ano não entra na conta"
+          },
+          {
+            "trecho": "h = 3 + 2 · sen θ",
+            "papel": "dado",
+            "nota": "função periódica com seno"
+          },
+          {
+            "trecho": "sen 30° = 0,5",
+            "papel": "dado",
+            "nota": "valor fornecido para substituir"
+          },
+          {
+            "trecho": "nesse instante, em metros",
+            "papel": "unidade",
+            "nota": "a resposta sai em m"
+          },
+          {
+            "trecho": "Qual é a altura da maré",
+            "papel": "pede",
+            "nota": "h = 3 + 2 · 0,5 = 4 m"
+          }
+        ]
+      }
+    },
+    "conceito": [
+      "No ciclo trigonométrico, de raio 1, um ângulo θ marca um ponto cujas coordenadas são (cos θ, sen θ). Uma volta completa tem 360° ou 2π rad, e meia volta tem 180° ou π rad. Para converter, use a regra de três: graus = rad · {180/π}.",
+      "Valores notáveis: sen 30° = 0,5; sen 90° = 1; cos 60° = 0,5; cos 0° = 1; cos 90° = 0. O seno e o cosseno sempre ficam entre −1 e 1. Por simetria, sen 150° = sen 30° e sen (180° + θ) = −sen θ.",
+      "As funções seno e cosseno são periódicas: repetem-se a cada 360°. Em f(x) = a + b · sen(cx), o valor máximo é a + |b|, o mínimo é a − |b| e o período é {360°/c}. Por isso elas modelam marés, ondas e ciclos de estações."
+    ],
+    "exemplos": [
+      {
+        "enunciado": "Quantos graus vale um arco de π/2 rad?",
+        "formula": "graus = rad · {180/π}",
+        "passos": [
+          "Troque π por 180°: 180° ÷ 2.",
+          "O arco mede 90°."
+        ]
+      },
+      {
+        "enunciado": "Qual é o valor máximo de f(x) = 5 + 3 · sen x?",
+        "formula": "máximo: sen x = 1",
+        "passos": [
+          "O maior valor de sen x é 1.",
+          "Máximo: 5 + 3 · 1 = 8."
+        ]
+      }
+    ],
+    "formulas": [
+      {
+        "nome": "Conversão",
+        "f": "π rad = 180°",
+        "uso": "Quando o ângulo está em radianos e se quer graus, ou o contrário."
+      },
+      {
+        "nome": "Limites",
+        "f": "−1 ≤ sen θ ≤ 1 e −1 ≤ cos θ ≤ 1",
+        "uso": "Quando se pede o máximo ou o mínimo de uma função com seno ou cosseno."
+      },
+      {
+        "nome": "Período",
+        "f": "T = {360°/c} ou {2π/c} para sen(cx)",
+        "uso": "Quando se pergunta de quanto em quanto tempo o fenômeno se repete."
+      },
+      {
+        "nome": "Pontos do ciclo",
+        "f": "(cos θ, sen θ)",
+        "uso": "Quando se pede a coordenada de um ponto do ciclo ou o sinal de sen e cos."
+      }
+    ],
+    "truque": "Troque π por 180° para converter: 5π/6 vira 5 · 180/6 = 150°. Para máximo e mínimo, use sen = 1 e sen = −1.",
+    "erroComum": "Achar que 2π rad vale 180°. A meia volta é π rad, e a volta completa é 2π rad ou 360°.",
+    "exercicios": [
+      {
+        "enunciado": "Quantos graus vale um arco de π/3 rad?",
+        "passos": [
+          "Troque π por 180°.",
+          "{180/3}."
+        ],
+        "resposta": "60°",
+        "conta": "180/3",
+        "valor": 60
+      },
+      {
+        "enunciado": "Quantos graus vale um arco de 5π/6 rad?",
+        "passos": [
+          "Troque π por 180°.",
+          "5 · 180 ÷ 6."
+        ],
+        "resposta": "150°",
+        "conta": "5*180/6",
+        "valor": 150
+      },
+      {
+        "enunciado": "A altura da maré é h = 3 + 2 · sen θ, em metros. Dado sen 30° = 0,5, qual é h para θ = 30°?",
+        "passos": [
+          "Substitua o seno: h = 3 + 2 · 0,5.",
+          "h = 3 + 1."
+        ],
+        "resposta": "4 m",
+        "conta": "3+2*0.5",
+        "valor": 4
+      },
+      {
+        "enunciado": "Quantas voltas completas cabem em um arco de 1800°?",
+        "passos": [
+          "Uma volta tem 360°.",
+          "{1800/360}."
+        ],
+        "resposta": "5 voltas",
+        "conta": "1800/360",
+        "valor": 5
+      },
+      {
+        "enunciado": "Qual é o período, em graus, da função f(x) = sen(3x)?",
+        "passos": [
+          "O período de sen(cx) é {360°/c}.",
+          "Com c = 3: {360/3}."
+        ],
+        "resposta": "120°",
+        "conta": "360/3",
+        "valor": 120
+      }
+    ],
+    "cartoes": [
+      {
+        "p": "Quantos graus tem π rad?",
+        "r": "180°."
+      },
+      {
+        "p": "Quais os valores extremos de sen e cos?",
+        "r": "Máximo 1 e mínimo −1."
+      },
+      {
+        "p": "Quais as coordenadas de um ponto do ciclo?",
+        "r": "(cos θ, sen θ)."
+      },
+      {
+        "p": "Qual o período de sen(cx)?",
+        "r": "{360°/c}, ou 2π/c em radianos."
+      },
+      {
+        "p": "Quanto vale sen 30°?",
+        "r": "0,5."
+      }
+    ],
+    "gerador": {
+      "vars": {},
+      "questoes": [
+        {
+          "vars": {
+            "k": {
+              "min": 1,
+              "max": 5
+            },
+            "r": {
+              "min": 10,
+              "max": 350,
+              "step": 10
+            }
+          },
+          "deriv": {
+            "a": "k*360+r"
+          },
+          "enunciado": "Qual é a primeira determinação positiva (entre 0° e 360°) do arco de {a}°?",
+          "conta": "a-360*k",
+          "unidade": "°",
+          "casas": 0,
+          "passos": [
+            "Cada volta completa vale 360°. Tire voltas inteiras até sobrar menos de 360°.",
+            "{a}° = {k} × 360° + resto. Resto = {a} − {k} × 360 = {valor}°."
+          ]
+        },
+        {
+          "vars": {
+            "n": {
+              "min": 2,
+              "max": 9
+            },
+            "r": {
+              "min": 10,
+              "max": 350,
+              "step": 10
+            }
+          },
+          "enunciado": "Um ponto percorre uma circunferência no sentido anti-horário a partir de 0°. Ele dá {n} voltas completas e mais {r}°. Quantos graus percorreu no total?",
+          "conta": "n*360+r",
+          "unidade": "°",
+          "casas": 0,
+          "passos": [
+            "Cada volta completa vale 360°.",
+            "Total = {n} × 360 + {r} = {valor}°."
+          ]
+        },
+        {
+          "vars": {
+            "k": {
+              "min": 1,
+              "max": 5
+            },
+            "r": {
+              "min": 10,
+              "max": 350,
+              "step": 10
+            }
+          },
+          "deriv": {
+            "a": "k*360+r"
+          },
+          "enunciado": "Qual é a primeira determinação positiva (entre 0° e 360°) do arco de −{a}°?",
+          "conta": "360-r",
+          "unidade": "°",
+          "casas": 0,
+          "passos": [
+            "Arco negativo gira no sentido horário. Primeiro tire as voltas completas: −{a}° equivale a −{r}°.",
+            "Para obter o ângulo positivo equivalente, some uma volta: 360° − {r}°.",
+            "Resposta: 360 − {r} = {valor}°."
+          ]
+        },
+        {
+          "vars": {
+            "k": {
+              "min": 1,
+              "max": 5
+            },
+            "v": {
+              "min": 0.1,
+              "max": 0.9,
+              "step": 0.1,
+              "casas": 1
+            }
+          },
+          "enunciado": "Sabendo que sen α = {v}, qual é o valor de sen(α + 180° + {k} × 360°)?",
+          "conta": "-v",
+          "unidade": "",
+          "casas": 1,
+          "passos": [
+            "Somar voltas completas de 360° não altera o seno: o ponto volta à mesma posição.",
+            "Somar 180° leva o ponto ao lado oposto da circunferência, e o seno muda de sinal.",
+            "sen(α + 180° + {k} × 360°) = −sen α = {valor}."
+          ]
+        },
+        {
+          "vars": {
+            "n": {
+              "min": 2,
+              "max": 9
+            },
+            "q": {
+              "min": 1,
+              "max": 11
+            }
+          },
+          "deriv": {
+            "t": "12*n+q",
+            "tot": "30*(12*n+q)",
+            "v360": "360*n"
+          },
+          "enunciado": "Um ponteiro parte de 0° e gira no sentido anti-horário a 30° por segundo. Após {t} s, em que ângulo entre 0° e 360° ele está?",
+          "conta": "30*t-360*n",
+          "unidade": "°",
+          "casas": 0,
+          "passos": [
+            "Em {t} s o ponteiro percorre {t} × 30 = {tot}°.",
+            "Retire as voltas completas: {n} voltas valem {n} × 360 = {v360}°.",
+            "Ângulo = {tot} − {v360} = {valor}°."
+          ]
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,524 @@
+[
+  {
+    "id": "concentracao-diluicao-solucoes",
+    "nivel": "basico",
+    "dia": 1,
+    "titulo": "Concentração e diluição de soluções (g/L e mol/L)",
+    "competencia": "C5",
+    "habilidades": ["H17", "H18"],
+    "conceito": [
+      "Uma solução é uma mistura homogênea de soluto (o que se dissolve) e solvente (em geral, a água). A concentração diz quanto soluto há em cada litro de solução. Em g/L, é a massa do soluto dividida pelo volume da solução: C = {m/V}, com m em gramas e V em litros.",
+      "Em mol/L (também chamada molaridade), conta-se a quantidade de matéria. A massa molar M é a massa de 1 mol da substância, calculada somando as massas atômicas: NaCl tem M = 23 + 35,5 = 58,5 g/mol. A quantidade de matéria é n = {m/M} e a concentração é C = {n/V}.",
+      "Diluir é acrescentar solvente. A quantidade de soluto não muda; só o volume cresce e a concentração cai. Por isso, antes e depois da diluição, vale Ci · Vi = Cf · Vf. Atenção à unidade: 1 L = 1000 mL."
+    ],
+    "quando": {
+      "sinais": [
+        "“g/L”, “gramas por litro” ou “massa dissolvida em um volume”: concentração comum, C = m ÷ V",
+        "“mol/L”, “molar” ou “quantidade de matéria por litro”: primeiro ache n = m ÷ M e depois divida pelo volume",
+        "“adiciona-se água”, “dilui-se até”: o soluto se conserva, então Ci · Vi = Cf · Vf",
+        "“volume em mL”: converta para litros antes de calcular a concentração"
+      ],
+      "formula": "C = {m/V};  n = {m/M};  C = {n/V};  Ci · Vi = Cf · Vf",
+      "armadilhas": [
+        "Usar o volume em mL na fórmula da concentração em g/L ou mol/L: divida por 1000 antes.",
+        "Confundir o volume do solvente com o volume final da solução: a concentração usa o volume total da solução."
+      ]
+    },
+    "ler": {
+      "passos": [
+        "Circule a unidade pedida (g/L ou mol/L) e o que se quer descobrir: concentração, massa ou volume.",
+        "Anote os dados: massa do soluto, volume da solução e as massas atômicas fornecidas.",
+        "Converta o volume de mL para L e, se a resposta for em mol/L, calcule a massa molar.",
+        "Risque o que não entra na conta, como datas e nomes de projetos.",
+        "Aplique C = m ÷ V (ou n ÷ V, ou Ci · Vi = Cf · Vf) e confira se a unidade final é a pedida."
+      ],
+      "exemplo": {
+        "enunciado": "Um laboratório prepara 500 mL de uma solução aquosa de NaCl dissolvendo 29,25 g do sal, para uma pesquisa iniciada em 2021. Dados: Na = 23 e Cl = 35,5. Qual é a concentração da solução, em mol/L?",
+        "anotacoes": [
+          {
+            "trecho": "500 mL",
+            "papel": "unidade",
+            "nota": "o volume está em mL e precisa virar litros: 0,5 L"
+          },
+          {
+            "trecho": "solução aquosa",
+            "papel": "condicao",
+            "nota": "a água é o solvente; o volume a usar é o da solução"
+          },
+          {
+            "trecho": "29,25 g",
+            "papel": "dado",
+            "nota": "massa do soluto, em gramas"
+          },
+          {
+            "trecho": "para uma pesquisa iniciada em 2021",
+            "papel": "distracao",
+            "nota": "não entra na conta"
+          },
+          {
+            "trecho": "Na = 23 e Cl = 35,5",
+            "papel": "dado",
+            "nota": "dão a massa molar do NaCl: 58,5 g/mol, logo n = {29,25/58,5} = 0,5 mol"
+          },
+          {
+            "trecho": "Qual é a concentração da solução, em mol/L",
+            "papel": "pede",
+            "nota": "C = {0,5/0,5} = 1 mol/L"
+          }
+        ]
+      }
+    },
+    "formulas": [
+      {
+        "nome": "Concentração comum",
+        "f": "C = {m/V}",
+        "uso": "Resposta em g/L: m em gramas e V em litros."
+      },
+      {
+        "nome": "Quantidade de matéria",
+        "f": "n = {m/M}",
+        "uso": "Transforma massa (g) em mol usando a massa molar M (g/mol)."
+      },
+      {
+        "nome": "Concentração em mol/L",
+        "f": "C = {n/V} = {m/(M · V)}",
+        "uso": "Quando a resposta é em mol/L (molaridade); V em litros."
+      },
+      {
+        "nome": "Diluição",
+        "f": "Ci · Vi = Cf · Vf",
+        "uso": "Quando se adiciona solvente: o soluto se conserva. Volume de água adicionada = Vf − Vi."
+      }
+    ],
+    "exemplos": [
+      {
+        "enunciado": "Dissolvem-se 20 g de açúcar em água até completar 400 mL de solução. Qual é a concentração em g/L?",
+        "formula": "C = {m/V}",
+        "passos": [
+          "Converta o volume: 400 mL = 0,4 L.",
+          "C = {20/0,4}.",
+          "C = 50 g/L."
+        ]
+      },
+      {
+        "enunciado": "Que massa de NaOH (M = 40 g/mol) é necessária para preparar 250 mL de solução 0,2 mol/L?",
+        "formula": "m = C · V · M",
+        "passos": [
+          "V = 250 mL = 0,25 L.",
+          "n = C × V = 0,2 × 0,25 = 0,05 mol.",
+          "m = n × M = 0,05 × 40 = 2 g."
+        ]
+      }
+    ],
+    "truque": "Teste de sentido: ao diluir, a concentração final sempre cai e o volume final sempre cresce. Se o seu resultado deu concentração maior depois de adicionar água, você inverteu Ci e Cf.",
+    "erroComum": "Esquecer de converter mL para L. Dissolver 10 g em 500 mL não dá 10 ÷ 500 = 0,02 g/L; dá 10 ÷ 0,5 = 20 g/L.",
+    "exercicios": [
+      {
+        "enunciado": "Uma cozinheira dissolve 18 g de sal em água até obter 600 mL de salmoura. Qual é a concentração, em g/L?",
+        "passos": [
+          "Converta o volume: 600 mL = 0,6 L.",
+          "C = {18/0,6}.",
+          "C = 30 g/L."
+        ],
+        "resposta": "30 g/L",
+        "conta": "18*1000/600",
+        "valor": 30
+      },
+      {
+        "enunciado": "Em um soro fisiológico, dissolveram-se 11,7 g de NaCl em água até completar 500 mL de solução. Qual é a concentração em mol/L? (Na = 23; Cl = 35,5)",
+        "passos": [
+          "M(NaCl) = 23 + 35,5 = 58,5 g/mol.",
+          "n = {11,7/58,5} = 0,2 mol.",
+          "C = {0,2/0,5} = 0,4 mol/L."
+        ],
+        "resposta": "0,4 mol/L",
+        "conta": "11.7/58.5/0.5",
+        "valor": 0.4
+      },
+      {
+        "enunciado": "Uma amostra de 200 mL de solução 0,5 mol/L de ácido sulfúrico é diluída com água até 1 L. Qual é a concentração final, em mol/L?",
+        "passos": [
+          "O soluto se conserva: Ci · Vi = Cf · Vf.",
+          "0,5 × 200 = Cf × 1000.",
+          "Cf = {100/1000} = 0,1 mol/L."
+        ],
+        "resposta": "0,1 mol/L",
+        "conta": "0.5*200/1000",
+        "valor": 0.1
+      },
+      {
+        "enunciado": "Que massa de NaOH, em gramas, é necessária para preparar 250 mL de solução 0,2 mol/L? (Na = 23; O = 16; H = 1)",
+        "passos": [
+          "M(NaOH) = 23 + 16 + 1 = 40 g/mol.",
+          "n = C × V = 0,2 × 0,25 = 0,05 mol.",
+          "m = 0,05 × 40 = 2 g."
+        ],
+        "resposta": "2 g",
+        "conta": "0.2*0.25*40",
+        "valor": 2
+      }
+    ],
+    "cartoes": [
+      {
+        "p": "Qual é a fórmula da concentração comum e a unidade usual?",
+        "r": "C = {m/V}, em g/L: m em gramas e V em litros da solução."
+      },
+      {
+        "p": "Como passar de g/L para mol/L?",
+        "r": "Divida a concentração em g/L pela massa molar M (g/mol): C(mol/L) = {C/M}, com C em g/L."
+      },
+      {
+        "p": "O que se conserva em uma diluição?",
+        "r": "A quantidade de soluto (mol ou massa). Por isso Ci · Vi = Cf · Vf."
+      }
+    ],
+    "gerador": {
+      "vars": {},
+      "questoes": [
+        {
+          "vars": {
+            "C": { "min": 10, "max": 60, "step": 5 },
+            "V": { "min": 200, "max": 1000, "step": 100 }
+          },
+          "deriv": { "m": "C*V/1000", "VL": "V/1000" },
+          "conceito": "Concentração comum é a massa de soluto por litro de solução: C = {m/V}. O volume precisa estar em litros.",
+          "enunciado": "Uma cozinheira prepara {V} mL de salmoura para conservar legumes, dissolvendo {m} g de sal de cozinha em água. Qual é a concentração da salmoura, em g/L?",
+          "conta": "m*1000/V",
+          "unidade": "g/L",
+          "casas": 0,
+          "passos": [
+            "Converta o volume para litros: {V} mL = {VL} L.",
+            "C = {{m}/{VL}}, com m em gramas e V em litros.",
+            "C = {valor} g/L."
+          ]
+        },
+        {
+          "vars": {
+            "c": { "min": 0.2, "max": 1, "step": 0.2, "casas": 1 },
+            "V": { "min": 0.5, "max": 2, "step": 0.5, "casas": 1 }
+          },
+          "deriv": { "m": "c*V*58.5", "n": "c*V" },
+          "conceito": "Para obter mol/L, converta a massa em quantidade de matéria, n = {m/M}, e divida pelo volume em litros: C = {n/V}.",
+          "enunciado": "Um técnico dissolve {m} g de NaCl em água e completa o volume até {V} L. Qual é a concentração da solução, em mol/L? (Na = 23; Cl = 35,5)",
+          "conta": "m/58.5/V",
+          "unidade": "mol/L",
+          "casas": 1,
+          "passos": [
+            "M(NaCl) = 23 + 35,5 = 58,5 g/mol.",
+            "n = {{m}/58,5} = {n} mol.",
+            "C = {{n}/{V}} = {valor} mol/L."
+          ]
+        },
+        {
+          "vars": {
+            "C": { "min": 0.1, "max": 1, "step": 0.1, "casas": 1 },
+            "V": { "min": 100, "max": 1000, "step": 100 }
+          },
+          "deriv": { "VL": "V/1000", "n": "C*V/1000" },
+          "conceito": "Para preparar uma solução de concentração conhecida, calcula-se primeiro n = C · V e depois a massa m = n · M a ser pesada.",
+          "enunciado": "Para uma aula de fabricação de sabão, o professor precisa de {V} mL de solução de NaOH {C} mol/L. Que massa de NaOH, em gramas, deve ser pesada? (Na = 23; O = 16; H = 1)",
+          "conta": "C*V/1000*40",
+          "unidade": "g",
+          "casas": 1,
+          "passos": [
+            "M(NaOH) = 23 + 16 + 1 = 40 g/mol.",
+            "n = C × V = {C} × {VL} = {n} mol.",
+            "m = n × M = {n} × 40 = {valor} g."
+          ]
+        },
+        {
+          "vars": {
+            "Cf": { "min": 0.1, "max": 0.5, "step": 0.1, "casas": 1 },
+            "f": { "min": 2, "max": 10 },
+            "Vf": { "min": 100, "max": 1000, "step": 100 }
+          },
+          "deriv": { "Ci": "Cf*f" },
+          "restricoes": [["inteiro", "Vf/f"]],
+          "conceito": "Na diluição, o número de mol do soluto não muda: Ci · Vi = Cf · Vf. Com isso se descobre quanto da solução concentrada deve ser medido.",
+          "enunciado": "Um laboratório dispõe de uma solução-estoque de ácido clorídrico {Ci} mol/L e precisa preparar {Vf} mL de solução {Cf} mol/L. Que volume da solução-estoque, em mL, deve ser medido e depois completado com água até {Vf} mL?",
+          "conta": "Cf*Vf/Ci",
+          "unidade": "mL",
+          "casas": 0,
+          "passos": [
+            "O soluto se conserva na diluição: Ci · Vi = Cf · Vf.",
+            "{Ci} × Vi = {Cf} × {Vf}.",
+            "Vi = {{Cf} × {Vf}/{Ci}} = {valor} mL."
+          ]
+        },
+        {
+          "vars": {
+            "C2": { "min": 5, "max": 20, "step": 5 },
+            "f": { "min": 2, "max": 5 },
+            "V1": { "min": 100, "max": 500, "step": 100 }
+          },
+          "deriv": { "C1": "f*C2", "Vf": "f*V1" },
+          "conceito": "Para saber quanta água acrescentar, ache o volume final pela conservação do soluto (C1 · V1 = C2 · Vf) e subtraia o volume inicial.",
+          "enunciado": "Uma doceira tem {V1} mL de calda de açúcar com {C1} g/L e a dilui com água até a concentração de {C2} g/L. Que volume de água, em mL, ela adicionou?",
+          "conta": "C1*V1/C2-V1",
+          "unidade": "mL",
+          "casas": 0,
+          "passos": [
+            "A massa de açúcar não muda: C1 × V1 = C2 × Vf.",
+            "{C1} × {V1} = {C2} × Vf, logo Vf = {{C1} × {V1}/{C2}} = {Vf} mL.",
+            "Água adicionada = Vf − V1 = {Vf} − {V1} = {valor} mL."
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "estequiometria-mol-massa-proporcao",
+    "nivel": "intermediario",
+    "dia": 2,
+    "titulo": "Estequiometria básica: mol, massa molar e proporção",
+    "competencia": "C7",
+    "habilidades": ["H24", "H25"],
+    "conceito": [
+      "Estequiometria é o cálculo das quantidades de reagentes e produtos de uma reação química. O mol é a unidade de quantidade de matéria: 1 mol contém 6,0 · 10^{23} entidades (átomos, moléculas, íons). A massa molar M é a massa de 1 mol, em g/mol, e vem da soma das massas atômicas: H_{2}O tem M = 2 · 1 + 16 = 18 g/mol.",
+      "Os coeficientes de uma equação balanceada dão a proporção em mol. Em 2 H_{2} + O_{2} → 2 H_{2}O, 2 mol de H_{2} reagem com 1 mol de O_{2} e formam 2 mol de H_{2}O. Para outras grandezas, converta: massa → mol (n = {m/M}), use a proporção, e volte para massa (m = n · M).",
+      "Na prática, a reação nem sempre rende o máximo. O rendimento é a razão entre a massa obtida e a prevista. Quando os reagentes não estão na proporção exata, o que se esgota primeiro é o reagente limitante e o outro fica em excesso."
+    ],
+    "quando": {
+      "sinais": [
+        "“quantos mol”, “quantidade de matéria”: use n = m ÷ M",
+        "“massa de produto formada” a partir de uma massa de reagente: massa → mol → proporção → massa",
+        "“rendimento de x%”: multiplique a massa teórica por {x/100}",
+        "“reagente em excesso” ou “sobra”: ache o limitante e calcule o que não reagiu"
+      ],
+      "formula": "n = {m/M};  proporção em mol pelos coeficientes;  m = n · M",
+      "armadilhas": [
+        "Usar uma equação sem balancear: a proporção só vale com os coeficientes corretos.",
+        "Aplicar a proporção da equação direto em gramas: os coeficientes valem para mol, não para massa."
+      ]
+    },
+    "ler": {
+      "passos": [
+        "Circule o que se pede (mol, massa, rendimento ou sobra) e a unidade.",
+        "Confira se a equação está balanceada e anote os coeficientes.",
+        "Calcule as massas molares com as massas atômicas dadas.",
+        "Converta o dado para mol, aplique a proporção e converta de volta para a unidade pedida.",
+        "Risque o que não entra na conta e confira se o resultado faz sentido."
+      ],
+      "exemplo": {
+        "enunciado": "Em uma siderúrgica, o ferro é obtido da hematita pela reação Fe_{2}O_{3} + 3 CO → 2 Fe + 3 CO_{2}. Um alto-forno recebe 320 kg de Fe_{2}O_{3} puro e a usina funciona desde 1998. Dados: Fe = 56 e O = 16. Qual é a massa máxima de ferro obtida, em kg?",
+        "anotacoes": [
+          {
+            "trecho": "Fe_{2}O_{3} + 3 CO → 2 Fe + 3 CO_{2}",
+            "papel": "condicao",
+            "nota": "equação balanceada: 1 mol de Fe_{2}O_{3} gera 2 mol de Fe"
+          },
+          {
+            "trecho": "320 kg",
+            "papel": "dado",
+            "nota": "massa do reagente; M(Fe_{2}O_{3}) = 160 g/mol, então 320 kg são 2 kmol"
+          },
+          {
+            "trecho": "a usina funciona desde 1998",
+            "papel": "distracao",
+            "nota": "não entra na conta"
+          },
+          {
+            "trecho": "Fe = 56 e O = 16",
+            "papel": "dado",
+            "nota": "para as massas molares: Fe_{2}O_{3} = 160 e Fe = 56"
+          },
+          {
+            "trecho": "Qual é a massa máxima de ferro obtida, em kg",
+            "papel": "pede",
+            "nota": "2 kmol de Fe_{2}O_{3} geram 4 kmol de Fe: 4 × 56 = 224 kg"
+          }
+        ]
+      }
+    },
+    "formulas": [
+      {
+        "nome": "Quantidade de matéria",
+        "f": "n = {m/M}",
+        "uso": "Converte massa (g) em mol usando a massa molar."
+      },
+      {
+        "nome": "Massa a partir de mol",
+        "f": "m = n · M",
+        "uso": "Volta de mol para gramas no fim do cálculo."
+      },
+      {
+        "nome": "Proporção da equação",
+        "f": "{n_{A}/a} = {n_{B}/b}",
+        "uso": "a e b são os coeficientes das substâncias A e B na equação balanceada."
+      },
+      {
+        "nome": "Rendimento",
+        "f": "massa obtida = massa teórica · {r/100}",
+        "uso": "Quando a reação rende r% do máximo previsto."
+      }
+    ],
+    "exemplos": [
+      {
+        "enunciado": "Quantos mol existem em 88 g de CO_{2}? (C = 12; O = 16)",
+        "formula": "n = {m/M}",
+        "passos": [
+          "M(CO_{2}) = 12 + 2 · 16 = 44 g/mol.",
+          "n = {88/44}.",
+          "n = 2 mol."
+        ]
+      },
+      {
+        "enunciado": "Na reação 2 H_{2} + O_{2} → 2 H_{2}O, que massa de água se forma a partir de 4 g de H_{2}? (H = 1; O = 16)",
+        "formula": "massa → mol → proporção → massa",
+        "passos": [
+          "n(H_{2}) = {4/2} = 2 mol.",
+          "Pela equação, 2 mol de H_{2} formam 2 mol de H_{2}O.",
+          "M(H_{2}O) = 18 g/mol, logo m = 2 × 18 = 36 g."
+        ]
+      }
+    ],
+    "truque": "Caminho fixo para qualquer questão: massa → mol (divide por M) → proporção da equação (regra de três com os coeficientes) → massa (multiplica por M). Os coeficientes só valem na etapa em mol.",
+    "erroComum": "Comparar gramas direto com os coeficientes. Em 2 H_{2} + O_{2} → 2 H_{2}O, 2 g de H_{2} não reagem com 1 g de O_{2}: a proporção é de 2 mol para 1 mol, ou seja, 4 g para 32 g.",
+    "exercicios": [
+      {
+        "enunciado": "Uma garrafa contém 90 g de água. Quantos mol de H_{2}O ela contém? (H = 1; O = 16)",
+        "passos": [
+          "M(H_{2}O) = 2 · 1 + 16 = 18 g/mol.",
+          "n = {90/18}.",
+          "n = 5 mol."
+        ],
+        "resposta": "5 mol",
+        "conta": "90/18",
+        "valor": 5
+      },
+      {
+        "enunciado": "Na combustão completa de 24 g de carbono, C + O_{2} → CO_{2}, que massa de CO_{2} é produzida, em gramas? (C = 12; O = 16)",
+        "passos": [
+          "1 mol de C (12 g) forma 1 mol de CO_{2} (44 g).",
+          "n(C) = {24/12} = 2 mol, que formam 2 mol de CO_{2}.",
+          "m = 2 × 44 = 88 g."
+        ],
+        "resposta": "88 g",
+        "conta": "24*44/12",
+        "valor": 88
+      },
+      {
+        "enunciado": "Em uma célula a combustível, 2 H_{2} + O_{2} → 2 H_{2}O. Quantos mol de O_{2} são consumidos por 6 mol de H_{2}?",
+        "passos": [
+          "A proporção é de 2 mol de H_{2} para 1 mol de O_{2}.",
+          "x = {6 × 1/2}.",
+          "x = 3 mol."
+        ],
+        "resposta": "3 mol",
+        "conta": "6/2",
+        "valor": 3
+      },
+      {
+        "enunciado": "A decomposição do calcário é CaCO_{3} → CaO + CO_{2}. Calcinando 100 g de CaCO_{3} com rendimento de 80%, qual é a massa de CaO obtida, em gramas? (Ca = 40; C = 12; O = 16)",
+        "passos": [
+          "M(CaCO_{3}) = 100 g/mol e M(CaO) = 56 g/mol; a proporção é de 1 mol para 1 mol.",
+          "Massa teórica de CaO = 56 g.",
+          "Com rendimento de 80%: 56 × 0,8 = 44,8 g."
+        ],
+        "resposta": "44,8 g",
+        "conta": "100*56/100*0.8",
+        "valor": 44.8
+      }
+    ],
+    "cartoes": [
+      {
+        "p": "Como converter massa em mol?",
+        "r": "Divida a massa pela massa molar: n = {m/M}, com M em g/mol."
+      },
+      {
+        "p": "Os coeficientes da equação balanceada valem para quais grandezas?",
+        "r": "Para quantidade de matéria (mol), nunca diretamente para gramas."
+      },
+      {
+        "p": "O que é o reagente limitante?",
+        "r": "O reagente que acaba primeiro e determina quanto produto se forma. O outro fica em excesso."
+      }
+    ],
+    "gerador": {
+      "vars": {},
+      "questoes": [
+        {
+          "vars": {
+            "k": { "min": 2, "max": 20 }
+          },
+          "deriv": { "m": "18*k" },
+          "conceito": "A quantidade de matéria é a massa dividida pela massa molar: n = {m/M}. A massa molar sai da soma das massas atômicas.",
+          "enunciado": "Uma garrafa de água mineral contém {m} g de água. Quantos mol de H_{2}O ela contém? (H = 1; O = 16)",
+          "conta": "m/18",
+          "unidade": "mol",
+          "casas": 0,
+          "passos": [
+            "M(H_{2}O) = 2 · 1 + 16 = 18 g/mol.",
+            "n = {{m}/18}.",
+            "n = {valor} mol."
+          ]
+        },
+        {
+          "vars": {
+            "m": { "min": 6, "max": 60, "step": 6 }
+          },
+          "conceito": "Na equação balanceada, os coeficientes dão a proporção em mol. Aqui, 1 mol de C forma 1 mol de CO_{2}, e a conversão para massa usa as massas molares 12 e 44.",
+          "enunciado": "Em uma churrasqueira, queimam-se {m} g de carvão (considere carbono puro) em excesso de oxigênio, segundo C + O_{2} → CO_{2}. Que massa de CO_{2} é lançada na atmosfera, em gramas? (C = 12; O = 16)",
+          "conta": "m*44/12",
+          "unidade": "g",
+          "casas": 0,
+          "passos": [
+            "1 mol de C (12 g) forma 1 mol de CO_{2} (44 g).",
+            "Regra de três: 12 g de C estão para 44 g de CO_{2} assim como {m} g de C estão para x.",
+            "x = {{m} × 44/12} = {valor} g de CO_{2}."
+          ]
+        },
+        {
+          "vars": {
+            "k": { "min": 1, "max": 8 }
+          },
+          "deriv": { "n": "3*k" },
+          "conceito": "Os coeficientes comparam mols entre si. Em 3 H_{2} + N_{2} → 2 NH_{3}, cada 3 mol de H_{2} formam 2 mol de NH_{3}; não há conversão de massa nesse tipo de questão.",
+          "enunciado": "Na síntese industrial da amônia, 3 H_{2} + N_{2} → 2 NH_{3}. Quantos mol de NH_{3} se formam a partir de {n} mol de H_{2}, com N_{2} em excesso?",
+          "conta": "n*2/3",
+          "unidade": "mol",
+          "casas": 0,
+          "passos": [
+            "Pela equação, 3 mol de H_{2} formam 2 mol de NH_{3}.",
+            "Regra de três: {n} mol de H_{2} formam x mol de NH_{3}.",
+            "x = {{n} × 2/3} = {valor} mol."
+          ]
+        },
+        {
+          "vars": {
+            "m": { "min": 50, "max": 500, "step": 50 },
+            "r": { "min": 70, "max": 100, "step": 10 }
+          },
+          "deriv": { "t": "m*56/100" },
+          "conceito": "Rendimento é a fração da massa teórica que realmente se obtém. Primeiro calcula-se o máximo pela estequiometria; depois aplica-se o percentual.",
+          "enunciado": "Na produção de cal, o calcário é calcinado: CaCO_{3} → CaO + CO_{2}. Uma indústria calcina {m} kg de CaCO_{3} puro e obtém rendimento de {r}%. Qual é a massa de CaO obtida, em kg? (Ca = 40; C = 12; O = 16)",
+          "conta": "m*56/100*r/100",
+          "unidade": "kg",
+          "casas": 1,
+          "passos": [
+            "M(CaCO_{3}) = 100 g/mol e M(CaO) = 56 g/mol, com proporção de 1 mol para 1 mol.",
+            "Massa teórica de CaO = {{m} × 56/100} = {t} kg.",
+            "Com rendimento de {r}%: {t} × {{r}/100} = {valor} kg."
+          ]
+        },
+        {
+          "vars": {
+            "a": { "min": 2, "max": 10, "step": 2 },
+            "e": { "min": 1, "max": 5 }
+          },
+          "deriv": { "b": "a/2+e", "c": "a/2", "s": "e" },
+          "conceito": "Reagente limitante é o que se esgota primeiro. A sobra do outro reagente é o que foi colocado menos o que a proporção da equação consome.",
+          "enunciado": "Em uma célula a combustível ocorre 2 H_{2} + O_{2} → 2 H_{2}O. Colocam-se {a} mol de H_{2} e {b} mol de O_{2} para reagir até o fim. Qual é a massa de O_{2} que sobra sem reagir, em gramas? (O = 16)",
+          "conta": "(b-a/2)*32",
+          "unidade": "g",
+          "casas": 0,
+          "passos": [
+            "A proporção é de 2 mol de H_{2} para 1 mol de O_{2}: {a} mol de H_{2} consomem {c} mol de O_{2}.",
+            "Sobram {b} − {c} = {s} mol de O_{2}, pois o H_{2} é o limitante.",
+            "M(O_{2}) = 32 g/mol, logo m = {s} × 32 = {valor} g."
+          ]
+        }
+      ]
+    }
+  }
+]

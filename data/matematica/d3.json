@@ -1,0 +1,1518 @@
+[
+  {
+    "id": "funcao-1-grau",
+    "nivel": "intermediario",
+    "titulo": "Função do 1º grau",
+    "competencia": "C5",
+    "habilidades": ["H19", "H20", "H21"],
+    "antes": "razao-proporcao-regra-de-tres",
+    "conceito": [
+      "Uma função do 1º grau tem a forma f(x) = ax + b, com a diferente de zero. O coeficiente a é a taxa de variação (quanto f cresce por unidade de x) e b é o valor inicial, quando x = 0.",
+      "O gráfico é uma reta. Se a > 0, a reta sobe; se a < 0, desce. A raiz é o valor de x em que f(x) = 0, isto é, x = {−b/a}.",
+      "Dados dois pontos (x_{1}, y_{1}) e (x_{2}, y_{2}), o coeficiente angular é a = {y_{2} − y_{1}/x_{2} − x_{1}}."
+    ],
+    "quando": {
+      "sinais": [
+        "“taxa fixa mais um valor por hora” (ou por km, por unidade): valor inicial b e taxa a, ou seja, f(x) = ax + b",
+        "“aumenta (ou diminui) a mesma quantia a cada”: variação constante, função do 1º grau",
+        "“em que momento o valor se anula”: ache a raiz, f(x) = 0; “a partir de quando”: resolva a inequação f(x) > 0 ou compare as duas funções",
+        "“o gráfico passa pelos pontos”: monte a com os dois pontos e depois ache b"
+      ],
+      "formula": "f(x) = ax + b; a = {y_{2} − y_{1}/x_{2} − x_{1}}; raiz: x = {−b/a}",
+      "armadilhas": [
+        "Trocar a taxa por unidade (a) com o valor fixo (b): quem multiplica x é a taxa.",
+        "Esquecer de somar o valor fixo ao calcular o total."
+      ]
+    },
+    "ler": {
+      "passos": [
+        "Circule o que a pergunta pede: aqui é a variável x, não o valor de f(x).",
+        "Separe o valor fixo (b) da taxa por unidade (a) e escreva f(x) = ax + b.",
+        "Substitua o valor dado no lugar certo: o total é f(x), e a incógnita é x.",
+        "Risque informações que não entram na conta, como datas e horários de funcionamento.",
+        "Resolva a equação e confira se o resultado faz sentido na situação."
+      ],
+      "exemplo": {
+        "enunciado": "Uma locadora de bicicletas cobra taxa fixa de R$ 12,00 mais R$ 5,00 por hora de uso. A locadora, fundada em 1998, fecha às 18 h. Quantas horas uma pessoa pode usar a bicicleta se dispõe de R$ 52,00?",
+        "anotacoes": [
+          {
+            "trecho": "taxa fixa de R$ 12,00",
+            "papel": "dado",
+            "nota": "valor inicial b = 12"
+          },
+          {
+            "trecho": "R$ 5,00 por hora",
+            "papel": "dado",
+            "nota": "taxa a = 5, que multiplica as horas x"
+          },
+          {
+            "trecho": "fundada em 1998, fecha às 18 h",
+            "papel": "distracao",
+            "nota": "não entra na conta"
+          },
+          {
+            "trecho": "R$ 52,00",
+            "papel": "dado",
+            "nota": "valor total, ou seja, f(x) = 52"
+          },
+          {
+            "trecho": "Quantas horas",
+            "papel": "pede",
+            "nota": "o x: 5x + 12 = 52, logo x = 8"
+          }
+        ]
+      }
+    },
+    "formulas": [
+      {
+        "nome": "Forma da função",
+        "f": "f(x) = a · x + b",
+        "uso": "Quando há parte fixa (b) e valor por unidade (a), como tarifa ou plano."
+      },
+      {
+        "nome": "Coeficiente angular",
+        "f": "a = {y_{2} − y_{1}/x_{2} − x_{1}}",
+        "uso": "Quando o enunciado dá dois pontos ou duas medidas da reta."
+      },
+      {
+        "nome": "Raiz",
+        "f": "x = {−b/a}",
+        "uso": "Quando se pergunta em que valor de x a função se anula."
+      }
+    ],
+    "exemplos": [
+      {
+        "enunciado": "Um táxi cobra bandeirada de R$ 5,00 mais R$ 2,50 por quilômetro. Escreva a função do preço e calcule o valor de uma corrida de 10 km.",
+        "formula": "P(x) = 2,5x + 5 → P(10) = 30",
+        "passos": ["Valor inicial (b) = 5. Taxa (a) = 2,5 por km.", "P(x) = 2,5x + 5.", "P(10) = 2,5 × 10 + 5 = 30, ou seja, R$ 30,00."]
+      },
+      {
+        "enunciado": "Qual é a raiz de f(x) = 2x − 8?",
+        "formula": "2x − 8 = 0 → x = 4",
+        "passos": ["Iguale a zero: 2x − 8 = 0.", "2x = 8.", "x = 4."]
+      }
+    ],
+    "truque": "Em problema de tarifa, plano ou aluguel, a parte fixa é o b e o que multiplica a quantidade é o a. Monte f(x) = a·x + b antes de qualquer conta.",
+    "erroComum": "Trocar a parte fixa pela parte variável, ou tratar a taxa como se já incluísse o valor inicial.",
+    "exercicios": [
+      {
+        "enunciado": "Um táxi cobra bandeirada de R$ 5,00 mais R$ 2,50 por quilômetro rodado. Quanto custa uma corrida de 14 km?",
+        "passos": ["P(x) = 2,5x + 5.", "P(14) = 2,5 × 14 + 5 = 35 + 5 = 40."],
+        "resposta": "R$ 40,00",
+        "conta": "5+2.5*14",
+        "valor": 40
+      },
+      {
+        "enunciado": "Para a função f(x) = 3x − 7, qual valor de x faz f(x) valer 20?",
+        "passos": ["3x − 7 = 20.", "3x = 27.", "x = 9."],
+        "resposta": "x = 9",
+        "conta": "(20+7)/3",
+        "valor": 9
+      },
+      {
+        "enunciado": "Qual é a raiz da função f(x) = −4x + 20?",
+        "passos": ["−4x + 20 = 0.", "4x = 20.", "x = 5."],
+        "resposta": "x = 5",
+        "conta": "20/4",
+        "valor": 5
+      },
+      {
+        "enunciado": "Uma reta passa pelos pontos (1, 5) e (4, 14). Qual é o seu coeficiente angular?",
+        "passos": ["a = {y_{2} − y_{1}/x_{2} − x_{1}}.", "a = {14 − 5/4 − 1} = {9/3} = 3."],
+        "resposta": "3",
+        "conta": "(14-5)/(4-1)",
+        "valor": 3
+      },
+      {
+        "enunciado": "O plano A cobra R$ 30,00 fixos mais R$ 4,00 por GB. O plano B cobra R$ 50,00 fixos mais R$ 2,00 por GB. Com quantos GB os dois planos custam o mesmo?",
+        "passos": ["A(x) = 4x + 30 e B(x) = 2x + 50.", "Iguale: 4x + 30 = 2x + 50.", "2x = 20, logo x = 10."],
+        "resposta": "10 GB",
+        "conta": "(50-30)/(4-2)",
+        "valor": 10
+      }
+    ],
+    "cartoes": [
+      {"p": "Qual é a forma geral de uma função do 1º grau?", "r": "f(x) = ax + b, com a diferente de zero."},
+      {"p": "O que representam a e b em f(x) = ax + b?", "r": "a é a taxa de variação (coeficiente angular); b é o valor inicial (quando x = 0)."},
+      {"p": "Como achar a raiz de f(x) = ax + b?", "r": "Resolva ax + b = 0, o que dá x = {−b/a}."},
+      {"p": "Como achar o coeficiente angular com dois pontos?", "r": "a = {y_{2} − y_{1}/x_{2} − x_{1}}."}
+    ],
+    "gerador": {
+      "vars": {},
+      "questoes": [
+        {
+          "vars": {
+            "a": {
+              "min": 2,
+              "max": 9
+            },
+            "b": {
+              "min": 1,
+              "max": 9
+            },
+            "c": {
+              "min": 1,
+              "max": 8
+            }
+          },
+          "enunciado": "Dada a função f(x) = {a}x + {b}, calcule f({c}).",
+          "conta": "a*c+b",
+          "unidade": "",
+          "casas": 0,
+          "passos": [
+            "Substitua x por {c} na função.",
+            "f({c}) = {a} × {c} + {b} = {valor}."
+          ]
+        },
+        {
+          "vars": {
+            "a": {
+              "min": 2,
+              "max": 9
+            },
+            "b": {
+              "min": 5,
+              "max": 30
+            },
+            "c": {
+              "min": 3,
+              "max": 15
+            }
+          },
+          "enunciado": "Uma corrida de táxi custa R$ {b} de bandeirada mais R$ {a} por quilômetro rodado. Quanto custa, em reais, uma corrida de {c} km?",
+          "conta": "a*c+b",
+          "unidade": "reais",
+          "casas": 0,
+          "passos": [
+            "O custo é uma função do 1º grau: C(x) = {a}x + {b}, com x em km.",
+            "Parte variável: {a} × {c}. Parte fixa: {b}.",
+            "C({c}) = {a} × {c} + {b} = {valor} reais."
+          ]
+        },
+        {
+          "vars": {
+            "a": {
+              "min": 2,
+              "max": 9
+            },
+            "b": {
+              "min": 10,
+              "max": 60
+            },
+            "d": {
+              "min": 2,
+              "max": 12
+            }
+          },
+          "deriv": {
+            "t": "a*d+b"
+          },
+          "enunciado": "Uma locadora cobra R$ {b} de taxa fixa mais R$ {a} por dia de aluguel. Paulo pagou R$ {t} no total. Por quantos dias ele alugou o equipamento?",
+          "conta": "(t-b)/a",
+          "unidade": "dias",
+          "casas": 0,
+          "passos": [
+            "O valor pago é {a}x + {b}, com x em dias, e ele vale {t}.",
+            "Tire a taxa fixa: {t} − {b} = {a}x.",
+            "x = {{t} − {b}/{a}} = {valor} dias."
+          ]
+        },
+        {
+          "vars": {
+            "a": {
+              "min": 2,
+              "max": 7
+            },
+            "b": {
+              "min": 1,
+              "max": 9
+            },
+            "x1": {
+              "min": 1,
+              "max": 4
+            },
+            "d": {
+              "min": 1,
+              "max": 4
+            },
+            "x3": {
+              "min": 5,
+              "max": 10
+            }
+          },
+          "deriv": {
+            "x2": "x1+d",
+            "y1": "a*x1+b",
+            "y2": "a*(x1+d)+b"
+          },
+          "enunciado": "O gráfico de uma função do 1º grau f passa pelos pontos ({x1}, {y1}) e ({x2}, {y2}). Qual é o valor de f({x3})?",
+          "conta": "a*x3+b",
+          "unidade": "",
+          "casas": 0,
+          "passos": [
+            "Coeficiente angular: a = {{y2} − {y1}/{x2} − {x1}} = {a}.",
+            "Use o ponto ({x1}, {y1}) em f(x) = {a}x + b: {y1} = {a} × {x1} + b, logo b = {b}.",
+            "f(x) = {a}x + {b}, então f({x3}) = {a} × {x3} + {b} = {valor}."
+          ]
+        },
+        {
+          "vars": {
+            "pb": {
+              "min": 2,
+              "max": 5
+            },
+            "e": {
+              "min": 1,
+              "max": 4
+            },
+            "fa": {
+              "min": 20,
+              "max": 60
+            },
+            "x": {
+              "min": 3,
+              "max": 12
+            }
+          },
+          "deriv": {
+            "pa": "pb+e",
+            "fb": "fa+e*x"
+          },
+          "enunciado": "Uma academia tem dois planos. O plano A cobra matrícula de R$ {fa} e mensalidade de R$ {pa}. O plano B cobra matrícula de R$ {fb} e mensalidade de R$ {pb}. Depois de quantos meses os dois planos terão custado o mesmo valor total?",
+          "conta": "x",
+          "unidade": "meses",
+          "casas": 0,
+          "passos": [
+            "Custo do plano A em m meses: {fa} + {pa}m. Custo do plano B: {fb} + {pb}m.",
+            "Igualando: {fa} + {pa}m = {fb} + {pb}m, ou seja, ({pa} − {pb})m = {fb} − {fa}.",
+            "{e}m = {fb} − {fa}, então m = {{fb} − {fa}/{e}} = {valor} meses."
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "funcao-2-grau",
+    "nivel": "intermediario",
+    "titulo": "Função do 2º grau",
+    "competencia": "C5",
+    "habilidades": ["H20", "H21", "H22"],
+    "antes": "funcao-1-grau",
+    "conceito": [
+      "Uma função do 2º grau tem a forma f(x) = ax^{2} + bx + c, com a diferente de zero. O gráfico é uma parábola: com a > 0 abre para cima (tem mínimo); com a < 0 abre para baixo (tem máximo).",
+      "As raízes vêm da fórmula de Bhaskara: x = {−b ± sqrt{Δ}/2a}, com Δ = b^{2} − 4ac. Se Δ > 0, há duas raízes; se Δ = 0, uma; se Δ < 0, nenhuma raiz real.",
+      "O vértice é o ponto de máximo ou mínimo: x_{v} = {−b/2a}. O valor extremo é f(x_{v})."
+    ],
+    "quando": {
+      "sinais": [
+        "“altura máxima” ou “lucro máximo”: parábola com a < 0, procure o vértice",
+        "“custo mínimo” ou “menor valor”: parábola com a > 0, vértice de mínimo",
+        "“em que instante a bola toca o solo”: raiz da função, f(t) = 0",
+        "“a trajetória é uma parábola”: função do 2º grau, ache a, b e c"
+      ],
+      "formula": "x_{v} = {−b/2a}; y_{v} = {−Δ/4a}; Δ = b^{2} − 4ac",
+      "armadilhas": [
+        "Dar x_{v} quando a pergunta pede o valor máximo (y_{v}), ou o contrário.",
+        "Errar o sinal de b ao calcular x_{v} = {−b/2a}."
+      ]
+    },
+    "ler": {
+      "passos": [
+        "Circule se a pergunta pede o instante (x do vértice) ou o valor máximo/mínimo (y do vértice).",
+        "Identifique a, b e c com o sinal de cada um.",
+        "Veja o sinal de a para saber se há máximo (a < 0) ou mínimo (a > 0).",
+        "Risque dados que não entram, como massa do objeto ou cor.",
+        "Calcule o vértice, substitua e confira a unidade da resposta."
+      ],
+      "exemplo": {
+        "enunciado": "A altura h, em metros, de uma bola chutada é dada por h(t) = −t^{2} + 6t, com t em segundos. A bola é de couro sintético e pesa 400 g. Qual é a altura máxima atingida pela bola?",
+        "anotacoes": [
+          {
+            "trecho": "h(t) = −t^{2} + 6t",
+            "papel": "dado",
+            "nota": "a = −1, b = 6, c = 0; como a < 0, há máximo"
+          },
+          {
+            "trecho": "em metros",
+            "papel": "unidade",
+            "nota": "a resposta sai em metros"
+          },
+          {
+            "trecho": "couro sintético e pesa 400 g",
+            "papel": "distracao",
+            "nota": "não entra na conta"
+          },
+          {
+            "trecho": "altura máxima",
+            "papel": "pede",
+            "nota": "valor máximo y_{v}: t_{v} = 3 e h(3) = −9 + 18 = 9 m"
+          }
+        ]
+      }
+    },
+    "formulas": [
+      {
+        "nome": "Discriminante",
+        "f": "Δ = b^{2} − 4 · a · c",
+        "uso": "Quando se quer saber quantas raízes reais a parábola tem."
+      },
+      {
+        "nome": "Bhaskara",
+        "f": "x = {−b ± sqrt{Δ}/2 · a}",
+        "uso": "Quando se pede o valor de x em que f(x) = 0."
+      },
+      {
+        "nome": "Vértice",
+        "f": "x_{v} = {−b/2 · a}  e  y_{v} = {−Δ/4 · a}",
+        "uso": "Quando o enunciado fala em “máximo” ou “mínimo” (lucro, altura, área)."
+      }
+    ],
+    "exemplos": [
+      {
+        "enunciado": "Quais são as raízes de x^{2} − 5x + 6 = 0?",
+        "formula": "x = {5 ± sqrt{25 − 24}/2} → x = 3 ou x = 2",
+        "passos": ["Δ = (−5)^{2} − 4 · 1 · 6 = 25 − 24 = 1.", "x = {5 ± 1/2}.", "x = 3 ou x = 2."]
+      },
+      {
+        "enunciado": "Uma bola é lançada e sua altura é h(t) = −t^{2} + 4t, em metros, com t em segundos. Em que instante a altura é máxima?",
+        "formula": "t_{v} = {−4/2 · (−1)} = 2",
+        "passos": ["a = −1 (abre para baixo), logo há um máximo.", "t_{v} = {−b/2a} = {−4/−2} = 2.", "A altura máxima ocorre em 2 s."]
+      }
+    ],
+    "truque": "Em problema de máximo ou mínimo (lucro, altura, área), não resolva a equação inteira: vá direto ao vértice x_{v} = {−b/2a} e substitua na função.",
+    "erroComum": "Esquecer o sinal de b ao calcular Δ ou o vértice, e dividir por a em vez de 2a.",
+    "exercicios": [
+      {
+        "enunciado": "Qual é a maior raiz de x^{2} − 5x + 6 = 0?",
+        "passos": ["Δ = 25 − 24 = 1.", "x = {5 ± 1/2}.", "A maior raiz é {6/2} = 3."],
+        "resposta": "3",
+        "conta": "(5+sqrt(25-24))/2",
+        "valor": 3
+      },
+      {
+        "enunciado": "Qual é o valor mínimo de f(x) = x^{2} − 8x + 20?",
+        "passos": ["x_{v} = {8/2} = 4.", "f(4) = 16 − 32 + 20 = 4."],
+        "resposta": "4",
+        "conta": "4**2-8*4+20",
+        "valor": 4
+      },
+      {
+        "enunciado": "A altura de uma bola, em metros, é h(t) = −5t^{2} + 20t, com t em segundos. Qual é a altura máxima atingida?",
+        "passos": ["t_{v} = {−20/2 · (−5)} = 2.", "h(2) = −5 · 4 + 40 = 20."],
+        "resposta": "20 m",
+        "conta": "-5*2**2+20*2",
+        "valor": 20
+      },
+      {
+        "enunciado": "Qual é o discriminante Δ da equação x^{2} + 2x − 8 = 0?",
+        "passos": ["Δ = b^{2} − 4ac.", "Δ = 4 − 4 · 1 · (−8) = 4 + 32 = 36."],
+        "resposta": "36",
+        "conta": "2**2-4*1*(-8)",
+        "valor": 36
+      },
+      {
+        "enunciado": "O lucro de uma fábrica, em milhares de reais, é L(x) = −x^{2} + 10x − 16, em que x é a quantidade produzida em milhares de unidades. Qual é o lucro máximo?",
+        "passos": ["x_{v} = {−10/−2} = 5.", "L(5) = −25 + 50 − 16 = 9."],
+        "resposta": "9 mil reais",
+        "conta": "-5**2+10*5-16",
+        "valor": 9
+      }
+    ],
+    "cartoes": [
+      {"p": "Qual é a fórmula do discriminante?", "r": "Δ = b^{2} − 4ac."},
+      {"p": "Como achar o vértice de uma parábola?", "r": "x_{v} = {−b/2a}; depois calcule f(x_{v})."},
+      {"p": "Quando a parábola tem ponto de máximo?", "r": "Quando a < 0 (abre para baixo)."},
+      {"p": "Quantas raízes reais há se Δ < 0?", "r": "Nenhuma."}
+    ],
+    "gerador": {
+      "vars": {},
+      "questoes": [
+        {
+          "vars": {
+            "a": {
+              "min": 2,
+              "max": 4
+            },
+            "b": {
+              "min": 1,
+              "max": 9
+            },
+            "c": {
+              "min": 1,
+              "max": 9
+            },
+            "x0": {
+              "min": 1,
+              "max": 5
+            }
+          },
+          "deriv": {
+            "ax2": "a*x0**2",
+            "bx": "b*x0"
+          },
+          "enunciado": "Dada a função f(x) = {a}x^{2} + {b}x + {c}, calcule f({x0}).",
+          "conta": "a*x0**2+b*x0+c",
+          "unidade": "",
+          "casas": 0,
+          "passos": [
+            "Substitua x por {x0}: f({x0}) = {a} × {x0}^{2} + {b} × {x0} + {c}.",
+            "{ax2} + {bx} + {c} = {valor}."
+          ]
+        },
+        {
+          "vars": {
+            "r1": {
+              "min": 1,
+              "max": 6
+            },
+            "d": {
+              "min": 1,
+              "max": 5
+            }
+          },
+          "deriv": {
+            "r2": "r1+d",
+            "s": "2*r1+d",
+            "p": "r1*(r1+d)"
+          },
+          "enunciado": "Qual é a maior raiz da equação x^{2} − {s}x + {p} = 0, sabendo que as raízes são inteiras?",
+          "conta": "r1+d",
+          "unidade": "",
+          "casas": 0,
+          "passos": [
+            "A soma das raízes é {s} e o produto é {p}.",
+            "Dois números com soma {s} e produto {p}: {r1} e {r2}.",
+            "A maior raiz é {valor}."
+          ]
+        },
+        {
+          "vars": {
+            "a": {
+              "min": 2,
+              "max": 4
+            },
+            "h": {
+              "min": 1,
+              "max": 8
+            },
+            "c": {
+              "min": 1,
+              "max": 9
+            }
+          },
+          "deriv": {
+            "b": "2*a*h"
+          },
+          "enunciado": "Qual é a abscissa do vértice da parábola y = {a}x^{2} − {b}x + {c}?",
+          "conta": "b/(2*a)",
+          "unidade": "",
+          "casas": 0,
+          "passos": [
+            "Para y = ax^{2} + bx + c, a abscissa do vértice é −b ÷ (2a).",
+            "Aqui a = {a} e b = −{b}, então a abscissa do vértice é {b} ÷ (2 × {a}) = {valor}."
+          ]
+        },
+        {
+          "vars": {
+            "a": {
+              "min": 2,
+              "max": 5
+            },
+            "h": {
+              "min": 1,
+              "max": 6
+            },
+            "c": {
+              "min": 1,
+              "max": 10
+            }
+          },
+          "deriv": {
+            "b": "2*a*h",
+            "ah2": "a*h**2",
+            "bh": "2*a*h*h"
+          },
+          "enunciado": "Um objeto é lançado para cima e sua altura, em metros, após t segundos é h(t) = −{a}t^{2} + {b}t + {c}. Qual é a altura máxima atingida, em metros?",
+          "conta": "c+b**2/(4*a)",
+          "unidade": "m",
+          "casas": 0,
+          "passos": [
+            "A altura máxima ocorre no vértice: t = {b} ÷ (2 × {a}) = {h} s.",
+            "h({h}) = −{a} × {h}^{2} + {b} × {h} + {c}.",
+            "h({h}) = −{ah2} + {bh} + {c} = {valor} m."
+          ]
+        },
+        {
+          "vars": {
+            "a": {
+              "min": 2,
+              "max": 4
+            },
+            "r1": {
+              "min": 1,
+              "max": 5
+            },
+            "e": {
+              "min": 1,
+              "max": 4
+            }
+          },
+          "deriv": {
+            "h": "r1+e",
+            "b": "2*a*(r1+e)",
+            "c": "a*r1*(r1+2*e)",
+            "D": "(2*a*(r1+e))**2-4*a*(a*r1*(r1+2*e))",
+            "f4": "4*a"
+          },
+          "enunciado": "O lucro mensal, em milhares de reais, de uma loja é L(x) = −{a}x^{2} + {b}x − {c}, em que x é a quantidade vendida, em centenas de unidades. Qual é o lucro máximo, em milhares de reais?",
+          "conta": "(b**2-4*a*c)/(4*a)",
+          "unidade": "mil reais",
+          "casas": 0,
+          "passos": [
+            "Aqui a = −{a}, b = {b} e c = −{c}.",
+            "Δ = {b}^{2} − 4 × (−{a}) × (−{c}) = {D}.",
+            "O valor máximo é −Δ ÷ (4a) = −{D} ÷ (−{f4}) = {valor} mil reais."
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "pa-e-pg",
+    "nivel": "intermediario",
+    "titulo": "Progressão aritmética e geométrica",
+    "competencia": "C4",
+    "habilidades": ["H15", "H17"],
+    "antes": "funcao-1-grau",
+    "conceito": [
+      "Em uma progressão aritmética (PA), cada termo é o anterior mais uma razão r constante. O termo geral é a_{n} = a_{1} + (n − 1) · r. A soma dos n primeiros termos é S_{n} = {(a_{1} + a_{n}) · n/2}.",
+      "Em uma progressão geométrica (PG), cada termo é o anterior vezes uma razão q constante. O termo geral é a_{n} = a_{1} · q^{n − 1}.",
+      "PA modela variação por soma constante (como uma função do 1º grau); PG modela variação por fator constante, como juros compostos e crescimento percentual."
+    ],
+    "quando": {
+      "sinais": [
+        "“aumenta 5 a cada dia” (soma fixa): progressão aritmética, a_{n} = a_{1} + (n − 1) · r",
+        "“dobra a cada hora” ou “cresce 10% ao mês”: progressão geométrica, multiplique pela razão q",
+        "“qual o total acumulado em n dias”: soma dos termos, S_{n}",
+        "“no 10º dia”: o termo é o a_{10}; conte quantos saltos há desde o primeiro"
+      ],
+      "formula": "PA: a_{n} = a_{1} + (n − 1) · r; PG: a_{n} = a_{1} · q^{n − 1}",
+      "armadilhas": [
+        "Usar n em vez de n − 1 saltos: do 1º ao 10º termo há 9 saltos.",
+        "Confundir soma fixa (PA) com multiplicação (PG), sobretudo em porcentagem."
+      ]
+    },
+    "ler": {
+      "passos": [
+        "Circule qual termo ou qual soma a pergunta pede.",
+        "Diga se o salto é uma soma fixa (PA) ou uma multiplicação (PG).",
+        "Anote a_{1}, a razão e o valor de n.",
+        "Risque o que não entra, como distâncias e nomes.",
+        "Aplique a fórmula do termo geral e confira o resultado."
+      ],
+      "exemplo": {
+        "enunciado": "Um atleta treina 20 minutos no primeiro dia e aumenta o treino em 5 minutos a cada dia. Ele corre em uma pista de 400 m. Quantos minutos ele treina no 10º dia?",
+        "anotacoes": [
+          {
+            "trecho": "20 minutos no primeiro dia",
+            "papel": "dado",
+            "nota": "a_{1} = 20"
+          },
+          {
+            "trecho": "em 5 minutos a cada dia",
+            "papel": "condicao",
+            "nota": "soma fixa, ou seja, PA de razão r = 5"
+          },
+          {
+            "trecho": "pista de 400 m",
+            "papel": "distracao",
+            "nota": "não entra na conta"
+          },
+          {
+            "trecho": "Quantos minutos",
+            "papel": "pede",
+            "nota": "a_{10} = 20 + 9 · 5 = 65"
+          }
+        ]
+      }
+    },
+    "formulas": [
+      {
+        "nome": "Termo geral da PA",
+        "f": "a_{n} = a_{1} + (n − 1) · r",
+        "uso": "Quando cada termo soma uma quantidade fixa ao anterior."
+      },
+      {
+        "nome": "Soma da PA",
+        "f": "S_{n} = {(a_{1} + a_{n}) · n/2}",
+        "uso": "Quando se pede o total dos n primeiros termos de uma PA."
+      },
+      {
+        "nome": "Termo geral da PG",
+        "f": "a_{n} = a_{1} · q^{n − 1}",
+        "uso": "Quando cada termo multiplica o anterior por um fator fixo, como crescimento percentual."
+      }
+    ],
+    "exemplos": [
+      {
+        "enunciado": "Em uma PA, a_{1} = 7 e r = 4. Qual é o 10º termo?",
+        "formula": "a_{10} = 7 + 9 · 4 = 43",
+        "passos": ["a_{n} = a_{1} + (n − 1) · r.", "a_{10} = 7 + 9 · 4 = 7 + 36 = 43."]
+      },
+      {
+        "enunciado": "Em uma PG, a_{1} = 3 e q = 2. Qual é o 6º termo?",
+        "formula": "a_{6} = 3 · 2^{5} = 96",
+        "passos": ["a_{n} = a_{1} · q^{n − 1}.", "a_{6} = 3 · 2^{5} = 3 · 32 = 96."]
+      }
+    ],
+    "truque": "Para saber se é PA ou PG, olhe a diferença e o quociente entre termos vizinhos: diferença constante é PA; quociente constante é PG. Na dúvida, escreva os três primeiros termos.",
+    "erroComum": "Usar n em vez de (n − 1) no termo geral: o primeiro termo já é a_{1}, então do 1º ao n-ésimo há n − 1 passos.",
+    "exercicios": [
+      {
+        "enunciado": "Em uma PA, o primeiro termo é 7 e a razão é 4. Qual é o 10º termo?",
+        "passos": ["a_{10} = 7 + (10 − 1) · 4.", "a_{10} = 7 + 36 = 43."],
+        "resposta": "43",
+        "conta": "7+9*4",
+        "valor": 43
+      },
+      {
+        "enunciado": "Qual é a soma dos 20 primeiros números pares positivos (2, 4, 6, ...)?",
+        "passos": ["a_{1} = 2 e r = 2, logo a_{20} = 2 + 19 · 2 = 40.", "S_{20} = {(2 + 40) · 20/2} = 420."],
+        "resposta": "420",
+        "conta": "(2+40)*20/2",
+        "valor": 420
+      },
+      {
+        "enunciado": "Em uma PG, o primeiro termo é 3 e a razão é 2. Qual é o 6º termo?",
+        "passos": ["a_{6} = 3 · 2^{5}.", "3 · 32 = 96."],
+        "resposta": "96",
+        "conta": "3*2**5",
+        "valor": 96
+      },
+      {
+        "enunciado": "Uma população de 1.000 habitantes cresce 10% ao ano. Quantos habitantes haverá após 3 anos?",
+        "passos": ["O fator anual é 1,10: é uma PG de razão 1,1.", "1000 · 1,1^{3} = 1000 · 1,331 = 1331."],
+        "resposta": "1.331 habitantes",
+        "conta": "1000*1.1**3",
+        "valor": 1331
+      },
+      {
+        "enunciado": "Quantos termos tem a PA 5, 8, 11, ..., 98?",
+        "passos": ["a_{1} = 5, r = 3 e a_{n} = 98.", "98 = 5 + (n − 1) · 3, logo n − 1 = {93/3} = 31.", "n = 32."],
+        "resposta": "32 termos",
+        "conta": "(98-5)/3+1",
+        "valor": 32
+      }
+    ],
+    "cartoes": [
+      {"p": "Qual é o termo geral de uma PA?", "r": "a_{n} = a_{1} + (n − 1) · r."},
+      {"p": "Qual é o termo geral de uma PG?", "r": "a_{n} = a_{1} · q^{n − 1}."},
+      {"p": "Como se calcula a soma dos n primeiros termos de uma PA?", "r": "S_{n} = {(a_{1} + a_{n}) · n/2}."},
+      {"p": "Como distinguir PA de PG?", "r": "PA tem diferença constante entre termos vizinhos; PG tem quociente constante."}
+    ],
+    "gerador": {
+      "vars": {},
+      "questoes": [
+        {
+          "vars": {
+            "a1": {
+              "min": 2,
+              "max": 10
+            },
+            "r": {
+              "min": 2,
+              "max": 7
+            },
+            "k": {
+              "min": 5,
+              "max": 12
+            }
+          },
+          "deriv": {
+            "km1": "k-1"
+          },
+          "enunciado": "Em uma PA, o primeiro termo é {a1} e a razão é {r}. Qual é o {k}º termo?",
+          "conta": "a1+(k-1)*r",
+          "unidade": "",
+          "casas": 0,
+          "passos": [
+            "Termo geral: o termo de ordem n é o primeiro termo mais (n − 1) vezes a razão.",
+            "a_{{k}} = {a1} + {km1} × {r} = {valor}."
+          ]
+        },
+        {
+          "vars": {
+            "a1": {
+              "min": 5,
+              "max": 20
+            },
+            "r": {
+              "min": 2,
+              "max": 6
+            },
+            "m": {
+              "min": 3,
+              "max": 6
+            }
+          },
+          "deriv": {
+            "n": "2*m",
+            "an": "a1+(2*m-1)*r",
+            "nm1": "2*m-1"
+          },
+          "enunciado": "Uma pessoa guardou R$ {a1} no primeiro mês e, a cada mês seguinte, guardou R$ {r} a mais que no mês anterior. Quanto terá guardado ao final de {n} meses?",
+          "conta": "n*(a1+an)/2",
+          "unidade": "reais",
+          "casas": 0,
+          "passos": [
+            "Os valores guardados formam uma PA com a_{1} = {a1} e razão {r}.",
+            "Último termo: a_{{n}} = {a1} + {nm1} × {r} = {an}.",
+            "Soma = ({a1} + {an}) × {n} ÷ 2 = {valor} reais."
+          ]
+        },
+        {
+          "vars": {
+            "a1": {
+              "min": 2,
+              "max": 6
+            },
+            "q": {
+              "min": 2,
+              "max": 3
+            },
+            "k": {
+              "min": 3,
+              "max": 6
+            }
+          },
+          "deriv": {
+            "qk": "q**k"
+          },
+          "enunciado": "Uma colônia tem {a1} bactérias e esse número é multiplicado por {q} a cada hora. Quantas bactérias haverá depois de {k} horas?",
+          "conta": "a1*q**k",
+          "unidade": "",
+          "casas": 0,
+          "passos": [
+            "A cada hora o valor é multiplicado por {q}: é uma PG de razão {q}.",
+            "Após {k} horas: {a1} × {q}^{k} = {a1} × {qk} = {valor}."
+          ]
+        },
+        {
+          "vars": {
+            "a1": {
+              "min": 1,
+              "max": 10
+            },
+            "r": {
+              "min": 2,
+              "max": 7
+            }
+          },
+          "deriv": {
+            "t3": "a1+2*r",
+            "t8": "a1+7*r"
+          },
+          "enunciado": "Em uma PA, o 3º termo vale {t3} e o 8º termo vale {t8}. Qual é o 1º termo?",
+          "conta": "t3-2*(t8-t3)/5",
+          "unidade": "",
+          "casas": 0,
+          "passos": [
+            "Do 3º ao 8º termo há 5 razões: {t8} − {t3} = 5r.",
+            "Logo r = {{t8} − {t3}/5} = {r}.",
+            "Como a_{3} = a_{1} + 2r, temos a_{1} = {t3} − 2 × {r} = {valor}."
+          ]
+        },
+        {
+          "vars": {
+            "a1": {
+              "min": 1,
+              "max": 5
+            },
+            "q": {
+              "min": 2,
+              "max": 3
+            },
+            "k": {
+              "min": 4,
+              "max": 7
+            }
+          },
+          "deriv": {
+            "qk1": "q**k-1",
+            "q1": "q-1"
+          },
+          "enunciado": "O primeiro dia de uma campanha arrecadou R$ {a1} e cada dia seguinte arrecadou {q} vezes o valor do dia anterior. Quantos reais foram arrecadados nos {k} primeiros dias?",
+          "conta": "a1*(q**k-1)/(q-1)",
+          "unidade": "reais",
+          "casas": 0,
+          "passos": [
+            "Os valores formam uma PG com a_{1} = {a1} e razão {q}.",
+            "Soma dos termos: primeiro termo × (razão elevada ao número de termos − 1) ÷ (razão − 1).",
+            "S_{{k}} = {a1} × ({q}^{{k}} − 1) ÷ ({q} − 1) = {a1} × {qk1} ÷ {q1}.",
+            "S_{{k}} = {valor} reais."
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "exponencial-logaritmo",
+    "nivel": "avancado",
+    "titulo": "Função exponencial e logaritmo",
+    "competencia": "C5",
+    "habilidades": [
+      "H19",
+      "H21"
+    ],
+    "antes": "pa-e-pg",
+    "quando": {
+      "sinais": [
+        "“cresce x% ao ano” ou “dobra a cada”: fator multiplicativo, função exponencial",
+        "“perde x% por ano” ou “decai”: base entre 0 e 1",
+        "“em quanto tempo” em crescimento exponencial: o tempo está no expoente, use logaritmo",
+        "o enunciado fornece log 2 = 0,30 ou valor parecido: use as propriedades do logaritmo",
+        "pH e Richter: cada unidade multiplica por 10; decibel: a cada 10 dB a intensidade multiplica por 10"
+      ],
+      "formula": "N = N_{0} · b^{t} e t = {log M − log N_{0}/log b}",
+      "armadilhas": [
+        "Aplicar log a uma soma: log (a + b) não é log a + log b.",
+        "Esquecer que a porcentagem vira fator: 8% ao ano é base 1,08, não 8."
+      ]
+    },
+    "ler": {
+      "passos": [
+        "Circule o que se pede: um valor futuro ou o tempo para atingir certo valor.",
+        "Anote o valor inicial, a taxa e o período, com a unidade de tempo.",
+        "Transforme a taxa em fator: dobra é 2, cresce 8% é 1,08, perde 20% é 0,8.",
+        "Risque datas e nomes que não entram na conta.",
+        "Se o tempo está no expoente, use log; confira se o valor fornecido (como log 2) basta."
+      ],
+      "exemplo": {
+        "enunciado": "Um laboratório de Recife, criado em 2005, mantém uma cultura que começa com 500 bactérias e dobra a cada hora. Quantas bactérias haverá após 4 horas?",
+        "anotacoes": [
+          {
+            "trecho": "criado em 2005",
+            "papel": "distracao",
+            "nota": "o ano não entra na conta"
+          },
+          {
+            "trecho": "500 bactérias",
+            "papel": "dado",
+            "nota": "valor inicial N_{0}"
+          },
+          {
+            "trecho": "dobra a cada hora",
+            "papel": "condicao",
+            "nota": "fator 2 por hora: crescimento exponencial"
+          },
+          {
+            "trecho": "após 4 horas",
+            "papel": "unidade",
+            "nota": "o tempo é contado em horas: t = 4"
+          },
+          {
+            "trecho": "Quantas bactérias haverá",
+            "papel": "pede",
+            "nota": "500 · 2^{4} = 8000"
+          }
+        ]
+      }
+    },
+    "conceito": [
+      "A função exponencial tem a forma f(x) = a · b^{x}, com b > 0 e b diferente de 1. Se b > 1 a função cresce; se 0 < b < 1 ela decai. Crescer i% por período é multiplicar por (1 + i) e perder i% é multiplicar por (1 − i), como em uma PG.",
+      "O logaritmo é o expoente: log_{b} N = x significa b^{x} = N. Assim, log 1000 = 3 na base 10. Ele transforma produto em soma, log (a · b) = log a + log b, e potência em produto, log a^{n} = n · log a.",
+      "Quando o tempo está no expoente, o logaritmo o isola: de N_{0} · b^{t} = M sai t = {log M − log N_{0}/log b}. Nas provas, os valores dos logaritmos costumam vir no enunciado, como log 2 = 0,30."
+    ],
+    "exemplos": [
+      {
+        "enunciado": "Uma população de 8.000 peixes diminui 25% ao ano. Quantos peixes restam após 2 anos?",
+        "formula": "N = 8000 · 0,75^{t}",
+        "passos": [
+          "Perder 25% é multiplicar por 0,75 a cada ano.",
+          "Após 2 anos: 8000 · 0,75^{2} = 8000 · 0,5625.",
+          "Restam 4500 peixes."
+        ]
+      },
+      {
+        "enunciado": "Dado log 2 = 0,30, calcule log 16.",
+        "formula": "log a^{n} = n · log a",
+        "passos": [
+          "Escreva 16 como potência de 2: 16 = 2^{4}.",
+          "log 16 = log 2^{4} = 4 · log 2.",
+          "4 · 0,30 = 1,20."
+        ]
+      }
+    ],
+    "formulas": [
+      {
+        "nome": "Crescimento e decaimento",
+        "f": "N = N_{0} · (1 ± i)^{t}",
+        "uso": "Quando algo cresce (+) ou decai (−) uma porcentagem fixa por período."
+      },
+      {
+        "nome": "Definição de logaritmo",
+        "f": "log_{b} N = x ⇔ b^{x} = N",
+        "uso": "Quando é preciso achar o expoente, ou seja, quantas vezes multiplicar a base."
+      },
+      {
+        "nome": "Propriedades",
+        "f": "log (a · b) = log a + log b; log a^{n} = n · log a",
+        "uso": "Quando o enunciado fornece log 2 ou log 3 e é preciso calcular outros logaritmos."
+      },
+      {
+        "nome": "Tempo no expoente",
+        "f": "t = {log M − log N_{0}/log b}",
+        "uso": "Quando se pergunta em quanto tempo uma grandeza atinge um valor com taxa constante."
+      }
+    ],
+    "truque": "Sem calculadora, ache a potência conhecida: 2^{10} = 1024 é quase 10^{3}, por isso log 2 vale cerca de 0,30. Para tempo de dobra, procure a potência de 2 mais próxima do fator final.",
+    "erroComum": "Usar log (a + b) = log a + log b. O logaritmo transforma produto em soma, não soma em soma: log (2 + 3) = log 5, enquanto log 2 + log 3 = log 6.",
+    "exercicios": [
+      {
+        "enunciado": "Uma cultura começa com 200 bactérias e triplica a cada hora. Quantas bactérias haverá após 3 horas?",
+        "passos": [
+          "O fator é 3 por hora: 200 · 3^{3}.",
+          "3^{3} = 27, e 200 · 27 = 5400."
+        ],
+        "resposta": "5.400 bactérias",
+        "conta": "200*3**3",
+        "valor": 5400
+      },
+      {
+        "enunciado": "O valor de um carro cai 20% ao ano. Se vale R$ 50.000 hoje, quanto valerá, em reais, após 2 anos?",
+        "passos": [
+          "Perder 20% é multiplicar por 0,8.",
+          "50000 · 0,8^{2} = 50000 · 0,64."
+        ],
+        "resposta": "R$ 32.000",
+        "conta": "50000*0.8**2",
+        "valor": 32000
+      },
+      {
+        "enunciado": "O nível sonoro, em decibéis, é 10 · log N, em que N é quantas vezes a intensidade do som supera a de referência. Para N = 10^{7}, qual é o nível sonoro, em dB?",
+        "passos": [
+          "log 10^{7} = 7.",
+          "Nível: 10 · 7."
+        ],
+        "resposta": "70 dB",
+        "conta": "10*log10(10**7)",
+        "valor": 70
+      },
+      {
+        "enunciado": "Uma população de 1.000 indivíduos dobra a cada 3 anos. Em quantos anos chegará a 8.000?",
+        "passos": [
+          "Precisa multiplicar por 8: 2^{k} = 8, logo k = 3 dobras.",
+          "Cada dobra leva 3 anos: 3 · 3."
+        ],
+        "resposta": "9 anos",
+        "conta": "3*log10(8)/log10(2)",
+        "valor": 9
+      },
+      {
+        "enunciado": "Uma colônia dobra de tamanho a cada dia, começando com 1 célula. Dado log 2 = 0,30, em quantos dias ela chega a 1.000 células?",
+        "passos": [
+          "2^{t} = 1000, logo t · log 2 = log 1000 = 3.",
+          "t = {3/0,30}.",
+          "t = 10."
+        ],
+        "resposta": "10 dias",
+        "conta": "3/0.30",
+        "valor": 10
+      }
+    ],
+    "cartoes": [
+      {
+        "p": "O que significa log_{b} N = x?",
+        "r": "Que b^{x} = N: o logaritmo é o expoente."
+      },
+      {
+        "p": "Quanto vale log 1000 na base 10?",
+        "r": "3, pois 10^{3} = 1000."
+      },
+      {
+        "p": "Como modelar “cresce 8% ao ano”?",
+        "r": "Fator 1,08 por ano: N = N_{0} · 1,08^{t}."
+      },
+      {
+        "p": "Como o logaritmo trata produto e potência?",
+        "r": "log (a · b) = log a + log b e log a^{n} = n · log a."
+      },
+      {
+        "p": "Quando usar logaritmo em crescimento exponencial?",
+        "r": "Quando se pergunta o tempo, que está no expoente."
+      }
+    ],
+    "gerador": {
+      "vars": {},
+      "questoes": [
+        {
+          "vars": {
+            "b": {
+              "min": 2,
+              "max": 5
+            },
+            "n": {
+              "min": 2,
+              "max": 4
+            }
+          },
+          "enunciado": "Calcule o valor de {b}^{n}.",
+          "conta": "b**n",
+          "unidade": "",
+          "casas": 0,
+          "passos": [
+            "Multiplique {b} por ele mesmo {n} vezes.",
+            "{b}^{n} = {valor}."
+          ]
+        },
+        {
+          "vars": {
+            "p0": {
+              "min": 2,
+              "max": 9
+            },
+            "t": {
+              "min": 3,
+              "max": 8
+            }
+          },
+          "deriv": {
+            "pt": "2**t"
+          },
+          "enunciado": "Uma cultura tem {p0} mil bactérias e a quantidade dobra a cada hora. Quantas mil bactérias haverá após {t} horas?",
+          "conta": "p0*2**t",
+          "unidade": "mil",
+          "casas": 0,
+          "passos": [
+            "A cada hora a quantidade é multiplicada por 2.",
+            "Após {t} horas: {p0} × 2^{t} = {p0} × {pt} = {valor} mil."
+          ]
+        },
+        {
+          "vars": {
+            "b": {
+              "min": 2,
+              "max": 5
+            },
+            "n": {
+              "min": 2,
+              "max": 4
+            }
+          },
+          "deriv": {
+            "N": "b**n"
+          },
+          "enunciado": "Calcule o valor de log_{{b}} {N}.",
+          "conta": "log(N,b)",
+          "unidade": "",
+          "casas": 0,
+          "passos": [
+            "Procure o expoente que, aplicado à base {b}, resulta em {N}.",
+            "Como {b}^{{n}} = {N}, temos log_{{b}} {N} = {valor}."
+          ]
+        },
+        {
+          "vars": {
+            "n": {
+              "min": 2,
+              "max": 6
+            },
+            "k": {
+              "min": 1,
+              "max": 3
+            }
+          },
+          "deriv": {
+            "N": "2**n*10**k"
+          },
+          "enunciado": "Considere log 2 = 0,30 (logaritmo na base 10). Qual é o valor de log {N}?",
+          "conta": "0.3*n+k",
+          "unidade": "",
+          "casas": 1,
+          "passos": [
+            "Fatore: {N} = 2^{n} × 10^{k}.",
+            "Pela propriedade do produto: log {N} = {n} × log 2 + {k} × log 10.",
+            "log {N} = {n} × 0,30 + {k} × 1 = {valor}."
+          ]
+        },
+        {
+          "vars": {
+            "j": {
+              "min": 1,
+              "max": 8
+            }
+          },
+          "deriv": {
+            "k": "3*j"
+          },
+          "enunciado": "Uma cultura começa com 1 bactéria e a população dobra a cada hora. Considerando log 2 = 0,30, em quantas horas a população chegará a 10^{k} bactérias?",
+          "conta": "k/0.3",
+          "unidade": "horas",
+          "casas": 0,
+          "passos": [
+            "Queremos que 2 elevado ao número t de horas seja igual a 10^{k}.",
+            "Aplicando log: t × log 2 = {k} × log 10 = {k}.",
+            "t = {k} ÷ 0,30 = {valor} horas."
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "sistemas-equacoes",
+    "nivel": "basico",
+    "titulo": "Equações e sistemas de equações",
+    "competencia": "C5",
+    "habilidades": [
+      "H19",
+      "H21"
+    ],
+    "antes": "funcao-1-grau",
+    "quando": {
+      "sinais": [
+        "“o dobro de”, “a soma de” ou “tem 5 a mais que”: traduza cada frase em uma equação",
+        "duas informações sobre duas quantidades desconhecidas (preço de A e de B): sistema",
+        "“total de itens” e “valor total”: uma equação para as quantidades e outra para os valores",
+        "“quando os custos se igualam”: iguale as duas expressões e resolva"
+      ],
+      "formula": "a_{1}x + b_{1}y = c_{1} e a_{2}x + b_{2}y = c_{2}",
+      "armadilhas": [
+        "Resolver para a incógnita errada: releia o que o enunciado pede, às vezes é x + y.",
+        "Errar o sinal ao eliminar uma incógnita: multiplique a equação inteira, não só um termo."
+      ]
+    },
+    "ler": {
+      "passos": [
+        "Circule o que a pergunta pede e dê um nome (x, y) a cada incógnita.",
+        "Traduza cada frase com número em uma equação.",
+        "Use uma equação por incógnita: duas incógnitas pedem duas equações.",
+        "Risque dados que não entram nas equações, como datas e nomes.",
+        "Resolva, volte ao enunciado e confira as duas equações com os valores achados."
+      ],
+      "exemplo": {
+        "enunciado": "Em uma lanchonete, aberta desde 1990, 2 sucos e 3 salgados custam R$ 19,00, e 1 suco e 2 salgados custam R$ 12,00. Qual é o preço de 1 salgado, em reais?",
+        "anotacoes": [
+          {
+            "trecho": "aberta desde 1990",
+            "papel": "distracao",
+            "nota": "o ano não entra na conta"
+          },
+          {
+            "trecho": "2 sucos e 3 salgados custam R$ 19,00",
+            "papel": "dado",
+            "nota": "primeira equação: 2s + 3g = 19"
+          },
+          {
+            "trecho": "1 suco e 2 salgados custam R$ 12,00",
+            "papel": "dado",
+            "nota": "segunda equação: s + 2g = 12"
+          },
+          {
+            "trecho": "em reais",
+            "papel": "unidade",
+            "nota": "preços em reais"
+          },
+          {
+            "trecho": "Qual é o preço de 1 salgado",
+            "papel": "pede",
+            "nota": "pede g, não s: s = 12 − 2g, 24 − 4g + 3g = 19, g = 5"
+          }
+        ]
+      }
+    },
+    "conceito": [
+      "Uma equação do 1º grau se resolve isolando a incógnita com operações inversas. Montá-la é traduzir o texto: “o dobro de x mais 5 é 21” vira 2x + 5 = 21, e então x = 8.",
+      "Um sistema de duas equações com duas incógnitas tem solução quando as duas valem ao mesmo tempo. Na substituição, isola-se uma incógnita e troca-se na outra equação; na adição, somam-se ou subtraem-se as equações para eliminar uma incógnita.",
+      "Graficamente, cada equação é uma reta e a solução é o ponto onde elas se cruzam. Retas paralelas significam sistema sem solução; retas coincidentes, infinitas soluções."
+    ],
+    "exemplos": [
+      {
+        "enunciado": "A soma de dois números é 30 e a diferença entre eles é 6. Quais são os números?",
+        "formula": "x = {S + D/2} e y = {S − D/2}",
+        "passos": [
+          "x + y = 30 e x − y = 6.",
+          "Somando as equações: 2x = 36, logo x = 18.",
+          "Então y = 30 − 18 = 12."
+        ]
+      },
+      {
+        "enunciado": "A empresa A cobra R$ 50 fixos mais R$ 4 por hora; a empresa B cobra R$ 20 fixos mais R$ 6 por hora. Com quantas horas os custos se igualam?",
+        "formula": "50 + 4h = 20 + 6h",
+        "passos": [
+          "Iguale os custos: 50 + 4h = 20 + 6h.",
+          "Passe os termos: 50 − 20 = 6h − 4h, logo 30 = 2h.",
+          "h = 15 horas."
+        ]
+      }
+    ],
+    "formulas": [
+      {
+        "nome": "Equação do 1º grau",
+        "f": "ax + b = c ⇒ x = {c − b/a}",
+        "uso": "Quando há uma só incógnita, como “o dobro de x mais 5 é 21”."
+      },
+      {
+        "nome": "Soma e diferença",
+        "f": "x = {S + D/2} e y = {S − D/2}",
+        "uso": "Quando o enunciado dá a soma S e a diferença D de duas quantidades."
+      },
+      {
+        "nome": "Substituição",
+        "f": "y = S − x ⇒ a · x + b · (S − x) = T",
+        "uso": "Quando uma incógnita pode ser isolada com facilidade, como x + y = S."
+      },
+      {
+        "nome": "Igualar custos",
+        "f": "custo_{A} = custo_{B}",
+        "uso": "Quando perguntam em que ponto duas opções se igualam, a interseção das retas."
+      }
+    ],
+    "truque": "Confira sempre substituindo as respostas nas duas equações do enunciado original. Se uma falha, o erro está na montagem. Valores impossíveis, como preço negativo, também denunciam erro.",
+    "erroComum": "Responder o valor de x quando o enunciado pede outra coisa, como x + y ou o preço de um item específico. Marque na leitura exatamente o que a pergunta pede.",
+    "exercicios": [
+      {
+        "enunciado": "O dobro de um número, mais 7, é igual a 35. Qual é o número?",
+        "passos": [
+          "Traduza: 2x + 7 = 35.",
+          "2x = 28, logo x = 14."
+        ],
+        "resposta": "14",
+        "conta": "(35-7)/2",
+        "valor": 14
+      },
+      {
+        "enunciado": "Em um estacionamento há carros e motos: 40 veículos e 110 rodas no total. Quantos são os carros?",
+        "passos": [
+          "c + m = 40 e 4c + 2m = 110.",
+          "Troque m = 40 − c: 4c + 80 − 2c = 110.",
+          "2c = 30, logo c = 15."
+        ],
+        "resposta": "15 carros (e 25 motos)",
+        "conta": "(110-2*40)/2",
+        "valor": 15
+      },
+      {
+        "enunciado": "Um ingresso de adulto custa R$ 30 e o de criança, R$ 18. Foram vendidos 25 ingressos, somando R$ 630. Quantos eram de adulto?",
+        "passos": [
+          "a + c = 25 e 30a + 18c = 630.",
+          "Troque c = 25 − a: 30a + 450 − 18a = 630.",
+          "12a = 180, logo a = 15."
+        ],
+        "resposta": "15 adultos (e 10 crianças)",
+        "conta": "(630-18*25)/(30-18)",
+        "valor": 15
+      },
+      {
+        "enunciado": "A locadora A cobra R$ 60 fixos mais R$ 0,80 por km; a B cobra R$ 100 fixos mais R$ 0,40 por km. Com quantos km os custos são iguais?",
+        "passos": [
+          "Iguale: 60 + 0,8k = 100 + 0,4k.",
+          "0,8k − 0,4k = 100 − 60, logo 0,4k = 40.",
+          "k = 100."
+        ],
+        "resposta": "100 km",
+        "conta": "(100-60)/(0.8-0.4)",
+        "valor": 100
+      },
+      {
+        "enunciado": "A soma das idades de um pai e de seu filho é 52 anos. Daqui a 10 anos, o pai terá o triplo da idade do filho. Qual é a idade atual do filho?",
+        "passos": [
+          "p + f = 52 e p + 10 = 3 · (f + 10), ou seja, p = 3f + 20.",
+          "Troque: 3f + 20 + f = 52, logo 4f = 32.",
+          "f = 8."
+        ],
+        "resposta": "8 anos (o pai tem 44)",
+        "conta": "(52-20)/4",
+        "valor": 8
+      }
+    ],
+    "cartoes": [
+      {
+        "p": "Como resolver um sistema 2x2 por adição?",
+        "r": "Iguale os coeficientes de uma incógnita, some ou subtraia as equações e elimine-a."
+      },
+      {
+        "p": "Como resolver por substituição?",
+        "r": "Isole uma incógnita em uma equação e troque na outra."
+      },
+      {
+        "p": "O que é a solução de um sistema no gráfico?",
+        "r": "O ponto em que as duas retas se cruzam."
+      },
+      {
+        "p": "Como traduzir “o dobro de x mais 5”?",
+        "r": "2x + 5."
+      },
+      {
+        "p": "Quando um sistema não tem solução?",
+        "r": "Quando as retas são paralelas: coeficientes proporcionais, mas termos independentes diferentes."
+      }
+    ],
+    "gerador": {
+      "vars": {},
+      "questoes": [
+        {
+          "vars": {
+            "x": {
+              "min": 9,
+              "max": 15
+            },
+            "y": {
+              "min": 1,
+              "max": 8
+            }
+          },
+          "deriv": {
+            "s": "x+y",
+            "d": "x-y",
+            "ssd": "2*x"
+          },
+          "enunciado": "Determine o valor de x no sistema formado por x + y = {s} e x − y = {d}.",
+          "conta": "(s+d)/2",
+          "unidade": "",
+          "casas": 0,
+          "passos": [
+            "Some as duas equações: 2x = {s} + {d} = {ssd}.",
+            "x = {ssd} ÷ 2 = {valor}."
+          ]
+        },
+        {
+          "vars": {
+            "p": {
+              "min": 2,
+              "max": 6
+            },
+            "c": {
+              "min": 3,
+              "max": 12
+            }
+          },
+          "deriv": {
+            "A": "2*p+c",
+            "B": "2*p+3*c",
+            "dif": "2*c"
+          },
+          "enunciado": "Ana comprou 2 canetas e 1 caderno por R$ {A}. Bia comprou 2 canetas e 3 cadernos por R$ {B}. Qual é o preço de um caderno, em reais?",
+          "conta": "(B-A)/2",
+          "unidade": "reais",
+          "casas": 0,
+          "passos": [
+            "A diferença entre as duas compras é de 2 cadernos: {B} − {A} = {dif}.",
+            "Um caderno custa {dif} ÷ 2 = {valor} reais."
+          ]
+        },
+        {
+          "vars": {
+            "y": {
+              "min": 5,
+              "max": 15
+            },
+            "k": {
+              "min": 2,
+              "max": 4
+            }
+          },
+          "deriv": {
+            "S": "(k+1)*y",
+            "k1": "k+1"
+          },
+          "enunciado": "A soma das idades de um pai e de seu filho é {S} anos, e o pai tem {k} vezes a idade do filho. Qual é a idade do pai, em anos?",
+          "conta": "k*S/(k+1)",
+          "unidade": "anos",
+          "casas": 0,
+          "passos": [
+            "Sendo f a idade do filho, a do pai é {k}f.",
+            "f + {k}f = {S}, ou seja, {k1}f = {S}.",
+            "f = {S} ÷ {k1} = {y}, e o pai tem {k} × {y} = {valor} anos."
+          ]
+        },
+        {
+          "vars": {
+            "x": {
+              "min": 1,
+              "max": 9
+            },
+            "y": {
+              "min": 1,
+              "max": 9
+            },
+            "a1": {
+              "min": 2,
+              "max": 5
+            },
+            "b1": {
+              "min": 2,
+              "max": 5
+            },
+            "a2": {
+              "min": 2,
+              "max": 5
+            },
+            "b2": {
+              "min": 2,
+              "max": 5
+            }
+          },
+          "deriv": {
+            "c1": "a1*x+b1*y",
+            "c2": "a2*x+b2*y",
+            "det": "a1*b2-a2*b1",
+            "q": "a1*(a2*x+b2*y)-a2*(a1*x+b1*y)"
+          },
+          "restricoes": [
+            [
+              "positivo",
+              "a1*b2-a2*b1"
+            ]
+          ],
+          "enunciado": "Resolva o sistema {a1}x + {b1}y = {c1} e {a2}x + {b2}y = {c2}. Qual é o valor de y?",
+          "conta": "(a1*c2-a2*c1)/(a1*b2-a2*b1)",
+          "unidade": "",
+          "casas": 0,
+          "passos": [
+            "Multiplique a 1ª equação por {a2} e a 2ª por {a1}, para igualar os coeficientes de x.",
+            "Subtraindo a 1ª da 2ª, o x some: ({a1} × {b2} − {a2} × {b1})y = {a1} × {c2} − {a2} × {c1}.",
+            "Calculando: {det}y = {q}.",
+            "y = {q} ÷ {det} = {valor}."
+          ]
+        },
+        {
+          "vars": {
+            "m": {
+              "min": 20,
+              "max": 80
+            },
+            "i": {
+              "min": 30,
+              "max": 90
+            },
+            "pm": {
+              "min": 10,
+              "max": 20
+            },
+            "d": {
+              "min": 10,
+              "max": 20
+            }
+          },
+          "deriv": {
+            "pc": "pm+d",
+            "n": "i+m",
+            "T": "(pm+d)*i+pm*m",
+            "pcn": "(pm+d)*(i+m)",
+            "dif": "d*m"
+          },
+          "enunciado": "Em um show foram vendidos {n} ingressos, entre inteiros, a R$ {pc} cada, e meias-entradas, a R$ {pm} cada. A arrecadação foi de R$ {T}. Quantas meias-entradas foram vendidas?",
+          "conta": "(pc*n-T)/(pc-pm)",
+          "unidade": "",
+          "casas": 0,
+          "passos": [
+            "Seja m o número de meias-entradas; os inteiros são {n} − m.",
+            "Arrecadação: {pc} × ({n} − m) + {pm} × m = {T}.",
+            "{pcn} − {d}m = {T}, logo {d}m = {pcn} − {T} = {dif}.",
+            "m = {dif} ÷ {d} = {valor}."
+          ]
+        }
+      ]
+    }
+  }
+]
